@@ -1,0 +1,6 @@
+# Agent scratchpad (not context files)
+.pi/agents/
+.pi/subagent-schedules/
+
+# Temp working files (agent uses repo-root .tmp/, not system /tmp/)
+.tmp/
