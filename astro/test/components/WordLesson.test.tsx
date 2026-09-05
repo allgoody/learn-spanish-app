@@ -22,6 +22,9 @@ describe("WordLesson", () => {
   it("renders a word with its inline gloss", () => {
     render(<WordLesson category={categories[0]} />);
     expect(screen.getByText("yo")).toBeInTheDocument();
+    expect(screen.getByText("/ʝo/")).toBeInTheDocument();
     expect(screen.getByText("я")).toBeInTheDocument();
+    expect(screen.getByText("Yo hablo español.")).toBeInTheDocument();
+    expect(screen.getByText("— Я говорю по-испански.")).toBeInTheDocument();
   });
 });

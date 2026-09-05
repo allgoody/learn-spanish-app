@@ -6,117 +6,117 @@
     {
       "title": "Личные (подлежащее)",
       "items": [
-        { "es": "yo", "pos": "pron. pers.", "ru": "я", "grammar": "1-е лицо, ед. ч.", "note": null },
-        { "es": "tú", "pos": "pron. pers.", "ru": "ты", "grammar": "2-е лицо, ед. ч.", "note": null },
-        { "es": "vos", "pos": "pron. pers.", "ru": "ты", "grammar": "2-е лицо, ед. ч.", "note": "voseo: употребляется в Аргентине, Уругвае и др. вместо tú" },
-        { "es": "usted", "pos": "pron. pers.", "ru": "Вы (вежл.)", "grammar": "3-е лицо, ед. ч.", "note": "вежливая форма, согласуется с глаголом в 3-м лице" },
-        { "es": "él", "pos": "pron. pers.", "ru": "он", "grammar": "3-е лицо, ед. ч., м. р.", "note": null },
-        { "es": "ella", "pos": "pron. pers.", "ru": "она", "grammar": "3-е лицо, ед. ч., ж. р.", "note": null },
-        { "es": "nosotros", "pos": "pron. pers.", "ru": "мы", "grammar": "1-е лицо, мн. ч., м. р.", "note": "также для смешанной группы" },
-        { "es": "nosotras", "pos": "pron. pers.", "ru": "мы", "grammar": "1-е лицо, мн. ч., ж. р.", "note": "только о женщинах" },
-        { "es": "vosotros", "pos": "pron. pers.", "ru": "вы", "grammar": "2-е лицо, мн. ч., м. р.", "note": "только в Испании" },
-        { "es": "vosotras", "pos": "pron. pers.", "ru": "вы", "grammar": "2-е лицо, мн. ч., ж. р.", "note": "только в Испании" },
-        { "es": "ustedes", "pos": "pron. pers.", "ru": "вы; Вы (вежл. мн.)", "grammar": "3-е лицо, мн. ч.", "note": "в Испании — только вежливое мн. ч.; в Латинской Америке заменяет vosotros" },
-        { "es": "ellos", "pos": "pron. pers.", "ru": "они", "grammar": "3-е лицо, мн. ч., м. р.", "note": null },
-        { "es": "ellas", "pos": "pron. pers.", "ru": "они", "grammar": "3-е лицо, мн. ч., ж. р.", "note": null }
+        { "es": "yo", "ipa": "/ʝo/", "pos": "pron. pers.", "ru": "я", "example": { "es": "Yo hablo español.", "ru": "Я говорю по-испански." }, "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "tú", "ipa": "/tu/", "pos": "pron. pers.", "ru": "ты", "example": { "es": "Tú tienes razón.", "ru": "Ты прав." }, "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "vos", "ipa": "/bos/", "pos": "pron. pers.", "ru": "ты", "example": { "es": "Vos sabés la respuesta.", "ru": "Ты знаешь ответ." }, "grammar": "2-е лицо, ед. ч.", "note": "voseo: употребляется в Аргентине, Уругвае и др. вместо tú" },
+        { "es": "usted", "ipa": "/usˈteð/", "pos": "pron. pers.", "ru": "Вы (вежл.)", "example": { "es": "Usted habla muy bien.", "ru": "Вы очень хорошо говорите." }, "grammar": "3-е лицо, ед. ч.", "note": "вежливая форма, согласуется с глаголом в 3-м лице" },
+        { "es": "él", "ipa": "/el/", "pos": "pron. pers.", "ru": "он", "example": { "es": "Él trabaja en Madrid.", "ru": "Он работает в Мадриде." }, "grammar": "3-е лицо, ед. ч., м. р.", "note": null },
+        { "es": "ella", "ipa": "/ˈeʝa/", "pos": "pron. pers.", "ru": "она", "example": { "es": "Ella canta muy bien.", "ru": "Она очень хорошо поёт." }, "grammar": "3-е лицо, ед. ч., ж. р.", "note": null },
+        { "es": "nosotros", "ipa": "/noˈsotɾos/", "pos": "pron. pers.", "ru": "мы", "example": { "es": "Nosotros vivimos en Sevilla.", "ru": "Мы живём в Севилье." }, "grammar": "1-е лицо, мн. ч., м. р.", "note": "также для смешанной группы" },
+        { "es": "nosotras", "ipa": "/noˈsotɾas/", "pos": "pron. pers.", "ru": "мы", "example": { "es": "Nosotras somos hermanas.", "ru": "Мы сёстры." }, "grammar": "1-е лицо, мн. ч., ж. р.", "note": "только о женщинах" },
+        { "es": "vosotros", "ipa": "/boˈsotɾos/", "pos": "pron. pers.", "ru": "вы", "example": { "es": "Vosotros sois de España.", "ru": "Вы из Испании." }, "grammar": "2-е лицо, мн. ч., м. р.", "note": "только в Испании" },
+        { "es": "vosotras", "ipa": "/boˈsotɾas/", "pos": "pron. pers.", "ru": "вы", "example": { "es": "Vosotras estudiáis juntas.", "ru": "Вы учитесь вместе." }, "grammar": "2-е лицо, мн. ч., ж. р.", "note": "только в Испании" },
+        { "es": "ustedes", "ipa": "/usˈteðes/", "pos": "pron. pers.", "ru": "вы; Вы (вежл. мн.)", "example": { "es": "Ustedes pueden entrar.", "ru": "Вы можете войти." }, "grammar": "3-е лицо, мн. ч.", "note": "в Испании — только вежливое мн. ч.; в Латинской Америке заменяет vosotros" },
+        { "es": "ellos", "ipa": "/ˈeʝos/", "pos": "pron. pers.", "ru": "они", "example": { "es": "Ellos juegan al fútbol.", "ru": "Они играют в футбол." }, "grammar": "3-е лицо, мн. ч., м. р.", "note": null },
+        { "es": "ellas", "ipa": "/ˈeʝas/", "pos": "pron. pers.", "ru": "они", "example": { "es": "Ellas compran pan.", "ru": "Они покупают хлеб." }, "grammar": "3-е лицо, мн. ч., ж. р.", "note": null }
       ]
     },
     {
       "title": "Прямое дополнение (винительный падеж)",
       "items": [
-        { "es": "me", "pos": "pron. pers. (acus.)", "ru": "меня", "grammar": "1-е лицо, ед. ч.", "note": null },
-        { "es": "te", "pos": "pron. pers. (acus.)", "ru": "тебя", "grammar": "2-е лицо, ед. ч.", "note": null },
-        { "es": "lo", "pos": "pron. pers. (acus.)", "ru": "его; это", "grammar": "3-е лицо, ед. ч., м. р.", "note": "в Испании также вежливое «Вас» (м. р.)" },
-        { "es": "la", "pos": "pron. pers. (acus.)", "ru": "её", "grammar": "3-е лицо, ед. ч., ж. р.", "note": "в Испании также вежливое «Вас» (ж. р.)" },
-        { "es": "nos", "pos": "pron. pers. (acus.)", "ru": "нас", "grammar": "1-е лицо, мн. ч.", "note": null },
-        { "es": "os", "pos": "pron. pers. (acus.)", "ru": "вас", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
-        { "es": "los", "pos": "pron. pers. (acus.)", "ru": "их", "grammar": "3-е лицо, мн. ч., м. р.", "note": "также вежливое «Вас» (мн. ч.)" },
-        { "es": "las", "pos": "pron. pers. (acus.)", "ru": "их", "grammar": "3-е лицо, мн. ч., ж. р.", "note": "также вежливое «Вас» (мн. ч., ж. р.)" }
+        { "es": "me", "ipa": "/me/", "pos": "pron. pers. (acus.)", "ru": "меня", "example": { "es": "Mi madre me espera.", "ru": "Мама ждёт меня." }, "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "te", "ipa": "/te/", "pos": "pron. pers. (acus.)", "ru": "тебя", "example": { "es": "Yo te veo.", "ru": "Я тебя вижу." }, "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "lo", "ipa": "/lo/", "pos": "pron. pers. (acus.)", "ru": "его; это", "example": { "es": "No lo entiendo.", "ru": "Я его не понимаю." }, "grammar": "3-е лицо, ед. ч., м. р.", "note": "в Испании также вежливое «Вас» (м. р.)" },
+        { "es": "la", "ipa": "/la/", "pos": "pron. pers. (acus.)", "ru": "её", "example": { "es": "La conozco bien.", "ru": "Я её хорошо знаю." }, "grammar": "3-е лицо, ед. ч., ж. р.", "note": "в Испании также вежливое «Вас» (ж. р.)" },
+        { "es": "nos", "ipa": "/nos/", "pos": "pron. pers. (acus.)", "ru": "нас", "example": { "es": "Ella nos invita a cenar.", "ru": "Она приглашает нас на ужин." }, "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "os", "ipa": "/os/", "pos": "pron. pers. (acus.)", "ru": "вас", "example": { "es": "Os espero en la puerta.", "ru": "Я жду вас у двери." }, "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "los", "ipa": "/los/", "pos": "pron. pers. (acus.)", "ru": "их", "example": { "es": "Los veo en el parque.", "ru": "Я вижу их в парке." }, "grammar": "3-е лицо, мн. ч., м. р.", "note": "также вежливое «Вас» (мн. ч.)" },
+        { "es": "las", "ipa": "/las/", "pos": "pron. pers. (acus.)", "ru": "их", "example": { "es": "Las leo por la noche.", "ru": "Я читаю их по вечерам." }, "grammar": "3-е лицо, мн. ч., ж. р.", "note": "также вежливое «Вас» (мн. ч., ж. р.)" }
       ]
     },
     {
       "title": "Косвенное дополнение (дательный падеж)",
       "items": [
-        { "es": "me", "pos": "pron. pers. (dat.)", "ru": "мне", "grammar": "1-е лицо, ед. ч.", "note": null },
-        { "es": "te", "pos": "pron. pers. (dat.)", "ru": "тебе", "grammar": "2-е лицо, ед. ч.", "note": null },
-        { "es": "le", "pos": "pron. pers. (dat.)", "ru": "ему, ей, Вам", "grammar": "3-е лицо, ед. ч.", "note": null },
-        { "es": "nos", "pos": "pron. pers. (dat.)", "ru": "нам", "grammar": "1-е лицо, мн. ч.", "note": null },
-        { "es": "os", "pos": "pron. pers. (dat.)", "ru": "вам", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
-        { "es": "les", "pos": "pron. pers. (dat.)", "ru": "им, Вам", "grammar": "3-е лицо, мн. ч.", "note": null }
+        { "es": "me", "ipa": "/me/", "pos": "pron. pers. (dat.)", "ru": "мне", "example": { "es": "Me gusta el café.", "ru": "Мне нравится кофе." }, "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "te", "ipa": "/te/", "pos": "pron. pers. (dat.)", "ru": "тебе", "example": { "es": "Te doy mi número.", "ru": "Я дам тебе свой номер." }, "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "le", "ipa": "/le/", "pos": "pron. pers. (dat.)", "ru": "ему, ей, Вам", "example": { "es": "Le compré un regalo.", "ru": "Я купил ему подарок." }, "grammar": "3-е лицо, ед. ч.", "note": null },
+        { "es": "nos", "ipa": "/nos/", "pos": "pron. pers. (dat.)", "ru": "нам", "example": { "es": "Nos gusta viajar.", "ru": "Нам нравится путешествовать." }, "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "os", "ipa": "/os/", "pos": "pron. pers. (dat.)", "ru": "вам", "example": { "es": "Os digo la verdad.", "ru": "Я говорю вам правду." }, "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "les", "ipa": "/les/", "pos": "pron. pers. (dat.)", "ru": "им, Вам", "example": { "es": "Les escribo una carta.", "ru": "Я пишу им письмо." }, "grammar": "3-е лицо, мн. ч.", "note": null }
       ]
     },
     {
       "title": "Предложные (после предлогов)",
       "note": "После предлогов также используются формы подлежащего: para él, para ella, para usted, para nosotros, para vosotros, para ellos.",
       "items": [
-        { "es": "mí", "pos": "pron. pers. (prep.)", "ru": "меня", "grammar": "1-е лицо, ед. ч.", "note": "после предлога: para mí" },
-        { "es": "ti", "pos": "pron. pers. (prep.)", "ru": "тебя", "grammar": "2-е лицо, ед. ч.", "note": "после предлога: para ti" },
-        { "es": "sí", "pos": "pron. pers. (prep.)", "ru": "себя", "grammar": "3-е лицо", "note": "после предлога: para sí" },
-        { "es": "conmigo", "pos": "pron. pers. (prep.)", "ru": "со мной", "grammar": "1-е лицо, ед. ч.", "note": "слитная форма: con + mí" },
-        { "es": "contigo", "pos": "pron. pers. (prep.)", "ru": "с тобой", "grammar": "2-е лицо, ед. ч.", "note": "слитная форма: con + ti" },
-        { "es": "consigo", "pos": "pron. pers. (prep.)", "ru": "с собой", "grammar": "3-е лицо", "note": "слитная форма: con + sí" }
+        { "es": "mí", "ipa": "/mi/", "pos": "pron. pers. (prep.)", "ru": "меня", "example": { "es": "Esto es para mí.", "ru": "Это для меня." }, "grammar": "1-е лицо, ед. ч.", "note": "после предлога: para mí" },
+        { "es": "ti", "ipa": "/ti/", "pos": "pron. pers. (prep.)", "ru": "тебя", "example": { "es": "El regalo es para ti.", "ru": "Подарок для тебя." }, "grammar": "2-е лицо, ед. ч.", "note": "после предлога: para ti" },
+        { "es": "sí", "ipa": "/si/", "pos": "pron. pers. (prep.)", "ru": "себя", "example": { "es": "Lo hizo por sí mismo.", "ru": "Он сделал это сам." }, "grammar": "3-е лицо", "note": "после предлога: para sí" },
+        { "es": "conmigo", "ipa": "/komˈmiɣo/", "pos": "pron. pers. (prep.)", "ru": "со мной", "example": { "es": "¿Vienes conmigo?", "ru": "Ты идёшь со мной?" }, "grammar": "1-е лицо, ед. ч.", "note": "слитная форма: con + mí" },
+        { "es": "contigo", "ipa": "/konˈtiɣo/", "pos": "pron. pers. (prep.)", "ru": "с тобой", "example": { "es": "Quiero hablar contigo.", "ru": "Я хочу поговорить с тобой." }, "grammar": "2-е лицо, ед. ч.", "note": "слитная форма: con + ti" },
+        { "es": "consigo", "ipa": "/konˈsiɣo/", "pos": "pron. pers. (prep.)", "ru": "с собой", "example": { "es": "Lleva el pasaporte consigo.", "ru": "Он носит паспорт с собой." }, "grammar": "3-е лицо", "note": "слитная форма: con + sí" }
       ]
     },
     {
       "title": "Притяжательные",
       "note": "Краткие формы стоят перед существительным (mi casa); полные — после существительного (un amigo mío) или с артиклем (el mío).",
       "items": [
-        { "es": "mi / mis", "pos": "pron. poses.", "ru": "мой, моя / мои", "grammar": "1-е лицо, ед. ч.", "note": null },
-        { "es": "tu / tus", "pos": "pron. poses.", "ru": "твой, твоя / твои", "grammar": "2-е лицо, ед. ч.", "note": null },
-        { "es": "su / sus", "pos": "pron. poses.", "ru": "его, её, Ваш, их", "grammar": "3-е лицо", "note": null },
-        { "es": "nuestro / nuestra / nuestros / nuestras", "pos": "pron. poses.", "ru": "наш / наша / наши", "grammar": "1-е лицо, мн. ч.", "note": null },
-        { "es": "vuestro / vuestra / vuestros / vuestras", "pos": "pron. poses.", "ru": "ваш / ваша / ваши", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
-        { "es": "mío / mía / míos / mías", "pos": "pron. poses.", "ru": "мой (полная форма)", "grammar": "1-е лицо, ед. ч.", "note": "un amigo mío" },
-        { "es": "tuyo / tuya / tuyos / tuyas", "pos": "pron. poses.", "ru": "твой (полная форма)", "grammar": "2-е лицо, ед. ч.", "note": "un amigo tuyo" },
-        { "es": "suyo / suya / suyos / suyas", "pos": "pron. poses.", "ru": "его, её, их (полная форма)", "grammar": "3-е лицо", "note": "un amigo suyo" }
+        { "es": "mi / mis", "ipa": "/mi/ /mis/", "pos": "pron. poses.", "ru": "мой, моя / мои", "example": { "es": "Mis amigos son de Madrid.", "ru": "Мои друзья из Мадрида." }, "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "tu / tus", "ipa": "/tu/ /tus/", "pos": "pron. poses.", "ru": "твой, твоя / твои", "example": { "es": "¿Dónde está tu casa?", "ru": "Где твой дом?" }, "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "su / sus", "ipa": "/su/ /sus/", "pos": "pron. poses.", "ru": "его, её, Ваш, их", "example": { "es": "Su hermana vive en Bilbao.", "ru": "Его сестра живёт в Бильбао." }, "grammar": "3-е лицо", "note": null },
+        { "es": "nuestro / nuestra / nuestros / nuestras", "ipa": "/ˈnwestɾo/ /ˈnwestɾa/ /ˈnwestɾos/ /ˈnwestɾas/", "pos": "pron. poses.", "ru": "наш / наша / наши", "example": { "es": "Nuestra casa es pequeña.", "ru": "Наш дом маленький." }, "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "vuestro / vuestra / vuestros / vuestras", "ipa": "/ˈbwestɾo/ /ˈbwestɾa/ /ˈbwestɾos/ /ˈbwestɾas/", "pos": "pron. poses.", "ru": "ваш / ваша / ваши", "example": { "es": "¿Cómo se llama vuestro perro?", "ru": "Как зовут вашу собаку?" }, "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "mío / mía / míos / mías", "ipa": "/ˈmi.o/ /ˈmi.a/ /ˈmi.os/ /ˈmi.as/", "pos": "pron. poses.", "ru": "мой (полная форма)", "example": { "es": "Este libro es mío.", "ru": "Эта книга моя." }, "grammar": "1-е лицо, ед. ч.", "note": "un amigo mío" },
+        { "es": "tuyo / tuya / tuyos / tuyas", "ipa": "/ˈtuʝo/ /ˈtuʝa/ /ˈtuʝos/ /ˈtuʝas/", "pos": "pron. poses.", "ru": "твой (полная форма)", "example": { "es": "La idea fue tuya.", "ru": "Идея была твоя." }, "grammar": "2-е лицо, ед. ч.", "note": "un amigo tuyo" },
+        { "es": "suyo / suya / suyos / suyas", "ipa": "/ˈsuʝo/ /ˈsuʝa/ /ˈsuʝos/ /ˈsuʝas/", "pos": "pron. poses.", "ru": "его, её, их (полная форма)", "example": { "es": "La culpa no es suya.", "ru": "Это не его вина." }, "grammar": "3-е лицо", "note": "un amigo suyo" }
       ]
     },
     {
       "title": "Указательные",
       "items": [
-        { "es": "este / esta / estos / estas", "pos": "pron. dem.", "ru": "этот / эта / эти", "grammar": "близко к говорящему", "note": null },
-        { "es": "ese / esa / esos / esas", "pos": "pron. dem.", "ru": "тот / та / те", "grammar": "ближе к собеседнику", "note": null },
-        { "es": "aquel / aquella / aquellos / aquellas", "pos": "pron. dem.", "ru": "тот / та / те", "grammar": "далеко от обоих", "note": null },
-        { "es": "esto", "pos": "pron. dem.", "ru": "это", "grammar": "ср. род, без существительного", "note": null },
-        { "es": "eso", "pos": "pron. dem.", "ru": "то", "grammar": "ср. род, без существительного", "note": null },
-        { "es": "aquello", "pos": "pron. dem.", "ru": "то (далёкое)", "grammar": "ср. род, без существительного", "note": null }
+        { "es": "este / esta / estos / estas", "ipa": "/ˈeste/ /ˈesta/ /ˈestos/ /ˈestas/", "pos": "pron. dem.", "ru": "этот / эта / эти", "example": { "es": "Este café está muy bueno.", "ru": "Этот кофе очень вкусный." }, "grammar": "близко к говорящему", "note": null },
+        { "es": "ese / esa / esos / esas", "ipa": "/ˈese/ /ˈesa/ /ˈesos/ /ˈesas/", "pos": "pron. dem.", "ru": "тот / та / те", "example": { "es": "Ese chico es mi primo.", "ru": "Тот парень — мой двоюродный брат." }, "grammar": "ближе к собеседнику", "note": null },
+        { "es": "aquel / aquella / aquellos / aquellas", "ipa": "/aˈkel/ /aˈkeʝa/ /aˈkeʝos/ /aˈkeʝas/", "pos": "pron. dem.", "ru": "тот / та / те", "example": { "es": "Aquel pueblo está lejos.", "ru": "Та деревня далеко." }, "grammar": "далеко от обоих", "note": null },
+        { "es": "esto", "ipa": "/ˈesto/", "pos": "pron. dem.", "ru": "это", "example": { "es": "Esto es importante.", "ru": "Это важно." }, "grammar": "ср. род, без существительного", "note": null },
+        { "es": "eso", "ipa": "/ˈeso/", "pos": "pron. dem.", "ru": "то", "example": { "es": "Eso no me gusta.", "ru": "Мне это не нравится." }, "grammar": "ср. род, без существительного", "note": null },
+        { "es": "aquello", "ipa": "/aˈkeʝo/", "pos": "pron. dem.", "ru": "то (далёкое)", "example": { "es": "Aquello fue hace años.", "ru": "То было много лет назад." }, "grammar": "ср. род, без существительного", "note": null }
       ]
     },
     {
       "title": "Относительные",
       "items": [
-        { "es": "que", "pos": "pron. rel.", "ru": "который, которая; что", "grammar": "неизменяемое", "note": null },
-        { "es": "quien / quienes", "pos": "pron. rel.", "ru": "кто; который", "grammar": "о людях", "note": null },
-        { "es": "el que / la que / los que / las que", "pos": "pron. rel.", "ru": "тот, который / та, которая / те, которые", "grammar": "согласуется с существительным", "note": null },
-        { "es": "lo que", "pos": "pron. rel.", "ru": "то, что", "grammar": "ср. род", "note": null },
-        { "es": "cuyo / cuya / cuyos / cuyas", "pos": "pron. rel.", "ru": "чей / чья / чьи", "grammar": "притяжательное относительное", "note": null }
+        { "es": "que", "ipa": "/ke/", "pos": "pron. rel.", "ru": "который, которая; что", "example": { "es": "El libro que leo es bueno.", "ru": "Книга, которую я читаю, хорошая." }, "grammar": "неизменяемое", "note": null },
+        { "es": "quien / quienes", "ipa": "/kjen/ /ˈkjenes/", "pos": "pron. rel.", "ru": "кто; который", "example": { "es": "La chica con quien hablé es de México.", "ru": "Девушка, с которой я говорил, из Мексики." }, "grammar": "о людях", "note": null },
+        { "es": "el que / la que / los que / las que", "ipa": "/el ke/ /la ke/ /los ke/ /las ke/", "pos": "pron. rel.", "ru": "тот, который / та, которая / те, которые", "example": { "es": "El que llega tarde pierde el tren.", "ru": "Тот, кто опаздывает, пропускает поезд." }, "grammar": "согласуется с существительным", "note": null },
+        { "es": "lo que", "ipa": "/lo ke/", "pos": "pron. rel.", "ru": "то, что", "example": { "es": "Lo que dices es cierto.", "ru": "То, что ты говоришь, верно." }, "grammar": "ср. род", "note": null },
+        { "es": "cuyo / cuya / cuyos / cuyas", "ipa": "/ˈkuʝo/ /ˈkuʝa/ /ˈkuʝos/ /ˈkuʝas/", "pos": "pron. rel.", "ru": "чей / чья / чьи", "example": { "es": "El autor cuyo libro leo es Unamuno.", "ru": "Автор, чью книгу я читаю, — Унамуно." }, "grammar": "притяжательное относительное", "note": null }
       ]
     },
     {
       "title": "Вопросительные и восклицательные",
       "items": [
-        { "es": "qué", "pos": "pron. interr.", "ru": "что? какой?", "grammar": "всегда с ударением", "note": null },
-        { "es": "quién / quiénes", "pos": "pron. interr.", "ru": "кто?", "grammar": "ед. / мн. ч.", "note": null },
-        { "es": "cuál / cuáles", "pos": "pron. interr.", "ru": "который? какой?", "grammar": "какой из?", "note": null },
-        { "es": "cuánto / cuánta / cuántos / cuántas", "pos": "pron. interr.", "ru": "сколько?", "grammar": "согласуется с существительным", "note": null }
+        { "es": "qué", "ipa": "/ke/", "pos": "pron. interr.", "ru": "что? какой?", "example": { "es": "¿Qué quieres comer?", "ru": "Что ты хочешь съесть?" }, "grammar": "всегда с ударением", "note": null },
+        { "es": "quién / quiénes", "ipa": "/kjen/ /ˈkjenes/", "pos": "pron. interr.", "ru": "кто?", "example": { "es": "¿Quién llama a la puerta?", "ru": "Кто стучит в дверь?" }, "grammar": "ед. / мн. ч.", "note": null },
+        { "es": "cuál / cuáles", "ipa": "/kwal/ /ˈkwales/", "pos": "pron. interr.", "ru": "который? какой?", "example": { "es": "¿Cuál es tu color favorito?", "ru": "Какой твой любимый цвет?" }, "grammar": "какой из?", "note": null },
+        { "es": "cuánto / cuánta / cuántos / cuántas", "ipa": "/ˈkwanto/ /ˈkwanta/ /ˈkwantos/ /ˈkwantas/", "pos": "pron. interr.", "ru": "сколько?", "example": { "es": "¿Cuánto cuesta el billete?", "ru": "Сколько стоит билет?" }, "grammar": "согласуется с существительным", "note": null }
       ]
     },
     {
       "title": "Неопределённые",
       "items": [
-        { "es": "alguien", "pos": "pron. indef.", "ru": "кто-то, кто-нибудь", "grammar": "только о людях", "note": null },
-        { "es": "nadie", "pos": "pron. indef.", "ru": "никто", "grammar": "только о людях", "note": null },
-        { "es": "algo", "pos": "pron. indef.", "ru": "что-то, нечто", "grammar": "только о предметах", "note": null },
-        { "es": "nada", "pos": "pron. indef.", "ru": "ничто, ничего", "grammar": "только о предметах", "note": null },
-        { "es": "alguno / alguna / algunos / algunas", "pos": "pron. indef.", "ru": "какой-нибудь, некоторый", "grammar": null, "note": null },
-        { "es": "ninguno / ninguna", "pos": "pron. indef.", "ru": "никакой, ни один", "grammar": null, "note": null },
-        { "es": "cada", "pos": "pron. indef.", "ru": "каждый", "grammar": "неизменяемое", "note": null },
-        { "es": "cualquiera", "pos": "pron. indef.", "ru": "любой, какой угодно", "grammar": null, "note": null },
-        { "es": "todo / toda / todos / todas", "pos": "pron. indef.", "ru": "весь, вся, все", "grammar": null, "note": null },
-        { "es": "otro / otra / otros / otras", "pos": "pron. indef.", "ru": "другой, иная, другие", "grammar": null, "note": null },
-        { "es": "mucho / mucha / muchos / muchas", "pos": "pron. indef.", "ru": "много, многие", "grammar": null, "note": null },
-        { "es": "poco / poca / pocos / pocas", "pos": "pron. indef.", "ru": "мало, немногие", "grammar": null, "note": null },
-        { "es": "varios / varias", "pos": "pron. indef.", "ru": "несколько, некоторые", "grammar": null, "note": null }
+        { "es": "alguien", "ipa": "/ˈalɣjen/", "pos": "pron. indef.", "ru": "кто-то, кто-нибудь", "example": { "es": "Alguien te busca.", "ru": "Кто-то тебя ищет." }, "grammar": "только о людях", "note": null },
+        { "es": "nadie", "ipa": "/ˈnaðje/", "pos": "pron. indef.", "ru": "никто", "example": { "es": "Nadie sabe la respuesta.", "ru": "Никто не знает ответа." }, "grammar": "только о людях", "note": null },
+        { "es": "algo", "ipa": "/ˈalɣo/", "pos": "pron. indef.", "ru": "что-то, нечто", "example": { "es": "Quiero comer algo.", "ru": "Я хочу что-нибудь съесть." }, "grammar": "только о предметах", "note": null },
+        { "es": "nada", "ipa": "/ˈnaða/", "pos": "pron. indef.", "ru": "ничто, ничего", "example": { "es": "No tengo nada que decir.", "ru": "Мне нечего сказать." }, "grammar": "только о предметах", "note": null },
+        { "es": "alguno / alguna / algunos / algunas", "ipa": "/alˈɣuno/ /alˈɣuna/ /alˈɣunos/ /alˈɣunas/", "pos": "pron. indef.", "ru": "какой-нибудь, некоторый", "example": { "es": "¿Tienes alguna pregunta?", "ru": "У тебя есть какой-нибудь вопрос?" }, "grammar": null, "note": null },
+        { "es": "ninguno / ninguna", "ipa": "/niŋˈɣuno/ /niŋˈɣuna/", "pos": "pron. indef.", "ru": "никакой, ни один", "example": { "es": "No tengo ninguna duda.", "ru": "У меня нет никаких сомнений." }, "grammar": null, "note": null },
+        { "es": "cada", "ipa": "/ˈkaða/", "pos": "pron. indef.", "ru": "каждый", "example": { "es": "Cada día aprendo algo nuevo.", "ru": "Каждый день я узнаю что-то новое." }, "grammar": "неизменяемое", "note": null },
+        { "es": "cualquiera", "ipa": "/kalˈkjeɾa/", "pos": "pron. indef.", "ru": "любой, какой угодно", "example": { "es": "Cualquiera puede hacerlo.", "ru": "Любой может это сделать." }, "grammar": null, "note": null },
+        { "es": "todo / toda / todos / todas", "ipa": "/ˈtoðo/ /ˈtoða/ /ˈtoðos/ /ˈtoðas/", "pos": "pron. indef.", "ru": "весь, вся, все", "example": { "es": "Todos estamos cansados.", "ru": "Мы все устали." }, "grammar": null, "note": null },
+        { "es": "otro / otra / otros / otras", "ipa": "/ˈotɾo/ /ˈotɾa/ /ˈotɾos/ /ˈotɾas/", "pos": "pron. indef.", "ru": "другой, иная, другие", "example": { "es": "Quiero otro café.", "ru": "Я хочу ещё один кофе." }, "grammar": null, "note": null },
+        { "es": "mucho / mucha / muchos / muchas", "ipa": "/ˈmutʃo/ /ˈmutʃa/ /ˈmutʃos/ /ˈmutʃas/", "pos": "pron. indef.", "ru": "много, многие", "example": { "es": "Muchos estudiantes aprenden español.", "ru": "Многие студенты учат испанский." }, "grammar": null, "note": null },
+        { "es": "poco / poca / pocos / pocas", "ipa": "/ˈpoko/ /ˈpoka/ /ˈpokos/ /ˈpokas/", "pos": "pron. indef.", "ru": "мало, немногие", "example": { "es": "Hay poca leche en la nevera.", "ru": "В холодильнике мало молока." }, "grammar": null, "note": null },
+        { "es": "varios / varias", "ipa": "/ˈbaɾjos/ /ˈbaɾjas/", "pos": "pron. indef.", "ru": "несколько, некоторые", "example": { "es": "He leído varios libros este año.", "ru": "В этом году я прочитал несколько книг." }, "grammar": null, "note": null }
       ]
     }
   ]

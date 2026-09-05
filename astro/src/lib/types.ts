@@ -27,8 +27,10 @@ export interface BookMeta {
 }
 export interface WordEntry {
   es: string;
+  ipa?: string | null;
   pos: string;
   ru: string;
+  example?: { es: string; ru: string } | null;
   grammar?: string | null;
   note?: string | null;
 }

@@ -27,9 +27,20 @@ export default function WordLesson({ category }: { category: WordCategory }) {
               <li key={it.es} className="py-2 border-b border-line">
                 <div className="flex items-baseline gap-2">
                   <span className="font-semibold">{it.es}</span>
+                  {it.ipa && (
+                    <span className="font-mono text-xs text-muted">
+                      {it.ipa}
+                    </span>
+                  )}
                   <span className="text-xs text-muted">{it.pos}</span>
                 </div>
                 <div className="text-ink">{it.ru}</div>
+                {it.example && (
+                  <div className="text-sm text-muted">
+                    <span className="italic">{it.example.es}</span>{" "}
+                    <span>— {it.example.ru}</span>
+                  </div>
+                )}
                 {it.grammar && (
                   <div className="text-sm text-muted">{it.grammar}</div>
                 )}
