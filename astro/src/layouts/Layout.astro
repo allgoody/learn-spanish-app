@@ -13,6 +13,9 @@ const { title = 'Aprende español' } = Astro.props
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Aprende español leyendo «Andanzas y visiones españolas» de Miguel de Unamuno, con glosario integrado." />
+    <link rel="canonical" href={Astro.url} />
+    <meta property="og:image" content="/og.png" />
     <title>{title}</title>
     <script is:inline>
       (function () {
@@ -43,7 +46,7 @@ const { title = 'Aprende español' } = Astro.props
           href="https://ctdev.dev/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-[0.65rem] text-muted opacity-60 hover:opacity-100 hover:underline"
+          class="text-[0.65rem] text-muted hover:underline"
         >Made by CTDev</a>
       </div>
     </footer>

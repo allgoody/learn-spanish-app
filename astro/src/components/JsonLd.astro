@@ -1,0 +1,14 @@
+---
+// seeded: astro-pi-workflow — site-owned, edit freely.
+// Renders a schema.org JSON-LD block in the server-rendered HTML.
+// Usage in a page or layout:
+//   import JsonLd from "../components/JsonLd.astro";
+//   <JsonLd schema={{ "@context": "https://schema.org", "@type": "WebSite", name: "Example", url: "https://example.com" }} />
+interface Props {
+  schema: Record<string, unknown> | Record<string, unknown>[];
+}
+const { schema } = Astro.props;
+// Escape "<" so a "</script>" inside a string value can't break out of the tag.
+const json = JSON.stringify(schema).replace(/</g, "\\u003c");
+---
+<script type="application/ld+json" set:html={json} />

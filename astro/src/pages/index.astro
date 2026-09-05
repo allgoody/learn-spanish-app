@@ -2,9 +2,27 @@
 import Layout from '../layouts/Layout.astro'
 import BookIntro from '../components/BookIntro.tsx'
 import { books } from '../lib/books'
+import JsonLd from '../components/JsonLd.astro'
 ---
 
 <Layout>
+  <JsonLd
+    schema={{
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Aprende español',
+      url: 'https://learn-words-5mq.pages.dev/',
+      inLanguage: 'es',
+    }}
+  />
+  <JsonLd
+    schema={{
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Aprende español',
+      url: 'https://learn-words-5mq.pages.dev/',
+    }}
+  />
   <main class="max-w-2xl mx-auto px-4 py-8">
     <BookIntro book={books[0]} client:load />
     <ul class="mt-8">
