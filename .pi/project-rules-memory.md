@@ -18,7 +18,11 @@
 
 ## Design System
 
-- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, ~0.6 opacity, underline on hover)
+- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, ~0.6 opacity, underline on hover). **Known ADA exception**: this credit fails WCAG contrast (2.26:1) by design — user-mandated style, keep as-is
+- **Standalone template lives in `template/`** (repo root, not astro/): `style.css` + `kitchen-sink.html` + `STYLE-GUIDE.md`. Design language = astro site's: stone neutrals + amber accent (amber-700 #b45309, stone-200 borders, white bg, system-ui, radius 4px)
+- **Dark theme mechanism** (template): all colors are CSS custom properties; `[data-theme="dark"]` forces dark, `[data-theme="light"]` forces light, otherwise `@media (prefers-color-scheme: dark) :root:not([data-theme="light"])` follows the system
+- **Contrast strategy** (template): light mode = 700-level semantic colors (emerald-700/amber-700/red-700/sky-700) so white button text passes 4.5:1; dark mode = 400-level colors with dark text via `--color-on-accent` (#ffffff light / #0c0a09 dark). Badges/alerts reuse the same tokens
+- **Modal component**: closed by default (`display:none`), `.modal.open` shows it; kitchen-sink wires open/close/overlay/Esc + focus management (focus in on open, return to trigger on close)
 
 ## Active Constraints
 
@@ -58,6 +62,8 @@
 - Modern Quijote adaptations (Trapiello 2004, Anaya/Edelsa, Navarro Durán) are all copyrighted
 - PD adapted Quijote exists: Oca y Merino 1916 "acomodado para las escuelas primarias" — Wikisource scan, needs OCR
 - Free legal modern content: UNAM CEPE graded readers (B1–B2 PDFs), CVC "Lecturas paso a paso", Vikidia (children's encyclopedia, free license)
+- **ADA audit (template)**: axe-core 4.10.2 via CDN works on file:// pages (Lighthouse refuses file:// — INVALID_URL). Landmark rules that bite: `<aside>` must be top-level (not nested in main), navs need unique aria-labels, no nested `<main>`. axe's heading-order rule does NOT flag h2→h1 decreases (only skips) — check manually. axe incomplete ≠ violation (placeholder text, cross-origin iframes, demo videos are untestable)
+- **CSS formatter rewrites** style.css/kitchen-sink.html (comments to own lines, 1-space indent) — re-read files before editing; oldText from memory drifts
 - Blasco Ibáñez (died 1928) = PD + modern-feeling prose; Pío Baroja PD in EU from Jan 2027
 
 ## Dependencies
