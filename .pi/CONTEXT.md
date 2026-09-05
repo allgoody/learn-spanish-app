@@ -25,11 +25,14 @@ Last updated: 2026-09-05
 ## Blocked / Needs Decision
 
 - [ ] Manual browser checks (WP-10 manual checklist): hover tooltip + pin + Esc, tap bottom sheet + outside-close, keyboard Enter/Space, RU/EN toggle, no console errors — user to verify in browser
+- [ ] **DEPLOYED (user-approved 17:25):** Cloudflare Pages project `learn-words` → <https://learn-words-5mq.pages.dev/> (bare subdomain taken globally by a Chinese word-learning site; suffix -5mq auto-assigned). Deployment 98606467. Re-deploy after changes: `wrangler pages deploy astro/dist --project-name learn-words`
 
 ## Next Steps
 
 1. User verifies manual checklist in browser (dev server on :4321)
 2. Post-build polish (user-driven, NOT executor): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
+3. **Dark theme for the app** (user-requested todo)
+4. **Check translations for errors** — user spotted English words written in Cyrillic where a Russian analog exists (user-requested todo; likely in glosses.json `ru` fields — audit glosses for transliterated English, e.g. "винтаж" vs "старинный")
 
 ## Key Decisions
 
