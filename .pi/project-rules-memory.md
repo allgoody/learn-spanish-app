@@ -33,6 +33,7 @@
 
 ## Lessons
 
+- **Output verbosity (user rule)**: keep the normal verbose style — detailed progress updates, explanations, status reports in chat. Not more, not less. Never go terse/silent, but no polling loops or repeated status checks the user didn't ask for — report when something completes or changes.
 - **Latest Astro is 7.3.1 (not 5.x)** — all APIs the plan uses (create-astro flags, `astro add tailwind`, `import.meta.glob`, `getStaticPaths`, `astro check`, JSON imports, `client:*`) are unchanged in v6/v7; Node 22+ required; `@latest` everywhere
 - **The Astro minimal template ships NO `src/layouts/Layout.astro`** — only `src/pages/index.astro` + `src/styles/global.css`; a plan saying MODIFY a scaffolded Layout.astro is wrong, it must be CREATE
 - **Body-only distinct word forms ≈ 11,761 → 236 batches of 50** — counting front matter inflates to ~12,270; measure body only (from PRÓLOGO to END marker)
