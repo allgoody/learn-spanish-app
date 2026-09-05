@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-- Astro (static) + Tailwind CSS + React (islands), mobile-first
+- Astro 7 (latest, verified 7.3.1) + Tailwind CSS 4 + React (islands), mobile-first
 - No backend, no runtime API keys
 
 ## Architecture
@@ -10,10 +10,10 @@
 - **Build-time gloss pipeline**: script downloads book → cleans → tokenizes → dedupes word forms → LLM batch-glosses with context sentences → commits `glosses.json` (word → {lemma, pos, ru, grammar, note})
 - **Gloss pipeline resilience (plan v2)**: `glosses.json` is written incrementally after EVERY batch so an interrupted run resumes; up to 3 context sentences per key (first 3 distinct occurrences, located by case-insensitive `indexOf` — the tokenizer emits no positions); parse/merge logic lives in pure tested helpers (`scripts/lib/gloss-parse.mjs`: `parseBatchResponse`/`mergeGlosses`/`pendingKeys`)
 - **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases (inlined/small JSON); phrase recognition via longest-match ("a pesar de" = one unit). `import.meta.glob` eager in frontmatter is fine — it stays server-side; island props serialize per-page
-- **Gloss schema (future-proof, all fields optional)**: lemma, pos, ipa, ru, grammar {tense, mood, person, number}, cefr, modern (archaic→modern), false_friend, note, examples
+- **Gloss schema (future-proof, all fields optional)**: lemma, pos, ipa, ru, grammar (STRING explaining THIS surface form, e.g. "pretérito imperfecto, 1ª/3ª pers. sing." — not an object), cefr, modern (archaic→modern), false_friend, note
 - **Reader UI**: every word rendered as a span with `data-word`; ONE delegated event handler; popup on hover (desktop) / bottom-sheet on tap (mobile). Paragraphs preserved via `splitParagraphs` (2+ consecutive `\n` tokens = break) — never render a whole chapter in one `<p>`. Popup has `popupRef`; close-on-outside rules must exclude targets inside the popup (hovering the tooltip / tapping or scrolling inside the sheet must NOT close it). Glossable spans: `tabindex="0" role="button"`; Enter/Space opens
 - **i18n**: `chapterCount(n, lang)` with `pluralRu(n, one, few, many)` — Russian plural rule: n%10==1 && n%100!=11 → one; n%10 in 2..4 && n%100 not in 12..14 → few; else many (41 → "41 глава", NOT "41 Главы")
-- Books as structured chapters (markdown/JSON) in content collections
+- Book data as plain JSON under `src/data/books/{id}/` (meta.json, chapters/, tokens/, glosses/) loaded via `import.meta.glob` — NOT content collections
 
 ## Design System
 
@@ -32,6 +32,9 @@
 
 ## Lessons
 
+- **Latest Astro is 7.3.1 (not 5.x)** — all APIs the plan uses (create-astro flags, `astro add tailwind`, `import.meta.glob`, `getStaticPaths`, `astro check`, JSON imports, `client:*`) are unchanged in v6/v7; Node 22+ required; `@latest` everywhere
+- **The Astro minimal template ships NO `src/layouts/Layout.astro`** — only `src/pages/index.astro` + `src/styles/global.css`; a plan saying MODIFY a scaffolded Layout.astro is wrong, it must be CREATE
+- **Body-only distinct word forms ≈ 11,761 → 236 batches of 50** — counting front matter inflates to ~12,270; measure body only (from PRÓLOGO to END marker)
 - **The book has 41 essays, not 37** — verified against the actual Gutenberg text; the ÍNDICE has 41 entries
 - One essay title spans two all-caps lines (`EL CRISTO YACENTE DE SANTA CLARA` + `(IGLESIA DE LA CRUZ) DE PALENCIA`) — title matching needs a two-line join fallback
 - Index continuation logic: a line WITHOUT a trailing page number STARTS a wrapped entry (does not continue the previous one)
@@ -51,4 +54,4 @@
 
 ## Dependencies
 
-- None installed yet — project not scaffolded. Plan targets: Astro 5 (minimal template, strict TS default), React via `--add react`, Tailwind 4 via `astro add tailwind` (@tailwindcss/vite), vitest (dev, tokenizer tests). Scripts in plain `.mjs` (no tsx).
+- None installed yet — project not scaffolded. Plan targets: **Astro 7 (latest, verified 7.3.1)** (minimal template, strict TS default), React via `--add react`, Tailwind 4 via `astro add tailwind` (@tailwindcss/vite), vitest (dev, tokenizer tests). Scripts in plain `.mjs` (no tsx).
