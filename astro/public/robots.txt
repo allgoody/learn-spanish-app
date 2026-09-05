@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://learn-words-5mq.pages.dev/sitemap-index.xml
