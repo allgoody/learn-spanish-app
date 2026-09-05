@@ -18,7 +18,6 @@ export default function Reader({ glosses }: Props) {
   const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
   const popupRef = useRef<HTMLDivElement>(null);
   const isHoverRef = useRef(false);
-  const pinnedRef = useRef(false);
   const openRef = useRef<OpenState | null>(null);
   openRef.current = open;
 
@@ -38,33 +37,14 @@ export default function Reader({ glosses }: Props) {
       if (el) {
         const key = el.getAttribute("data-word")!;
         setOpen((cur) =>
-          cur && cur.key === key && cur.el === el && pinnedRef.current
-            ? null
-            : { key, el },
+          cur && cur.key === key && cur.el === el ? null : { key, el },
         );
-        pinnedRef.current = true;
         return;
       }
-      if (!insidePopup(e.target)) {
-        pinnedRef.current = false;
-        setOpen(null);
-      }
-    };
-    const onMouseOver = (e: MouseEvent) => {
-      if (!isHoverRef.current) return;
-      const el = (e.target as HTMLElement).closest(
-        "[data-word]",
-      ) as HTMLElement | null;
-      if (el) {
-        pinnedRef.current = false;
-        setOpen({ key: el.getAttribute("data-word")!, el });
-        return;
-      }
-      if (!insidePopup(e.target) && !pinnedRef.current) setOpen(null);
+      if (!insidePopup(e.target)) setOpen(null);
     };
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        pinnedRef.current = false;
         setOpen(null);
         return;
       }
@@ -80,18 +60,13 @@ export default function Reader({ glosses }: Props) {
     };
     const onScroll = (e: Event) => {
       if (!openRef.current) return;
-      if (!insidePopup(e.target)) {
-        pinnedRef.current = false;
-        setOpen(null);
-      }
+      if (!insidePopup(e.target)) setOpen(null);
     };
     document.addEventListener("click", onDocClick);
-    document.addEventListener("mouseover", onMouseOver);
     document.addEventListener("keydown", onKeyDown);
     document.addEventListener("scroll", onScroll, true);
     return () => {
       document.removeEventListener("click", onDocClick);
-      document.removeEventListener("mouseover", onMouseOver);
       document.removeEventListener("keydown", onKeyDown);
       document.removeEventListener("scroll", onScroll, true);
     };
@@ -120,7 +95,7 @@ export default function Reader({ glosses }: Props) {
   const row = (label: string, value: ReactNode) =>
     value == null ? null : (
       <div key={label}>
-        <div className="text-xs text-stone-500">{label}</div>
+        <div className="text-xs text-muted">{label}</div>
         <div>{value}</div>
       </div>
     );
@@ -137,14 +112,14 @@ export default function Reader({ glosses }: Props) {
       {row(
         s.level,
         gloss.cefr && (
-          <span className="inline-block rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-800">
+          <span className="inline-block rounded bg-accent-soft px-1.5 py-0.5 text-xs font-medium text-accent">
             {gloss.cefr}
           </span>
         ),
       )}
       {row(s.modern, gloss.modern)}
       {gloss.false_friend && (
-        <div className="rounded bg-amber-100/80 p-2 text-amber-800">
+        <div className="rounded bg-accent-soft p-2 text-accent">
           <div className="text-xs font-semibold">{s.falseFriend}</div>
           <div>{gloss.false_friend}</div>
         </div>
@@ -161,7 +136,7 @@ export default function Reader({ glosses }: Props) {
         ref={popupRef}
         role="dialog"
         aria-label={open.key}
-        className="fixed z-50 w-80 max-w-[calc(100vw-16px)] rounded-lg bg-stone-900 p-3 text-sm text-stone-50 shadow-lg transition-opacity"
+        className="fixed z-50 w-80 max-w-[calc(100vw-16px)] rounded-lg bg-popup p-3 text-sm text-popup-text shadow-lg transition-opacity"
         style={{
           left: pos?.left,
           top: pos?.top,
@@ -179,12 +154,12 @@ export default function Reader({ glosses }: Props) {
       ref={popupRef}
       role="dialog"
       aria-label={open.key}
-      className="fixed inset-x-0 bottom-0 z-50 max-h-[60vh] overflow-y-auto rounded-t-2xl border-t bg-white p-4 shadow-xl"
+      className="fixed inset-x-0 bottom-0 z-50 max-h-[60vh] overflow-y-auto rounded-t-2xl border-t border-line bg-paper p-4 shadow-xl"
     >
       <button
         type="button"
         onClick={() => setOpen(null)}
-        className="absolute right-3 top-3 text-sm text-stone-500 hover:text-stone-800"
+        className="absolute right-3 top-3 text-sm text-muted hover:text-ink"
       >
         {s.close}
       </button>
