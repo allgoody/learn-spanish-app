@@ -8,21 +8,14 @@ Last updated: 2026-09-05
 
 ## Current Task
 
-**All tasks completed.** Session covered: per-locale SEO titles/descriptions (ru), English removed from the app, og:image swap, sitemap + robots.txt, domain change to **<https://niceio.com/>** (deployed, DNS verified 200), footer fixes (CTDev url → /ru/, sticky footer). 4 commits made; 5 files uncommitted (see File Map). Deploy command: `wrangler pages deploy astro/dist --project-name learn-words` (project `learn-words`, custom domain niceio.com).
+**All tasks completed.** Session covered: full audit pass (all 3 audit skills via subagents on `deepseek-v4-flash:0731-cloud:max`) — site is GREEN across every gate. 27 new tests added (78 total). Nothing in progress; next action is user-driven (commit + optional config widening).
 
 ## Completed This Session
 
-- [x] **Domain → niceio.com** — `astro.config.mjs` `site:`, JSON-LD urls (index.astro), robots.txt Sitemap line. Deployed twice; niceio.com verified live (200, DNS points to Cloudflare Pages)
-- [x] **Footer fixes** — CTDev credit href → `https://ctdev.dev/ru/`; sticky footer: body `min-h-dvh flex flex-col`, content wrapped in `<div class="flex-1">` so footer anchors to viewport bottom on short pages
-- [x] **og:image swapped** — user's design → `public/og.jpg` (1376×768, ffmpeg q4, 42KB); `og.png` deleted
-- [x] **Sitemap on every build** — `@astrojs/sitemap` + `site:` config; emits `sitemap-index.xml` + `sitemap-0.xml` (44 URLs)
-- [x] **robots.txt** — Allow all + `Sitemap: https://niceio.com/sitemap-index.xml`
-- [x] **Per-locale SEO data** — `lib/seo.ts` (`seo: Record<Lang, SeoStrings>`, `seoLang = "ru"`); all 4 page templates call `seo[seoLang]`; Layout defaults from seo too
-- [x] **Russian titles/descriptions live** — index «Учить испанский язык — книги с переводом и словарём | Aprende español»; book «{title} — читать на испанском с переводом»; chapters «{chapter} — {book} с переводом» + unique RU description; words «Испанские слова по теме „{title}"…»
-- [x] **`lang`/JSON-LD fixed** — index + book landing `contentLang="ru"`, `inLanguage: 'ru'`; chapters keep `lang="es"`
-- [x] **English removed from the app** — `LANGS = ["ru"]` (group hidden < 2), `getLang()` → "ru" (stale "en" ignored), no-FOUC applies only "ru"; `en` strings KEPT in i18n.ts + seo.ts as future data; tests updated (51/51 pass)
-- [x] (previous session) **Pronouns lesson enriched** — IPA + usage examples, 69 entries
-- [x] (previous session) **URL restructure executed** — chooser at `/`, generic book/chapter/words routes, `lang` fields, `<html lang>` fix
+- [x] **audit-lighthouse-loop** (`--fix auto`, Gate target) — iteration 1 clean: zero gate failures both presets. Desktop perf 0.99 / mobile 1.0, LCP 751 ms / 1.39 s, CLS 0.000. 0 fixes, 0 deferred. Ledger: no new findings (1 closed entry: footer contrast)
+- [x] **audit-add-test** — 27 new tests, 78/78 passing (51 existing + 27 new), tsc 0 errors, astro check 0 errors. New: `test/lib/seo.test.ts` (8), `test/layouts/Layout.test.ts` (10, AstroContainer), `test/data/words/pronouns.test.ts` (4), `WordLesson.test.tsx` 2→7. Infra: `vitest.config.ts` → `getViteConfig` + `react()`, `setup.ts` matchMedia polyfill, `types.d.ts` astro module decl. `src/` untouched
+- [x] **audit-perf** (median-of-3 confirm) — PASS: LCP 829 ms desktop / 1.48 s mobile, CLS 0.000, perf 99/100, a11y/BP/SEO/agentic all 1.0. Bundle JS 64.2 KB gz / 120 KB, CSS 3.9 KB / 50 KB. No client: or image violations (LCP = H1 text, zero `<img>` in src/). JSON-LD/llms.txt/links/meta/imageBudget all green
+- [x] (previous session) **Domain → niceio.com**, footer fixes, og:image, sitemap + robots.txt, per-locale SEO (ru), English removed from app, URL restructure
 
 ## In Progress
 
@@ -30,16 +23,18 @@ Last updated: 2026-09-05
 
 ## Blocked / Needs Decision
 
-- (none — deployed to niceio.com)
+- [?] **Widen `collect.url` in `astro/lighthouserc.json`?** Currently `["/"]` — Lighthouse + dist checks (links/meta/imageBudget/jsonld) cover ONLY the home page; the other 43 pages (book landing, 41 chapters, words) are outside the audit surface. User decision pending (perf subagent flagged it; nothing changed)
 
 ## Next Steps
 
-1. **Commit the 5 uncommitted files** (domain change + footer fixes + this context) — user-driven via /skill:commit
-2. (when a 2nd UI language lands) **sitemap hreflang annotations** — `@astrojs/sitemap` installed; add `i18n` config + hreflang links then
-3. (future, routing.md §7) **Glosses per-language map** — `glosses.json` schema `ru` → `{ru, en}`, bilingual pipeline re-run (11.7k forms × 2 langs), reader fallback ru → lemma. User-driven
+1. **Commit the uncommitted files** (5 pre-existing + 7 new test files + vitest.config.ts) — user-driven via /skill:commit
+2. (optional, user decision) **Widen `collect.url`** to `/books/andanzas/`, `/words/pronouns/`, a chapter — then re-run `node astro/scripts/perf-check.mjs --full --runs 3 astro`
+3. (when a 2nd UI language lands) **sitemap hreflang annotations** — `@astrojs/sitemap` installed; add `i18n` config + hreflang links then
+4. (future, routing.md §7) **Glosses per-language map** — `glosses.json` schema `ru` → `{ru, en}`, bilingual pipeline re-run (11.7k forms × 2 langs), reader fallback ru → lemma. User-driven
 
 ## Key Decisions
 
+- **Audit surface = home page only (2026-09-05)** — `collect.url: ["/"]` in lighthouserc.json; widening is a config decision, not a code change
 - **SEO titles/descriptions are per-locale data** — `lib/seo.ts`; adding a language = map entries + URL routing, NO page template changes
 - **English removed from the app (2026-09-05)** — `en` strings kept as future data, NOT dead code
 - **Multi-language future model LOCKED (2026-09-05)** — subdirectory per language + hreflang; supersedes routing.md §7's old "UI language in URL? No". Full trace in "Multi-language" section below
@@ -64,15 +59,22 @@ Last updated: 2026-09-05
 
 ## File Map
 
+- `astro/test/lib/seo.test.ts` — NEW: per-locale SEO map tests (8)
+- `astro/test/layouts/Layout.test.ts` — NEW: Layout SSR tests via AstroContainer (10)
+- `astro/test/data/words/pronouns.test.ts` — NEW: pronouns data shape (4)
+- `astro/test/components/WordLesson.test.tsx` — extended 2→7 (group headings, 69 items, grammar labels)
+- `astro/test/setup.ts` — matchMedia polyfill (guarded, node/jsdom dual env)
+- `astro/test/types.d.ts` — global `declare module "*.astro"` (inline import() type)
+- `astro/vitest.config.ts` — `getViteConfig` + `react()` (AstroContainer + React server renderer)
+- `astro/lighthouserc.json` — `collect.url: ["/"]` (audit surface = home only; widening = user decision)
 - `astro/astro.config.mjs` — `site: https://niceio.com/` + `@astrojs/sitemap` (UNCOMMITTED)
 - `astro/src/pages/index.astro` — JSON-LD urls → niceio.com (UNCOMMITTED)
 - `astro/public/robots.txt` — Sitemap → niceio.com (UNCOMMITTED)
-- `astro/src/layouts/Layout.astro` — footer: CTDev href /ru/ + sticky footer (`min-h-dvh flex flex-col` body, `<div class="flex-1">` wrapper) (UNCOMMITTED)
+- `astro/src/layouts/Layout.astro` — footer: CTDev href /ru/ + sticky footer (UNCOMMITTED)
 - `astro/public/og.jpg` — og:image (ffmpeg-optimized 1376×768, 42KB)
 - `astro/src/lib/seo.ts` — per-locale SEO map (ru + en), `seoLang = "ru"`
 - `astro/src/components/HeaderMenu.tsx` — `LANGS = ["ru"]`, language group hidden < 2 langs
 - `astro/src/lib/i18n.ts` — `getLang()` → "ru"; `en` strings kept for future
-- `astro/test/components/HeaderMenu.test.tsx` + `astro/test/lib/i18n.test.ts` — locked-behavior tests
 - `astro/src/data/words/pronouns.json` — 69 entries, 9 groups, `ipa` + `example {es, ru}`
 - `astro/src/lib/types.ts` — `WordEntry.ipa?`, `WordEntry.example?`
 - `astro/src/components/WordLesson.tsx` — renders IPA + example
@@ -83,6 +85,12 @@ Last updated: 2026-09-05
 
 ## Gotchas / Warnings
 
+- **Audit surface is `/` only** — lighthouserc `collect.url: ["/"]`; 43 other pages build but are never Lighthouse-audited. Widen before trusting "all green" for the whole site
+- **LH 13.4.1 blind-spots (version-removed, not failures)**: `interaction-to-next-paint` → `inp-breakdown-insight`; `modern-image-formats` → `image-delivery-insight`; `uses-responsive-images` → `image-size-responsive`
+- **INP n/a on static pages is expected** — assertion auto-skipped; not a failure
+- **LCP element is the H1 text** ("Aprende español") — the site has ZERO `<img>` in src/; nothing to preload
+- **5 islands all `client:load`** — each is the page's primary above-the-fold interaction; `client:visible/idle` would delay it. No violations
+- **Windows chrome-launcher EPERM cleanup crash is expected** — results are used if the JSON output exists
 - **IPA symbols (ʝ, ɣ, ð, ŋ, ɾ, tʃ) trigger typos-checker "unknown word" advisories** on pronouns.json — expected, no action
 - **Plan WP order is load-bearing**: Layout `contentLang`/`description` props MUST precede pages passing them — `astro check` fails otherwise (ts(2322); verified empirically)
 - **Pronouns content = 69 entries** (not 55)

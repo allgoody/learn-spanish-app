@@ -28,6 +28,17 @@
 - **Contrast strategy** (template): light mode = 700-level semantic colors (emerald-700/amber-700/red-700/sky-700) so white button text passes 4.5:1; dark mode = 400-level colors with dark text via `--color-on-accent` (#ffffff light / #0c0a09 dark). Badges/alerts reuse the same tokens
 - **Modal component**: closed by default (`display:none`), `.modal.open` shows it; kitchen-sink wires open/close/overlay/Esc + focus management (focus in on open, return to trigger on close)
 
+## Audit & Testing (state 2026-09-05)
+
+- **All audit gates GREEN** (2026-09-05, LH 13.4.1): audit-lighthouse-loop 0 failures, audit-perf median-of-3 PASS (desktop LCP 829 ms / mobile 1.48 s, CLS 0.000, perf 99/100, a11y/BP/SEO/agentic 1.0), bundle JS 64.2 KB gz / 120 KB budget, CSS 3.9 KB / 50 KB
+- **78 tests passing** (12 files): 51 pre-existing + 27 added 2026-09-05 (seo.test.ts, Layout.test.ts via AstroContainer, pronouns.test.ts, WordLesson.test.tsx 2→7). `vitest.config.ts` uses `getViteConfig` + `react()` (needed for AstroContainer + React server renderer); `test/setup.ts` has a guarded `matchMedia` polyfill (node/jsdom dual env); `test/types.d.ts` is a global script with `declare module "*.astro"`
+- **Audit surface = home page only** — `collect.url: ["/"]` in `astro/lighthouserc.json`; the other 43 pages (book landing, 41 chapters, words) build but are never Lighthouse-audited. Widen deliberately before trusting site-wide green
+- **LH 13.4.1 blind-spots (version-removed, not failures)**: `interaction-to-next-paint` → `inp-breakdown-insight`; `modern-image-formats` → `image-delivery-insight`; `uses-responsive-images` → `image-size-responsive`
+- **INP n/a on static pages is expected** — assertion auto-skipped, not a failure
+- **LCP element is the H1 text** — the site has ZERO `<img>` in `src/`; nothing to preload, no CLS risk from images
+- **5 islands all `client:load`** — each is the page's primary above-the-fold interaction (HeaderMenu in Layout, Chooser on `/`, BookLanding, Reader, WordLesson); `client:visible/idle` would delay the main interaction. No violations
+- **Windows chrome-launcher EPERM cleanup crash is expected** — results are used if the JSON output exists
+
 ## Active Constraints
 
 - **Book #1: Unamuno, "Andanzas y visiones españolas" (1922)** — Gutenberg #78052 (clean text); **41 essays** (PRÓLOGO + 40), each essay = a chapter
@@ -56,6 +67,7 @@
 - **Plan review lesson: WP ordering applies to EVERY new prop, not just the obvious ones** — a page passed `description` to Layout before the WP that added the prop → `astro check` ts(2322) (verified empirically with a probe page). When reordering WPs, update all cross-refs (contexts, Shared Context, CONTEXT.md gotchas). And: a static no-FOUC guard is bypassed by the runtime setter — guard `setLang` too (data-content-lang check)
 - **Plan review lesson: hover/tap popups must exclude the popup element from close-on-outside logic** — capture-phase scroll listeners fire for scrolls inside the popup; mouseover fires when entering the popup
 - **Plan review lesson: Russian pluralization needs a real rule** — "41 Главы" is wrong; use pluralRu (41 → "41 глава")
+- **`runs.all()` takes plain objects `{ key, ...params }`, NOT `runs.run()` promises** — passing run promises throws "runs.all item N has an invalid key" (the destructure reads `key` off the promise = undefined). Pattern: `const [a, b] = await runs.all([{ key: 'a', agent, task }, { key: 'b', agent, task }])`; use `runs.run('k', {...})` only for single sequential children. Validation throws before any child launches, so a failed workflow leaves no orphans
 - **`api/tags` does NOT list `deepseek-v4-flash:0731-cloud`** (only gemini-3-flash-preview:latest, qwq:32b) but the chat endpoint ACCEPTS it — the local ollama proxies cloud models (response model name: `deepseek-v4-flash:0731`). `api/ps` shows nothing loaded for proxied models — NOT a sign of a dead pipeline. Verify a model works with a tiny `curl -m 30 http://localhost:11434/api/chat -d '{"model":"<name>","messages":[{"role":"user","content":"hi"}],"stream":false}'`
 - **Subagent status display is misleading**: turns/ctx don't grow while a subagent is blocked in a long bash call — the child process does the work. Don't kill a subagent just because it looks idle; check the actual child process / output files first
 - **Guardrail gotchas**: `taskkill //PID` gets mangled → use `powershell -Command "Stop-Process -Id N -Force"`. `cd astro && nohup ... > ../.tmp/...` trips the path guardrail → run from repo root: `node astro/scripts/...` + `.tmp/gloss.log` (scripts resolve their own paths via `__dirname`)
