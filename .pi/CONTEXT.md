@@ -7,59 +7,56 @@ Last updated: 2026-09-05
 
 ## Current Task
 
-Plan `spanish-reader-app` reviewed (2nd pass), issues fixed, updated for latest Astro 7. Awaiting user go-ahead to commit → execute via `/skill:implement spanish-reader-app`.
+Executing plan `spanish-reader-app` (`.pi/plans/spanish-reader-app/`) via `/skill:implement`. Phases 1–2 done + committed. Phase 3 WP-6 done. **WP-7 gloss generation is RUNNING IN THE BACKGROUND** — see In Progress.
 
 ## Completed This Session
 
-- [x] Second plan review pass — verified every claim against the real Gutenberg text (`.tmp/pg78052.txt`): 41 index entries, wrapped entry, two-line body title, all-caps false positives, CRLF line endings, word counts
-- [x] Fixed review findings: Layout.astro MODIFY→CREATE (minimal template ships none), WP-8 build check DEFERRED to WP-9, WP-10 test count 6→10, WP-1 repo-root description
-- [x] Verified latest Astro (7.3.1) against official docs — all plan APIs unchanged; updated plan text "Astro 5" → "Astro 7 (latest)"
-- [x] Batch estimate re-measured: ~11,761 body-only keys → 236 batches — plan's ~11,700/~235 was right (first count included front matter)
+- [x] Phase 1 (committed `75c48ef`): Astro 7.3.1 scaffold (minimal + react + tailwind), `src/lib/types.ts`, `src/lib/i18n.ts` (RU/EN strings, `chapterCount`/`pluralRu`, `getLang`/`setLang`/`onLangChange`), `src/layouts/Layout.astro` (CTDev footer), `LangToggle.tsx`, placeholder home
+- [x] Phase 2 (committed `c24e381`): `scripts/fetch-book.mjs` → 41 chapters (76,143 words) + `meta.json`; `src/lib/books.ts` + `BookIntro.tsx` + book home page; `scripts/lib/tokenize.mjs` + 6 vitest tests (all pass)
+- [x] Phase 3 WP-6: `scripts/data/phrases.json` (40 phrases), `scripts/gloss.mjs` (model REQUIRED, no default; ollama chat, format json, 120s timeout, 3×5s network retry, batch re-try once, incremental `glosses.json` after every batch, resumable), `scripts/lib/gloss-parse.mjs` + 4 tests (10/10 total pass)
+- [x] User chose gloss model: **deepseek-v4-flash:0731-cloud** (via subagent with `:max` reasoning, then user asked to kill the subagent and run it directly — done)
 
 ## In Progress
 
-- [ ] Plan patches committed → execute (`/skill:implement spanish-reader-app`)
+- [ ] **WP-7 gloss pipeline running**: `nohup node astro/scripts/gloss.mjs --model deepseek-v4-flash:0731-cloud > .tmp/gloss.log 2>&1 &` (started ~10:30, PID was 2702). Last check: batch 19/207, ~2,350/~11,700 keys. **User preference: do NOT poll the log — report only when it finishes.** Check with: `tail .tmp/gloss.log` + count keys in `astro/src/data/books/andanzas/glosses.json`. If the process died, re-run the same command (resumable).
 
 ## Blocked / Needs Decision
 
-- [?] User must say "commit it" — plan files modified, uncommitted
-- [?] WP-7 (gloss generation) requires the user to name the ollama model at run time — the plan/scripts NEVER default a model
+- [?] WP-7 checks after the run: coverage ≥ 90% (else report failed keys, ask user about re-run with different model), spot-check 5 random glosses (ru + lemma sane)
+- [?] If coverage < 90% or glosses look systematically wrong → ask user before re-running
 
 ## Next Steps
 
-1. Commit the patched plan (user's call)
-2. Execute: read `.pi/plans/spanish-reader-app/_index.md`, then phase by phase
-3. At WP-7: ask the user which model to use (current ollama tags: gemini-3-flash-preview:latest, qwq:32b)
-4. After Phase 4: post-build polish stage — audit skills, user-driven
+1. When pipeline finishes: run WP-7 success checks (41 tokens/, 41 glosses/, glosses.json exists, ≥10,000 keys, coverage ≥ 90%, spot checks)
+2. Phase 3 verification (`npm run build`) → commit `spanish-reader: phase 3 — gloss pipeline` (also sweeps in uncommitted biome quote-style autofixes + WP-6 files)
+3. Phase 4: WP-8 `src/pages/books/andanzas/[slug].astro` (static spans, `data-word`, `splitParagraphs`, prev/next), WP-9 `src/components/Reader.tsx` (delegated handler, tooltip/bottom-sheet, popupRef guards, keyboard access), WP-10 final verification → commit
+4. Post-build polish (user-driven, NOT executor): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
 
 ## Key Decisions
 
-- **Astro 7 (latest, verified 7.3.1)** — `@latest` everywhere; all APIs the plan uses are unchanged from Astro 5; Node 22+ required (have 24.14.1)
-- **Book #1: Unamuno, "Andanzas y visiones españolas" (1922)** — Gutenberg #78052; **41 essays** (PRÓLOGO + 40), each = a chapter
-- **Gloss model: USER-SUPPLIED at run time — NO default anywhere.** Script requires `--model` or `GLOSS_MODEL`, exits 1 otherwise
+- **Gloss model: USER-SUPPLIED, never defaulted** — user picked `deepseek-v4-flash:0731-cloud` (accepted by local ollama chat endpoint even though `api/tags` doesn't list it — it's cloud-proxied)
+- **Subagent approach abandoned** — user killed the delegate subagent (its status display looks frozen while blocked in a long bash call; the work happens in the child process). Running the pipeline directly via nohup instead.
+- **Astro 7.3.1** (latest), React 19, Tailwind 4.3, vitest 5 — all installed
 - **v1 scope: reading + glosses only** — known-words, TTS, SRS later
 - **UI: Russian + English toggle** (glosses always in Russian)
-- **Build-time annotation** — LLM glosses every unique word form with context; committed as JSON; no backend
-- **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases
-- (earlier session) incremental `glosses.json` writes, 3 contexts/key, `gloss-parse.mjs` + 4 tests, `splitParagraphs`, `popupRef` guards, keyboard access, `chapterCount`/`pluralRu`, Layout `title` prop, 37→41 typos, 5-random-gloss quality sample
 
 ## File Map
 
-- `.pi/plans/spanish-reader-app/_index.md` — PATCHED this session: Astro 7 (latest) in Objective/constraints/File Map
-- `.pi/plans/spanish-reader-app/phase-01-scaffold-foundation.md` — PATCHED: Layout.astro CREATE (minimal template ships none), repo-root description, Astro 7 context
-- `.pi/plans/spanish-reader-app/phase-04-reader-ui.md` — PATCHED: WP-8 build check DEFERRED to WP-9, WP-10 "10 tests"
-- `.pi/plans/spanish-reader-app/phase-02-book-data-tokenizer.md`, `phase-03-gloss-pipeline.md` — unchanged this session (patched in earlier session)
-- `idea/findings.md` — research + decisions (unchanged; §6 model pick is a note, NOT a decision)
-- `.tmp/pg78052.txt` — Gutenberg source text (keep for the fetch script)
+- `astro/scripts/gloss.mjs` — gloss pipeline (WP-6, uncommitted)
+- `astro/scripts/lib/gloss-parse.mjs` + `astro/test/gloss-parse.test.mjs` — parse/merge helpers + tests (uncommitted)
+- `astro/scripts/data/phrases.json` — 40 seed phrases (uncommitted)
+- `astro/src/data/books/andanzas/glosses.json` — incremental gloss library, growing (uncommitted)
+- `.tmp/gloss.log` — pipeline output log (progress lines `batch i/N — glossed so far: X`)
+- `.tmp/pg78052.txt` — Gutenberg source (keep)
+- `.pi/plans/spanish-reader-app/` — the plan (phases 1–4, 10 WPs)
 
 ## Gotchas / Warnings
 
-- **Latest Astro is 7.3.1, not 5.x** — plan text updated; `npm create astro@latest` resolves to 7.x
-- **The minimal template ships NO `src/layouts/Layout.astro`** — WP-2 creates it
-- **The book has 41 essays, not 37** — plan files all say 41 now
-- One essay title spans two all-caps lines: `EL CRISTO YACENTE DE SANTA CLARA` + `(IGLESIA DE LA CRUZ) DE PALENCIA` — two-line join fallback in WP-3 step 6
-- Index continuation logic: a line WITHOUT a trailing page number STARTS a wrapped entry (does not continue the previous one)
-- Body has 48 all-caps lines but only 41 are titles (7 versalitas false positives: RECUERDO DE MALLORCA, EL CAMPO ES UNA METÁFORA, Roman numerals I–IV) — index-driven matching handles this; never split on all-caps lines alone
-- **deepseek-v4-flash:0731-cloud is NOT in the current ollama tags** (only gemini-3-flash-preview:latest, qwq:32b) — the user picks the model
-- Bash guardrail blocks inline node/python with backslash regexes — write scratch scripts to `.tmp/` instead
-- Plan review lesson: `import.meta.glob` eager in frontmatter is fine (server-side; island props serialize per-page) — do NOT "fix" it to non-eager
+- **`api/tags` does NOT list `deepseek-v4-flash:0731-cloud`** (only gemini-3-flash-preview:latest, qwq:32b) but the chat endpoint ACCEPTS it (cloud-proxied; response model name is `deepseek-v4-flash:0731`). `api/ps` shows nothing loaded for proxied models — not a sign of a dead pipeline.
+- **Subagent status display is misleading**: turns/ctx don't grow while blocked in a long bash call — the child process does the work. Don't kill a subagent just because it looks idle.
+- **Guardrail gotchas**: `taskkill //PID` gets mangled → use `powershell -Command "Stop-Process -Id N -Force"`. `cd astro && nohup ... > ../.tmp/...` trips the path guardrail → run from repo root: `node astro/scripts/...` + `.tmp/gloss.log` (script resolves its own paths via `__dirname`).
+- **WP-3 bug fixed**: the PRÓLOGO special case must advance `nextTitleIdx` past the index's first entry, else every section after the prólogo is missed.
+- **Tokenizer**: word regex must include digits (`[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+`) — the plan's letter-only regex made "all digits → null" dead code; test 6 requires `1911` as one token.
+- **Biome autofix** rewrites quotes (`'json'` → `"json"`); WP-6's success check greps for `format: "json"` — restore double quotes if biome flips it.
+- Uncommitted diffs on phase 1/2 files are biome quote-style autofixes only (cosmetic).
+- Bash guardrail blocks inline node/python with backslash regexes — write scratch scripts to `.tmp/` instead.

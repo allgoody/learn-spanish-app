@@ -2,8 +2,9 @@
 
 ## Tech Stack
 
-- Astro 7 (latest, verified 7.3.1) + Tailwind CSS 4 + React (islands), mobile-first
-- No backend, no runtime API keys
+- Astro 7.3.1 (latest) + Tailwind CSS 4.3 + React 19 (islands), mobile-first — INSTALLED in `astro/`
+- TypeScript strict (Astro default), vitest 5 (dev) for `.mjs` script tests
+- No backend, no runtime API keys; scripts are plain ESM `.mjs` (Node built-ins only, no tsx/axios/lodash)
 
 ## Architecture
 
@@ -22,7 +23,7 @@
 ## Active Constraints
 
 - **Book #1: Unamuno, "Andanzas y visiones españolas" (1922)** — Gutenberg #78052 (clean text); **41 essays** (PRÓLOGO + 40), each essay = a chapter
-- **Gloss model: USER-SUPPLIED at run time — NEVER defaulted.** `scripts/gloss.mjs` requires `--model <name>` or env `GLOSS_MODEL` and exits 1 without one. The user chooses the model (deepseek-v4-flash was the original pick but is NOT in current ollama tags)
+- **Gloss model: USER-SUPPLIED at run time — NEVER defaulted.** `scripts/gloss.mjs` requires `--model <name>` or env `GLOSS_MODEL` and exits 1 without one. User's current pick: `deepseek-v4-flash:0731-cloud`
 - **v1 scope: reading + glosses only** — known-words tracking, TTS audio, SRS = later phases
 - **UI: Russian + English toggle** (glosses always in Russian)
 - **Copyright**: public domain books ONLY in the public app. User's own modern book = private use only (no public deploy)
@@ -42,7 +43,12 @@
 - **Plan review lesson: a "resumable" script that only writes its state at the end is not resumable** — persist incrementally (glosses.json after each batch)
 - **Plan review lesson: hover/tap popups must exclude the popup element from close-on-outside logic** — capture-phase scroll listeners fire for scrolls inside the popup; mouseover fires when entering the popup
 - **Plan review lesson: Russian pluralization needs a real rule** — "41 Главы" is wrong; use pluralRu (41 → "41 глава")
-- deepseek-v4-flash:0731-cloud is NOT in the current ollama tags (only gemini-3-flash-preview:latest, qwq:32b) — verify with `curl -s http://localhost:11434/api/tags`
+- **`api/tags` does NOT list `deepseek-v4-flash:0731-cloud`** (only gemini-3-flash-preview:latest, qwq:32b) but the chat endpoint ACCEPTS it — the local ollama proxies cloud models (response model name: `deepseek-v4-flash:0731`). `api/ps` shows nothing loaded for proxied models — NOT a sign of a dead pipeline. Verify a model works with a tiny `curl -m 30 http://localhost:11434/api/chat -d '{"model":"<name>","messages":[{"role":"user","content":"hi"}],"stream":false}'`
+- **Subagent status display is misleading**: turns/ctx don't grow while a subagent is blocked in a long bash call — the child process does the work. Don't kill a subagent just because it looks idle; check the actual child process / output files first
+- **Guardrail gotchas**: `taskkill //PID` gets mangled → use `powershell -Command "Stop-Process -Id N -Force"`. `cd astro && nohup ... > ../.tmp/...` trips the path guardrail → run from repo root: `node astro/scripts/...` + `.tmp/gloss.log` (scripts resolve their own paths via `__dirname`)
+- **WP-3 fetch script**: the PRÓLOGO special case must advance `nextTitleIdx` past the index's first entry, else every section after the prólogo is missed
+- **Tokenizer**: word regex must include digits (`[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+`) — a letter-only regex makes "all digits → null" dead code
+- **Biome autofix** rewrites quotes; plan success checks may grep for exact quote style (e.g. `format: "json"`) — restore if biome flips it
 - Bash guardrail blocks inline python with backslash regexes — write scratch scripts to `.tmp/` instead
 - Don Quijote original (1605) is archaic 17th-century Spanish — hard even for natives; not a learner's first book
 - Platero y yo (Jiménez, 1914): PD in US, but EU copyright until 2029 — avoid for public sites
@@ -54,4 +60,5 @@
 
 ## Dependencies
 
-- None installed yet — project not scaffolded. Plan targets: **Astro 7 (latest, verified 7.3.1)** (minimal template, strict TS default), React via `--add react`, Tailwind 4 via `astro add tailwind` (@tailwindcss/vite), vitest (dev, tokenizer tests). Scripts in plain `.mjs` (no tsx).
+- Installed in `astro/`: astro 7.3.1, react 19, react-dom 19, @astrojs/react 6, tailwindcss 4.3, @tailwindcss/vite 4.3, @astrojs/check, typescript 6, vitest 5
+- Scripts: plain `.mjs` (Node built-ins only). No other deps allowed by plan
