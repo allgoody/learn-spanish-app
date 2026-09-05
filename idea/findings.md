@@ -116,3 +116,42 @@ Buy any modern novel; the pipeline doesn't care. The app works identically — j
 2. Gloss pipeline script (download → clean → tokenize → dedupe → LLM batch-gloss → glosses.json)
 3. Reader UI: word spans + one delegated handler + popup/bottom-sheet
 4. Book #2+ becomes a ~10-minute job (pipeline is reusable)
+
+## 8. Routing research (2026-09-05) — decision in `idea/routing.md`
+
+**Question:** optimal/usual routing for a learning app where content language is fixed
+per item (Spanish book) and the learner's translation language varies.
+
+**Findings:**
+
+1. **UX research — mixing languages is the anti-pattern.** A UX StackExchange case
+   (identical setup: interface language vs. mother language vs. learning language)
+   concludes: showing multiple languages at once looks messy/unprofessional, adds
+   cognitive load, and users expect the app to follow their chosen language fully.
+   → Validates tying gloss language to the app setting. Our current app (EN UI +
+   RU glosses) is exactly the "mixed" state the research warns about.
+
+2. **Astro's built-in i18n routing does NOT fit this case.** It's designed for
+   *parallel locale trees* (same pages in many languages: `/[locale]/` prefixes,
+   `prefixDefaultLocale`, per-locale fallback). Our content is not parallel — a
+   Spanish book has no French version. Astro docs explicitly support manual routing
+   (`routing: "manual"`); plain file-based routing is the right call.
+
+3. **Industry practice (Duolingo, Babbel, LingQ):** the learner's language is a
+   *setting*, never a URL dimension; the content/course language is either encoded
+   as a (source, target) pair in the URL (Duolingo: `/course/es/ru/...`) or a
+   filter/category (LingQ). No major learning app puts the UI language in the URL.
+   → Our model (flat URLs, content language as data, translation = setting) is the
+   industry-standard shape.
+
+4. **Google's multilingual guidance** (separate URLs per language, hreflang) applies
+   to multilingual *content* sites — not to single-language content with a UI
+   dictionary. The applicable part: declare content language via `lang` attribute
+   and JSON-LD `inLanguage`.
+
+5. **intl-t.dev principle:** "choose your URLs independently of where the locale
+   comes from" — locale from localStorage + language-free URLs is a supported,
+   documented pattern.
+
+**Conclusion:** the flat model (routing.md §4) matches both UX research and industry
+practice. Astro's i18n routing stays unused; content pages declare `lang` statically.
