@@ -14,6 +14,8 @@
 - **Gloss schema (future-proof, all fields optional)**: lemma, pos, ipa, ru, grammar (STRING explaining THIS surface form, e.g. "pretérito imperfecto, 1ª/3ª pers. sing." — not an object), cefr, modern (archaic→modern), false_friend, note
 - **Reader UI**: every word rendered as a span with `data-word`; ONE delegated event handler; popup on hover (desktop) / bottom-sheet on tap (mobile). Paragraphs preserved via `splitParagraphs` (2+ consecutive `\n` tokens = break) — never render a whole chapter in one `<p>`. Popup has `popupRef`; close-on-outside rules must exclude targets inside the popup (hovering the tooltip / tapping or scrolling inside the sheet must NOT close it). Glossable spans: `tabindex="0" role="button"`; Enter/Space opens
 - **i18n**: `chapterCount(n, lang)` with `pluralRu(n, one, few, many)` — Russian plural rule: n%10==1 && n%100!=11 → one; n%10 in 2..4 && n%100 not in 12..14 → few; else many (41 → "41 глава", NOT "41 Главы")
+- **Routing model (decision record `idea/routing.md` — read before touching URL structure)**: flat URLs — content language is DATA (`lang` field on BookMeta/WordCategory), never in URLs. Translation language = app setting (UI lang). Word lesson ids are per-language slugs (`/words/pronouns/` es, `/words/pronoms/` fr later). Chapter URLs `/books/andanzas/{slug}` are permanent — no `_redirects`. Source language is NOT a persistent setting (chooser sections only). `<html lang>` = content language on content pages (Layout `contentLang` prop). Glosses stay RU-only until the per-language gloss data task (routing.md §7)
+- **URL restructure plan exists**: `.pi/plans/restructure-routing/` (11 WPs, 3 phases) — chooser at `/`, `/books/[book]/` landing, generic reader, `/words/[category]/` + pronouns lesson (69 entries, 9 groups, RU content). NOT yet executed
 - Book data as plain JSON under `src/data/books/{id}/` (meta.json, chapters/, tokens/, glosses/) loaded via `import.meta.glob` — NOT content collections
 
 ## Design System
@@ -33,7 +35,9 @@
 - **Copyright**: public domain books ONLY in the public app. User's own modern book = private use only (no public deploy)
 - **Audit skills (audit-add-test, audit-lighthouse-loop, audit-perf) run AFTER the build as a user-driven polish stage** — not executor WPs; audits need a stable build
 - Temp/working files MUST be created in `.tmp/` under the repo root, never in system `/tmp/` or outside the workspace. `.tmp/` should be in `.gitignore`. Clean up with `rm -rf .tmp/` after use.
-- Never deploy unless the user explicitly asks in the current request
+- **URL structure changes require updating `idea/routing.md` first** — it is the source of truth for routing & language handling
+- **JSX convention**: React islands use `className` (see BookIntro.tsx); Astro templates use `class`
+- **Never deploy unless the user explicitly asks in the current request**
 
 ## Lessons
 
