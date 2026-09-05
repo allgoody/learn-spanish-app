@@ -76,6 +76,6 @@ Rejected because the flat model matches the domain, not because of cost alone.
 ## 7. Open items
 
 - [ ] Glosses per-language map + bilingual pipeline re-run (user-driven, later)
-- [ ] `<html lang>` static override on content pages
+- [x] `<html lang>` static override on content pages (done 2026-09-05, plan restructure-routing)
 - [ ] UI language in URL (e.g. `/ru/...`)? — No. localStorage is fine for an app;
       if ever needed it nests outermost and doesn't disturb the content tree.
