@@ -7,18 +7,22 @@ Last updated: 2026-09-05
 
 ## Current Task
 
-**App plan COMPLETE** (42 pages, reader with gloss popups, deployed). This session: created the standalone `template/` (full stylesheet + kitchen-sink + style guide, dark theme, ADA-compliant). Template work is DONE and uncommitted. App polish stage (user-driven) remains.
+**Hamburger menu + dark theme DONE** (uncommitted). Header menu (RU/EN + Light/Dark/System) replaces the old LangToggle; full token-based dark theme from `template/style.css` values. Verified in browser (light/dark/system, menu, popup, mobile). App polish stage (user-driven) remains.
 
 ## Completed This Session
 
-- [x] **`template/` created** (new, uncommitted): `style.css` (full taxonomy: 81 HTML elements, 14 UI components, 7 states, 5 token categories as CSS custom properties; stone/amber design language from the astro site; dark theme via `[data-theme]` attr + `prefers-color-scheme` with `:root:not([data-theme="light"])`), `kitchen-sink.html` (preview with theme toggle + CTDev footer), `STYLE-GUIDE.md` (filled reference). Audit helper: 95/95 styled, 0 partial, 0 missing
-- [x] **Modal open-on-load fixed**: `.modal` now `display:none` by default, `.modal.open` shows it; kitchen-sink wires open/close buttons, overlay click, Esc; native `<dialog>` demo also wired via showModal()
-- [x] **ADA/WCAG audit (axe-core 4.10.2, light + dark)**: all violations fixed — contrast (semantic colors → 700-level in light, new `--color-on-accent` token = white light / #0c0a09 dark for colored buttons + pagination current; audit-banner → theme tokens), landmarks (page-level `<main>`, demo `<aside>` moved top-level, navs got aria-labels, no nested mains), heading order (demo h1/h2 removed), `aria-disabled` on disabled link, `tabindex="0"` on tooltip, modal `role="dialog" aria-modal aria-labelledby` + focus management (focus in on open, return on close), video/audio/canvas fallback text
-- [x] Verified in browser: both themes render, modal focus flow, landmarks, 95/95 coverage
+- [x] **Menu toggle fix**: active segment was invisible — `bg-primary` utility never existed (token is `--color-accent`; `--color-primary` was never mapped in `@theme`). Now `bg-accent text-on-accent` (filled amber) vs inactive outlined — clear on/off states in both themes
+- [x] **Reader: click-only popup on desktop** — hover no longer opens/closes; click a word opens (toggle on same word), click outside the text area closes, Esc closes, hovering the popup keeps it open; mobile tap → bottom sheet unchanged; `pinnedRef`/`onMouseOver` removed
+- [x] **Hamburger menu** (user-requested): `HeaderMenu.tsx` replaces `LangToggle.tsx` (deleted) — hamburger button in header (all viewports), dropdown with "App language" (Русский/English) + "Color theme" (Светлая/Тёмная/Системная) segmented controls; outside-click + Esc close, focus returns to button; `aria-expanded`/`aria-pressed`/`role=group`
+- [x] **Dark theme for the app**: `global.css` now carries the template's token values (stone+amber) as runtime CSS vars (`--bg`, `--text`, `--accent`, …) with `[data-theme="dark"]` + `@media (prefers-color-scheme: dark) :root:not([data-theme="light"])` overrides; mapped to Tailwind 4 utilities via `@theme inline` (`bg-paper`, `text-ink`, `border-line`, `bg-accent-soft`, `bg-popup`, …); all stone/amber classes replaced across Layout, index, [slug], Reader, BookIntro
+- [x] **`lib/theme.ts`**: getTheme/setTheme/applyTheme/onThemeChange, localStorage `theme` key, `data-theme` attr on `<html>`
+- [x] **No-FOUC**: inline pre-paint script in Layout head sets `data-theme` AND `lang` from localStorage before first paint
+- [x] **Hydration fix**: islands init to server defaults (ru/system) and sync from localStorage in a mount effect — eliminates React error #418 (text mismatch) that the old `useState(getLang())` pattern caused (BookIntro had it pre-existing)
+- [x] Browser-verified via chrome-devtools: system dark via media query, explicit light/dark toggle + persistence, menu open/close/Esc/outside-click, language switch re-renders UI, popup + bottom sheet + CEFR badge in both themes, mobile 375px no overflow, console clean
 
 ## In Progress
 
-- (none — template task complete)
+- (none — hamburger + dark theme complete)
 
 ## Blocked / Needs Decision
 
@@ -28,13 +32,13 @@ Last updated: 2026-09-05
 
 ## Next Steps
 
-1. Commit `template/` (3 files, all new)
-2. **Dark theme for the app** (user-requested todo — the template's token approach can inform it)
-3. **Check translations for errors** — user spotted English words written in Cyrillic (audit glosses.json `ru` fields for transliterated English, e.g. "винтаж" vs "старинный")
-4. Post-build polish (user-driven): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
+1. **Check translations for errors** — user spotted English words written in Cyrillic (audit glosses.json `ru` fields for transliterated English, e.g. "винтаж" vs "старинный")
+2. Post-build polish (user-driven): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
 
 ## Key Decisions
 
+- **App dark theme = template's token values** (stone+amber), runtime CSS vars + `@theme inline` mapping to Tailwind utilities; `[data-theme]` attr + `prefers-color-scheme` mechanism identical to template
+- **Hydration pattern**: islands init to server defaults, sync from localStorage in mount effect (avoids React #418 text mismatch; suppressHydrationWarning keeps stale server text — don't use)
 - **Template design language = astro site's**: stone neutrals + amber accent (amber-700 #b45309, stone-200 borders, white bg, system-ui, rounded 4px)
 - **Dark theme mechanism**: CSS custom properties; `[data-theme="dark"]` forces dark, `[data-theme="light"]` forces light, otherwise `prefers-color-scheme` wins
 - **Contrast strategy**: light mode uses 700-level semantic colors (white text passes 4.5:1); dark mode uses 400-level colors with dark text (`--color-on-accent: #0c0a09`)
@@ -43,6 +47,9 @@ Last updated: 2026-09-05
 
 ## File Map
 
+- `astro/src/components/HeaderMenu.tsx` — hamburger menu (lang + theme switchers), replaces LangToggle
+- `astro/src/lib/theme.ts` — theme state (light/dark/system), localStorage, data-theme attr
+- `astro/src/styles/global.css` — token system (template values) + `@theme inline` mapping + glossable/focus styles
 - `template/style.css` — full standalone stylesheet (tokens → elements → components → a11y), dark theme, ADA-clean
 - `template/kitchen-sink.html` — preview page (theme toggle, modal/dialog demos, CTDev footer)
 - `template/STYLE-GUIDE.md` — filled reference: every element/component/token, light→dark values
