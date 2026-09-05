@@ -27,7 +27,7 @@ Last updated: 2026-09-05
 
 ## Next Steps
 
-1. **Commit the uncommitted files** (5 pre-existing + 7 new test files + vitest.config.ts) — user-driven via /skill:commit
+1. **Decide on next book(s) from `idea/findings.md`** — candidates: Blasco Ibáñez (†1928, PD everywhere, modern-feeling page-turners: La barraca, Cañas y barro), Pío Baroja (PD in EU from Jan 2027). Pipeline is reusable (~10 min per book). User-driven
 2. (optional, user decision) **Widen `collect.url`** to `/books/andanzas/`, `/words/pronouns/`, a chapter — then re-run `node astro/scripts/perf-check.mjs --full --runs 3 astro`
 3. (when a 2nd UI language lands) **sitemap hreflang annotations** — `@astrojs/sitemap` installed; add `i18n` config + hreflang links then
 4. (future, routing.md §7) **Glosses per-language map** — `glosses.json` schema `ru` → `{ru, en}`, bilingual pipeline re-run (11.7k forms × 2 langs), reader fallback ru → lemma. User-driven
