@@ -39,7 +39,7 @@
 - Temp/working files MUST be created in `.tmp/` under the repo root, never in system `/tmp/` or outside the workspace. `.tmp/` should be in `.gitignore`. Clean up with `rm -rf .tmp/` after use.
 - **URL structure changes require updating `idea/routing.md` first** — it is the source of truth for routing & language handling
 - **JSX convention**: React islands use `className` (see BookLanding.tsx); Astro templates use `class`
-- **Site domain is https://niceio.com/** (2026-09-05) — set in `astro.config.mjs` `site:`, JSON-LD urls in index.astro, robots.txt Sitemap line. Cloudflare Pages project `learn-words`; DNS CNAME → learn-words-5mq.pages.dev. Deploy: `wrangler pages deploy astro/dist --project-name learn-words`
+- **Site domain is <https://niceio.com/>** (2026-09-05) — set in `astro.config.mjs` `site:`, JSON-LD urls in index.astro, robots.txt Sitemap line. Cloudflare Pages project `learn-words`; DNS CNAME → learn-words-5mq.pages.dev. Deploy: `wrangler pages deploy astro/dist --project-name learn-words`
 - **Never deploy unless the user explicitly asks in the current request**
 
 ## Lessons
