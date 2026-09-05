@@ -48,7 +48,7 @@ Create the dynamic chapter page that renders the tokenized text as static spans 
 - [ ] `grep -c "import.meta.glob" "astro/src/pages/books/andanzas/[slug].astro"` → 2
 - [ ] `grep -c "splitParagraphs" "astro/src/pages/books/andanzas/[slug].astro"` → ≥ 1
 - [ ] `grep -c "tabindex" "astro/src/pages/books/andanzas/[slug].astro"` → ≥ 1
-- [ ] `cd astro && npm run build` → exit 0 (after WP-9; if Reader.tsx is missing, this fails — run WP-9 first if needed)
+- [ ] `cd astro && npm run build` → exit 0 — DEFERRED to WP-9 (Reader.tsx doesn't exist yet; the build check runs there)
 
 ### WP-9: Reader island (popup + bottom sheet)
 
@@ -115,7 +115,7 @@ Run the full verification suite and the manual checklist. Fix anything that fail
 
 **Success:**
 
-- [ ] `cd astro && npm test` → exit 0 (6 tokenizer tests)
+- [ ] `cd astro && npm test` → exit 0 (10 tests: 6 tokenizer + 4 gloss-parse)
 - [ ] `cd astro && npx astro check` → exit 0
 - [ ] `cd astro && npm run build` → exit 0
 - [ ] `grep -n "ctdev.dev" astro/src/layouts/Layout.astro` → 1 match (footer credit present)

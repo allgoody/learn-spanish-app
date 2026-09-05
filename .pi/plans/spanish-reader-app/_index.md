@@ -11,7 +11,7 @@ planner-model: deepseek-v4-flash:0731-cloud
 
 ## Objective
 
-Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of this repo. Stack: Astro 5 + Tailwind 4 + React islands, mobile-first. Content: Miguel de Unamuno's *Andanzas y visiones españolas* (public domain, Project Gutenberg #78052). Every word/phrase in the text renders as a span; tapping (mobile) or hovering (desktop) shows a gloss popup: Russian translation, grammar explanation of the word form, IPA, lemma, POS, CEFR level, modern equivalent, false-friend warning, note. Glosses are generated at build time by an LLM pipeline (the model is supplied by the user at run time — the plan and scripts NEVER default to a model) and stored as per-chapter precompiled JSON libraries that each page loads with it. UI has a Russian/English toggle (glosses always in Russian).
+Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of this repo. Stack: Astro 7 (latest — `@latest` resolves to 7.x, verified 7.3.1) + Tailwind 4 + React islands, mobile-first. Content: Miguel de Unamuno's *Andanzas y visiones españolas* (public domain, Project Gutenberg #78052). Every word/phrase in the text renders as a span; tapping (mobile) or hovering (desktop) shows a gloss popup: Russian translation, grammar explanation of the word form, IPA, lemma, POS, CEFR level, modern equivalent, false-friend warning, note. Glosses are generated at build time by an LLM pipeline (the model is supplied by the user at run time — the plan and scripts NEVER default to a model) and stored as per-chapter precompiled JSON libraries that each page loads with it. UI has a Russian/English toggle (glosses always in Russian).
 
 ## Global Context
 
@@ -51,7 +51,7 @@ Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of th
 
 - **DO NOT set, choose, or default an LLM model anywhere** — not in scripts, not in commands, not in prompts. `scripts/gloss.mjs` requires `--model <name>` or env `GLOSS_MODEL` and exits 1 with a clear message if neither is given. The user supplies the model at run time (WP-7).
 - DO: all app code lives in `astro/`. Run commands as `cd astro && <cmd>` from repo root.
-- DO: TypeScript strict (Astro 5 default — do not change tsconfig).
+- DO: TypeScript strict (Astro 7 default — do not change tsconfig).
 - DO: use only Node built-ins in scripts (`node:fs`, `node:path`, `fetch`). No axios, no tsx, no lodash.
 - DO NOT: add dependencies beyond: `astro`, `react`, `react-dom`, `@astrojs/react`, `tailwindcss`, `@tailwindcss/vite` (all installed via scaffold) and `vitest` (dev, WP-5).
 - DO: commit generated data (`chapters/`, `tokens/`, `glosses/`) — it is app content, not build output.
@@ -91,7 +91,7 @@ Deferred deliberately: audits need a finished, stable build — running them mid
 
 **Phase 1:**
 
-- `astro/` — CREATE (scaffold: Astro 5 minimal + React + Tailwind 4)
+- `astro/` — CREATE (scaffold: Astro 7 minimal + React + Tailwind 4)
 - `astro/src/lib/types.ts` — CREATE — Gloss/Token/ChapterMeta/BookMeta/GlossLibrary types
 - `astro/src/lib/i18n.ts` — CREATE — RU/EN UI strings + lang state
 - `astro/src/layouts/Layout.astro` — CREATE — base layout (header, footer w/ CTDev credit, global.css)

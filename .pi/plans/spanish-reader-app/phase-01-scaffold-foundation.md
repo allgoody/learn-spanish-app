@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create the Astro app skeleton in `astro/` (Astro 5 + React + Tailwind 4), the shared types, the RU/EN i18n module, and the base layout with footer. The site builds and serves a placeholder home page. No book data yet.
+Create the Astro app skeleton in `astro/` (Astro 7 + React + Tailwind 4), the shared types, the RU/EN i18n module, and the base layout with footer. The site builds and serves a placeholder home page. No book data yet.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ See Global Context in `_index.md`. All commands run from repo root with `cd astr
 ### WP-1: Scaffold Astro app with React and Tailwind
 
 **Context:**
-Repo root is empty except `.git`, `.pi/`, `idea/`, `.tmp/`. Astro 5's create-astro has no `--typescript` flag (strict is the default). Tailwind 4 is added via `astro add tailwind` (requires Astro >= 5.2.0; installs the `@tailwindcss/vite` plugin and creates `src/styles/global.css` with `@import "tailwindcss";`). React is added via `--add react` at scaffold time.
+Repo root contains only `.git`, `.gitignore`, `.orca/`, `.pi/`, `idea/`, `.tmp/`. Astro 7's create-astro has no `--typescript` flag (strict is the default). Tailwind 4 is added via `astro add tailwind` (supported since Astro 5.2, unchanged in 7.x; installs the `@tailwindcss/vite` plugin and creates `src/styles/global.css` with `@import "tailwindcss";`). React is added via `--add react` at scaffold time. All APIs this plan uses (`import.meta.glob`, `getStaticPaths`, `astro check`, JSON imports, `client:*` directives) are unchanged in Astro 7. Node 22+ required (verified: v24.14.1).
 
 **Task:**
 Create the Astro app in `astro/` with the minimal template, React integration, and Tailwind 4. Verify dev, build, and type-check all work.
@@ -53,7 +53,7 @@ Create the Astro app in `astro/` with the minimal template, React integration, a
 ### WP-2: Types, i18n, layout, language toggle
 
 **Context:**
-The scaffold from WP-1 created `astro/src/pages/index.astro` (minimal home), `astro/src/layouts/Layout.astro` (minimal), `astro/src/styles/global.css` (Tailwind import). React islands render via `client:*` directives. The gloss schema was designed in `idea/findings.md`: fields lemma, pos, ipa, ru, grammar, cefr, modern, false_friend, note — all optional except ru.
+The scaffold from WP-1 created `astro/src/pages/index.astro` (minimal home) and `astro/src/styles/global.css` (Tailwind import). The minimal template ships NO `src/layouts/Layout.astro` — it must be created here. React islands render via `client:*` directives. The gloss schema was designed in `idea/findings.md`: fields lemma, pos, ipa, ru, grammar, cefr, modern, false_friend, note — all optional except ru.
 
 **Task:**
 Create the shared types, the RU/EN i18n module, the base layout with footer (CTDev credit), the language toggle island, and replace the placeholder home page with a layout-only page.
@@ -62,7 +62,7 @@ Create the shared types, the RU/EN i18n module, the base layout with footer (CTD
 
 - `astro/src/lib/types.ts` — CREATE
 - `astro/src/lib/i18n.ts` — CREATE
-- `astro/src/layouts/Layout.astro` — MODIFY (replace scaffold content)
+- `astro/src/layouts/Layout.astro` — CREATE (minimal template ships none)
 - `astro/src/styles/global.css` — MODIFY (append reading styles)
 - `astro/src/components/LangToggle.tsx` — CREATE
 - `astro/src/pages/index.astro` — MODIFY (placeholder home using Layout)
