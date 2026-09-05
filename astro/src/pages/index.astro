@@ -1,9 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import BookIntro from '../components/BookIntro.tsx'
+import { books } from '../lib/books'
 ---
 
 <Layout>
-  <main class="min-h-screen flex items-center justify-center">
-    <p class="text-stone-500">No books yet</p>
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <BookIntro book={books[0]} client:load />
+    <ul class="mt-8">
+      {books[0].chapters.map((c) => (
+        <li>
+          <a href={`/books/andanzas/${c.id}`} class="block py-2 border-b border-stone-200 hover:text-amber-700">
+            {c.title}
+          </a>
+        </li>
+      ))}
+    </ul>
   </main>
 </Layout>
