@@ -7,30 +7,29 @@ Last updated: 2026-09-05
 
 ## Current Task
 
-Executing plan `spanish-reader-app` (`.pi/plans/spanish-reader-app/`) via `/skill:implement`. Phases 1–2 done + committed. Phase 3 WP-6 done. **WP-7 gloss generation is RUNNING IN THE BACKGROUND** — see In Progress.
+**PLAN COMPLETE** — `spanish-reader-app` all 4 phases done + committed (`4c6e14e` phase 3, `5bd81fb` phase 4). App is fully functional: 42 pages, reader with gloss popups. Remaining: user-driven polish stage (audit skills) + manual browser checks.
 
 ## Completed This Session
 
-- [x] Phase 1 (committed `75c48ef`): Astro 7.3.1 scaffold (minimal + react + tailwind), `src/lib/types.ts`, `src/lib/i18n.ts` (RU/EN strings, `chapterCount`/`pluralRu`, `getLang`/`setLang`/`onLangChange`), `src/layouts/Layout.astro` (CTDev footer), `LangToggle.tsx`, placeholder home
-- [x] Phase 2 (committed `c24e381`): `scripts/fetch-book.mjs` → 41 chapters (76,143 words) + `meta.json`; `src/lib/books.ts` + `BookIntro.tsx` + book home page; `scripts/lib/tokenize.mjs` + 6 vitest tests (all pass)
-- [x] Phase 3 WP-6: `scripts/data/phrases.json` (40 phrases), `scripts/gloss.mjs` (model REQUIRED, no default; ollama chat, format json, 120s timeout, 3×5s network retry, batch re-try once, incremental `glosses.json` after every batch, resumable), `scripts/lib/gloss-parse.mjs` + 4 tests (10/10 total pass)
-- [x] User chose gloss model: **deepseek-v4-flash:0731-cloud** (via subagent with `:max` reasoning, then user asked to kill the subagent and run it directly — done)
+- [x] WP-7 gloss pipeline COMPLETE: 11,639 keys (98.7% coverage, 150 failed keys from timeouts — under the 90% gate, no re-run needed), 41 tokens/ + 41 glosses/ files, spot-checks 5/5 sane
+- [x] Phase 4 WP-8: `[slug].astro` — static spans, data-word, splitParagraphs (single \n → space, 2+ → paragraph break), prev/next, Reader mount. **Gotcha: import.meta.glob must live INSIDE getStaticPaths** (Astro docs: getStaticPaths runs in isolated scope, can only reference file imports — frontmatter globs get dropped, build fails with "tokenFiles is not defined")
+- [x] Phase 4 WP-9: `Reader.tsx` — delegated document listeners (click/mouseover/keydown/scroll-capture), popupRef contains-guards, pinned state (hover opens unpinned, click pins, click-same-word toggles close), tooltip (hover) with useLayoutEffect positioning + top-overflow clamp, bottom sheet (touch) with close button, RU/EN labels via onLangChange
+- [x] Phase 4 WP-10: npm test 10/10, astro check 0 errors, build 42 pages, ctdev.dev footer, home 41 links, prologo renders 400 glossable spans + island mounted
+- [x] Commits: `4c6e14e` phase 3 (gloss pipeline + biome autofixes), `5bd81fb` phase 4 (reader UI)
+- [x] User preference updated: LIVE progress updates on long-running jobs (was: don't poll)
 
 ## In Progress
 
-- [ ] **WP-7 gloss pipeline running**: `nohup node astro/scripts/gloss.mjs --model deepseek-v4-flash:0731-cloud > .tmp/gloss.log 2>&1 &` (started ~10:30, PID was 2702). Last check: batch 19/207, ~2,350/~11,700 keys. **User preference: do NOT poll the log — report only when it finishes.** Check with: `tail .tmp/gloss.log` + count keys in `astro/src/data/books/andanzas/glosses.json`. If the process died, re-run the same command (resumable).
+- (none — plan complete)
 
 ## Blocked / Needs Decision
 
-- [?] WP-7 checks after the run: coverage ≥ 90% (else report failed keys, ask user about re-run with different model), spot-check 5 random glosses (ru + lemma sane)
-- [?] If coverage < 90% or glosses look systematically wrong → ask user before re-running
+- [ ] Manual browser checks (WP-10 manual checklist): hover tooltip + pin + Esc, tap bottom sheet + outside-close, keyboard Enter/Space, RU/EN toggle, no console errors — user to verify in browser
 
 ## Next Steps
 
-1. When pipeline finishes: run WP-7 success checks (41 tokens/, 41 glosses/, glosses.json exists, ≥10,000 keys, coverage ≥ 90%, spot checks)
-2. Phase 3 verification (`npm run build`) → commit `spanish-reader: phase 3 — gloss pipeline` (also sweeps in uncommitted biome quote-style autofixes + WP-6 files)
-3. Phase 4: WP-8 `src/pages/books/andanzas/[slug].astro` (static spans, `data-word`, `splitParagraphs`, prev/next), WP-9 `src/components/Reader.tsx` (delegated handler, tooltip/bottom-sheet, popupRef guards, keyboard access), WP-10 final verification → commit
-4. Post-build polish (user-driven, NOT executor): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
+1. User verifies manual checklist in browser (dev server on :4321)
+2. Post-build polish (user-driven, NOT executor): `/skill:audit-add-test`, `/skill:audit-lighthouse-loop`, `/skill:audit-perf`
 
 ## Key Decisions
 

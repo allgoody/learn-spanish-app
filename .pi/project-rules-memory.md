@@ -33,7 +33,7 @@
 
 ## Lessons
 
-- **Output verbosity (user rule)**: keep the normal verbose style — detailed progress updates, explanations, status reports in chat. Not more, not less. Never go terse/silent, but no polling loops or repeated status checks the user didn't ask for — report when something completes or changes.
+- **Output verbosity (user rule)**: keep the normal verbose style — detailed progress updates, explanations, status reports in chat. Not more, not less. **Long-running jobs (e.g. the gloss pipeline): the user wants LIVE progress updates — report batch progress as it happens, don't wait silently for completion.**
 - **Latest Astro is 7.3.1 (not 5.x)** — all APIs the plan uses (create-astro flags, `astro add tailwind`, `import.meta.glob`, `getStaticPaths`, `astro check`, JSON imports, `client:*`) are unchanged in v6/v7; Node 22+ required; `@latest` everywhere
 - **The Astro minimal template ships NO `src/layouts/Layout.astro`** — only `src/pages/index.astro` + `src/styles/global.css`; a plan saying MODIFY a scaffolded Layout.astro is wrong, it must be CREATE
 - **Body-only distinct word forms ≈ 11,761 → 236 batches of 50** — counting front matter inflates to ~12,270; measure body only (from PRÓLOGO to END marker)
@@ -49,6 +49,7 @@
 - **Guardrail gotchas**: `taskkill //PID` gets mangled → use `powershell -Command "Stop-Process -Id N -Force"`. `cd astro && nohup ... > ../.tmp/...` trips the path guardrail → run from repo root: `node astro/scripts/...` + `.tmp/gloss.log` (scripts resolve their own paths via `__dirname`)
 - **WP-3 fetch script**: the PRÓLOGO special case must advance `nextTitleIdx` past the index's first entry, else every section after the prólogo is missed
 - **Tokenizer**: word regex must include digits (`[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+`) — a letter-only regex makes "all digits → null" dead code
+- **`import.meta.glob` in Astro pages must live INSIDE `getStaticPaths()`** — the docs' Caution: getStaticPaths runs in its own isolated scope and can only reference file imports, not frontmatter variables. A frontmatter `const tokenFiles = import.meta.glob(...)` used only in getStaticPaths gets DROPPED by the compiler (no warning) → build fails with "tokenFiles is not defined". Move the glob calls into getStaticPaths (Vite still transforms them there).
 - **Biome autofix** rewrites quotes; plan success checks may grep for exact quote style (e.g. `format: "json"`) — restore if biome flips it
 - Bash guardrail blocks inline python with backslash regexes — write scratch scripts to `.tmp/` instead
 - Don Quijote original (1605) is archaic 17th-century Spanish — hard even for natives; not a learner's first book
