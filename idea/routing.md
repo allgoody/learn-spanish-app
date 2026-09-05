@@ -77,5 +77,18 @@ Rejected because the flat model matches the domain, not because of cost alone.
 
 - [ ] Glosses per-language map + bilingual pipeline re-run (user-driven, later)
 - [x] `<html lang>` static override on content pages (done 2026-09-05, plan restructure-routing)
-- [ ] UI language in URL (e.g. `/ru/...`)? — No. localStorage is fine for an app;
-      if ever needed it nests outermost and doesn't disturb the content tree.
+- [x] ~~UI language in URL? No.~~ **SUPERSEDED 2026-09-05 — see §8.** The old "localStorage is fine for an app" reasoning predated SEO as a goal; localStorage is invisible to crawlers, so a 2nd UI language requires per-language URLs
+
+## 8. Future: UI language in the URL (locked 2026-09-05)
+
+> Decision record for when a 2nd UI language (English) is re-enabled. The app is
+> Russian-only today (`LANGS = ["ru"]` in HeaderMenu; `en` strings kept in
+> `lib/i18n.ts` + `lib/seo.ts` as future data). Full trace: `.pi/CONTEXT.md`
+> "Multi-language (locked decisions)".
+
+- **Model: subdirectory per language + hreflang** — `/` = Russian (default, keep as-is), `/en/` = English, future `/de/` etc. NOT query params (Google indexes one version only), NOT subdomains (splits domain authority), NOT JS-only swapping (invisible to crawlers).
+- **hreflang**: `<link rel="alternate" hreflang="ru|en|x-default">` generated in Layout from the current URL by swapping the prefix. Blesses near-duplicate chapter pages (Spanish text shared, chrome/glossary differ).
+- **Per-language vs shared**: UI strings + gloss translations + SEO titles/descriptions (`lib/seo.ts` map) + `lang` attr + JSON-LD `inLanguage` + `og:locale` are per-language; Spanish book text + chapter structure are shared. Chapter pages keep `lang="es"` even in the English version.
+- **Implementation sketch**: move pages under `src/pages/[lang]/...` (Astro `i18n` config, `defaultLocale: 'ru'`), drive the header toggle by URL instead of localStorage, `seoLang` becomes a function of the URL prefix — page templates keep working unchanged.
+- **Also needed then**: `sitemap.xml` with hreflang annotations (`@astrojs/sitemap` supports i18n) + `robots.txt` — neither exists yet.
+- **Gloss language follows UI language** (§2) — per-language gloss map `{ru, en}` is a separate data task (§7).
