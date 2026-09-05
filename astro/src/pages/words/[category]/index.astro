@@ -1,0 +1,24 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import WordLesson from '../../../components/WordLesson.tsx'
+import { categories } from '../../../lib/words'
+
+export function getStaticPaths() {
+  return categories.map((c) => ({
+    params: { category: c.id },
+    props: { category: c },
+  }))
+}
+
+const { category } = Astro.props
+---
+
+<Layout
+  title={category.title.ru}
+  contentLang={category.lang}
+  description="Урок испанских слов с переводом и пояснениями."
+>
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <WordLesson category={category} client:load />
+  </main>
+</Layout>

@@ -8,10 +8,11 @@ Last updated: 2026-09-05
 
 ## Current Task
 
-**URL restructure PLAN READY + REVIEWED — not yet executed.** `.pi/plans/restructure-routing/` (11 WPs, 3 phases): chooser at `/`, generic `/books/[book]/` landing, generic reader (chapter URLs unchanged), `/words/[category]/` with pronouns lesson (69 entries, 9 groups), `lang` fields, Layout `contentLang`/`description` props + `setLang` guard, 3 component tests. Second-opinion review done, all 5 findings fixed. Awaiting user go-ahead to execute.
+**URL restructure DONE (2026-09-05, plan restructure-routing).** Chooser at `/` with per-language sections (books + word categories); generic `/books/[book]/` landing; generic reader at `/books/[book]/[slug]` (chapter URLs unchanged); `/words/pronouns/` lesson (69 entries, 9 groups); `lang` fields on BookMeta/WordCategory; Layout `contentLang`/`description` props + `setLang` guard; `<html lang>` static override on content pages (routing.md §7 checked off); 3 new component tests. All checks green: astro check 0 errors, build 44 pages, 51 tests pass, all 5 routes probe 200.
 
 ## Completed This Session
 
+- [x] **URL restructure executed (plan restructure-routing, 11 WPs / 3 phases)** — chooser at `/`, `/books/[book]/` landing, generic reader, `/words/pronouns/` lesson, `lang` fields, `<html lang>` fix; verified: astro check 0 errors, build 44 pages, 51 tests, 5 routes probe 200. Deployment pending user go-ahead.
 - [x] **Plan reviewed (second opinion, review-plan skill)** — verified every WP against the real codebase (types, i18n, Layout, reader page, meta.json 41 chapters, test setup, npm scripts); found 5 issues, all fixed:
   - **Blocking**: WP-5/6 order — WP-5's `index.astro` passed `description` to Layout before WP-6 added the prop → `astro check` fails (ts(2322), verified empirically with a probe page). Swapped: Layout props = WP-5, Chooser = WP-6; cross-refs updated (WP-7/8/9 contexts, Shared Context, CONTEXT.md gotcha)
   - **Major**: `setLang` runtime gap — it unconditionally sets `document.documentElement.lang`, clobbering content lang on UI switch. Added one-line `data-content-lang` guard to WP-5 (i18n.ts MODIFY + success check); `_index.md` global constraint amended
@@ -23,20 +24,17 @@ Last updated: 2026-09-05
 
 ## In Progress
 
-- (none — plan pending execution)
+- (none — plan executed; deployment pending user go-ahead)
 
 ## Blocked / Needs Decision
 
-- [ ] **Plan approval** — user reviews `.pi/plans/restructure-routing/` and says go (or requests changes)
+- [x] **Plan approval** — plan `restructure-routing` executed 2026-09-05 (see Current Task)
 - [x] **DEPLOYED (user-approved):** Cloudflare Pages `learn-words` → [https://learn-words-5mq.pages.dev/](https://learn-words-5mq.pages.dev/). Re-deploy: `wrangler pages deploy astro/dist --project-name learn-words`. Do NOT deploy the restructure without explicit ask
 
 ## Next Steps
 
-1. **Execute plan `restructure-routing`** (or adjust after user review) — read `.pi/plans/restructure-routing/_index.md` first
-2. **Create favicon** — `public/favicon.svg` (amber/stone) + `<link rel="icon">` in Layout head (clears favicon-404 finding)
-3. ~~Redo app URL structure~~ **PLANNED** (see plan) — was Next Steps #1, now covered by the plan
-4. ~~Add pronouns lesson~~ **PLANNED** (WP-2 of the plan) — was Next Steps #2
-5. (future, routing.md §7) **Glosses per-language map** — `glosses.json` schema `ru` → `{ru, en}`, bilingual pipeline re-run (11.7k forms × 2 langs), reader fallback ru → lemma. User-driven, NOT in the plan
+1. **Create favicon** — `public/favicon.svg` (amber/stone) + `<link rel="icon">` in Layout head (clears favicon-404 finding)
+2. (future, routing.md §7) **Glosses per-language map** — `glosses.json` schema `ru` → `{ru, en}`, bilingual pipeline re-run (11.7k forms × 2 langs), reader fallback ru → lemma. User-driven, NOT in the plan
 
 ## Key Decisions
 
@@ -52,7 +50,11 @@ Last updated: 2026-09-05
 
 - `idea/routing.md` — DECISION RECORD: routing & language model (3 dimensions, URL tree, data consequences, rejected prefix alternative, open items)
 - `idea/findings.md` — §8 added: routing research (UX, Astro i18n, industry practice, sources)
-- `.pi/plans/restructure-routing/_index.md` + `phase-01-data-content.md` + `phase-02-pages-components.md` + `phase-03-verification.md` — the plan (11 WPs, 3 phases; REVIEWED + 5 fixes applied 2026-09-05, not executed)
+- `.pi/plans/restructure-routing/_index.md` + `phase-01-data-content.md` + `phase-02-pages-components.md` + `phase-03-verification.md` — the plan (11 WPs, 3 phases; REVIEWED + 5 fixes applied, EXECUTED 2026-09-05)
+- `astro/src/components/Chooser.tsx` + `BookLanding.tsx` + `WordLesson.tsx` — new islands (chooser, book landing, words lesson)
+- `astro/src/lib/words.ts` + `astro/src/data/words/pronouns.json` — words registry + pronouns lesson (69 entries, 9 groups)
+- `astro/src/pages/books/[book]/index.astro` + `[slug].astro` + `astro/src/pages/words/[category]/index.astro` — generic routes (old `books/andanzas/[slug].astro` deleted)
+- `astro/test/components/Chooser.test.tsx` + `BookLanding.test.tsx` + `WordLesson.test.tsx` — new island tests
 - `astro/src/components/HeaderMenu.tsx`, `astro/src/lib/theme.ts`, `astro/src/styles/global.css` — previous session's hamburger menu + dark theme (still UNCOMMITTED)
 - `astro/scripts/gloss.mjs` + `astro/scripts/lib/gloss-parse.mjs` + `astro/test/gloss-parse.test.mjs` — gloss pipeline (uncommitted)
 - `astro/src/data/books/andanzas/glosses.json` — incremental gloss library (uncommitted)
@@ -62,4 +64,4 @@ Last updated: 2026-09-05
 
 - **Plan WP order is load-bearing**: Layout `contentLang`/`description` props (WP-5) MUST precede pages passing them (WP-6/7/8/9) — `astro check` fails otherwise (ts(2322) on unknown props; verified empirically)
 - **Pronouns content = 69 entries** (not 55 — corrected in plan WP-2 success check)
-- **JSX convention**: islands use `className` (see BookIntro.tsx); Astro templates use `class`
+- **JSX convention**: islands use `className` (see BookLanding.tsx); Astro templates use `class`

@@ -13,6 +13,10 @@ export const strings: Record<Lang, Record<string, string>> = {
     close: "Закрыть",
     menu: "Меню",
     appLanguage: "Язык приложения",
+    booksSection: "Книги",
+    wordsSection: "Категории слов",
+    backToBooks: "← Все книги",
+    backHome: "← На главную",
     colorTheme: "Цветовая тема",
     light: "Светлая",
     dark: "Тёмная",
@@ -32,6 +36,10 @@ export const strings: Record<Lang, Record<string, string>> = {
     close: "Close",
     menu: "Menu",
     appLanguage: "App language",
+    booksSection: "Books",
+    wordsSection: "Word categories",
+    backToBooks: "← All books",
+    backHome: "← Home",
     colorTheme: "Color theme",
     light: "Light",
     dark: "Dark",
@@ -63,7 +71,9 @@ const listeners = new Set<(l: Lang) => void>();
 
 export function setLang(l: Lang): void {
   localStorage.setItem("lang", l);
-  document.documentElement.lang = l;
+  if (!document.documentElement.hasAttribute("data-content-lang")) {
+    document.documentElement.lang = l;
+  }
   listeners.forEach((cb) => cb(l));
 }
 

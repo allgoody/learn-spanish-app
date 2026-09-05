@@ -15,7 +15,7 @@
 - **Reader UI**: every word rendered as a span with `data-word`; ONE delegated event handler; popup on hover (desktop) / bottom-sheet on tap (mobile). Paragraphs preserved via `splitParagraphs` (2+ consecutive `\n` tokens = break) — never render a whole chapter in one `<p>`. Popup has `popupRef`; close-on-outside rules must exclude targets inside the popup (hovering the tooltip / tapping or scrolling inside the sheet must NOT close it). Glossable spans: `tabindex="0" role="button"`; Enter/Space opens
 - **i18n**: `chapterCount(n, lang)` with `pluralRu(n, one, few, many)` — Russian plural rule: n%10==1 && n%100!=11 → one; n%10 in 2..4 && n%100 not in 12..14 → few; else many (41 → "41 глава", NOT "41 Главы")
 - **Routing model (decision record `idea/routing.md` — read before touching URL structure)**: flat URLs — content language is DATA (`lang` field on BookMeta/WordCategory), never in URLs. Translation language = app setting (UI lang). Word lesson ids are per-language slugs (`/words/pronouns/` es, `/words/pronoms/` fr later). Chapter URLs `/books/andanzas/{slug}` are permanent — no `_redirects`. Source language is NOT a persistent setting (chooser sections only). `<html lang>` = content language on content pages (Layout `contentLang` prop + `data-content-lang` marker; `setLang` skips the lang override when the marker is present, so a UI switch can't clobber content lang). Glosses stay RU-only until the per-language gloss data task (routing.md §7)
-- **URL restructure plan exists**: `.pi/plans/restructure-routing/` (11 WPs, 3 phases) — chooser at `/`, `/books/[book]/` landing, generic reader, `/words/[category]/` + pronouns lesson (69 entries, 9 groups, RU content). Reviewed + 5 fixes applied 2026-09-05 (WP-5/6 swap, setLang guard, contentLang from data). NOT yet executed
+- **URL restructure EXECUTED 2026-09-05** (plan `.pi/plans/restructure-routing/`, 11 WPs / 3 phases): chooser at `/` (per-language sections from `languages` registry), generic `/books/[book]/` landing, generic reader `/books/[book]/[slug]` (chapter URLs unchanged), `/words/[category]/` + pronouns lesson (69 entries, 9 groups, RU content). `lang` field on BookMeta/WordCategory; Layout `contentLang`/`description` props; `setLang` guard. Verified: astro check 0 errors, build 44 pages, 51 tests, 5 routes probe 200. Deployment pending user go-ahead
 - Book data as plain JSON under `src/data/books/{id}/` (meta.json, chapters/, tokens/, glosses/) loaded via `import.meta.glob` — NOT content collections
 
 ## Design System
@@ -36,7 +36,7 @@
 - **Audit skills (audit-add-test, audit-lighthouse-loop, audit-perf) run AFTER the build as a user-driven polish stage** — not executor WPs; audits need a stable build
 - Temp/working files MUST be created in `.tmp/` under the repo root, never in system `/tmp/` or outside the workspace. `.tmp/` should be in `.gitignore`. Clean up with `rm -rf .tmp/` after use.
 - **URL structure changes require updating `idea/routing.md` first** — it is the source of truth for routing & language handling
-- **JSX convention**: React islands use `className` (see BookIntro.tsx); Astro templates use `class`
+- **JSX convention**: React islands use `className` (see BookLanding.tsx); Astro templates use `class`
 - **Never deploy unless the user explicitly asks in the current request**
 
 ## Lessons
@@ -60,6 +60,8 @@
 - **Tokenizer**: word regex must include digits (`[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+`) — a letter-only regex makes "all digits → null" dead code
 - **`import.meta.glob` in Astro pages must live INSIDE `getStaticPaths()`** — the docs' Caution: getStaticPaths runs in its own isolated scope and can only reference file imports, not frontmatter variables. A frontmatter `const tokenFiles = import.meta.glob(...)` used only in getStaticPaths gets DROPPED by the compiler (no warning) → build fails with "tokenFiles is not defined". Move the glob calls into getStaticPaths (Vite still transforms them there).
 - **Biome autofix** rewrites quotes; plan success checks may grep for exact quote style (e.g. `format: "json"`) — restore if biome flips it
+- **LSP JSON false positive after edit**: a valid JSON file can briefly report "End of file expected" from a stale LSP buffer right after an edit — verify with `node -e "JSON.parse(...)"` and `touch` the file to refresh the server before trusting the diagnostic
+- **Plan grep checks can match i18n string dicts**: WP-8's `grep "← Home"` check matched the `backHome` string WP-4 itself mandates — check intent (no hardcoded links in templates) over literal grep when the plan's own WPs conflict
 - Bash guardrail blocks inline python with backslash regexes — write scratch scripts to `.tmp/` instead
 - Don Quijote original (1605) is archaic 17th-century Spanish — hard even for natives; not a learner's first book
 - Platero y yo (Jiménez, 1914): PD in US, but EU copyright until 2029 — avoid for public sites

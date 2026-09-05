@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import BookIntro from '../components/BookIntro.tsx'
+import Chooser from '../components/Chooser.tsx'
 import { books } from '../lib/books'
+import { categories } from '../lib/words'
 import JsonLd from '../components/JsonLd.astro'
 ---
 
-<Layout>
+<Layout
+  title="Aprende español"
+  description="Учите испанский язык: читайте книги с интегрированным словарём и изучайте слова по темам."
+>
   <JsonLd
     schema={{
       '@context': 'https://schema.org',
@@ -24,15 +28,7 @@ import JsonLd from '../components/JsonLd.astro'
     }}
   />
   <main class="max-w-2xl mx-auto px-4 py-8">
-    <BookIntro book={books[0]} client:load />
-    <ul class="mt-8">
-      {books[0].chapters.map((c) => (
-        <li>
-          <a href={`/books/andanzas/${c.id}`} class="block py-2 border-b border-line hover:text-accent">
-            {c.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <h1 class="text-2xl font-bold mb-6">Aprende español</h1>
+    <Chooser books={books} categories={categories} client:load />
   </main>
 </Layout>

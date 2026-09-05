@@ -1,0 +1,123 @@
+{
+  "id": "pronouns",
+  "lang": "es",
+  "title": { "ru": "Местоимения", "en": "Pronouns" },
+  "groups": [
+    {
+      "title": "Личные (подлежащее)",
+      "items": [
+        { "es": "yo", "pos": "pron. pers.", "ru": "я", "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "tú", "pos": "pron. pers.", "ru": "ты", "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "vos", "pos": "pron. pers.", "ru": "ты", "grammar": "2-е лицо, ед. ч.", "note": "voseo: употребляется в Аргентине, Уругвае и др. вместо tú" },
+        { "es": "usted", "pos": "pron. pers.", "ru": "Вы (вежл.)", "grammar": "3-е лицо, ед. ч.", "note": "вежливая форма, согласуется с глаголом в 3-м лице" },
+        { "es": "él", "pos": "pron. pers.", "ru": "он", "grammar": "3-е лицо, ед. ч., м. р.", "note": null },
+        { "es": "ella", "pos": "pron. pers.", "ru": "она", "grammar": "3-е лицо, ед. ч., ж. р.", "note": null },
+        { "es": "nosotros", "pos": "pron. pers.", "ru": "мы", "grammar": "1-е лицо, мн. ч., м. р.", "note": "также для смешанной группы" },
+        { "es": "nosotras", "pos": "pron. pers.", "ru": "мы", "grammar": "1-е лицо, мн. ч., ж. р.", "note": "только о женщинах" },
+        { "es": "vosotros", "pos": "pron. pers.", "ru": "вы", "grammar": "2-е лицо, мн. ч., м. р.", "note": "только в Испании" },
+        { "es": "vosotras", "pos": "pron. pers.", "ru": "вы", "grammar": "2-е лицо, мн. ч., ж. р.", "note": "только в Испании" },
+        { "es": "ustedes", "pos": "pron. pers.", "ru": "вы; Вы (вежл. мн.)", "grammar": "3-е лицо, мн. ч.", "note": "в Испании — только вежливое мн. ч.; в Латинской Америке заменяет vosotros" },
+        { "es": "ellos", "pos": "pron. pers.", "ru": "они", "grammar": "3-е лицо, мн. ч., м. р.", "note": null },
+        { "es": "ellas", "pos": "pron. pers.", "ru": "они", "grammar": "3-е лицо, мн. ч., ж. р.", "note": null }
+      ]
+    },
+    {
+      "title": "Прямое дополнение (винительный падеж)",
+      "items": [
+        { "es": "me", "pos": "pron. pers. (acus.)", "ru": "меня", "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "te", "pos": "pron. pers. (acus.)", "ru": "тебя", "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "lo", "pos": "pron. pers. (acus.)", "ru": "его; это", "grammar": "3-е лицо, ед. ч., м. р.", "note": "в Испании также вежливое «Вас» (м. р.)" },
+        { "es": "la", "pos": "pron. pers. (acus.)", "ru": "её", "grammar": "3-е лицо, ед. ч., ж. р.", "note": "в Испании также вежливое «Вас» (ж. р.)" },
+        { "es": "nos", "pos": "pron. pers. (acus.)", "ru": "нас", "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "os", "pos": "pron. pers. (acus.)", "ru": "вас", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "los", "pos": "pron. pers. (acus.)", "ru": "их", "grammar": "3-е лицо, мн. ч., м. р.", "note": "также вежливое «Вас» (мн. ч.)" },
+        { "es": "las", "pos": "pron. pers. (acus.)", "ru": "их", "grammar": "3-е лицо, мн. ч., ж. р.", "note": "также вежливое «Вас» (мн. ч., ж. р.)" }
+      ]
+    },
+    {
+      "title": "Косвенное дополнение (дательный падеж)",
+      "items": [
+        { "es": "me", "pos": "pron. pers. (dat.)", "ru": "мне", "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "te", "pos": "pron. pers. (dat.)", "ru": "тебе", "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "le", "pos": "pron. pers. (dat.)", "ru": "ему, ей, Вам", "grammar": "3-е лицо, ед. ч.", "note": null },
+        { "es": "nos", "pos": "pron. pers. (dat.)", "ru": "нам", "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "os", "pos": "pron. pers. (dat.)", "ru": "вам", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "les", "pos": "pron. pers. (dat.)", "ru": "им, Вам", "grammar": "3-е лицо, мн. ч.", "note": null }
+      ]
+    },
+    {
+      "title": "Предложные (после предлогов)",
+      "note": "После предлогов также используются формы подлежащего: para él, para ella, para usted, para nosotros, para vosotros, para ellos.",
+      "items": [
+        { "es": "mí", "pos": "pron. pers. (prep.)", "ru": "меня", "grammar": "1-е лицо, ед. ч.", "note": "после предлога: para mí" },
+        { "es": "ti", "pos": "pron. pers. (prep.)", "ru": "тебя", "grammar": "2-е лицо, ед. ч.", "note": "после предлога: para ti" },
+        { "es": "sí", "pos": "pron. pers. (prep.)", "ru": "себя", "grammar": "3-е лицо", "note": "после предлога: para sí" },
+        { "es": "conmigo", "pos": "pron. pers. (prep.)", "ru": "со мной", "grammar": "1-е лицо, ед. ч.", "note": "слитная форма: con + mí" },
+        { "es": "contigo", "pos": "pron. pers. (prep.)", "ru": "с тобой", "grammar": "2-е лицо, ед. ч.", "note": "слитная форма: con + ti" },
+        { "es": "consigo", "pos": "pron. pers. (prep.)", "ru": "с собой", "grammar": "3-е лицо", "note": "слитная форма: con + sí" }
+      ]
+    },
+    {
+      "title": "Притяжательные",
+      "note": "Краткие формы стоят перед существительным (mi casa); полные — после существительного (un amigo mío) или с артиклем (el mío).",
+      "items": [
+        { "es": "mi / mis", "pos": "pron. poses.", "ru": "мой, моя / мои", "grammar": "1-е лицо, ед. ч.", "note": null },
+        { "es": "tu / tus", "pos": "pron. poses.", "ru": "твой, твоя / твои", "grammar": "2-е лицо, ед. ч.", "note": null },
+        { "es": "su / sus", "pos": "pron. poses.", "ru": "его, её, Ваш, их", "grammar": "3-е лицо", "note": null },
+        { "es": "nuestro / nuestra / nuestros / nuestras", "pos": "pron. poses.", "ru": "наш / наша / наши", "grammar": "1-е лицо, мн. ч.", "note": null },
+        { "es": "vuestro / vuestra / vuestros / vuestras", "pos": "pron. poses.", "ru": "ваш / ваша / ваши", "grammar": "2-е лицо, мн. ч.", "note": "только в Испании" },
+        { "es": "mío / mía / míos / mías", "pos": "pron. poses.", "ru": "мой (полная форма)", "grammar": "1-е лицо, ед. ч.", "note": "un amigo mío" },
+        { "es": "tuyo / tuya / tuyos / tuyas", "pos": "pron. poses.", "ru": "твой (полная форма)", "grammar": "2-е лицо, ед. ч.", "note": "un amigo tuyo" },
+        { "es": "suyo / suya / suyos / suyas", "pos": "pron. poses.", "ru": "его, её, их (полная форма)", "grammar": "3-е лицо", "note": "un amigo suyo" }
+      ]
+    },
+    {
+      "title": "Указательные",
+      "items": [
+        { "es": "este / esta / estos / estas", "pos": "pron. dem.", "ru": "этот / эта / эти", "grammar": "близко к говорящему", "note": null },
+        { "es": "ese / esa / esos / esas", "pos": "pron. dem.", "ru": "тот / та / те", "grammar": "ближе к собеседнику", "note": null },
+        { "es": "aquel / aquella / aquellos / aquellas", "pos": "pron. dem.", "ru": "тот / та / те", "grammar": "далеко от обоих", "note": null },
+        { "es": "esto", "pos": "pron. dem.", "ru": "это", "grammar": "ср. род, без существительного", "note": null },
+        { "es": "eso", "pos": "pron. dem.", "ru": "то", "grammar": "ср. род, без существительного", "note": null },
+        { "es": "aquello", "pos": "pron. dem.", "ru": "то (далёкое)", "grammar": "ср. род, без существительного", "note": null }
+      ]
+    },
+    {
+      "title": "Относительные",
+      "items": [
+        { "es": "que", "pos": "pron. rel.", "ru": "который, которая; что", "grammar": "неизменяемое", "note": null },
+        { "es": "quien / quienes", "pos": "pron. rel.", "ru": "кто; который", "grammar": "о людях", "note": null },
+        { "es": "el que / la que / los que / las que", "pos": "pron. rel.", "ru": "тот, который / та, которая / те, которые", "grammar": "согласуется с существительным", "note": null },
+        { "es": "lo que", "pos": "pron. rel.", "ru": "то, что", "grammar": "ср. род", "note": null },
+        { "es": "cuyo / cuya / cuyos / cuyas", "pos": "pron. rel.", "ru": "чей / чья / чьи", "grammar": "притяжательное относительное", "note": null }
+      ]
+    },
+    {
+      "title": "Вопросительные и восклицательные",
+      "items": [
+        { "es": "qué", "pos": "pron. interr.", "ru": "что? какой?", "grammar": "всегда с ударением", "note": null },
+        { "es": "quién / quiénes", "pos": "pron. interr.", "ru": "кто?", "grammar": "ед. / мн. ч.", "note": null },
+        { "es": "cuál / cuáles", "pos": "pron. interr.", "ru": "который? какой?", "grammar": "какой из?", "note": null },
+        { "es": "cuánto / cuánta / cuántos / cuántas", "pos": "pron. interr.", "ru": "сколько?", "grammar": "согласуется с существительным", "note": null }
+      ]
+    },
+    {
+      "title": "Неопределённые",
+      "items": [
+        { "es": "alguien", "pos": "pron. indef.", "ru": "кто-то, кто-нибудь", "grammar": "только о людях", "note": null },
+        { "es": "nadie", "pos": "pron. indef.", "ru": "никто", "grammar": "только о людях", "note": null },
+        { "es": "algo", "pos": "pron. indef.", "ru": "что-то, нечто", "grammar": "только о предметах", "note": null },
+        { "es": "nada", "pos": "pron. indef.", "ru": "ничто, ничего", "grammar": "только о предметах", "note": null },
+        { "es": "alguno / alguna / algunos / algunas", "pos": "pron. indef.", "ru": "какой-нибудь, некоторый", "grammar": null, "note": null },
+        { "es": "ninguno / ninguna", "pos": "pron. indef.", "ru": "никакой, ни один", "grammar": null, "note": null },
+        { "es": "cada", "pos": "pron. indef.", "ru": "каждый", "grammar": "неизменяемое", "note": null },
+        { "es": "cualquiera", "pos": "pron. indef.", "ru": "любой, какой угодно", "grammar": null, "note": null },
+        { "es": "todo / toda / todos / todas", "pos": "pron. indef.", "ru": "весь, вся, все", "grammar": null, "note": null },
+        { "es": "otro / otra / otros / otras", "pos": "pron. indef.", "ru": "другой, иная, другие", "grammar": null, "note": null },
+        { "es": "mucho / mucha / muchos / muchas", "pos": "pron. indef.", "ru": "много, многие", "grammar": null, "note": null },
+        { "es": "poco / poca / pocos / pocas", "pos": "pron. indef.", "ru": "мало, немногие", "grammar": null, "note": null },
+        { "es": "varios / varias", "pos": "pron. indef.", "ru": "несколько, некоторые", "grammar": null, "note": null }
+      ]
+    }
+  ]
+}

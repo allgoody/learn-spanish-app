@@ -4,16 +4,18 @@ import HeaderMenu from '../components/HeaderMenu.tsx'
 
 interface Props {
   title?: string
+  description?: string
+  contentLang?: string
 }
 
-const { title = 'Aprende español' } = Astro.props
+const { title = 'Aprende español', description = 'Aprende español leyendo «Andanzas y visiones españolas» de Miguel de Unamuno, con glosario integrado.', contentLang } = Astro.props
 ---
 
-<html lang="es">
+<html lang={contentLang ?? 'es'} data-content-lang={contentLang ? '' : undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Aprende español leyendo «Andanzas y visiones españolas» de Miguel de Unamuno, con glosario integrado." />
+    <meta name="description" content={description} />
     <link rel="canonical" href={Astro.url} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:image" content="/og.png" />
@@ -25,9 +27,11 @@ const { title = 'Aprende español' } = Astro.props
           if (t === 'light' || t === 'dark') {
             document.documentElement.setAttribute('data-theme', t)
           }
-          var l = localStorage.getItem('lang')
-          if (l === 'ru' || l === 'en') {
-            document.documentElement.lang = l
+          if (!document.documentElement.hasAttribute('data-content-lang')) {
+            var l = localStorage.getItem('lang')
+            if (l === 'ru' || l === 'en') {
+              document.documentElement.lang = l
+            }
           }
         } catch (e) {}
       })()

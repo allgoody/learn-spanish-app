@@ -1,28 +1,31 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
 import Reader from '../../../components/Reader.tsx'
-import meta from '../../../data/books/andanzas/meta.json'
+import { books } from '../../../lib/books'
 import type { Token, GlossLibrary } from '../../../lib/types'
 
 export function getStaticPaths() {
   // globs must live here: getStaticPaths runs in its own scope and can only
   // reference file imports, not frontmatter variables
-  const tokenFiles = import.meta.glob('../../../data/books/andanzas/tokens/*.json', {
+  const tokenFiles = import.meta.glob('../../../data/books/*/tokens/*.json', {
     eager: true,
     import: 'default',
   })
-  const glossFiles = import.meta.glob('../../../data/books/andanzas/glosses/*.json', {
+  const glossFiles = import.meta.glob('../../../data/books/*/glosses/*.json', {
     eager: true,
     import: 'default',
   })
-  return meta.chapters.map((c) => ({
-    params: { slug: c.id },
-    props: {
-      chapter: c,
-      tokens: tokenFiles[`../../../data/books/andanzas/tokens/${c.id}.json`] as Token[],
-      glosses: glossFiles[`../../../data/books/andanzas/glosses/${c.id}.json`] as GlossLibrary,
-    },
-  }))
+  return books.flatMap((book) =>
+    book.chapters.map((c) => ({
+      params: { book: book.id, slug: c.id },
+      props: {
+        book,
+        chapter: c,
+        tokens: tokenFiles[`../../../data/books/${book.id}/tokens/${c.id}.json`] as Token[],
+        glosses: glossFiles[`../../../data/books/${book.id}/glosses/${c.id}.json`] as GlossLibrary,
+      },
+    })),
+  )
 }
 
 // 2+ consecutive \n tokens = paragraph break; single \n = soft line wrap → space
@@ -54,14 +57,14 @@ function splitParagraphs(tokens: Token[]): Token[][] {
   return paras
 }
 
-const { chapter, tokens, glosses } = Astro.props
+const { book, chapter, tokens, glosses } = Astro.props
 const paragraphs = splitParagraphs(tokens)
-const idx = meta.chapters.findIndex((c) => c.id === chapter.id)
-const prev = idx > 0 ? meta.chapters[idx - 1] : null
-const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
+const idx = book.chapters.findIndex((c) => c.id === chapter.id)
+const prev = idx > 0 ? book.chapters[idx - 1] : null
+const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null
 ---
 
-<Layout title={chapter.title}>
+<Layout title={chapter.title} contentLang={book.lang}>
   <article class="max-w-2xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">{chapter.title}</h1>
     {paragraphs.map((para) => (
@@ -79,14 +82,14 @@ const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
     ))}
     <nav class="mt-10 flex justify-between text-sm">
       {prev ? (
-        <a href={`/books/andanzas/${prev.id}`} class="hover:text-accent">
+        <a href={`/books/${book.id}/${prev.id}`} class="hover:text-accent">
           ← {prev.title}
         </a>
       ) : (
         <span />
       )}
       {next ? (
-        <a href={`/books/andanzas/${next.id}`} class="hover:text-accent">
+        <a href={`/books/${book.id}/${next.id}`} class="hover:text-accent">
           {next.title} →
         </a>
       ) : (
@@ -94,8 +97,8 @@ const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
       )}
     </nav>
     <div class="mt-6 text-center">
-      <a href="/" class="text-sm text-muted hover:text-accent">
-        ← Home
+      <a href={`/books/${book.id}/`} class="text-sm text-muted hover:text-accent">
+        ← {book.title}
       </a>
     </div>
   </article>

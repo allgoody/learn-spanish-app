@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import BookLanding from '../../../components/BookLanding.tsx'
+import { books } from '../../../lib/books'
+
+export function getStaticPaths() {
+  return books.map((b) => ({
+    params: { book: b.id },
+    props: { book: b },
+  }))
+}
+
+const { book } = Astro.props
+---
+
+<Layout title={book.title} contentLang={book.lang}>
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <BookLanding book={book} client:load />
+  </main>
+</Layout>

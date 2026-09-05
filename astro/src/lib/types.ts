@@ -19,9 +19,28 @@ export interface ChapterMeta {
 }
 export interface BookMeta {
   id: string;
+  lang: string;
   title: string;
   author: string;
   source: string;
   chapters: ChapterMeta[];
+}
+export interface WordEntry {
+  es: string;
+  pos: string;
+  ru: string;
+  grammar?: string | null;
+  note?: string | null;
+}
+export interface WordGroup {
+  title: string;
+  note?: string | null;
+  items: WordEntry[];
+}
+export interface WordCategory {
+  id: string;
+  lang: string;
+  title: { ru: string; en: string };
+  groups: WordGroup[];
 }
 export type GlossLibrary = Record<string, Gloss>;
