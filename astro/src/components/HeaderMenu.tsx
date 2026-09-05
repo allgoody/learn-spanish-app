@@ -8,7 +8,10 @@ import {
 } from "../lib/i18n";
 import { getTheme, setTheme, onThemeChange, type Theme } from "../lib/theme";
 
-const LANGS: Lang[] = ["ru", "en"];
+// ponytail: English removed from the app language toggle (2026-09-05) — the
+// group is hidden while only one language exists. Re-add "en" when URL-based
+// i18n lands (see .pi/CONTEXT.md "Multi-language").
+const LANGS: Lang[] = ["ru"];
 const THEMES: Theme[] = ["light", "dark", "system"];
 
 export default function HeaderMenu() {
@@ -89,24 +92,26 @@ export default function HeaderMenu() {
           id="header-menu"
           className="absolute right-0 top-full z-50 mt-2 w-60 rounded-lg border border-line bg-paper p-3 shadow-lg"
         >
-          <div role="group" aria-label={s.appLanguage}>
-            <div className="text-xs font-semibold text-muted">
-              {s.appLanguage}
+          {LANGS.length > 1 && (
+            <div role="group" aria-label={s.appLanguage}>
+              <div className="text-xs font-semibold text-muted">
+                {s.appLanguage}
+              </div>
+              <div className="mt-1.5 flex gap-1.5">
+                {LANGS.map((l) => (
+                  <button
+                    key={l}
+                    type="button"
+                    aria-pressed={lang === l}
+                    onClick={() => setLang(l)}
+                    className={seg(lang === l)}
+                  >
+                    {l === "ru" ? "Русский" : "English"}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="mt-1.5 flex gap-1.5">
-              {LANGS.map((l) => (
-                <button
-                  key={l}
-                  type="button"
-                  aria-pressed={lang === l}
-                  onClick={() => setLang(l)}
-                  className={seg(lang === l)}
-                >
-                  {l === "ru" ? "Русский" : "English"}
-                </button>
-              ))}
-            </div>
-          </div>
+          )}
           <div
             role="group"
             aria-label={s.colorTheme}

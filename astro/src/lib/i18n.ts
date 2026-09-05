@@ -63,8 +63,9 @@ export function chapterCount(n: number, lang: Lang): string {
 }
 
 export function getLang(): Lang {
-  if (typeof localStorage === "undefined") return "ru";
-  return localStorage.getItem("lang") === "en" ? "en" : "ru";
+  // ponytail: English removed from the app (2026-09-05) — stale localStorage
+  // "en" prefs are ignored until URL-based i18n lands (see .pi/CONTEXT.md).
+  return "ru";
 }
 
 const listeners = new Set<(l: Lang) => void>();

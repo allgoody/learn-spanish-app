@@ -14,7 +14,7 @@ describe("HeaderMenu", () => {
     const btn = screen.getByRole("button", { name: "Меню" });
     expect(btn).toHaveAttribute("aria-expanded", "false");
     expect(
-      screen.queryByRole("group", { name: "Язык приложения" }),
+      screen.queryByRole("group", { name: "Цветовая тема" }),
     ).not.toBeInTheDocument();
   });
 
@@ -26,13 +26,13 @@ describe("HeaderMenu", () => {
     await user.click(btn);
     expect(btn).toHaveAttribute("aria-expanded", "true");
     expect(
-      screen.getByRole("group", { name: "Язык приложения" }),
+      screen.getByRole("group", { name: "Цветовая тема" }),
     ).toBeInTheDocument();
 
     await user.click(btn);
     expect(btn).toHaveAttribute("aria-expanded", "false");
     expect(
-      screen.queryByRole("group", { name: "Язык приложения" }),
+      screen.queryByRole("group", { name: "Цветовая тема" }),
     ).not.toBeInTheDocument();
   });
 
@@ -43,7 +43,7 @@ describe("HeaderMenu", () => {
 
     await user.click(document.body);
     expect(
-      screen.queryByRole("group", { name: "Язык приложения" }),
+      screen.queryByRole("group", { name: "Цветовая тема" }),
     ).not.toBeInTheDocument();
   });
 
@@ -72,16 +72,13 @@ describe("HeaderMenu", () => {
     expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
   });
 
-  it("switches app language and re-renders the menu labels", async () => {
+  it("hides the app language group while only Russian exists", async () => {
     const user = userEvent.setup();
     render(<HeaderMenu />);
     await user.click(screen.getByRole("button", { name: "Меню" }));
 
-    await user.click(screen.getByRole("button", { name: "English" }));
-    expect(localStorage.getItem("lang")).toBe("en");
     expect(
-      screen.getByRole("group", { name: "App language" }),
-    ).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Dark" })).toBeInTheDocument();
+      screen.queryByRole("group", { name: "Язык приложения" }),
+    ).not.toBeInTheDocument();
   });
 });

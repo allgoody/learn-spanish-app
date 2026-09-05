@@ -68,18 +68,18 @@ describe("lang", () => {
     expect(getLang()).toBe("ru");
   });
 
-  it("reads en from storage", () => {
+  it("ignores stale en from storage (English removed 2026-09-05)", () => {
     localStorage.setItem("lang", "en");
-    expect(getLang()).toBe("en");
+    expect(getLang()).toBe("ru");
   });
 
   it("setLang persists, sets html lang, and notifies listeners", () => {
     const seen: string[] = [];
     const off = onLangChange((l) => seen.push(l));
-    setLang("en");
-    expect(localStorage.getItem("lang")).toBe("en");
-    expect(document.documentElement.lang).toBe("en");
-    expect(seen).toEqual(["en"]);
+    setLang("ru");
+    expect(localStorage.getItem("lang")).toBe("ru");
+    expect(document.documentElement.lang).toBe("ru");
+    expect(seen).toEqual(["ru"]);
     off();
   });
 });
