@@ -8,9 +8,11 @@
 ## Architecture
 
 - **Build-time gloss pipeline**: script downloads book → cleans → tokenizes → dedupes word forms → LLM batch-glosses with context sentences → commits `glosses.json` (word → {lemma, pos, ru, grammar, note})
-- **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases (inlined/small JSON); phrase recognition via longest-match ("a pesar de" = one unit)
+- **Gloss pipeline resilience (plan v2)**: `glosses.json` is written incrementally after EVERY batch so an interrupted run resumes; up to 3 context sentences per key (first 3 distinct occurrences, located by case-insensitive `indexOf` — the tokenizer emits no positions); parse/merge logic lives in pure tested helpers (`scripts/lib/gloss-parse.mjs`: `parseBatchResponse`/`mergeGlosses`/`pendingKeys`)
+- **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases (inlined/small JSON); phrase recognition via longest-match ("a pesar de" = one unit). `import.meta.glob` eager in frontmatter is fine — it stays server-side; island props serialize per-page
 - **Gloss schema (future-proof, all fields optional)**: lemma, pos, ipa, ru, grammar {tense, mood, person, number}, cefr, modern (archaic→modern), false_friend, note, examples
-- **Reader UI**: every word rendered as a span with `data-word`; ONE delegated event handler; popup on hover (desktop) / bottom-sheet on tap (mobile)
+- **Reader UI**: every word rendered as a span with `data-word`; ONE delegated event handler; popup on hover (desktop) / bottom-sheet on tap (mobile). Paragraphs preserved via `splitParagraphs` (2+ consecutive `\n` tokens = break) — never render a whole chapter in one `<p>`. Popup has `popupRef`; close-on-outside rules must exclude targets inside the popup (hovering the tooltip / tapping or scrolling inside the sheet must NOT close it). Glossable spans: `tabindex="0" role="button"`; Enter/Space opens
+- **i18n**: `chapterCount(n, lang)` with `pluralRu(n, one, few, many)` — Russian plural rule: n%10==1 && n%100!=11 → one; n%10 in 2..4 && n%100 not in 12..14 → few; else many (41 → "41 глава", NOT "41 Главы")
 - Books as structured chapters (markdown/JSON) in content collections
 
 ## Design System
@@ -24,6 +26,7 @@
 - **v1 scope: reading + glosses only** — known-words tracking, TTS audio, SRS = later phases
 - **UI: Russian + English toggle** (glosses always in Russian)
 - **Copyright**: public domain books ONLY in the public app. User's own modern book = private use only (no public deploy)
+- **Audit skills (audit-add-test, audit-lighthouse-loop, audit-perf) run AFTER the build as a user-driven polish stage** — not executor WPs; audits need a stable build
 - Temp/working files MUST be created in `.tmp/` under the repo root, never in system `/tmp/` or outside the workspace. `.tmp/` should be in `.gitignore`. Clean up with `rm -rf .tmp/` after use.
 - Never deploy unless the user explicitly asks in the current request
 
@@ -32,7 +35,10 @@
 - **The book has 41 essays, not 37** — verified against the actual Gutenberg text; the ÍNDICE has 41 entries
 - One essay title spans two all-caps lines (`EL CRISTO YACENTE DE SANTA CLARA` + `(IGLESIA DE LA CRUZ) DE PALENCIA`) — title matching needs a two-line join fallback
 - Index continuation logic: a line WITHOUT a trailing page number STARTS a wrapped entry (does not continue the previous one)
-- Body has 48 all-caps lines but only 41 are titles (7 versalitas false positives) — always match against index titles, never split on all-caps lines alone
+- Body has 48 all-caps lines but only 41 are titles (7 versalitas false positives: RECUERDO DE MALLORCA, EL CAMPO ES UNA METÁFORA, JUNTO A LA VIEJA COLEGIATA, Roman numerals I–IV) — always match against index titles, never split on all-caps lines alone
+- **Plan review lesson: a "resumable" script that only writes its state at the end is not resumable** — persist incrementally (glosses.json after each batch)
+- **Plan review lesson: hover/tap popups must exclude the popup element from close-on-outside logic** — capture-phase scroll listeners fire for scrolls inside the popup; mouseover fires when entering the popup
+- **Plan review lesson: Russian pluralization needs a real rule** — "41 Главы" is wrong; use pluralRu (41 → "41 глава")
 - deepseek-v4-flash:0731-cloud is NOT in the current ollama tags (only gemini-3-flash-preview:latest, qwq:32b) — verify with `curl -s http://localhost:11434/api/tags`
 - Bash guardrail blocks inline python with backslash regexes — write scratch scripts to `.tmp/` instead
 - Don Quijote original (1605) is archaic 17th-century Spanish — hard even for natives; not a learner's first book

@@ -27,7 +27,7 @@ Create `astro/scripts/fetch-book.mjs` that reads the Gutenberg text, strips fron
 
 - `astro/scripts/fetch-book.mjs` — CREATE
 - `astro/src/data/books/andanzas/meta.json` — CREATE (generated)
-- `astro/src/data/books/andanzas/chapters/{id}.txt` — CREATE (generated, 37 files)
+- `astro/src/data/books/andanzas/chapters/{id}.txt` — CREATE (generated, 41 files)
 
 **Constraints:**
 
@@ -62,7 +62,7 @@ Create `astro/scripts/fetch-book.mjs` that reads the Gutenberg text, strips fron
 ### WP-4: Book registry + home page
 
 **Context:**
-`meta.json` now exists at `astro/src/data/books/andanzas/meta.json` (37 chapters). `src/lib/i18n.ts` has `getLang()`, `onLangChange()`, and the `description` string in ru/en. The placeholder home page from WP-2 is at `src/pages/index.astro`.
+`meta.json` now exists at `astro/src/data/books/andanzas/meta.json` (41 chapters). `src/lib/i18n.ts` has `getLang()`, `onLangChange()`, `chapterCount()`, and the `description` string in ru/en. The placeholder home page from WP-2 is at `src/pages/index.astro`.
 
 **Task:**
 Create the book registry module and replace the placeholder home page with the book home: book card (title, author, description in current language, chapter count) + chapter list linking to `/books/andanzas/{id}`.
@@ -76,7 +76,7 @@ Create the book registry module and replace the placeholder home page with the b
 **Constraints:**
 
 - DO: `books.ts` exports `books: BookMeta[]` — import `andanzasMeta from '../data/books/andanzas/meta.json'` and export `[andanzasMeta]`. Also export `getBook(id: string): BookMeta | undefined`.
-- DO: `BookIntro.tsx`: React island, props `{ book: BookMeta }`; useState lang from getLang(); subscribes via onLangChange (useEffect, cleanup with the returned unsubscribe); renders: h1 book.title, p book.author, p strings[lang].description, p `${book.chapters.length} ${strings[lang].chapters}`. Tailwind: h1 `text-2xl font-bold`, author `text-stone-500`, description `mt-2 text-stone-700`.
+- DO: `BookIntro.tsx`: React island, props `{ book: BookMeta }`; useState lang from getLang(); subscribes via onLangChange (useEffect, cleanup with the returned unsubscribe); renders: h1 book.title, p book.author, p strings[lang].description, p chapterCount(book.chapters.length, lang). Tailwind: h1 `text-2xl font-bold`, author `text-stone-500`, description `mt-2 text-stone-700`.
 - DO: `index.astro`: use Layout; render `<main class="max-w-2xl mx-auto px-4 py-8">` with `<BookIntro book={books[0]} client:load />` and a chapter list: `<ul>` of links `<a href={/books/andanzas/${c.id}}>` with chapter titles, styled `block py-2 border-b border-stone-200 hover:text-amber-700`.
 - DO NOT: hardcode the chapter list — always read from `books[0].chapters`.
 - DO NOT: create the chapter page yet (WP-8) — links may 404 until then.
@@ -86,7 +86,7 @@ Create the book registry module and replace the placeholder home page with the b
 - [ ] `grep -n "meta.json" astro/src/lib/books.ts` → 1 match
 - [ ] `grep -c "client:load" astro/src/pages/index.astro` → ≥ 1
 - [ ] `cd astro && npm run build` → exit 0
-- [ ] Manual: `cd astro && npm run dev` → <http://localhost:4321> shows book title, author, RU description, "41 Главы" (or "41 Chapters" after toggling EN), and 41 chapter links
+- [ ] Manual: `cd astro && npm run dev` → <http://localhost:4321> shows book title, author, RU description, "41 глава" (or "41 chapters" after toggling EN), and 41 chapter links
 
 ### WP-5: Tokenizer + tests
 

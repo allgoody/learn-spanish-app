@@ -83,9 +83,10 @@ Create the shared types, the RU/EN i18n module, the base layout with footer (CTD
   export type GlossLibrary = Record<string, Gloss>
   ```
 
-- DO: `i18n.ts` exports: `type Lang = 'ru' | 'en'`, `strings: Record<Lang, Record<string, string>>` with keys: translation, grammar, lemma, pos, level, modern, falseFriend, note, close, prev, next, chapters, description. RU values: Перевод, Грамматика, Словарная форма, Часть речи, Уровень, Современный эквивалент, Ложный друг, Примечание, Закрыть, Назад, Вперёд, Главы, «Странствия и видения Испании» — сборник очерков Мигеля де Унамуно о путешествиях по Испании. EN values: Translation, Grammar, Dictionary form, Part of speech, Level, Modern equivalent, False friend, Note, Close, Previous, Next, Chapters, Andanzas y visiones españolas — Miguel de Unamuno's essay collection on travels through Spain.
+- DO: `i18n.ts` exports: `type Lang = 'ru' | 'en'`, `strings: Record<Lang, Record<string, string>>` with keys: translation, grammar, lemma, pos, level, modern, falseFriend, note, close, description. RU values: Перевод, Грамматика, Словарная форма, Часть речи, Уровень, Современный эквивалент, Ложный друг, Примечание, Закрыть, «Странствия и видения Испании» — сборник очерков Мигеля де Унамуно о путешествиях по Испании. EN values: Translation, Grammar, Dictionary form, Part of speech, Level, Modern equivalent, False friend, Note, Close, Andanzas y visiones españolas — Miguel de Unamuno's essay collection on travels through Spain.
+- DO: `i18n.ts` also exports `chapterCount(n: number, lang: Lang): string` — RU via a small `pluralRu(n, one, few, many)` helper (rule: n%10==1 && n%100!=11 → one; n%10 in 2..4 && n%100 not in 12..14 → few; else many), EN: `${n} ${n === 1 ? 'chapter' : 'chapters'}`. (`41` → `41 глава`, `2` → `2 главы`, `5` → `5 глав`.)
 - DO: `i18n.ts` also exports `getLang(): Lang` (localStorage 'lang', default 'ru'), `setLang(l: Lang)` (writes localStorage, sets `document.documentElement.lang`, notifies subscribers), `onLangChange(cb: (l: Lang) => void): () => void` (returns unsubscribe).
-- DO: `Layout.astro`: `<html lang="es">`, meta charset + viewport, imports global.css, header with site title "Aprende español" and `<LangToggle client:load />`, `<slot />`, footer with the CTDev credit (exact spec in `_index.md` Conventions).
+- DO: `Layout.astro`: `<html lang="es">`, meta charset + viewport, imports global.css, accepts a `title` prop (default `"Aprende español"`) used in `<title>{title}</title>`, header with site title "Aprende español" and `<LangToggle client:load />`, `<slot />`, footer with the CTDev credit (exact spec in `_index.md` Conventions).
 - DO: `global.css`: keep `@import "tailwindcss";` and append:
 
   ```css
@@ -103,6 +104,8 @@ Create the shared types, the RU/EN i18n module, the base layout with footer (CTD
 - [ ] `test -f astro/src/lib/types.ts && test -f astro/src/lib/i18n.ts && test -f astro/src/components/LangToggle.tsx` → exit 0
 - [ ] `grep -c "export interface Gloss" astro/src/lib/types.ts` → 1
 - [ ] `grep -c "onLangChange" astro/src/lib/i18n.ts` → ≥ 1
+- [ ] `grep -c "chapterCount" astro/src/lib/i18n.ts` → ≥ 1
+- [ ] `grep -n "title" astro/src/layouts/Layout.astro` → ≥ 1 match
 - [ ] `grep -n "ctdev.dev" astro/src/layouts/Layout.astro` → 1 match
 - [ ] `grep -n 'target="_blank"' astro/src/layouts/Layout.astro` → 1 match
 - [ ] `grep -n "glossable" astro/src/styles/global.css` → ≥ 1

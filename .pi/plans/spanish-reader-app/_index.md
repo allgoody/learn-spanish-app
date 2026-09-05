@@ -45,6 +45,8 @@ Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of th
 
 **Gloss key normalization:** lowercase surface form, accents KEPT (`Habló` → `habló`). Phrase keys = lowercase phrase (`a pesar de`). Numbers and punctuation get `w: null` (no gloss).
 
+**Note on `idea/findings.md`:** its §6 "Gloss model: deepseek-v4-flash" was a research note, NOT a decision — the user picks the model at run time (WP-7). The plan and scripts never default to a model.
+
 ## Global Constraints
 
 - **DO NOT set, choose, or default an LLM model anywhere** — not in scripts, not in commands, not in prompts. `scripts/gloss.mjs` requires `--model <name>` or env `GLOSS_MODEL` and exits 1 with a clear message if neither is given. The user supplies the model at run time (WP-7).
@@ -76,6 +78,15 @@ Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of th
 | 3 | Gloss Pipeline | phase-03-gloss-pipeline.md | WP-6–WP-7 | Phase 2 |
 | 4 | Reader UI | phase-04-reader-ui.md | WP-8–WP-10 | Phase 3 |
 
+## Post-Build Polish (after Phase 4, user-driven — NOT executor work)
+
+Run these as a separate stage once the app is stable; they are interactive skills, not plan WPs:
+
+- `/skill:audit-add-test` — component tests for the Reader island (popup/sheet interaction), LangToggle, BookIntro
+- `/skill:audit-lighthouse-loop` and `/skill:audit-perf` — performance gates against the final build
+
+Deferred deliberately: audits need a finished, stable build — running them mid-build churns on findings that later phases invalidate. The plan's per-phase verification (build + check + tests + manual checklist) is the in-build gate.
+
 ## File Map
 
 **Phase 1:**
@@ -103,6 +114,8 @@ Build v1 of a static Spanish-learning web app in the `astro/` subdirectory of th
 
 - `astro/scripts/data/phrases.json` — CREATE — seed phrase list (specified in WP-6)
 - `astro/scripts/gloss.mjs` — CREATE — LLM gloss pipeline (model required, no default)
+- `astro/scripts/lib/gloss-parse.mjs` — CREATE — pure batch-parse/merge helpers (tested)
+- `astro/test/gloss-parse.test.mjs` — CREATE — vitest tests
 - `astro/src/data/books/andanzas/tokens/{id}.json` — CREATE (generated, 41 files)
 - `astro/src/data/books/andanzas/glosses/{id}.json` — CREATE (generated, 41 files)
 - `astro/src/data/books/andanzas/glosses.json` — CREATE (generated, merged)
