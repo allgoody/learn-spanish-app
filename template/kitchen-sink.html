@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template Style Audit — Kitchen Sink</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .kitchen-sink {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .audit-banner {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="kitchen-sink">
+        <header class="audit-banner">
+          <h1>Template Style Audit — Kitchen Sink</h1>
+          <p>
+            Link this page to your project's stylesheet. Elements with no
+            matching style render with browser defaults — those are the gaps to
+            fill.
+          </p>
+          <p>
+            <button type="button" class="btn btn-secondary" id="theme-toggle">
+              Toggle dark theme
+            </button>
+          </p>
+        </header>
+
+        <!-- ============================================================ -->
+        <!-- 1. Typography -->
+        <!-- ============================================================ -->
+        <section id="typography">
+          <h2>Typography</h2>
+          <p>
+            h1 and h2 are demonstrated by this page's own header and section
+            titles; the scale below shows h3–h6.
+          </p>
+          <h3>Heading Level 3</h3>
+          <h4>Heading Level 4</h4>
+          <h5>Heading Level 5</h5>
+          <h6>Heading Level 6</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="lead">
+            This is a lead paragraph — typically larger and lighter than body
+            text.
+          </p>
+          <p>
+            <small>This is small text for fine print and disclaimers.</small>
+          </p>
+          <blockquote>
+            This is a blockquote — a quotation from another source. It should be
+            visually distinct from surrounding body text.
+            <cite>— Citation source</cite>
+          </blockquote>
+          <p>
+            Inline semantics: <strong>strong</strong>, <em>emphasis</em>,
+            <b>bold</b>, <i>italic</i>, <u>underline</u>, <s>strikethrough</s>,
+            <del>deleted</del>, <ins>inserted</ins>, H<sub>2</sub>O,
+            E=mc<sup>2</sup>, <code>code</code>, <kbd>Ctrl+S</kbd>,
+            <samp>sample output</samp>, <var>variable</var>,
+            <q>inline quote</q>, <mark>highlighted</mark>,
+            <abbr title="Abbreviation">abbr</abbr>, <cite>cite</cite>.
+          </p>
+          <pre>
+This is a bare pre element.
+  It preserves    whitespace
+    and line breaks.
+    </pre>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 2. Lists -->
+        <!-- ============================================================ -->
+        <section id="lists">
+          <h2>Lists</h2>
+          <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+          </ul>
+          <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+          </ol>
+          <dl>
+            <dt>Term 1</dt>
+            <dd>Description for term 1</dd>
+            <dt>Term 2</dt>
+            <dd>Description for term 2</dd>
+          </dl>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 3. Tables -->
+        <!-- ============================================================ -->
+        <section id="tables">
+          <h2>Tables</h2>
+          <table>
+            <caption>
+              Sample table caption
+            </caption>
+            <thead>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 4. Links -->
+        <!-- ============================================================ -->
+        <section id="links">
+          <h2>Links</h2>
+          <p><a href="#typography">A default link</a></p>
+          <p><a href="#typography">A visited-looking link</a></p>
+          <p>
+            <a href="#" class="disabled" aria-disabled="true"
+              >A disabled-looking link</a
+            >
+          </p>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 5. Media -->
+        <!-- ============================================================ -->
+        <section id="media">
+          <h2>Media</h2>
+          <img
+            src="https://placehold.co/600x300"
+            alt="Placeholder image"
+            width="600"
+            height="300"
+          />
+          <figure>
+            <img
+              src="https://placehold.co/400x200"
+              alt="Figure image"
+              width="400"
+              height="200"
+            />
+            <figcaption>A figure with a caption</figcaption>
+          </figure>
+          <picture>
+            <source
+              srcset="https://placehold.co/800x400"
+              media="(min-width: 800px)"
+            />
+            <img
+              src="https://placehold.co/400x200"
+              alt="Picture fallback"
+              width="400"
+              height="200"
+            />
+          </picture>
+          <video controls width="400">
+            <source src="sample.mp4" type="video/mp4" />
+            Video placeholder — no media loaded.
+          </video>
+          <audio controls>
+            <source src="sample.mp3" type="audio/mpeg" />
+            Audio placeholder — no media loaded.
+          </audio>
+          <iframe
+            src="https://example.com"
+            width="400"
+            height="200"
+            title="Example iframe"
+          ></iframe>
+          <canvas width="400" height="200"
+            >Canvas placeholder — no drawing.</canvas
+          >
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 6. Forms -->
+        <!-- ============================================================ -->
+        <section id="forms">
+          <h2>Forms</h2>
+          <form>
+            <fieldset>
+              <legend>Text inputs</legend>
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+              </div>
+              <div>
+                <label for="quantity">Quantity</label>
+                <input
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  value="1"
+                  min="0"
+                  max="10"
+                />
+              </div>
+              <div>
+                <label for="range">Range</label>
+                <input
+                  type="range"
+                  id="range"
+                  name="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="Enter a message"
+                ></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Choice controls</legend>
+              <div>
+                <input type="checkbox" id="agree" name="agree" />
+                <label for="agree">I agree to the terms</label>
+              </div>
+              <div>
+                <input type="radio" id="option1" name="choice" value="1" />
+                <label for="option1">Option 1</label>
+                <input type="radio" id="option2" name="choice" value="2" />
+                <label for="option2">Option 2</label>
+              </div>
+              <div>
+                <label for="select">Select</label>
+                <select id="select" name="select">
+                  <optgroup label="Group A">
+                    <option value="a1">Option A1</option>
+                    <option value="a2">Option A2</option>
+                  </optgroup>
+                  <option value="b1">Option B1</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Meter and progress</legend>
+              <label for="progress-bar">Progress</label>
+              <progress id="progress-bar" value="60" max="100">60%</progress>
+              <br />
+              <label for="meter-bar">Meter</label>
+              <meter id="meter-bar" value="0.6" min="0" max="1">60%</meter>
+            </fieldset>
+            <div>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 7. Separators -->
+        <!-- ============================================================ -->
+        <section id="separators">
+          <h2>Separators</h2>
+          <p>Text before horizontal rule</p>
+          <hr />
+          <p>Text after horizontal rule</p>
+          <p>Line one<br />Line two (after br)</p>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 8. Disclosure -->
+        <!-- ============================================================ -->
+        <section id="disclosure">
+          <h2>Disclosure</h2>
+          <details>
+            <summary>Click to expand details</summary>
+            <p>
+              This content is hidden until the details element is opened. The
+              summary element serves as the toggle.
+            </p>
+          </details>
+          <p>
+            <button type="button" class="btn btn-secondary" id="open-dialog">
+              Open native dialog
+            </button>
+          </p>
+          <dialog id="demo-dialog">
+            <div class="modal-header">Native dialog</div>
+            <div class="modal-body">
+              <p>
+                This is a native dialog element, opened via showModal(). Press
+                Esc or click the button to dismiss.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" id="close-dialog">Close</button>
+            </div>
+          </dialog>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 9. Structure -->
+        <!-- ============================================================ -->
+        <section id="structure">
+          <h2>Document structure</h2>
+          <header>
+            <h3>Site header</h3>
+            <nav aria-label="Site navigation">
+              <ul>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#components">Components</a></li>
+              </ul>
+            </nav>
+          </header>
+          <!-- demo main: the page-level <main> already wraps this page -->
+          <div>
+            <article>
+              <h3>Article title</h3>
+              <p>This is the main article content within a main element.</p>
+              <section>
+                <h4>Article section</h4>
+                <p>A nested section within the article.</p>
+              </section>
+            </article>
+          </div>
+          <footer>
+            <p>Footer content</p>
+            <address>
+              Contact: <a href="mailto:info@example.com">info@example.com</a>
+            </address>
+          </footer>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 10. Generic containers -->
+        <!-- ============================================================ -->
+        <section id="generic">
+          <h2>Generic containers</h2>
+          <div>
+            This is a bare div element with no class — it exercises base div
+            styling.
+          </div>
+          <p>
+            This paragraph contains a <span>bare span element</span> inline — it
+            exercises base span styling.
+          </p>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 11. Components -->
+        <!-- ============================================================ -->
+        <section id="components">
+          <h2>UI Components</h2>
+
+          <h3>Buttons</h3>
+          <button class="btn btn-primary">Primary button</button>
+          <button class="btn btn-secondary">Secondary button</button>
+          <button class="btn btn-ghost">Ghost button</button>
+
+          <h3>Badge</h3>
+          <span class="badge">Default badge</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-info">Info</span>
+
+          <h3>Alerts</h3>
+          <div class="alert alert-info">This is an info alert.</div>
+          <div class="alert alert-success">This is a success alert.</div>
+          <div class="alert alert-warning">This is a warning alert.</div>
+          <div class="alert alert-danger">This is a danger alert.</div>
+
+          <h3>Card</h3>
+          <div class="card">
+            <div class="card-header">Card header</div>
+            <div class="card-body">
+              <p>
+                Card body content goes here. This is the main content area of a
+                card.
+              </p>
+            </div>
+            <div class="card-footer">Card footer</div>
+          </div>
+
+          <h3>Avatar</h3>
+          <div class="avatar">AB</div>
+
+          <h3>Tooltip</h3>
+          <span class="tooltip" data-tooltip="This is a tooltip" tabindex="0"
+            >Hover or focus for tooltip</span
+          >
+
+          <h3>Progress / Spinner / Skeleton</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+          <div class="spinner"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+
+          <h3>Tabs</h3>
+          <div class="tabs">
+            <div class="tab-list">
+              <button class="tab tab-active">Tab 1</button>
+              <button class="tab">Tab 2</button>
+            </div>
+            <div class="tab-panel">Tab 1 content</div>
+            <div class="tab-panel" hidden>Tab 2 content</div>
+          </div>
+
+          <h3>Accordion</h3>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger">Section 1</button>
+              <div class="accordion-content">
+                Accordion content for section 1.
+              </div>
+            </div>
+          </div>
+
+          <h3>Modal</h3>
+          <p>
+            <button type="button" class="btn btn-primary" id="open-modal">
+              Open modal
+            </button>
+          </p>
+          <div
+            class="modal"
+            id="demo-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+          >
+            <div class="modal-overlay"></div>
+            <div class="modal-dialog">
+              <div class="modal-header" id="modal-title">Modal title</div>
+              <div class="modal-body">Modal body content.</div>
+              <div class="modal-footer">
+                <button type="button" class="btn" id="close-modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <h3>Breadcrumb</h3>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Category</a></li>
+              <li>Current page</li>
+            </ol>
+          </nav>
+
+          <h3>Pagination</h3>
+          <nav class="pagination" aria-label="Pagination">
+            <ul>
+              <li><a href="#">&laquo; Prev</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Next &raquo;</a></li>
+            </ul>
+          </nav>
+
+          <h3>Empty state</h3>
+          <div class="empty-state">
+            <p>No items found</p>
+            <button class="btn btn-primary">Add item</button>
+          </div>
+
+          <h3>Code block</h3>
+          <p>Inline code: <code class="code-block">const x = 42</code></p>
+          <pre><code class="code-block">function example() {
+  return "block code";
+}</code></pre>
+        </section>
+      </div>
+    </main>
+    <!-- aside must be a top-level landmark (not nested in main) -->
+    <aside>
+      <h3>Aside / sidebar</h3>
+      <p>Related content in an aside element.</p>
+    </aside>
+    <footer style="text-align: center; padding: 1rem 0 2rem">
+      <a
+        href="https://ctdev.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="font-size: 0.65rem; color: var(--color-muted); opacity: 0.6"
+        >Made by CTDev</a
+      >
+    </footer>
+    <script>
+      // Theme toggle: explicit data-theme wins, otherwise follows system.
+      const root = document.documentElement;
+      const btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", () => {
+        const next = root.dataset.theme === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        btn.textContent =
+          next === "dark" ? "Switch to light theme" : "Toggle dark theme";
+      });
+
+      // Modal: opens only on button click; closes on Close, overlay click, or Esc.
+      // Focus moves into the dialog on open and returns to the trigger on close.
+      const modal = document.getElementById("demo-modal");
+      const openModalBtn = document.getElementById("open-modal");
+      const closeModalBtn = document.getElementById("close-modal");
+      const openModal = () => {
+        modal.classList.add("open");
+        closeModalBtn.focus();
+      };
+      const closeModal = () => {
+        modal.classList.remove("open");
+        openModalBtn.focus();
+      };
+      openModalBtn.addEventListener("click", openModal);
+      closeModalBtn.addEventListener("click", closeModal);
+      modal
+        .querySelector(".modal-overlay")
+        .addEventListener("click", closeModal);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      // Native dialog: opens only on button click; Esc/Close dismiss (native).
+      const dialog = document.getElementById("demo-dialog");
+      document
+        .getElementById("open-dialog")
+        .addEventListener("click", () => dialog.showModal());
+      document
+        .getElementById("close-dialog")
+        .addEventListener("click", () => dialog.close());
+    </script>
+  </body>
+</html>
