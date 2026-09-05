@@ -4,19 +4,19 @@ import Chooser from '../components/Chooser.tsx'
 import { books } from '../lib/books'
 import { categories } from '../lib/words'
 import JsonLd from '../components/JsonLd.astro'
+import { seo, seoLang } from '../lib/seo'
+
+const s = seo[seoLang]
 ---
 
-<Layout
-  title="Aprende español"
-  description="Учите испанский язык: читайте книги с интегрированным словарём и изучайте слова по темам."
->
+<Layout title={s.homeTitle} description={s.homeDescription} contentLang="ru">
   <JsonLd
     schema={{
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'Aprende español',
       url: 'https://learn-words-5mq.pages.dev/',
-      inLanguage: 'es',
+      inLanguage: 'ru',
     }}
   />
   <JsonLd

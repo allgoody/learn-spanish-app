@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro'
 import Reader from '../../../components/Reader.tsx'
 import { books } from '../../../lib/books'
+import { seo, seoLang } from '../../../lib/seo'
 import type { Token, GlossLibrary } from '../../../lib/types'
 
 export function getStaticPaths() {
@@ -58,13 +59,14 @@ function splitParagraphs(tokens: Token[]): Token[][] {
 }
 
 const { book, chapter, tokens, glosses } = Astro.props
+const s = seo[seoLang]
 const paragraphs = splitParagraphs(tokens)
 const idx = book.chapters.findIndex((c) => c.id === chapter.id)
 const prev = idx > 0 ? book.chapters[idx - 1] : null
 const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null
 ---
 
-<Layout title={chapter.title} contentLang={book.lang}>
+<Layout title={s.chapterTitle(book, chapter)} description={s.chapterDescription(book, chapter)} contentLang={book.lang}>
   <article class="max-w-2xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">{chapter.title}</h1>
     {paragraphs.map((para) => (

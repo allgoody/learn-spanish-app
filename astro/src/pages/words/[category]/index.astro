@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro'
 import WordLesson from '../../../components/WordLesson.tsx'
 import { categories } from '../../../lib/words'
+import { seo, seoLang } from '../../../lib/seo'
 
 export function getStaticPaths() {
   return categories.map((c) => ({
@@ -11,12 +12,13 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props
+const s = seo[seoLang]
 ---
 
 <Layout
-  title={category.title.ru}
+  title={s.categoryTitle(category)}
   contentLang={category.lang}
-  description="Урок испанских слов с переводом и пояснениями."
+  description={s.categoryDescription(category)}
 >
   <main class="max-w-2xl mx-auto px-4 py-8">
     <WordLesson category={category} client:load />

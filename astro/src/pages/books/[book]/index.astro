@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro'
 import BookLanding from '../../../components/BookLanding.tsx'
 import { books } from '../../../lib/books'
+import { seo, seoLang } from '../../../lib/seo'
 
 export function getStaticPaths() {
   return books.map((b) => ({
@@ -11,9 +12,10 @@ export function getStaticPaths() {
 }
 
 const { book } = Astro.props
+const s = seo[seoLang]
 ---
 
-<Layout title={book.title} contentLang={book.lang}>
+<Layout title={s.bookTitle(book)} description={s.bookDescription(book)} contentLang="ru">
   <main class="max-w-2xl mx-auto px-4 py-8">
     <BookLanding book={book} client:load />
   </main>
