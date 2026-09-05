@@ -4,3 +4,6 @@
 
 # Temp working files (agent uses repo-root .tmp/, not system /tmp/)
 .tmp/
+
+# Wrangler (Cloudflare) local state
+.wrangler/
