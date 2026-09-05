@@ -65,8 +65,9 @@ Design tokens (from global.css `@theme inline`): `bg-paper`, `text-ink`,
 - DO: Use the token utilities listed above. No new colors, no inline hex.
 - DO: Keep chapter URLs exactly as they are: `/books/andanzas/{slug}`.
 - DO: Keep the WebSite + Organization JSON-LD blocks in `index.astro` unchanged.
-- DO: Keep `Reader.tsx`, `HeaderMenu.tsx`, `lib/i18n.ts` logic (pluralRu, getLang,
-  setLang, onLangChange) untouched — only ADD keys to the `strings` dict.
+- DO: Keep `Reader.tsx`, `HeaderMenu.tsx`, and `lib/i18n.ts` logic (pluralRu, getLang,
+  onLangChange) untouched — only ADD keys to the `strings` dict and the one-line
+  `setLang` guard from WP-5.
 - DO NOT: Add a language prefix to any URL (decision in `idea/routing.md`).
 - DO NOT: Change glosses.json schema or content — glosses stay Russian-only.
 - DO NOT: Touch `template/` (style.css, kitchen-sink.html, STYLE-GUIDE.md).
@@ -107,7 +108,7 @@ Design tokens (from global.css `@theme inline`): `bg-paper`, `text-ink`,
 
 **Phase 2:**
 
-- `astro/src/lib/i18n.ts` — MODIFY — add 4 keys × 2 languages
+- `astro/src/lib/i18n.ts` — MODIFY — add 4 keys × 2 languages + `setLang` content-lang guard (WP-5)
 - `astro/src/components/Chooser.tsx` — CREATE — chooser island
 - `astro/src/pages/index.astro` — MODIFY — rewrite as chooser
 - `astro/src/components/BookLanding.tsx` — CREATE — renamed+extended BookIntro

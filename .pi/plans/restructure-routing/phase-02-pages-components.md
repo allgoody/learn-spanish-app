@@ -23,8 +23,8 @@ dict in `astro/src/lib/i18n.ts` is `Record<Lang, Record<string, string>>` with
 `astro/src/lib/books.ts`.
 
 **JSX convention: React components use `className` (see `BookIntro.tsx`); Astro
-templates use `class`.** WP order matters: WP-6 (Layout props) comes BEFORE the
-pages that pass `contentLang` to Layout — do not reorder.
+templates use `class`.** WP order matters: WP-5 (Layout props) comes BEFORE the
+pages that pass `contentLang`/`description` to Layout (WP-6/7/8/9) — do not reorder.
 
 ## Work Packages
 
@@ -66,7 +66,90 @@ Add four new keys to BOTH the `ru` and `en` objects: `booksSection`,
 - [ ] `grep -c "backHome" astro/src/lib/i18n.ts` → 2
 - [ ] No type errors: `cd astro && npx astro check` → exit 0
 
-### WP-5: Create the Chooser island and rewrite the home page
+### WP-5: Add contentLang and description props to Layout
+
+**Context:**
+`astro/src/layouts/Layout.astro` has `<html lang="es">` and an inline no-FOUC
+script that sets `data-theme` and overrides `document.documentElement.lang` from
+localStorage. Per `idea/routing.md` §5, content pages (book landing, reader,
+words) must keep `lang` = content language ("es") regardless of the UI setting;
+chrome pages (chooser) keep the UI-language behavior. The script must skip the
+lang override when the page declares a content language. `setLang` in
+`astro/src/lib/i18n.ts` also overrides `document.documentElement.lang` on every
+UI-language switch — it must skip the override on content pages too, or the
+invariant breaks at runtime. This WP comes BEFORE the pages that pass
+`contentLang`/`description` — do not reorder.
+
+**Task:**
+Add `contentLang?: string` and `description?: string` props to Layout; render
+`lang` and a `data-content-lang` marker from `contentLang`; make the script skip
+the lang override when the marker is present; use the `description` prop in the
+meta tag; guard `setLang` in `lib/i18n.ts` with the same marker check.
+
+**Files:**
+
+- `astro/src/layouts/Layout.astro` — MODIFY — props, html tag, script, meta
+- `astro/src/lib/i18n.ts` — MODIFY — one-line guard in `setLang`
+
+**Constraints:**
+
+- DO: Props interface becomes:
+
+```ts
+interface Props {
+  title?: string
+  description?: string
+  contentLang?: string
+}
+```
+
+- DO: Destructure: `const { title = 'Aprende español', description = 'Aprende español leyendo «Andanzas y visiones españolas» de Miguel de Unamuno, con glosario integrado.', contentLang } = Astro.props`
+- DO: `<html lang={contentLang ?? 'es'} data-content-lang={contentLang ? '' : undefined}>`
+- DO: `<meta name="description" content={description} />` (replaces the hardcoded content)
+- DO: In the inline script, wrap the lang override in a guard — the script becomes:
+
+```js
+(function () {
+  try {
+    var t = localStorage.getItem('theme')
+    if (t === 'light' || t === 'dark') {
+      document.documentElement.setAttribute('data-theme', t)
+    }
+    if (!document.documentElement.hasAttribute('data-content-lang')) {
+      var l = localStorage.getItem('lang')
+      if (l === 'ru' || l === 'en') {
+        document.documentElement.lang = l
+      }
+    }
+  } catch (e) {}
+})()
+```
+
+- DO: In `lib/i18n.ts`, guard `setLang` — the function becomes:
+
+```ts
+export function setLang(l: Lang): void {
+  localStorage.setItem("lang", l);
+  if (!document.documentElement.hasAttribute("data-content-lang")) {
+    document.documentElement.lang = l;
+  }
+  listeners.forEach((cb) => cb(l));
+}
+```
+
+- DO NOT: Change the theme logic, header, footer, or the CTDev credit
+- DO NOT: Change the `title` prop behavior
+- DO NOT: Change anything else in `lib/i18n.ts` (pluralRu, getLang, onLangChange, chapterCount, strings stay untouched)
+
+**Success:**
+
+- [ ] `grep -n "contentLang" astro/src/layouts/Layout.astro` → ≥ 3 matches (prop, destructure, html attr)
+- [ ] `grep -n "data-content-lang" astro/src/layouts/Layout.astro` → ≥ 2 matches (html attr + script guard)
+- [ ] `grep -n "data-content-lang" astro/src/lib/i18n.ts` → 1 match (setLang guard)
+- [ ] `grep -n "description" astro/src/layouts/Layout.astro` → ≥ 2 matches (prop + meta)
+- [ ] No type errors: `cd astro && npx astro check` → exit 0
+
+### WP-6: Create the Chooser island and rewrite the home page
 
 **Context:**
 `astro/src/pages/index.astro` currently renders BookIntro (`books[0]`) + a chapter
@@ -74,8 +157,9 @@ list + two JSON-LD blocks (WebSite, Organization — import `JsonLd` from
 `../components/JsonLd.astro`). It will become the chooser. The island pattern is
 in `BookIntro.tsx`. `languages` (from `lib/words.ts`) drives the sections;
 `books` and `categories` are passed as props. `chapterCount(n, lang)` from
-`lib/i18n.ts` formats the book card subtitle. Token utilities: `bg-paper`,
-`text-ink`, `text-muted`, `border-line`, `bg-surface-hover`, `bg-accent`.
+`lib/i18n.ts` formats the book card subtitle. Layout now accepts `description`
+(WP-5). Token utilities: `bg-paper`, `text-ink`, `text-muted`, `border-line`,
+`bg-surface-hover`, `bg-accent`.
 
 **Task:**
 Create `astro/src/components/Chooser.tsx` and rewrite `astro/src/pages/index.astro`
@@ -199,72 +283,7 @@ export default function Chooser({
 - [ ] `test -f astro/src/components/Chooser.tsx` → exit 0
 - [ ] `grep -n "client:load" astro/src/pages/index.astro` → 1 match
 - [ ] `grep -n "BookIntro" astro/src/pages/index.astro` → 0 matches
-- [ ] `grep -n "JsonLd" astro/src/pages/index.astro` → ≥ 3 matches (2 imports + 2 usages)
-- [ ] No type errors: `cd astro && npx astro check` → exit 0
-
-### WP-6: Add contentLang and description props to Layout
-
-**Context:**
-`astro/src/layouts/Layout.astro` has `<html lang="es">` and an inline no-FOUC
-script that sets `data-theme` and overrides `document.documentElement.lang` from
-localStorage. Per `idea/routing.md` §5, content pages (book landing, reader,
-words) must keep `lang` = content language ("es") regardless of the UI setting;
-chrome pages (chooser) keep the UI-language behavior. The script must skip the
-lang override when the page declares a content language. This WP comes BEFORE the
-pages that pass `contentLang` — do not reorder.
-
-**Task:**
-Add `contentLang?: string` and `description?: string` props to Layout; render
-`lang` and a `data-content-lang` marker from `contentLang`; make the script skip
-the lang override when the marker is present; use the `description` prop in the
-meta tag.
-
-**Files:**
-
-- `astro/src/layouts/Layout.astro` — MODIFY — props, html tag, script, meta
-
-**Constraints:**
-
-- DO: Props interface becomes:
-
-```ts
-interface Props {
-  title?: string
-  description?: string
-  contentLang?: string
-}
-```
-
-- DO: Destructure: `const { title = 'Aprende español', description = 'Aprende español leyendo «Andanzas y visiones españolas» de Miguel de Unamuno, con glosario integrado.', contentLang } = Astro.props`
-- DO: `<html lang={contentLang ?? 'es'} data-content-lang={contentLang ? '' : undefined}>`
-- DO: `<meta name="description" content={description} />` (replaces the hardcoded content)
-- DO: In the inline script, wrap the lang override in a guard — the script becomes:
-
-```js
-(function () {
-  try {
-    var t = localStorage.getItem('theme')
-    if (t === 'light' || t === 'dark') {
-      document.documentElement.setAttribute('data-theme', t)
-    }
-    if (!document.documentElement.hasAttribute('data-content-lang')) {
-      var l = localStorage.getItem('lang')
-      if (l === 'ru' || l === 'en') {
-        document.documentElement.lang = l
-      }
-    }
-  } catch (e) {}
-})()
-```
-
-- DO NOT: Change the theme logic, header, footer, or the CTDev credit
-- DO NOT: Change the `title` prop behavior
-
-**Success:**
-
-- [ ] `grep -n "contentLang" astro/src/layouts/Layout.astro` → ≥ 3 matches (prop, destructure, html attr)
-- [ ] `grep -n "data-content-lang" astro/src/layouts/Layout.astro` → ≥ 2 matches (html attr + script guard)
-- [ ] `grep -n "description" astro/src/layouts/Layout.astro` → ≥ 2 matches (prop + meta)
+- [ ] `grep -n "JsonLd" astro/src/pages/index.astro` → ≥ 3 matches (1 import + 2 usages)
 - [ ] No type errors: `cd astro && npx astro check` → exit 0
 
 ### WP-7: Create BookLanding and the generic book landing page
@@ -277,7 +296,7 @@ markup (from the old index.astro) is: `<ul class="mt-8">` + `<li><a href={...}
 class="block py-2 border-b border-line hover:text-accent">{c.title}</a></li>`.
 The new landing page lives at `src/pages/books/[book]/index.astro` and must be
 generic over books (see `lib/books.ts` — `books` array, `getBook`). Layout now
-accepts `contentLang` (WP-6).
+accepts `contentLang` (WP-5).
 
 **Task:**
 Create `astro/src/components/BookLanding.tsx` (supersedes BookIntro: adds a
@@ -360,7 +379,7 @@ export function getStaticPaths() {
 const { book } = Astro.props
 ---
 
-<Layout title={book.title} contentLang="es">
+<Layout title={book.title} contentLang={book.lang}>
   <main class="max-w-2xl mx-auto px-4 py-8">
     <BookLanding book={book} client:load />
   </main>
@@ -389,7 +408,7 @@ chapter text + nav with hardcoded `/books/andanzas/` links and a hardcoded
 "← Home" link. Read the FULL current file before rewriting. The generic version
 lives at `src/pages/books/[book]/[slug].astro`; the old file MUST be deleted in
 the same WP (two routes matching `/books/andanzas/{slug}` = build error). Layout
-now accepts `contentLang` (WP-6).
+now accepts `contentLang` (WP-5).
 
 **Task:**
 Create `astro/src/pages/books/[book]/[slug].astro` (generic over books, chapter
@@ -438,10 +457,11 @@ export function getStaticPaths() {
   `const idx = book.chapters.findIndex((c) => c.id === chapter.id)`,
   `const prev = idx > 0 ? book.chapters[idx - 1] : null`,
   `const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null`
-- DO: Template — `<Layout title={chapter.title} contentLang="es">`; keep the
+- DO: Template — `<Layout title={chapter.title} contentLang={book.lang}>`; keep the
   article/h1/paragraphs markup identical to the current file; nav links become
   `` `/books/${book.id}/${prev.id}` `` and `` `/books/${book.id}/${next.id}` ``;
-  REPLACE the hardcoded "← Home" link with a back link to the book landing:
+  REPLACE the hardcoded "← Home" link with a back link to the book landing (keep
+  the wrapping `<div class="mt-6 text-center">`):
   `<a href={`/books/${book.id}/`} class="text-sm text-muted hover:text-accent">← {book.title}</a>`
 - DO: Delete the old file: `rm 'astro/src/pages/books/andanzas/[slug].astro'`
 - DO NOT: Change `Reader.tsx` or its usage (`<Reader glosses={glosses} client:load />`)
@@ -463,7 +483,7 @@ The words tree: `src/pages/words/[category]/index.astro` with `getStaticPaths`
 from `categories` (WP-3). The lesson content is Russian (like glosses) — group
 titles/notes are plain strings from the data file; only the page title and back
 link are localized. The island pattern is in `BookLanding.tsx` (WP-7). Layout
-now accepts `contentLang` (WP-6).
+now accepts `contentLang` (WP-5).
 
 **Task:**
 Create `astro/src/components/WordLesson.tsx` and
@@ -548,7 +568,7 @@ const { category } = Astro.props
 
 <Layout
   title={category.title.ru}
-  contentLang="es"
+  contentLang={category.lang}
   description="Урок испанских слов с переводом и пояснениями."
 >
   <main class="max-w-2xl mx-auto px-4 py-8">
