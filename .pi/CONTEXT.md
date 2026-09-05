@@ -7,46 +7,57 @@ Last updated: 2026-02-14
 
 ## Current Task
 
-Idea discussion phase — no code written yet. User wants an Astro + Tailwind + React app to learn Spanish by reading a Spanish book with hover/tap word glosses (Russian translation + word-form/grammar explanation).
+Execution plan for v1 is written and awaiting user review → commit → execute. Plan: `.pi/plans/spanish-reader-app/` (5 files, 4 phases, 10 WPs).
 
 ## Completed This Session
 
-- [x] Discussed architecture: build-time LLM glossing → `glosses.json` committed to repo; runtime popup is instant/offline, no backend
-- [x] Researched book options + copyright status (see Key Decisions)
-- [x] Found PD adapted Don Quijote: Oca y Merino 1916 "acomodado para las escuelas primarias" (Wikisource scan, needs OCR)
+- [x] All design decisions made (book, gloss approach, scope, UI language)
+- [x] `idea/findings.md` — full research doc (architecture, book copyright analysis, Quijote deep dive, decisions)
+- [x] Downloaded Gutenberg #78052 text to `.tmp/pg78052.txt` (8555 lines) and verified its structure
+- [x] Wrote the full execution plan (scaffold → book data → gloss pipeline → reader UI)
+- [x] Self-review caught + fixed 2 plan bugs: book has **41 essays (not 37)**; index continuation logic was inverted + one title spans two lines (both re-verified against the source)
 
 ## In Progress
 
-- [ ] Nothing — waiting on user decisions
+- [ ] Plan review by user → commit → execute (`/skill:implement spanish-reader-app`)
 
 ## Blocked / Needs Decision
 
-- [?] Which book(s) first? (Quiroga recommended, Blasco Ibáñez for modern feel, or user's own private book)
-- [?] Gloss approach: one-time LLM pass (recommended, includes grammar) vs free dictionary (translations only)
-- [?] Scope: reading + glosses only, or known-words tracking / TTS audio / SRS flashcards from the start
+- [?] User must review the plan files before execution
+- [?] WP-7 (gloss generation) requires the user to name the ollama model at run time — the plan/scripts NEVER default a model
 
 ## Next Steps
 
-1. User picks book + gloss approach + scope
-2. Scaffold Astro + Tailwind + React project
-3. Build gloss pipeline script (download → clean → tokenize → dedupe → LLM batch-gloss with context → glosses.json)
-4. Build reader UI: word spans with data-word, one delegated handler, popup/bottom-sheet
+1. Commit the plan (user asked "shall I commit it?" — awaiting answer)
+2. Execute: read `.pi/plans/spanish-reader-app/_index.md`, then phase by phase
+3. At WP-7: ask the user which model to use (e.g. gemini-3-flash-preview:latest, qwq:32b — whatever they choose)
 
 ## Key Decisions
 
-- **Build-time annotation, not runtime dictionary** — LLM glosses every unique word form with context sentence; result committed as JSON. Instant hover, offline, zero per-visitor cost
+- **Book #1: Unamuno, "Andanzas y visiones españolas" (1922)** — Gutenberg #78052; **41 essays** (PRÓLOGO + 40), each = a chapter
+- **Gloss model: USER-SUPPLIED at run time — NO default anywhere.** Script requires `--model` or `GLOSS_MODEL`, exits 1 otherwise. User explicitly requested this
+- **v1 scope: reading + glosses only** — known-words, TTS, SRS later
+- **UI: Russian + English toggle** (glosses always in Russian)
+- **Build-time annotation** — LLM glosses every unique word form with context sentence; committed as JSON; instant hover, offline, no backend
+- **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases; longest-match phrase recognition (40-phrase seed list)
 - **Public domain books only** for public deploy; user's own modern book = private use only
-- **Book #1 candidate: Horacio Quiroga, "Cuentos de la selva" (1918, PD)** — simple language, short chapters
-- **"Modern-feeling" PD pick: Blasco Ibáñez** (died 1928, PD everywhere) — La barraca, Cañas y barro
-- **Don Quijote**: original too archaic for learners; Oca y Merino 1916 adaptation is the legal route (OCR needed); alternative = glosses with modern equivalents ("trujiste → trajiste (moderno)")
-- **Avoid**: Platero y yo (EU copyright until 2029), Lorca (litigious estate), pirate sites (Lectulandia etc.)
 
 ## File Map
 
-- No files created yet — empty repo (only .git, .orca)
+- `.pi/plans/spanish-reader-app/_index.md` — plan overview, global context/constraints, phase table
+- `.pi/plans/spanish-reader-app/phase-01-scaffold-foundation.md` — WP-1..2 (scaffold, types, i18n, layout)
+- `.pi/plans/spanish-reader-app/phase-02-book-data-tokenizer.md` — WP-3..5 (fetch/clean, home page, tokenizer+tests)
+- `.pi/plans/spanish-reader-app/phase-03-gloss-pipeline.md` — WP-6..7 (phrases seed, gloss.mjs, run with user model)
+- `.pi/plans/spanish-reader-app/phase-04-reader-ui.md` — WP-8..10 (chapter page, Reader island, final verification)
+- `idea/findings.md` — research + decisions (updated)
+- `.tmp/pg78052.txt` — Gutenberg source text (keep for the fetch script)
+- `.tmp/check-index.py` — scratch script that verified the 41-title index parsing
 
 ## Gotchas / Warnings
 
-- Wikisource Oca y Merino Quijote is a 54 MB scanned PDF — needs OCR + cleanup before use
-- UNAM CEPE graded readers (free PDFs, B1–B2) and CVC "Lecturas paso a paso" are free legal modern content, but not novels
-- Modern adaptations (Trapiello 2004, Anaya/Edelsa graded readers, Navarro Durán) are all copyrighted
+- **The book has 41 essays, not 37** — plan files all say 41 now
+- One essay title spans two all-caps lines: `EL CRISTO YACENTE DE SANTA CLARA` + `(IGLESIA DE LA CRUZ) DE PALENCIA` — the fetch script needs the two-line join fallback (specified in WP-3 step 6)
+- Index continuation logic: a line WITHOUT a trailing page number STARTS a wrapped entry (does not continue the previous one)
+- **deepseek-v4-flash:0731-cloud is NOT in the current ollama tags** (only gemini-3-flash-preview:latest, qwq:32b) — do not assume it's available; the user picks the model
+- Bash guardrail blocks inline python with backslash regexes (`D:\-` false positive) — write scratch scripts to `.tmp/` instead
+- Body has 48 all-caps lines but only 41 are titles (7 versalitas false positives) — the index-driven matching handles this; do not split on all-caps lines alone
