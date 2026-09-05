@@ -1,0 +1,99 @@
+{
+  "collect": {
+    "staticDistDir": "./dist",
+    "url": ["/"],
+    "numberOfRuns": 1
+  },
+  "locales": {
+    "list": [],
+    "note": "First path segment treated as a locale variant (e.g. 'de' → /de and /de/about are variants of / and /about). Used by perf-check --full --worklist --only-failed to collapse locale variants in delta iterations: a failing page re-audits only its default-locale route; the full route set still runs at confirm. Leave empty for single-locale sites."
+  },
+  "presets": {
+    "desktop": {
+      "flags": { "preset": "desktop" },
+      "assertions": {
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
+        "interaction-to-next-paint": ["error", { "maxNumericValue": 200 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
+        "categories:performance": ["error", { "minScore": 0.9 }],
+        "categories:accessibility": ["error", { "minScore": 1 }],
+        "categories:seo": ["error", { "minScore": 1 }],
+        "categories:best-practices": ["error", { "minScore": 1 }],
+        "color-contrast": "error",
+        "errors-in-console": "error",
+        "label-content-name-mismatch": "error",
+        "modern-image-formats": "warn",
+        "uses-responsive-images": "warn",
+        "llms-txt": "error",
+        "agent-accessibility-tree": "error"
+      }
+    },
+    "mobile": {
+      "flags": {},
+      "assertions": {
+        "largest-contentful-paint": ["error", { "maxNumericValue": 4000 }],
+        "interaction-to-next-paint": ["error", { "maxNumericValue": 200 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
+        "categories:performance": ["error", { "minScore": 0.9 }],
+        "categories:accessibility": ["error", { "minScore": 1 }],
+        "categories:seo": ["error", { "minScore": 1 }],
+        "categories:best-practices": ["error", { "minScore": 1 }],
+        "color-contrast": "error",
+        "errors-in-console": "error",
+        "label-content-name-mismatch": "error",
+        "modern-image-formats": "warn",
+        "uses-responsive-images": "warn",
+        "llms-txt": "error",
+        "agent-accessibility-tree": "error"
+      }
+    }
+  },
+  "targets": {
+    "gate": {},
+    "perfect": {
+      "categories:performance": 1,
+      "categories:accessibility": 1
+    }
+  },
+  "activeTarget": "gate",
+  "hosting": {
+    "minCacheSeconds": 31536000,
+    "requireHttp2": true,
+    "requireCompression": true,
+    "note": "Asserted by perf-check.mjs --hosted <url> against the deployed URL (not the local static server)."
+  },
+  "agentic": {
+    "llmsTxt": true,
+    "note": "llmsTxt: fast-path check of dist/llms.txt (exists + H1 + link + min length). The Lighthouse audits llms-txt + agent-accessibility-tree are gated at 1 in presets.*.assertions (LH 13.3+; older versions skip them as blind-spots). WebMCP audits and the agentic-browsing category score are intentionally NOT gated (experimental, pass-ratio semantics)."
+  },
+  "jsonld": {
+    "require": true,
+    "perRoute": {
+      "/": {
+        "types": ["WebSite", "Organization"]
+      }
+    },
+    "requiredProps": {},
+    "note": "Validated by perf-check.mjs against each route's built HTML (Lighthouse has no structured-data audit). Default = presence + validity (parses, schema.org @context). Opt-in strictness: perRoute e.g. { \"/\": { \"types\": [\"WebSite\", \"Organization\"] } }; requiredProps e.g. { \"Article\": [\"headline\", \"author\", \"datePublished\"] }. The fix-loop skill ratchets perRoute entries in as it fixes routes."
+  },
+  "bundleBudget": {
+    "maxRouteJsKb": 120,
+    "maxTotalCssKb": 50,
+    "note": "Read by scripts/perf-check.mjs. NOTE: maxRouteJsKb is a SITE-TOTAL, not per-route — it sums every .js file in dist/_astro (gzipped), so React islands + GSAP chunks count even when no single route loads them all. Set it to the heaviest realistic route + headroom (120 is the showcase baseline). The 'presets' and 'collect' keys are also read by perf-check.mjs (not LHCI — LHCI is no longer used)."
+  },
+  "links": {
+    "ignore": [],
+    "note": "Internal link/asset checker (dist-based, fast + full modes): every root-absolute href/src in built HTML must resolve to a file in dist/. Closes the Lighthouse 13.x blind-spot (resource 404s are no longer flagged by errors-in-console). 'ignore' is an array of path prefixes to skip. Relative URLs are not checked (v1 scope)."
+  },
+  "meta": {
+    "title": true,
+    "description": true,
+    "canonical": true,
+    "ogImage": true,
+    "note": "Per-route head-tag lint (dist-based, fast + full modes): title, meta[name=description], link[rel=canonical], meta[property=og:image]. Lighthouse has NO canonical or Open Graph audit. Set a key to false to skip that check."
+  },
+  "imageBudget": {
+    "maxRouteImageKb": 500,
+    "note": "Per-route total image weight in KB (raw bytes, dist-based, fast + full modes): sums every local image referenced by the route's built HTML — img src + first srcset candidate, CSS url() refs (inline styles AND linked local stylesheets — background-image heroes are counted), and link[rel=preload][as=image] hrefs. Hero images are the #1 perf killer on showcase sites — budget them at audit time, Chrome-free."
+  }
+}

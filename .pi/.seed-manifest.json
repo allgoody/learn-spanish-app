@@ -1,0 +1,38 @@
+{
+  "seededBy": "astro-pi-workflow",
+  "seededAt": "2026-09-05T15:32:44.414Z",
+  "appDir": "astro",
+  "files": {
+    ".pi/CONTEXT.md": {
+      "template": "templates/CONTEXT.md.template",
+      "hash": "6f6029ee88a2e4b1ee4f8cddd350354854bd7f859e1f61a90de94d7395a78c85",
+      "dir": "context"
+    },
+    ".pi/project-rules-memory.md": {
+      "template": "templates/project-rules-memory.md.template",
+      "hash": "9c3de1c5471e1b257eae448ab7a4ed78de32f4343cf8a6882163d2bcfe12d56c",
+      "dir": "context"
+    },
+    "lighthouserc.json": {
+      "template": "templates/lighthouserc.json.template",
+      "hash": "07d2e927dcf3ca3de00229faae59e372fae261f8ee0c41bdb8e6b7734ab230d2",
+      "dir": "app"
+    },
+    "public/llms.txt": {
+      "template": "templates/llms.txt.template",
+      "hash": "ad967cbd7e73c385e0410bcc0d55f97db7ec73bab175ae41007affce3cc17818",
+      "dir": "app"
+    },
+    "src/components/JsonLd.astro": {
+      "template": "templates/JsonLd.astro.template",
+      "hash": "8840ccea18fa1fc067e5df413b2893470ac870ef3bca9e066958607d7ced975e",
+      "dir": "app"
+    },
+    "scripts/perf-check.mjs": {
+      "template": "scripts/perf-check.mjs",
+      "hash": "87dcf75c75a0d6b03143e0ac898c7218e3e2613a0fababbe77988d05a9227a57",
+      "dir": "app",
+      "sync": true
+    }
+  }
+}
