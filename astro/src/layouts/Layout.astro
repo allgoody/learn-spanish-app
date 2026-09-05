@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-import LangToggle from '../components/LangToggle.tsx'
+import HeaderMenu from '../components/HeaderMenu.tsx'
 
 interface Props {
   title?: string
@@ -14,22 +14,36 @@ const { title = 'Aprende español' } = Astro.props
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme')
+          if (t === 'light' || t === 'dark') {
+            document.documentElement.setAttribute('data-theme', t)
+          }
+          var l = localStorage.getItem('lang')
+          if (l === 'ru' || l === 'en') {
+            document.documentElement.lang = l
+          }
+        } catch (e) {}
+      })()
+    </script>
   </head>
-  <body class="min-h-screen bg-white text-stone-900">
-    <header class="border-b border-stone-200">
+  <body class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line">
       <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="font-bold text-lg hover:text-amber-700">Aprende español</a>
-        <LangToggle client:load />
+        <a href="/" class="font-bold text-lg hover:text-accent">Aprende español</a>
+        <HeaderMenu client:load />
       </div>
     </header>
     <slot />
-    <footer class="border-t border-stone-200 mt-12">
+    <footer class="border-t border-line mt-12">
       <div class="max-w-2xl mx-auto px-4 py-6 text-center">
         <a
           href="https://ctdev.dev/"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-[0.65rem] text-stone-500 opacity-60 hover:opacity-100 hover:underline"
+          class="text-[0.65rem] text-muted opacity-60 hover:opacity-100 hover:underline"
         >Made by CTDev</a>
       </div>
     </footer>

@@ -65,7 +65,7 @@ const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
   <article class="max-w-2xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">{chapter.title}</h1>
     {paragraphs.map((para) => (
-      <p class="text-lg leading-relaxed text-stone-800 mb-4">
+      <p class="text-lg leading-relaxed text-ink mb-4">
         {para.map((tok) =>
           tok.w ? (
             <span class="glossable" data-word={tok.w} tabindex="0" role="button">
@@ -79,14 +79,14 @@ const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
     ))}
     <nav class="mt-10 flex justify-between text-sm">
       {prev ? (
-        <a href={`/books/andanzas/${prev.id}`} class="hover:text-amber-700">
+        <a href={`/books/andanzas/${prev.id}`} class="hover:text-accent">
           ← {prev.title}
         </a>
       ) : (
         <span />
       )}
       {next ? (
-        <a href={`/books/andanzas/${next.id}`} class="hover:text-amber-700">
+        <a href={`/books/andanzas/${next.id}`} class="hover:text-accent">
           {next.title} →
         </a>
       ) : (
@@ -94,7 +94,7 @@ const next = idx < meta.chapters.length - 1 ? meta.chapters[idx + 1] : null
       )}
     </nav>
     <div class="mt-6 text-center">
-      <a href="/" class="text-sm text-stone-500 hover:text-amber-700">
+      <a href="/" class="text-sm text-muted hover:text-accent">
         ← Home
       </a>
     </div>
