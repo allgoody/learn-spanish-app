@@ -18,7 +18,7 @@
 
 ## Design System
 
-- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, ~0.6 opacity, underline on hover). **Known ADA exception**: this credit fails WCAG contrast (2.26:1) by design — user-mandated style, keep as-is
+- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, underline on hover). **RESTYLED 2026-09-05**: the old ~0.6 opacity failed contrast (2.26:1); user approved removing the opacity — the muted token alone passes 4.5:1 in both themes (stone-500 on white 4.72:1, stone-400 on stone-950 7.88:1). No opacity reduction on the credit anymore.
 - **Standalone template lives in `template/`** (repo root, not astro/): `style.css` + `kitchen-sink.html` + `STYLE-GUIDE.md`. Design language = astro site's: stone neutrals + amber accent (amber-700 #b45309, stone-200 borders, white bg, system-ui, radius 4px)
 - **Dark theme mechanism** (template): all colors are CSS custom properties; `[data-theme="dark"]` forces dark, `[data-theme="light"]` forces light, otherwise `@media (prefers-color-scheme: dark) :root:not([data-theme="light"])` follows the system
 - **Contrast strategy** (template): light mode = 700-level semantic colors (emerald-700/amber-700/red-700/sky-700) so white button text passes 4.5:1; dark mode = 400-level colors with dark text via `--color-on-accent` (#ffffff light / #0c0a09 dark). Badges/alerts reuse the same tokens
@@ -70,3 +70,13 @@
 
 - Installed in `astro/`: astro 7.3.1, react 19, react-dom 19, @astrojs/react 6, tailwindcss 4.3, @tailwindcss/vite 4.3, @astrojs/check, typescript 6, vitest 5
 - Scripts: plain `.mjs` (Node built-ins only). No other deps allowed by plan
+
+<!-- BEGIN astro-pi-workflow:workflow -->
+<!-- Seeded by astro-pi-workflow. This block is yours to customize; re-running
+     install.mjs site will not modify it. Delete this BEGIN line to have it
+     re-seeded fresh on the next install. -->
+## Workflow checkpoints (astro-pi-workflow)
+
+1. Rules (this file) — live; constrain work as it happens.
+2. audit-perf skill — run before declaring a page/island/image task done.
+<!-- END astro-pi-workflow:workflow -->
