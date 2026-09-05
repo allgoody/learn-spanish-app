@@ -9,7 +9,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://learn-words-5mq.pages.dev/",
+  site: "https://niceio.com/",
   integrations: [react(), sitemap()],
 
   vite: {

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://learn-words-5mq.pages.dev/sitemap-index.xml
+Sitemap: https://niceio.com/sitemap-index.xml

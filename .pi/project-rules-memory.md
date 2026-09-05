@@ -21,7 +21,8 @@
 
 ## Design System
 
-- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, underline on hover). **RESTYLED 2026-09-05**: the old ~0.6 opacity failed contrast (2.26:1); user approved removing the opacity — the muted token alone passes 4.5:1 in both themes (stone-500 on white 4.72:1, stone-400 on stone-950 7.88:1). No opacity reduction on the credit anymore.
+- Footer must include subtle 'Made by CTDev' credit linking to <https://ctdev.dev/ru/> (target=_blank, rel=noopener noreferrer, ~0.65rem, muted, underline on hover). **RESTYLED 2026-09-05**: the old ~0.6 opacity failed contrast (2.26:1); user approved removing the opacity — the muted token alone passes 4.5:1 in both themes (stone-500 on white 4.72:1, stone-400 on stone-950 7.88:1). No opacity reduction on the credit anymore. **Href changed to /ru/ 2026-09-05**
+- **Sticky footer layout** (2026-09-05): body is `min-h-dvh flex flex-col`; page content wrapped in `<div class="flex-1">` so the footer anchors to the viewport bottom on short pages. Use `min-h-dvh`, NOT `min-h-screen` — 100vh cuts the footer on mobile when the address bar collapses
 - **Standalone template lives in `template/`** (repo root, not astro/): `style.css` + `kitchen-sink.html` + `STYLE-GUIDE.md`. Design language = astro site's: stone neutrals + amber accent (amber-700 #b45309, stone-200 borders, white bg, system-ui, radius 4px)
 - **Dark theme mechanism** (template): all colors are CSS custom properties; `[data-theme="dark"]` forces dark, `[data-theme="light"]` forces light, otherwise `@media (prefers-color-scheme: dark) :root:not([data-theme="light"])` follows the system
 - **Contrast strategy** (template): light mode = 700-level semantic colors (emerald-700/amber-700/red-700/sky-700) so white button text passes 4.5:1; dark mode = 400-level colors with dark text via `--color-on-accent` (#ffffff light / #0c0a09 dark). Badges/alerts reuse the same tokens
@@ -38,6 +39,7 @@
 - Temp/working files MUST be created in `.tmp/` under the repo root, never in system `/tmp/` or outside the workspace. `.tmp/` should be in `.gitignore`. Clean up with `rm -rf .tmp/` after use.
 - **URL structure changes require updating `idea/routing.md` first** — it is the source of truth for routing & language handling
 - **JSX convention**: React islands use `className` (see BookLanding.tsx); Astro templates use `class`
+- **Site domain is https://niceio.com/** (2026-09-05) — set in `astro.config.mjs` `site:`, JSON-LD urls in index.astro, robots.txt Sitemap line. Cloudflare Pages project `learn-words`; DNS CNAME → learn-words-5mq.pages.dev. Deploy: `wrangler pages deploy astro/dist --project-name learn-words`
 - **Never deploy unless the user explicitly asks in the current request**
 
 ## Lessons
