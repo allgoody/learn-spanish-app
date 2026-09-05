@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+.glossable { text-decoration: underline dotted; text-underline-offset: 3px; text-decoration-color: #b45309; cursor: help; }
+.glossable:hover { background: #fef3c7; }
