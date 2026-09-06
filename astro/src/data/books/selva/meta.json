@@ -1,0 +1,41 @@
+{
+  "id": "selva",
+  "lang": "es",
+  "title": "Cuentos de la selva",
+  "author": "Horacio Quiroga",
+  "source": "Wikisource es (1918 ed.)",
+  "chapters": [
+    {
+      "id": "la-tortuga-gigante",
+      "title": "La tortuga gigante"
+    },
+    {
+      "id": "las-medias-de-los-flamencos",
+      "title": "Las medias de los flamencos"
+    },
+    {
+      "id": "el-loro-pelado",
+      "title": "El loro pelado"
+    },
+    {
+      "id": "la-guerra-de-los-yacares",
+      "title": "La guerra de los yacarés"
+    },
+    {
+      "id": "la-gama-ciega",
+      "title": "La gama ciega"
+    },
+    {
+      "id": "historia-de-dos-cachorros-de-coati-y-de-dos-cachorros-de-hombre",
+      "title": "Historia de dos cachorros de coatí y de dos cachorros de hombre"
+    },
+    {
+      "id": "el-paso-del-yabebiri",
+      "title": "El paso del Yabebirí"
+    },
+    {
+      "id": "la-abeja-haragana",
+      "title": "La abeja haragana"
+    }
+  ]
+}
