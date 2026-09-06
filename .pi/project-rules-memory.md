@@ -87,6 +87,7 @@
 - **ADA audit (template)**: axe-core 4.10.2 via CDN works on file:// pages (Lighthouse refuses file:// — INVALID_URL). Landmark rules that bite: `<aside>` must be top-level (not nested in main), navs need unique aria-labels, no nested `<main>`. axe's heading-order rule does NOT flag h2→h1 decreases (only skips) — check manually. axe incomplete ≠ violation (placeholder text, cross-origin iframes, demo videos are untestable)
 - **CSS formatter rewrites** style.css/kitchen-sink.html (comments to own lines, 1-space indent) — re-read files before editing; oldText from memory drifts
 - Blasco Ibáñez (died 1928) = PD + modern-feeling prose; Pío Baroja PD in EU from Jan 2027
+- **Wikisource es parse HTML structure** (verified live 2026-09-06): `action=parse&prop=text` output has `id="ws-data"` in the page HEADER (before the `ws-h3-medio` heading) — NOT a footer; the story body is the LAST block of `<p>` elements in the document (after it come only a closing `</div>` and a NewPP comment). The first body `<p>` starts with a `<style>` block (dropinitial CSS, `data-mw-deduplicate="TemplateStyles:r1647991"`) that must be stripped BEFORE the generic tag strip or the CSS leaks into the text. Drop caps are `<img alt="H" ...>` — the letter is in the alt attribute. Pagenum markers are empty `<span class="pagenum">` spans; `&#32;` entities appear before `</p>`. 1918 edition keeps old orthography ("fué", "vió") — the gloss system explains surface forms, do not modernize
 
 ## Dependencies
 
