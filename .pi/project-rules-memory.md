@@ -9,6 +9,7 @@
 ## Architecture
 
 - **Build-time gloss pipeline**: script downloads book → cleans → tokenizes → dedupes word forms → LLM batch-glosses with context sentences → commits `glosses.json` (word → {lemma, pos, ru, grammar, note})
+- **Book fetch pipelines (2)**: Gutenberg via `scripts/fetch-book.mjs` (START/END markers + ÍNDICE parsing, andanzas); **Wikisource es via `scripts/fetch-wikisource.mjs`** (config-driven: `scripts/data/wikisource/{id}.json` with `pages[]`; MediaWiki `action=parse&prop=text`; pure tested extractor `scripts/lib/wikisource-parse.mjs` → `extractStoryText(html, pageTitle)`; 300ms polite delay between pages; 3-attempt/5s-backoff retries). New book = config + run + wire into `lib/books.ts`
 - **Gloss pipeline resilience (plan v2)**: `glosses.json` is written incrementally after EVERY batch so an interrupted run resumes; up to 3 context sentences per key (first 3 distinct occurrences, located by case-insensitive `indexOf` — the tokenizer emits no positions); parse/merge logic lives in pure tested helpers (`scripts/lib/gloss-parse.mjs`: `parseBatchResponse`/`mergeGlosses`/`pendingKeys`)
 - **Per-page precompiled gloss libraries** — each chapter page loads only its own words+phrases (inlined/small JSON); phrase recognition via longest-match ("a pesar de" = one unit). `import.meta.glob` eager in frontmatter is fine — it stays server-side; island props serialize per-page
 - **Gloss schema (future-proof, all fields optional)**: lemma, pos, ipa, ru, grammar (STRING explaining THIS surface form, e.g. "pretérito imperfecto, 1ª/3ª pers. sing." — not an object), cefr, modern (archaic→modern), false_friend, note
@@ -31,7 +32,7 @@
 ## Audit & Testing (state 2026-09-05)
 
 - **All audit gates GREEN** (2026-09-05, LH 13.4.1): audit-lighthouse-loop 0 failures, audit-perf median-of-3 PASS (desktop LCP 829 ms / mobile 1.48 s, CLS 0.000, perf 99/100, a11y/BP/SEO/agentic 1.0), bundle JS 64.2 KB gz / 120 KB budget, CSS 3.9 KB / 50 KB
-- **78 tests passing** (12 files): 51 pre-existing + 27 added 2026-09-05 (seo.test.ts, Layout.test.ts via AstroContainer, pronouns.test.ts, WordLesson.test.tsx 2→7). `vitest.config.ts` uses `getViteConfig` + `react()` (needed for AstroContainer + React server renderer); `test/setup.ts` has a guarded `matchMedia` polyfill (node/jsdom dual env); `test/types.d.ts` is a global script with `declare module "*.astro"`
+- **90 tests passing** (14 files): 51 pre-existing + 27 added 2026-09-05 (seo.test.ts, Layout.test.ts via AstroContainer, pronouns.test.ts, WordLesson.test.tsx 2→7) + 6 wikisource-parse.test.mjs + 6 selva.test.ts (2026-09-06). `vitest.config.ts` uses `getViteConfig` + `react()` (needed for AstroContainer + React server renderer); `test/setup.ts` has a guarded `matchMedia` polyfill (node/jsdom dual env); `test/types.d.ts` is a global script with `declare module "*.astro"`
 - **Audit surface = home page only** — `collect.url: ["/"]` in `astro/lighthouserc.json`; the other 43 pages (book landing, 41 chapters, words) build but are never Lighthouse-audited. Widen deliberately before trusting site-wide green
 - **LH 13.4.1 blind-spots (version-removed, not failures)**: `interaction-to-next-paint` → `inp-breakdown-insight`; `modern-image-formats` → `image-delivery-insight`; `uses-responsive-images` → `image-size-responsive`
 - **INP n/a on static pages is expected** — assertion auto-skipped, not a failure
@@ -42,6 +43,7 @@
 ## Active Constraints
 
 - **Book #1: Unamuno, "Andanzas y visiones españolas" (1922)** — Gutenberg #78052 (clean text); **41 essays** (PRÓLOGO + 40), each essay = a chapter
+- **Book #2: Quiroga, "Cuentos de la selva" (1918)** — Wikisource es (8 stories, Índice order); fetched 2026-09-06, 17,630 words, 2,822 distinct gloss keys at 100% coverage; wired into `lib/books.ts` (andanzas first, selva second)
 - **Gloss model: USER-SUPPLIED at run time — NEVER defaulted.** `scripts/gloss.mjs` requires `--model <name>` or env `GLOSS_MODEL` and exits 1 without one. User's current pick: `deepseek-v4-flash:0731-cloud`
 - **v1 scope: reading + glosses only** — known-words tracking, TTS audio, SRS = later phases
 - **UI: Russian only (2026-09-05)** — English removed from the App language toggle (`LANGS = ["ru"]`, group hidden while < 2 langs); `getLang()` returns "ru" (stale localStorage "en" ignored); no-FOUC script applies only "ru". `en` strings KEPT in `lib/i18n.ts` + `lib/seo.ts` as future data. Locked future model: UI language in URL subdirectory (`/en/...`) + hreflang when a 2nd language lands — see `.pi/CONTEXT.md` "Multi-language" + `idea/routing.md` §8. Glosses always in Russian
@@ -87,6 +89,8 @@
 - **ADA audit (template)**: axe-core 4.10.2 via CDN works on file:// pages (Lighthouse refuses file:// — INVALID_URL). Landmark rules that bite: `<aside>` must be top-level (not nested in main), navs need unique aria-labels, no nested `<main>`. axe's heading-order rule does NOT flag h2→h1 decreases (only skips) — check manually. axe incomplete ≠ violation (placeholder text, cross-origin iframes, demo videos are untestable)
 - **CSS formatter rewrites** style.css/kitchen-sink.html (comments to own lines, 1-space indent) — re-read files before editing; oldText from memory drifts
 - Blasco Ibáñez (died 1928) = PD + modern-feeling prose; Pío Baroja PD in EU from Jan 2027
+- **`gloss.mjs --data-dir` is CWD-relative** — the value is used verbatim, NOT joined against ROOT. From the repo root pass `--data-dir astro/src/data/books/selva`; from `astro/` pass `src/data/books/selva`. Wrong path = ENOENT on meta.json
+- **Vitest + vite import analysis rewrites `new URL("<string literal>", import.meta.url)`** in test files to the dev-server base (<http://localhost:3000>) → `fileURLToPath` throws "The URL must be of scheme file". Hoist the relative path into a variable first (`new URL(rel, import.meta.url)` works — verified). `process.cwd()` in vitest = `astro/`
 - **Wikisource es parse HTML structure** (verified live 2026-09-06): `action=parse&prop=text` output has `id="ws-data"` in the page HEADER (before the `ws-h3-medio` heading) — NOT a footer; the story body is the LAST block of `<p>` elements in the document (after it come only a closing `</div>` and a NewPP comment). The first body `<p>` starts with a `<style>` block (dropinitial CSS, `data-mw-deduplicate="TemplateStyles:r1647991"`) that must be stripped BEFORE the generic tag strip or the CSS leaks into the text. Drop caps are `<img alt="H" ...>` — the letter is in the alt attribute. Pagenum markers are empty `<span class="pagenum">` spans; `&#32;` entities appear before `</p>`. 1918 edition keeps old orthography ("fué", "vió") — the gloss system explains surface forms, do not modernize
 
 ## Dependencies
