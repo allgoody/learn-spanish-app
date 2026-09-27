@@ -1,0 +1,1855 @@
+{
+  "id": "frequency",
+  "lang": "es",
+  "title": {
+    "ru": "Частотные слова из книг",
+    "en": "Frequent words from the books"
+  },
+  "groups": [
+    {
+      "title": "предлог",
+      "items": [
+        {
+          "es": "de",
+          "ipa": "/de/",
+          "pos": "предлог",
+          "ru": "из, от, о",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 11 487"
+        },
+        {
+          "es": "en",
+          "ipa": "/en/",
+          "pos": "предлог",
+          "ru": "в, на",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 3 950"
+        },
+        {
+          "es": "a",
+          "ipa": "/a/",
+          "pos": "предлог",
+          "ru": "в, к, на",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 3 708"
+        },
+        {
+          "es": "con",
+          "ipa": "/kon/",
+          "pos": "предлог",
+          "ru": "с, со",
+          "example": null,
+          "grammar": "preposición",
+          "note": "вхождений в корпусе: 1 579"
+        },
+        {
+          "es": "por",
+          "ipa": "/poɾ/",
+          "pos": "предлог",
+          "ru": "по, через, за",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 1 458"
+        },
+        {
+          "es": "al",
+          "ipa": "/al/",
+          "pos": "предлог",
+          "ru": "в, на, к (предлог + артикль)",
+          "example": null,
+          "grammar": "contracción de 'a' + 'el'",
+          "note": "вхождений в корпусе: 1 367"
+        },
+        {
+          "es": "para",
+          "ipa": "/ˈpaɾa/",
+          "pos": "предлог",
+          "ru": "для; чтобы; в направлении",
+          "example": null,
+          "grammar": "preposición",
+          "note": "вхождений в корпусе: 838"
+        },
+        {
+          "es": "sobre",
+          "ipa": "/ˈsoβɾe/",
+          "pos": "предлог",
+          "ru": "на, над, о",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 370"
+        },
+        {
+          "es": "sin",
+          "ipa": "/sin/",
+          "pos": "предлог",
+          "ru": "без",
+          "example": null,
+          "grammar": "preposición",
+          "note": "вхождений в корпусе: 353"
+        },
+        {
+          "es": "hasta",
+          "ipa": "/ˈasta/",
+          "pos": "предлог",
+          "ru": "до",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 288"
+        },
+        {
+          "es": "entre",
+          "ipa": "/ˈentɾe/",
+          "pos": "предлог",
+          "ru": "между",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 265"
+        },
+        {
+          "es": "desde",
+          "ipa": "/ˈdes.ðe/",
+          "pos": "предлог",
+          "ru": "из, от, с",
+          "example": null,
+          "grammar": "preposición",
+          "note": "вхождений в корпусе: 179"
+        },
+        {
+          "es": "contra",
+          "ipa": "/ˈkontɾa/",
+          "pos": "предлог",
+          "ru": "против",
+          "example": null,
+          "grammar": "preposición",
+          "note": "вхождений в корпусе: 91"
+        }
+      ]
+    },
+    {
+      "title": "союз",
+      "items": [
+        {
+          "es": "y",
+          "ipa": "/i/",
+          "pos": "союз",
+          "ru": "и",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 5 939"
+        },
+        {
+          "es": "que",
+          "ipa": "/ke/",
+          "pos": "союз",
+          "ru": "что; который",
+          "example": null,
+          "grammar": "conjunción (o pronombre relativo, según contexto)",
+          "note": "вхождений в корпусе: 5 410"
+        },
+        {
+          "es": "como",
+          "ipa": "/ˈkomo/",
+          "pos": "союз",
+          "ru": "как, в качестве",
+          "example": null,
+          "grammar": "conjunción comparativa o de modo; sin tilde",
+          "note": "вхождений в корпусе: 1 105"
+        },
+        {
+          "es": "pero",
+          "ipa": "/ˈpeɾo/",
+          "pos": "союз",
+          "ru": "но",
+          "example": null,
+          "grammar": "conjunción adversativa",
+          "note": "вхождений в корпусе: 651"
+        },
+        {
+          "es": "si",
+          "ipa": "/si/",
+          "pos": "союз",
+          "ru": "если",
+          "example": null,
+          "grammar": "conjunción condicional",
+          "note": "вхождений в корпусе: 463"
+        },
+        {
+          "es": "o",
+          "ipa": "/o/",
+          "pos": "союз",
+          "ru": "или",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 441"
+        },
+        {
+          "es": "cuando",
+          "ipa": "/ˈkwan.do/",
+          "pos": "союз",
+          "ru": "когда",
+          "example": null,
+          "grammar": "conjunción",
+          "note": "вхождений в корпусе: 345"
+        },
+        {
+          "es": "ni",
+          "ipa": "/ni/",
+          "pos": "союз",
+          "ru": "ни",
+          "example": null,
+          "grammar": "conjunción coordinada (negativa)",
+          "note": "вхождений в корпусе: 267"
+        },
+        {
+          "es": "porque",
+          "ipa": "/ˈpoɾke/",
+          "pos": "союз",
+          "ru": "потому что, так как",
+          "example": null,
+          "grammar": "conjunción causal",
+          "note": "вхождений в корпусе: 263"
+        },
+        {
+          "es": "sino",
+          "ipa": "/ˈsino/",
+          "pos": "союз",
+          "ru": "а, но, кроме",
+          "example": null,
+          "grammar": "conjunción adversativa",
+          "note": "вхождений в корпусе: 145"
+        },
+        {
+          "es": "pues",
+          "ipa": "/pwes/",
+          "pos": "союз",
+          "ru": "так как, ведь",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 139"
+        },
+        {
+          "es": "mientras",
+          "ipa": "/ˈmjen.tɾas/",
+          "pos": "союз",
+          "ru": "пока, в то время как",
+          "example": null,
+          "grammar": "conjunción",
+          "note": "вхождений в корпусе: 111"
+        },
+        {
+          "es": "aunque",
+          "ipa": "/ˈauŋke/",
+          "pos": "союз",
+          "ru": "хотя, хотя и",
+          "example": null,
+          "grammar": "conjunción concesiva",
+          "note": "вхождений в корпусе: 103"
+        }
+      ]
+    },
+    {
+      "title": "артикль",
+      "items": [
+        {
+          "es": "el",
+          "ipa": "/el/",
+          "pos": "артикль",
+          "ru": "определённый артикль м.р. ед.ч.",
+          "example": null,
+          "grammar": "artículo determinado masculino singular",
+          "note": "вхождений в корпусе: 15 105"
+        }
+      ]
+    },
+    {
+      "title": "глагол",
+      "items": [
+        {
+          "es": "ser",
+          "ipa": "/seɾ/",
+          "pos": "глагол",
+          "ru": "быть",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 2 566"
+        },
+        {
+          "es": "haber",
+          "ipa": "/aˈβeɾ/",
+          "pos": "глагол",
+          "ru": "иметь (вспомогательный), быть",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 1 555"
+        },
+        {
+          "es": "decir",
+          "ipa": "/deˈθiɾ/",
+          "pos": "глагол",
+          "ru": "говорить, сказать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 732"
+        },
+        {
+          "es": "hacer",
+          "ipa": "/aˈθeɾ/",
+          "pos": "глагол",
+          "ru": "делать, совершать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 688"
+        },
+        {
+          "es": "ir",
+          "ipa": "/iɾ/",
+          "pos": "глагол",
+          "ru": "идти, ехать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 600"
+        },
+        {
+          "es": "ver",
+          "ipa": "/beɾ/",
+          "pos": "глагол",
+          "ru": "видеть",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 561"
+        },
+        {
+          "es": "tener",
+          "ipa": "/teˈneɾ/",
+          "pos": "глагол",
+          "ru": "иметь",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 533"
+        },
+        {
+          "es": "estar",
+          "ipa": "/esˈtaɾ/",
+          "pos": "глагол",
+          "ru": "быть, находиться, чувствовать себя",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 516"
+        },
+        {
+          "es": "poder",
+          "ipa": "/poˈðeɾ/",
+          "pos": "глагол",
+          "ru": "мочь, быть в состоянии",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 404"
+        },
+        {
+          "es": "dar",
+          "ipa": "/daɾ/",
+          "pos": "глагол",
+          "ru": "давать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 351"
+        },
+        {
+          "es": "pasar",
+          "ipa": "/paˈsaɾ/",
+          "pos": "глагол",
+          "ru": "проводить (время), проходить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 300"
+        },
+        {
+          "es": "saber",
+          "ipa": "/saˈβeɾ/",
+          "pos": "глагол",
+          "ru": "знать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 287"
+        },
+        {
+          "es": "querer",
+          "ipa": "/keˈɾeɾ/",
+          "pos": "глагол",
+          "ru": "хотеть; любить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 286"
+        },
+        {
+          "es": "parecer",
+          "ipa": "/paɾeˈθeɾ/",
+          "pos": "глагол",
+          "ru": "казаться",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 254"
+        },
+        {
+          "es": "llegar",
+          "ipa": "/ʝeˈɣaɾ/",
+          "pos": "глагол",
+          "ru": "прибывать, достигать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 219"
+        },
+        {
+          "es": "creer",
+          "ipa": "/kɾeˈeɾ/",
+          "pos": "глагол",
+          "ru": "верить",
+          "example": null,
+          "grammar": "verbo, infinitivo",
+          "note": "вхождений в корпусе: 217"
+        },
+        {
+          "es": "hablar",
+          "ipa": "/aˈβlaɾ/",
+          "pos": "глагол",
+          "ru": "говорить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 205"
+        },
+        {
+          "es": "vivir",
+          "ipa": "/biˈβir/",
+          "pos": "глагол",
+          "ru": "жить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 199"
+        },
+        {
+          "es": "volver",
+          "ipa": "/bolˈβer/",
+          "pos": "глагол",
+          "ru": "возвращаться",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 198"
+        },
+        {
+          "es": "quedar",
+          "ipa": "/keˈðaɾ/",
+          "pos": "глагол",
+          "ru": "оставаться",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 193"
+        },
+        {
+          "es": "sentir",
+          "ipa": "/senˈtiɾ/",
+          "pos": "глагол",
+          "ru": "чувствовать",
+          "example": null,
+          "grammar": "verbo, infinitivo",
+          "note": "вхождений в корпусе: 182"
+        },
+        {
+          "es": "llevar",
+          "ipa": "/ʝeˈβaɾ/",
+          "pos": "глагол",
+          "ru": "нести, носить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 176"
+        },
+        {
+          "es": "dejar",
+          "ipa": "/deˈxaɾ/",
+          "pos": "глагол",
+          "ru": "оставлять, позволять",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 175"
+        },
+        {
+          "es": "morir",
+          "ipa": "/moˈɾiɾ/",
+          "pos": "глагол",
+          "ru": "умирать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 169"
+        },
+        {
+          "es": "salir",
+          "ipa": "/saˈliɾ/",
+          "pos": "глагол",
+          "ru": "выходить, выйти",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 167"
+        },
+        {
+          "es": "mirar",
+          "ipa": "/miˈɾaɾ/",
+          "pos": "глагол",
+          "ru": "смотреть",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 162"
+        },
+        {
+          "es": "encontrar",
+          "ipa": "/enkonˈtɾaɾ/",
+          "pos": "глагол",
+          "ru": "находить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 155"
+        },
+        {
+          "es": "llamar",
+          "ipa": "/ʎaˈmaɾ/",
+          "pos": "глагол",
+          "ru": "звать, называть",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 154"
+        },
+        {
+          "es": "poner",
+          "ipa": "/poˈneɾ/",
+          "pos": "глагол",
+          "ru": "класть, ставить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 145"
+        },
+        {
+          "es": "buscar",
+          "ipa": "/busˈkaɾ/",
+          "pos": "глагол",
+          "ru": "искать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 135"
+        },
+        {
+          "es": "oír",
+          "ipa": "/oˈiɾ/",
+          "pos": "глагол",
+          "ru": "слышать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 133"
+        },
+        {
+          "es": "correr",
+          "ipa": "/koˈreɾ/",
+          "pos": "глагол",
+          "ru": "бежать, течь",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 131"
+        },
+        {
+          "es": "caer",
+          "ipa": "/kaˈeɾ/",
+          "pos": "глагол",
+          "ru": "падать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 130"
+        },
+        {
+          "es": "venir",
+          "ipa": "/beˈniɾ/",
+          "pos": "глагол",
+          "ru": "приходить, приезжать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 130"
+        },
+        {
+          "es": "seguir",
+          "ipa": "/seˈɣiɾ/",
+          "pos": "глагол",
+          "ru": "продолжать, следовать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 117"
+        },
+        {
+          "es": "pensar",
+          "ipa": "/penˈsaɾ/",
+          "pos": "глагол",
+          "ru": "думать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 115"
+        },
+        {
+          "es": "deber",
+          "ipa": "/deˈβeɾ/",
+          "pos": "глагол",
+          "ru": "быть должным, долженствовать",
+          "example": null,
+          "grammar": "инфинитив; deber + inf. = должен сделать",
+          "note": "вхождений в корпусе: 113"
+        },
+        {
+          "es": "entrar",
+          "ipa": "/enˈtɾaɾ/",
+          "pos": "глагол",
+          "ru": "входить",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 113"
+        },
+        {
+          "es": "escribir",
+          "ipa": "/eskɾiˈβiɾ/",
+          "pos": "глагол",
+          "ru": "писать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 108"
+        },
+        {
+          "es": "conocer",
+          "ipa": "/ko.noˈθeɾ/",
+          "pos": "глагол",
+          "ru": "знать, быть знакомым; познакомиться",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 102"
+        },
+        {
+          "es": "empezar",
+          "ipa": "/empeˈθaɾ/",
+          "pos": "глагол",
+          "ru": "начинать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 96"
+        },
+        {
+          "es": "acabar",
+          "ipa": "/akaˈβaɾ/",
+          "pos": "глагол",
+          "ru": "заканчивать, кончать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 92"
+        },
+        {
+          "es": "bajar",
+          "ipa": "/baˈxaɾ/",
+          "pos": "глагол",
+          "ru": "спускаться, опускать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 91"
+        },
+        {
+          "es": "dormir",
+          "ipa": "/dorˈmir/",
+          "pos": "глагол",
+          "ru": "спать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 90"
+        },
+        {
+          "es": "leer",
+          "ipa": "/leˈeɾ/",
+          "pos": "глагол",
+          "ru": "читать",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 89"
+        },
+        {
+          "es": "perder",
+          "ipa": "/peɾˈðeɾ/",
+          "pos": "глагол",
+          "ru": "терять",
+          "example": null,
+          "grammar": "infinitivo",
+          "note": "вхождений в корпусе: 88"
+        }
+      ]
+    },
+    {
+      "title": "мест.",
+      "items": [
+        {
+          "es": "uno",
+          "ipa": "/ˈuno/",
+          "pos": "мест.",
+          "ru": "один, некто",
+          "example": null,
+          "grammar": "pronombre indefinido",
+          "note": "вхождений в корпусе: 3 406"
+        },
+        {
+          "es": "se",
+          "ipa": "/se/",
+          "pos": "мест.",
+          "ru": "себя, -ся",
+          "example": null,
+          "grammar": "pronombre reflexivo/impersonal",
+          "note": "вхождений в корпусе: 2 058"
+        },
+        {
+          "es": "lo",
+          "ipa": "/lo/",
+          "pos": "мест.",
+          "ru": "его, это (местоимение)",
+          "example": null,
+          "grammar": "pronombre personal átono, 3ª pers. sing. masculino/neutro",
+          "note": "вхождений в корпусе: 994"
+        },
+        {
+          "es": "le",
+          "ipa": "/le/",
+          "pos": "мест.",
+          "ru": "ему, ей, вам (вежл.)",
+          "example": null,
+          "grammar": "pronombre personal, 3ª pers. sing., objeto indirecto",
+          "note": "вхождений в корпусе: 718"
+        },
+        {
+          "es": "me",
+          "ipa": "/me/",
+          "pos": "мест.",
+          "ru": "мне, меня",
+          "example": null,
+          "grammar": "pronombre personal átono, 1ª pers. sing.",
+          "note": "вхождений в корпусе: 491"
+        },
+        {
+          "es": "él",
+          "ipa": "/el/",
+          "pos": "мест.",
+          "ru": "он",
+          "example": null,
+          "grammar": "pronombre personal, 3ª pers. masc. sing.",
+          "note": "вхождений в корпусе: 426"
+        },
+        {
+          "es": "qué",
+          "ipa": "/ke/",
+          "pos": "мест.",
+          "ru": "что, какой",
+          "example": null,
+          "grammar": "interrogativo/exclamativo",
+          "note": "вхождений в корпусе: 322"
+        },
+        {
+          "es": "yo",
+          "ipa": "/ʝo/",
+          "pos": "мест.",
+          "ru": "я",
+          "example": null,
+          "grammar": "pronombre personal, 1ª pers. sing.",
+          "note": "вхождений в корпусе: 228"
+        },
+        {
+          "es": "ella",
+          "ipa": "/ˈeʎa/",
+          "pos": "мест.",
+          "ru": "она",
+          "example": null,
+          "grammar": "pronombre personal, 3ª pers. fem. sing.",
+          "note": "вхождений в корпусе: 221"
+        },
+        {
+          "es": "nos",
+          "ipa": "/nos/",
+          "pos": "мест.",
+          "ru": "нам, нас",
+          "example": null,
+          "grammar": "pronombre personal, 1ª pers. plural, objeto directo/indirecto",
+          "note": "вхождений в корпусе: 215"
+        },
+        {
+          "es": "les",
+          "ipa": "/les/",
+          "pos": "мест.",
+          "ru": "им",
+          "example": null,
+          "grammar": "pronombre personal dativo, 3.ª pers. plural",
+          "note": "вхождений в корпусе: 185"
+        },
+        {
+          "es": "esto",
+          "ipa": "/ˈesto/",
+          "pos": "мест.",
+          "ru": "это",
+          "example": null,
+          "grammar": "pronombre demostrativo neutro, singular",
+          "note": "вхождений в корпусе: 174"
+        },
+        {
+          "es": "algo",
+          "ipa": "/ˈalɣo/",
+          "pos": "мест.",
+          "ru": "что-то, нечто",
+          "example": null,
+          "grammar": "pronombre indefinido",
+          "note": "вхождений в корпусе: 156"
+        },
+        {
+          "es": "nada",
+          "ipa": "/ˈnaða/",
+          "pos": "мест.",
+          "ru": "ничто, ничего",
+          "example": null,
+          "grammar": "pronombre indefinido",
+          "note": "вхождений в корпусе: 142"
+        },
+        {
+          "es": "usted",
+          "ipa": "/usˈteð/",
+          "pos": "мест.",
+          "ru": "вы (вежливая форма)",
+          "example": null,
+          "grammar": "pronombre personal, 2ª pers. sing. (formal)",
+          "note": "вхождений в корпусе: 135"
+        },
+        {
+          "es": "ellos",
+          "ipa": "/ˈeʎos/",
+          "pos": "мест.",
+          "ru": "они",
+          "example": null,
+          "grammar": "pronombre personal masculino plural",
+          "note": "вхождений в корпусе: 134"
+        },
+        {
+          "es": "eso",
+          "ipa": "/ˈeso/",
+          "pos": "мест.",
+          "ru": "это, то",
+          "example": null,
+          "grammar": "pronombre demostrativo neutro, singular",
+          "note": "вхождений в корпусе: 108"
+        },
+        {
+          "es": "quien",
+          "ipa": "/kjen/",
+          "pos": "мест.",
+          "ru": "кто, который",
+          "example": null,
+          "grammar": "pronombre relativo",
+          "note": "вхождений в корпусе: 107"
+        },
+        {
+          "es": "cual",
+          "ipa": "/kwal/",
+          "pos": "мест.",
+          "ru": "который, каковой",
+          "example": null,
+          "grammar": "pronombre relativo, singular",
+          "note": "вхождений в корпусе: 106"
+        },
+        {
+          "es": "te",
+          "ipa": "/te/",
+          "pos": "мест.",
+          "ru": "тебя, тебе",
+          "example": null,
+          "grammar": "pronombre personal átono, 2ª pers. sing.",
+          "note": "вхождений в корпусе: 98"
+        }
+      ]
+    },
+    {
+      "title": "прил.",
+      "items": [
+        {
+          "es": "su",
+          "ipa": "/su/",
+          "pos": "прил.",
+          "ru": "его, её, их, Ваш",
+          "example": null,
+          "grammar": "adjetivo posesivo, 3ª pers. sing./pl., invariable",
+          "note": "вхождений в корпусе: 2 515"
+        },
+        {
+          "es": "todo",
+          "ipa": "/ˈto.ðo/",
+          "pos": "прил.",
+          "ru": "весь, всё",
+          "example": null,
+          "grammar": "adjetivo indefinido, masculino singular",
+          "note": "вхождений в корпусе: 1 030"
+        },
+        {
+          "es": "este",
+          "ipa": "/ˈeste/",
+          "pos": "прил.",
+          "ru": "этот",
+          "example": null,
+          "grammar": "adjetivo demostrativo masculino singular",
+          "note": "вхождений в корпусе: 744"
+        },
+        {
+          "es": "otro",
+          "ipa": "/ˈotɾo/",
+          "pos": "прил.",
+          "ru": "другой, иной",
+          "example": null,
+          "grammar": "adjetivo/pronombre indefinido, masculino singular",
+          "note": "вхождений в корпусе: 581"
+        },
+        {
+          "es": "aquel",
+          "ipa": "/aˈkel/",
+          "pos": "прил.",
+          "ru": "тот",
+          "example": null,
+          "grammar": "adjetivo demostrativo, masculino singular",
+          "note": "вхождений в корпусе: 480"
+        },
+        {
+          "es": "mi",
+          "ipa": "/mi/",
+          "pos": "прил.",
+          "ru": "мой, моя, моё",
+          "example": null,
+          "grammar": "adjetivo posesivo, 1ª persona singular, forma apocopada",
+          "note": "вхождений в корпусе: 454"
+        },
+        {
+          "es": "ese",
+          "ipa": "/ˈese/",
+          "pos": "прил.",
+          "ru": "этот",
+          "example": null,
+          "grammar": "adjetivo demostrativo, masculino, singular",
+          "note": "вхождений в корпусе: 310"
+        },
+        {
+          "es": "mismo",
+          "ipa": "/ˈmismo/",
+          "pos": "прил.",
+          "ru": "сам, тот же самый",
+          "example": null,
+          "grammar": "adjetivo indefinido, masculino singular",
+          "note": "вхождений в корпусе: 288"
+        },
+        {
+          "es": "grande",
+          "ipa": "/ˈɡɾande/",
+          "pos": "прил.",
+          "ru": "большой, великий",
+          "example": null,
+          "grammar": "adjetivo, singular, apócope 'gran' ante sustantivo singular",
+          "note": "вхождений в корпусе: 280"
+        },
+        {
+          "es": "pobre",
+          "ipa": "/ˈpoβɾe/",
+          "pos": "прил.",
+          "ru": "бедный, жалкий",
+          "example": null,
+          "grammar": "adjetivo, singular",
+          "note": "вхождений в корпусе: 254"
+        },
+        {
+          "es": "nuestro",
+          "ipa": "/ˈnwestɾo/",
+          "pos": "прил.",
+          "ru": "наш",
+          "example": null,
+          "grammar": "adjetivo posesivo masculino singular (en 'Padre nuestro')",
+          "note": "вхождений в корпусе: 248"
+        },
+        {
+          "es": "mucho",
+          "ipa": "/ˈmutʃo/",
+          "pos": "прил.",
+          "ru": "много",
+          "example": null,
+          "grammar": "adjetivo masculino singular",
+          "note": "вхождений в корпусе: 240"
+        },
+        {
+          "es": "alguno",
+          "ipa": "/alˈɣuno/",
+          "pos": "прил.",
+          "ru": "некоторый, какой-нибудь",
+          "example": null,
+          "grammar": "pronombre indefinido, masculino singular",
+          "note": "вхождений в корпусе: 233"
+        },
+        {
+          "es": "solo",
+          "ipa": "/ˈsolo/",
+          "pos": "прил.",
+          "ru": "один, одинокий; только",
+          "example": null,
+          "grammar": "adjetivo masculino, singular",
+          "note": "вхождений в корпусе: 225"
+        },
+        {
+          "es": "bueno",
+          "ipa": "/ˈbweno/",
+          "pos": "прил.",
+          "ru": "хороший",
+          "example": null,
+          "grammar": "adjetivo masculino, singular",
+          "note": "вхождений в корпусе: 187"
+        },
+        {
+          "es": "poco",
+          "ipa": "/ˈpoko/",
+          "pos": "прил.",
+          "ru": "мало, немного",
+          "example": null,
+          "grammar": "adjetivo, masculino singular",
+          "note": "вхождений в корпусе: 167"
+        },
+        {
+          "es": "viejo",
+          "ipa": "/ˈbjexo/",
+          "pos": "прил.",
+          "ru": "старый",
+          "example": null,
+          "grammar": "adjetivo masculino, singular",
+          "note": "вхождений в корпусе: 163"
+        },
+        {
+          "es": "cada",
+          "ipa": "/ˈkaða/",
+          "pos": "прил.",
+          "ru": "каждый, каждая, каждое",
+          "example": null,
+          "grammar": "adjetivo indefinido, invariable",
+          "note": "вхождений в корпусе: 154"
+        },
+        {
+          "es": "tal",
+          "ipa": "/tal/",
+          "pos": "прил.",
+          "ru": "такой",
+          "example": null,
+          "grammar": "adjetivo indefinido",
+          "note": "вхождений в корпусе: 147"
+        },
+        {
+          "es": "tanto",
+          "ipa": "/ˈtan.to/",
+          "pos": "прил.",
+          "ru": "столько, так много",
+          "example": null,
+          "grammar": "adjetivo/determinante masculino singular",
+          "note": "вхождений в корпусе: 142"
+        },
+        {
+          "es": "santo",
+          "ipa": "/ˈsanto/",
+          "pos": "прил.",
+          "ru": "святой",
+          "example": null,
+          "grammar": "adjetivo, singular",
+          "note": "вхождений в корпусе: 130"
+        },
+        {
+          "es": "bajo",
+          "ipa": "/ˈbaxo/",
+          "pos": "прил.",
+          "ru": "низкий; под; нижний",
+          "example": null,
+          "grammar": "adjetivo masculino singular; también preposición en bajo la luz",
+          "note": "вхождений в корпусе: 128"
+        },
+        {
+          "es": "primero",
+          "ipa": "/pɾiˈmeɾo/",
+          "pos": "прил.",
+          "ru": "первый",
+          "example": null,
+          "grammar": "adjetivo, singular, masculino",
+          "note": "вхождений в корпусе: 118"
+        },
+        {
+          "es": "pequeño",
+          "ipa": "/peˈkeɲo/",
+          "pos": "прил.",
+          "ru": "маленький",
+          "example": null,
+          "grammar": "adjetivo masculino, singular",
+          "note": "вхождений в корпусе: 115"
+        },
+        {
+          "es": "medio",
+          "ipa": "/ˈmeðjo/",
+          "pos": "прил.",
+          "ru": "середина",
+          "example": null,
+          "grammar": "sustantivo masculino, singular (en frase 'en medio de')",
+          "note": "вхождений в корпусе: 112"
+        },
+        {
+          "es": "mejor",
+          "ipa": "/meˈxoɾ/",
+          "pos": "прил.",
+          "ru": "лучше, лучший",
+          "example": null,
+          "grammar": "comparativo de bueno/bien",
+          "note": "вхождений в корпусе: 106"
+        },
+        {
+          "es": "nuevo",
+          "ipa": "/ˈnwe.βo/",
+          "pos": "прил.",
+          "ru": "новый",
+          "example": null,
+          "grammar": "adjetivo masculino, singular",
+          "note": "вхождений в корпусе: 104"
+        },
+        {
+          "es": "mayor",
+          "ipa": "/maˈʝoɾ/",
+          "pos": "прил.",
+          "ru": "больший, старший",
+          "example": null,
+          "grammar": "adjetivo comparativo, singular (invariable en género)",
+          "note": "вхождений в корпусе: 103"
+        },
+        {
+          "es": "tu",
+          "ipa": "/tu/",
+          "pos": "прил.",
+          "ru": "твой, твоя, твоё, твои",
+          "example": null,
+          "grammar": "adjetivo/determinante posesivo, 2ª pers. sing., singular",
+          "note": "вхождений в корпусе: 100"
+        },
+        {
+          "es": "alto",
+          "ipa": "/ˈalto/",
+          "pos": "прил.",
+          "ru": "высокий",
+          "example": null,
+          "grammar": "adjetivo, masculino singular",
+          "note": "вхождений в корпусе: 99"
+        },
+        {
+          "es": "catalán",
+          "ipa": "/kataˈlan/",
+          "pos": "прил.",
+          "ru": "каталанский язык",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 89"
+        }
+      ]
+    },
+    {
+      "title": "сущ.",
+      "items": [
+        {
+          "es": "vez",
+          "ipa": "/beθ/",
+          "pos": "сущ.",
+          "ru": "раз",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 409"
+        },
+        {
+          "es": "hombre",
+          "ipa": "/ˈombɾe/",
+          "pos": "сущ.",
+          "ru": "человек, мужчина",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 371"
+        },
+        {
+          "es": "tierra",
+          "ipa": "/ˈtjera/",
+          "pos": "сущ.",
+          "ru": "земля",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 353"
+        },
+        {
+          "es": "día",
+          "ipa": "/ˈdia/",
+          "pos": "сущ.",
+          "ru": "день",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 276"
+        },
+        {
+          "es": "agua",
+          "ipa": "/ˈa.ɣwa/",
+          "pos": "сущ.",
+          "ru": "вода",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 264"
+        },
+        {
+          "es": "vida",
+          "ipa": "/ˈbiða/",
+          "pos": "сущ.",
+          "ru": "жизнь",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 241"
+        },
+        {
+          "es": "campo",
+          "ipa": "/ˈkampo/",
+          "pos": "сущ.",
+          "ru": "поле, деревня",
+          "example": null,
+          "grammar": "sustantivo masculino",
+          "note": "вхождений в корпусе: 221"
+        },
+        {
+          "es": "barraca",
+          "ipa": "/baˈraka/",
+          "pos": "сущ.",
+          "ru": "хижина, лачуга (в Валенсии)",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 215"
+        },
+        {
+          "es": "ciudad",
+          "ipa": "/θjuˈðað/",
+          "pos": "сущ.",
+          "ru": "город",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 200"
+        },
+        {
+          "es": "pueblo",
+          "ipa": "/ˈpweβlo/",
+          "pos": "сущ.",
+          "ru": "народ, село, деревня",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 188"
+        },
+        {
+          "es": "camino",
+          "ipa": "/kaˈmino/",
+          "pos": "сущ.",
+          "ru": "дорога, путь",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 186"
+        },
+        {
+          "es": "cielo",
+          "ipa": "/ˈθjelo/",
+          "pos": "сущ.",
+          "ru": "небо",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 183"
+        },
+        {
+          "es": "ojo",
+          "ipa": "/ˈoxo/",
+          "pos": "сущ.",
+          "ru": "глаз",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 181"
+        },
+        {
+          "es": "casa",
+          "ipa": "/ˈkasa/",
+          "pos": "сущ.",
+          "ru": "дом",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 166"
+        },
+        {
+          "es": "cosa",
+          "ipa": "/ˈkosa/",
+          "pos": "сущ.",
+          "ru": "вещь, дело",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 162"
+        },
+        {
+          "es": "alma",
+          "ipa": "/ˈalma/",
+          "pos": "сущ.",
+          "ru": "душа",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 161"
+        },
+        {
+          "es": "don",
+          "ipa": "/don/",
+          "pos": "сущ.",
+          "ru": "дон (титул)",
+          "example": null,
+          "grammar": "sustantivo masculino singular",
+          "note": "вхождений в корпусе: 161"
+        },
+        {
+          "es": "padre",
+          "ipa": "/ˈpaðɾe/",
+          "pos": "сущ.",
+          "ru": "отец",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 148"
+        },
+        {
+          "es": "sol",
+          "ipa": "/ˈsol/",
+          "pos": "сущ.",
+          "ru": "солнце",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 148"
+        },
+        {
+          "es": "dios",
+          "ipa": "/djos/",
+          "pos": "сущ.",
+          "ru": "бог",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 146"
+        },
+        {
+          "es": "huerta",
+          "ipa": "/ˈweɾta/",
+          "pos": "сущ.",
+          "ru": "сад, огород",
+          "example": null,
+          "grammar": "sustantivo femenino singular",
+          "note": "вхождений в корпусе: 144"
+        },
+        {
+          "es": "mar",
+          "ipa": "/maɾ/",
+          "pos": "сущ.",
+          "ru": "море",
+          "example": null,
+          "grammar": "sustantivo, singular (puede ser masculino o femenino)",
+          "note": "вхождений в корпусе: 143"
+        },
+        {
+          "es": "noche",
+          "ipa": "/ˈnotʃe/",
+          "pos": "сущ.",
+          "ru": "ночь",
+          "example": null,
+          "grammar": "sustantivo femenino singular",
+          "note": "вхождений в корпусе: 143"
+        },
+        {
+          "es": "tiempo",
+          "ipa": "/ˈtjempo/",
+          "pos": "сущ.",
+          "ru": "время",
+          "example": null,
+          "grammar": "sustantivo masculino singular",
+          "note": "вхождений в корпусе: 141"
+        },
+        {
+          "es": "parte",
+          "ipa": "/ˈpaɾte/",
+          "pos": "сущ.",
+          "ru": "часть",
+          "example": null,
+          "grammar": "singular, femenino",
+          "note": "вхождений в корпусе: 138"
+        },
+        {
+          "es": "año",
+          "ipa": "/ˈaɲo/",
+          "pos": "сущ.",
+          "ru": "год",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 133"
+        },
+        {
+          "es": "pie",
+          "ipa": "/pje/",
+          "pos": "сущ.",
+          "ru": "нога (ступня), подножие",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 131"
+        },
+        {
+          "es": "cabeza",
+          "ipa": "/kaˈβeθa/",
+          "pos": "сущ.",
+          "ru": "голова",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 129"
+        },
+        {
+          "es": "hora",
+          "ipa": "/ˈoɾa/",
+          "pos": "сущ.",
+          "ru": "час, время",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 129"
+        },
+        {
+          "es": "mujer",
+          "ipa": "/muˈxeɾ/",
+          "pos": "сущ.",
+          "ru": "женщина, жена",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 127"
+        },
+        {
+          "es": "señor",
+          "ipa": "/seˈɲoɾ/",
+          "pos": "сущ.",
+          "ru": "господин, Господь",
+          "example": null,
+          "grammar": "sustantivo masculino singular",
+          "note": "вхождений в корпусе: 126"
+        },
+        {
+          "es": "madre",
+          "ipa": "/ˈmaðɾe/",
+          "pos": "сущ.",
+          "ru": "мать",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 119"
+        },
+        {
+          "es": "gente",
+          "ipa": "/ˈxente/",
+          "pos": "сущ.",
+          "ru": "люди",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 117"
+        },
+        {
+          "es": "mano",
+          "ipa": "/ˈmano/",
+          "pos": "сущ.",
+          "ru": "рука (кисть)",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 116"
+        },
+        {
+          "es": "río",
+          "ipa": "/ˈrio/",
+          "pos": "сущ.",
+          "ru": "река",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 115"
+        },
+        {
+          "es": "luz",
+          "ipa": "/luθ/",
+          "pos": "сущ.",
+          "ru": "свет",
+          "example": null,
+          "grammar": "sustantivo femenino singular",
+          "note": "вхождений в корпусе: 112"
+        },
+        {
+          "es": "hijo",
+          "ipa": "/ˈixo/",
+          "pos": "сущ.",
+          "ru": "сын",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 110"
+        },
+        {
+          "es": "puerta",
+          "ipa": "/ˈpweɾta/",
+          "pos": "сущ.",
+          "ru": "дверь, ворота",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 110"
+        },
+        {
+          "es": "familia",
+          "ipa": "/faˈmilja/",
+          "pos": "сущ.",
+          "ru": "семья",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 104"
+        },
+        {
+          "es": "mundo",
+          "ipa": "/ˈmun.do/",
+          "pos": "сущ.",
+          "ru": "мир",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 99"
+        },
+        {
+          "es": "piedra",
+          "ipa": "/ˈpjeðɾa/",
+          "pos": "сущ.",
+          "ru": "камень",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 99"
+        },
+        {
+          "es": "tarde",
+          "ipa": "/ˈtaɾðe/",
+          "pos": "сущ.",
+          "ru": "вечер, день",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 98"
+        },
+        {
+          "es": "obra",
+          "ipa": "/ˈoβɾa/",
+          "pos": "сущ.",
+          "ru": "дело, произведение",
+          "example": null,
+          "grammar": "sustantivo femenino singular",
+          "note": "вхождений в корпусе: 95"
+        },
+        {
+          "es": "paso",
+          "ipa": "/ˈpa.so/",
+          "pos": "сущ.",
+          "ru": "шаг",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 95"
+        },
+        {
+          "es": "amigo",
+          "ipa": "/aˈmiɣo/",
+          "pos": "сущ.",
+          "ru": "друг",
+          "example": null,
+          "grammar": "sustantivo masc. sing.",
+          "note": "вхождений в корпусе: 93"
+        },
+        {
+          "es": "montaña",
+          "ipa": "/monˈtaɲa/",
+          "pos": "сущ.",
+          "ru": "гора",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 91"
+        },
+        {
+          "es": "árbol",
+          "ipa": "/ˈaɾβol/",
+          "pos": "сущ.",
+          "ru": "дерево",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 90"
+        },
+        {
+          "es": "recuerdo",
+          "ipa": "/reˈkweɾðo/",
+          "pos": "сущ.",
+          "ru": "воспоминание",
+          "example": null,
+          "grammar": "sustantivo masculino, singular",
+          "note": "вхождений в корпусе: 90"
+        },
+        {
+          "es": "historia",
+          "ipa": "/isˈtoɾja/",
+          "pos": "сущ.",
+          "ru": "история",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 88"
+        },
+        {
+          "es": "raya",
+          "ipa": "/ˈraʝa/",
+          "pos": "сущ.",
+          "ru": "скат (рыба)",
+          "example": null,
+          "grammar": "sustantivo femenino, singular",
+          "note": "вхождений в корпусе: 88"
+        },
+        {
+          "es": "tigre",
+          "ipa": "/ˈtiɡɾe/",
+          "pos": "сущ.",
+          "ru": "тигр",
+          "example": null,
+          "grammar": "sustantivo masculino singular",
+          "note": "вхождений в корпусе: 88"
+        }
+      ]
+    },
+    {
+      "title": "нареч.",
+      "items": [
+        {
+          "es": "no",
+          "ipa": "/no/",
+          "pos": "нареч.",
+          "ru": "нет, не",
+          "example": null,
+          "grammar": "adverbio de negación",
+          "note": "вхождений в корпусе: 1 840"
+        },
+        {
+          "es": "más",
+          "ipa": "/mas/",
+          "pos": "нареч.",
+          "ru": "более, больше",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 1 023"
+        },
+        {
+          "es": "ya",
+          "ipa": "/ʝa/",
+          "pos": "нареч.",
+          "ru": "уже",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 325"
+        },
+        {
+          "es": "allí",
+          "ipa": "/aˈʎi/",
+          "pos": "нареч.",
+          "ru": "там",
+          "example": null,
+          "grammar": "adverbio de lugar",
+          "note": "вхождений в корпусе: 294"
+        },
+        {
+          "es": "tan",
+          "ipa": "/tan/",
+          "pos": "нареч.",
+          "ru": "так, такой",
+          "example": null,
+          "grammar": "adverbio de grado",
+          "note": "вхождений в корпусе: 253"
+        },
+        {
+          "es": "bien",
+          "ipa": "/bjen/",
+          "pos": "нареч.",
+          "ru": "хорошо",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 245"
+        },
+        {
+          "es": "muy",
+          "ipa": "/mwi/",
+          "pos": "нареч.",
+          "ru": "очень",
+          "example": null,
+          "grammar": "adverbio de grado",
+          "note": "вхождений в корпусе: 220"
+        },
+        {
+          "es": "donde",
+          "ipa": "/ˈdonde/",
+          "pos": "нареч.",
+          "ru": "где, куда",
+          "example": null,
+          "grammar": "adverbio relativo/locativo",
+          "note": "вхождений в корпусе: 217"
+        },
+        {
+          "es": "así",
+          "ipa": "/aˈsi/",
+          "pos": "нареч.",
+          "ru": "так, таким образом",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 215"
+        },
+        {
+          "es": "aquí",
+          "ipa": "/aˈki/",
+          "pos": "нареч.",
+          "ru": "здесь",
+          "example": null,
+          "grammar": "adverbio de lugar",
+          "note": "вхождений в корпусе: 207"
+        },
+        {
+          "es": "siempre",
+          "ipa": "/ˈsjem.pɾe/",
+          "pos": "нареч.",
+          "ru": "всегда",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 181"
+        },
+        {
+          "es": "también",
+          "ipa": "/tamˈbjen/",
+          "pos": "нареч.",
+          "ru": "также",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 176"
+        },
+        {
+          "es": "sí",
+          "ipa": "/si/",
+          "pos": "нареч.",
+          "ru": "да; конечно",
+          "example": null,
+          "grammar": "adverbio de afirmación",
+          "note": "вхождений в корпусе: 141"
+        },
+        {
+          "es": "después",
+          "ipa": "/desˈpwes/",
+          "pos": "нареч.",
+          "ru": "после, потом",
+          "example": null,
+          "grammar": "adverbio de tiempo",
+          "note": "вхождений в корпусе: 139"
+        },
+        {
+          "es": "ahora",
+          "ipa": "/aˈoɾa/",
+          "pos": "нареч.",
+          "ru": "сейчас",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 136"
+        },
+        {
+          "es": "entonces",
+          "ipa": "/enˈtonθes/",
+          "pos": "нареч.",
+          "ru": "тогда, затем",
+          "example": null,
+          "grammar": "adverbio de tiempo",
+          "note": "вхождений в корпусе: 135"
+        },
+        {
+          "es": "aún",
+          "ipa": "/aˈun/",
+          "pos": "нареч.",
+          "ru": "ещё, всё ещё",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 122"
+        },
+        {
+          "es": "acaso",
+          "ipa": "/aˈkaso/",
+          "pos": "нареч.",
+          "ru": "случайно, может быть",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 119"
+        },
+        {
+          "es": "luego",
+          "ipa": "/ˈlweɡo/",
+          "pos": "нареч.",
+          "ru": "потом",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 113"
+        },
+        {
+          "es": "casi",
+          "ipa": "/ˈkasi/",
+          "pos": "нареч.",
+          "ru": "почти",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 103"
+        },
+        {
+          "es": "antes",
+          "ipa": "/ˈantes/",
+          "pos": "нареч.",
+          "ru": "раньше, прежде",
+          "example": null,
+          "grammar": null,
+          "note": "вхождений в корпусе: 101"
+        },
+        {
+          "es": "cómo",
+          "ipa": "/ˈkomo/",
+          "pos": "нареч.",
+          "ru": "как",
+          "example": null,
+          "grammar": "adverbio interrogativo/exclamativo",
+          "note": "вхождений в корпусе: 97"
+        },
+        {
+          "es": "apenas",
+          "ipa": "/aˈpenas/",
+          "pos": "нареч.",
+          "ru": "едва, почти не",
+          "example": null,
+          "grammar": "adverbio",
+          "note": "вхождений в корпусе: 93"
+        },
+        {
+          "es": "hoy",
+          "ipa": "/ˈoi/",
+          "pos": "нареч.",
+          "ru": "сегодня",
+          "example": null,
+          "grammar": "adverbio de tiempo",
+          "note": "вхождений в корпусе: 93"
+        }
+      ]
+    },
+    {
+      "title": "числ.",
+      "items": [
+        {
+          "es": "dos",
+          "ipa": "/dos/",
+          "pos": "числ.",
+          "ru": "два",
+          "example": null,
+          "grammar": "numeral cardinal, invariable",
+          "note": "вхождений в корпусе: 228"
+        }
+      ]
+    }
+  ]
+}
