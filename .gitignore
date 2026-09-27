@@ -7,3 +7,6 @@
 
 # Wrangler (Cloudflare) local state
 .wrangler/
+
+# Vitest cache
+.vitest/
