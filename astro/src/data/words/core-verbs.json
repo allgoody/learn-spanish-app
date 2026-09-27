@@ -1,0 +1,85 @@
+{
+  "id": "core-verbs",
+  "lang": "es",
+  "title": { "ru": "Сер, эстар, хабер, тенер", "en": "Core verbs: ser, estar, haber, tener" },
+  "groups": [
+    {
+      "title": "ser — быть (постоянное)",
+      "items": [
+        { "es": "soy", "ipa": "/soj/", "pos": "v. (ser)", "ru": "я есть", "example": { "es": "Soy profesor.", "ru": "Я учитель." }, "grammar": "1-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "eres", "ipa": "/ˈeɾes/", "pos": "v. (ser)", "ru": "ты есть", "example": { "es": "Eres muy amable.", "ru": "Ты очень любезен." }, "grammar": "2-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "es", "ipa": "/es/", "pos": "v. (ser)", "ru": "он/она есть", "example": { "es": "Ella es médica.", "ru": "Она врач." }, "grammar": "3-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "somos", "ipa": "/ˈsomos/", "pos": "v. (ser)", "ru": "мы есть", "example": { "es": "Somos amigos.", "ru": "Мы друзья." }, "grammar": "1-е лицо мн. ч., presente de indicativo", "note": null },
+        { "es": "sois", "ipa": "/sojs/", "pos": "v. (ser)", "ru": "вы есть", "example": { "es": "Sois muy jóvenes.", "ru": "Вы очень молоды." }, "grammar": "2-е лицо мн. ч., presente de indicativo", "note": "только в Испании" },
+        { "es": "son", "ipa": "/son/", "pos": "v. (ser)", "ru": "они есть", "example": { "es": "Son de México.", "ru": "Они из Мексики." }, "grammar": "3-е лицо мн. ч., presente de indicativo", "note": null }
+      ]
+    },
+    {
+      "title": "estar — быть, находиться (состояние)",
+      "items": [
+        { "es": "estoy", "ipa": "/esˈtoj/", "pos": "v. (estar)", "ru": "я нахожусь", "example": { "es": "Estoy en casa.", "ru": "Я дома." }, "grammar": "1-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "estás", "ipa": "/esˈtas/", "pos": "v. (estar)", "ru": "ты находишься", "example": { "es": "¿Estás cansado?", "ru": "Ты устал?" }, "grammar": "2-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "está", "ipa": "/esˈta/", "pos": "v. (estar)", "ru": "он/она находится", "example": { "es": "El libro está en la mesa.", "ru": "Книга на столе." }, "grammar": "3-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "estamos", "ipa": "/esˈtamos/", "pos": "v. (estar)", "ru": "мы находимся", "example": { "es": "Estamos listos.", "ru": "Мы готовы." }, "grammar": "1-е лицо мн. ч., presente de indicativo", "note": null },
+        { "es": "estáis", "ipa": "/esˈtajs/", "pos": "v. (estar)", "ru": "вы находитесь", "example": { "es": "¿Estáis en casa?", "ru": "Вы дома?" }, "grammar": "2-е лицо мн. ч., presente de indicativo", "note": "только в Испании" },
+        { "es": "están", "ipa": "/esˈtan/", "pos": "v. (estar)", "ru": "они находятся", "example": { "es": "Están muy contentos.", "ru": "Они очень довольны." }, "grammar": "3-е лицо мн. ч., presente de indicativo", "note": null }
+      ]
+    },
+    {
+      "title": "haber — иметь (вспомогательный); hay",
+      "items": [
+        { "es": "he", "ipa": "/e/", "pos": "v. (haber)", "ru": "я (вспом. глагол)", "example": { "es": "He comido ya.", "ru": "Я уже поел." }, "grammar": "1-е лицо ед. ч.; вспомогательный для pretérito perfecto", "note": null },
+        { "es": "has", "ipa": "/as/", "pos": "v. (haber)", "ru": "ты (вспом. глагол)", "example": { "es": "¿Has visto la película?", "ru": "Ты видел фильм?" }, "grammar": "2-е лицо ед. ч.; вспомогательный", "note": null },
+        { "es": "ha", "ipa": "/a/", "pos": "v. (haber)", "ru": "он/она (вспом. глагол)", "example": { "es": "Ella ha llegado tarde.", "ru": "Она пришла поздно." }, "grammar": "3-е лицо ед. ч.; вспомогательный", "note": null },
+        { "es": "hemos", "ipa": "/ˈemos/", "pos": "v. (haber)", "ru": "мы (вспом. глагол)", "example": { "es": "Hemos terminado el trabajo.", "ru": "Мы закончили работу." }, "grammar": "1-е лицо мн. ч.; вспомогательный", "note": null },
+        { "es": "habéis", "ipa": "/aˈβejs/", "pos": "v. (haber)", "ru": "вы (вспом. глагол)", "example": { "es": "¿Habéis comido?", "ru": "Вы поели?" }, "grammar": "2-е лицо мн. ч.; вспомогательный", "note": "только в Испании" },
+        { "es": "han", "ipa": "/an/", "pos": "v. (haber)", "ru": "они (вспом. глагол)", "example": { "es": "Han salido de viaje.", "ru": "Они уехали в поездку." }, "grammar": "3-е лицо мн. ч.; вспомогательный", "note": null },
+        { "es": "hay", "ipa": "/aj/", "pos": "v. (haber)", "ru": "есть, имеется", "example": { "es": "Hay pan en la cocina.", "ru": "На кухне есть хлеб." }, "grammar": "безличная форма; одинаков для ед. и мн. ч.", "note": null }
+      ]
+    },
+    {
+      "title": "tener — иметь",
+      "items": [
+        { "es": "tengo", "ipa": "/ˈteŋɡo/", "pos": "v. (tener)", "ru": "я имею", "example": { "es": "Tengo un coche.", "ru": "У меня есть машина." }, "grammar": "1-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "tienes", "ipa": "/ˈtjenes/", "pos": "v. (tener)", "ru": "ты имеешь", "example": { "es": "Tienes razón.", "ru": "Ты прав." }, "grammar": "2-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "tiene", "ipa": "/ˈtjene/", "pos": "v. (tener)", "ru": "он/она имеет", "example": { "es": "Tiene dos hijos.", "ru": "У него двое детей." }, "grammar": "3-е лицо ед. ч., presente de indicativo", "note": null },
+        { "es": "tenemos", "ipa": "/teˈnemos/", "pos": "v. (tener)", "ru": "мы имеем", "example": { "es": "Tenemos tiempo.", "ru": "У нас есть время." }, "grammar": "1-е лицо мн. ч., presente de indicativo", "note": null },
+        { "es": "tenéis", "ipa": "/teˈnejs/", "pos": "v. (tener)", "ru": "вы имеете", "example": { "es": "¿Tenéis hambre?", "ru": "Вы голодны?" }, "grammar": "2-е лицо мн. ч., presente de indicativo", "note": "только в Испании" },
+        { "es": "tienen", "ipa": "/ˈtjenen/", "pos": "v. (tener)", "ru": "они имеют", "example": { "es": "Tienen una casa grande.", "ru": "У них большой дом." }, "grammar": "3-е лицо мн. ч., presente de indicativo", "note": null }
+      ]
+    },
+    {
+      "title": "ser vs estar — значение меняется",
+      "items": [
+        { "es": "ser listo / estar listo", "ipa": "/seɾ ˈlisto/ /esˈtaɾ ˈlisto/", "pos": "v. (ser/estar)", "ru": "быть умным / быть готовым", "example": { "es": "Es listo, pero hoy no está listo. / Él es listo y ahora está listo.", "ru": "Он умный, но сегодня не готов. / Он умный и сейчас готов." }, "grammar": "ser: умный от природы; estar: готовый", "note": null },
+        { "es": "ser aburrido / estar aburrido", "ipa": "/seɾ aβuˈriðo/ /esˈtaɾ aβuˈriðo/", "pos": "v. (ser/estar)", "ru": "быть скучным / скучать", "example": { "es": "El libro es aburrido y estoy aburrido. / El libro es aburrido, yo estoy aburrido.", "ru": "Книга скучная, и мне скучно. / Книга скучная, а я скучаю." }, "grammar": "ser: скучный (свойство); estar: скучающий", "note": null },
+        { "es": "ser rico / estar rico", "ipa": "/seɾ ˈriko/ /esˈtaɾ ˈriko/", "pos": "v. (ser/estar)", "ru": "быть богатым / быть вкусным", "example": { "es": "Es rico y la sopa está rica. / Él es rico, la sopa está rica.", "ru": "Он богат, и суп вкусный. / Он богат, а суп вкусный." }, "grammar": "ser: богатый; estar: вкусный", "note": null },
+        { "es": "ser verde / estar verde", "ipa": "/seɾ ˈbeɾðe/ /esˈtaɾ ˈbeɾðe/", "pos": "v. (ser/estar)", "ru": "быть зелёным / быть незрелым", "example": { "es": "El campo es verde y la fruta está verde. / El campo es verde, la fruta está verde.", "ru": "Поле зелёное, а фрукт незрелый. / Поле зелёное, фрукт незрелый." }, "grammar": "ser: зелёный (цвет); estar: незрелый", "note": null },
+        { "es": "ser bueno / estar bueno", "ipa": "/seɾ ˈbweno/ /esˈtaɾ ˈbweno/", "pos": "v. (ser/estar)", "ru": "быть хорошим / быть в форме; вкусным", "example": { "es": "Es bueno y está bueno. / Él es bueno, el pan está bueno.", "ru": "Он хороший человек и хорош собой. / Он добрый, а хлеб вкусный." }, "grammar": "ser: хороший (мораль); estar: в форме, вкусный", "note": null },
+        { "es": "ser malo / estar malo", "ipa": "/seɾ ˈmalo/ /esˈtaɾ ˈmalo/", "pos": "v. (ser/estar)", "ru": "быть плохим / быть больным", "example": { "es": "El perro es malo y está malo. / El perro es malo, el niño está malo.", "ru": "Собака злая и больна. / Собака злая, а ребёнок болен." }, "grammar": "ser: плохой, злой; estar: больной", "note": null },
+        { "es": "ser vivo / estar vivo", "ipa": "/seɾ ˈbiβo/ /esˈtaɾ ˈbiβo/", "pos": "v. (ser/estar)", "ru": "быть смышлёным / быть живым", "example": { "es": "Es vivo y todavía está vivo. / Él es vivo, el abuelo está vivo.", "ru": "Он смышлёный и всё ещё жив. / Он смышлёный, а дед жив." }, "grammar": "ser: живой, смышлёный; estar: в живых", "note": null },
+        { "es": "ser seguro / estar seguro", "ipa": "/seɾ seˈɣuɾo/ /esˈtaɾ seˈɣuɾo/", "pos": "v. (ser/estar)", "ru": "быть безопасным / быть уверенным", "example": { "es": "El coche es seguro y estoy seguro. / El coche es seguro, yo estoy seguro.", "ru": "Машина безопасная, и я уверен. / Машина безопасная, а я уверен." }, "grammar": "ser: безопасный, надёжный; estar: уверенный", "note": null },
+        { "es": "ser atento / estar atento", "ipa": "/seɾ aˈtento/ /esˈtaɾ aˈtento/", "pos": "v. (ser/estar)", "ru": "быть внимательным (по характеру) / быть внимательным (сейчас)", "example": { "es": "Es atento y está atento a todo. / Él es atento, ahora está atento.", "ru": "Он внимательный человек и сейчас ко всему внимателен. / Он внимательный, сейчас он сосредоточен." }, "grammar": "ser: внимательный (черта); estar: сосредоточенный сейчас", "note": null },
+        { "es": "ser cansado / estar cansado", "ipa": "/seɾ kanˈsado/ /esˈtaɾ kanˈsado/", "pos": "v. (ser/estar)", "ru": "быть утомительным / быть уставшим", "example": { "es": "El viaje es cansado y estoy cansado. / El viaje es cansado, yo estoy cansado.", "ru": "Поездка утомительная, и я устал. / Поездка утомительная, а я устал." }, "grammar": "ser: утомительный; estar: уставший", "note": null }
+      ]
+    },
+    {
+      "title": "Устойчивые выражения с tener",
+      "items": [
+        { "es": "tener que + inf.", "ipa": "/teˈneɾ ke/", "pos": "v. (tener)", "ru": "должен, нужно", "example": { "es": "Tengo que estudiar.", "ru": "Мне нужно учиться." }, "grammar": "обязательство; tener que + инфинитив", "note": null },
+        { "es": "tener ganas de", "ipa": "/teˈneɾ ˈɡanas de/", "pos": "v. (tener)", "ru": "хотеть, иметь желание", "example": { "es": "Tengo ganas de verte.", "ru": "Мне хочется тебя увидеть." }, "grammar": "желание; tener ganas de + инфинитив", "note": null },
+        { "es": "tener razón", "ipa": "/teˈneɾ raˈson/", "pos": "v. (tener)", "ru": "быть правым", "example": { "es": "Tienes razón.", "ru": "Ты прав." }, "grammar": "правота; только с tener, не ser", "note": null },
+        { "es": "tener hambre", "ipa": "/teˈneɾ ˈambɾe/", "pos": "v. (tener)", "ru": "быть голодным", "example": { "es": "Tengo hambre.", "ru": "Я голоден." }, "grammar": "голод; tener hambre", "note": null },
+        { "es": "tener sed", "ipa": "/teˈneɾ seð/", "pos": "v. (tener)", "ru": "хотеть пить", "example": { "es": "Tengo sed.", "ru": "Я хочу пить." }, "grammar": "жажда; tener sed", "note": null },
+        { "es": "tener frío", "ipa": "/teˈneɾ ˈfɾio/", "pos": "v. (tener)", "ru": "мёрзнуть", "example": { "es": "Tengo frío.", "ru": "Мне холодно." }, "grammar": "ощущение холода; tener frío", "note": null },
+        { "es": "tener calor", "ipa": "/teˈneɾ kaˈloɾ/", "pos": "v. (tener)", "ru": "испытывать жару", "example": { "es": "Tengo calor.", "ru": "Мне жарко." }, "grammar": "ощущение жары; tener calor", "note": null },
+        { "es": "tener sueño", "ipa": "/teˈneɾ ˈsweɲo/", "pos": "v. (tener)", "ru": "хотеть спать", "example": { "es": "Tengo sueño.", "ru": "Я хочу спать." }, "grammar": "сонливость; tener sueño", "note": null },
+        { "es": "tener miedo", "ipa": "/teˈneɾ ˈmjeðo/", "pos": "v. (tener)", "ru": "бояться", "example": { "es": "Tengo miedo de los perros.", "ru": "Я боюсь собак." }, "grammar": "страх; tener miedo de + сущ.", "note": null },
+        { "es": "tener prisa", "ipa": "/teˈneɾ ˈpɾisa/", "pos": "v. (tener)", "ru": "спешить", "example": { "es": "Tengo prisa.", "ru": "Я спешу." }, "grammar": "спешка; tener prisa", "note": null },
+        { "es": "tener años", "ipa": "/teˈneɾ ˈaɲos/", "pos": "v. (tener)", "ru": "быть в возрасте", "example": { "es": "Tengo treinta años.", "ru": "Мне тридцать лет." }, "grammar": "возраст; tener + число + años", "note": null },
+        { "es": "tener suerte", "ipa": "/teˈneɾ ˈsweɾte/", "pos": "v. (tener)", "ru": "везти", "example": { "es": "Tienes suerte.", "ru": "Тебе везёт." }, "grammar": "удача; tener suerte", "note": null },
+        { "es": "no tener ni idea", "ipa": "/no teˈneɾ ni ˈiðea/", "pos": "v. (tener)", "ru": "не иметь понятия", "example": { "es": "No tengo ni idea.", "ru": "Понятия не имею." }, "grammar": "полное незнание; разговорное", "note": "разговорное" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "interjections",
+  "lang": "es",
+  "title": { "ru": "Междометия", "en": "Interjections" },
+  "groups": [
+    {
+      "title": "Приветствия и прощания",
+      "items": [
+        { "es": "hola", "ipa": "/ˈola/", "pos": "interj.", "ru": "привет", "example": { "es": "¡Hola! ¿Cómo estás?", "ru": "Привет! Как ты?" }, "grammar": "междометие", "note": null },
+        { "es": "buenos días", "ipa": "/ˈbwenos ˈdias/", "pos": "interj.", "ru": "доброе утро", "example": { "es": "Buenos días, señora.", "ru": "Доброе утро, сеньора." }, "grammar": "междометие", "note": null },
+        { "es": "buenas tardes", "ipa": "/ˈbwenas ˈtaɾðes/", "pos": "interj.", "ru": "добрый день", "example": { "es": "Buenas tardes, ¿en qué puedo ayudarle?", "ru": "Добрый день, чем могу помочь?" }, "grammar": "междометие", "note": null },
+        { "es": "buenas noches", "ipa": "/ˈbwenas ˈnotʃes/", "pos": "interj.", "ru": "добрый вечер; доброй ночи", "example": { "es": "Buenas noches, hasta mañana.", "ru": "Доброй ночи, до завтра." }, "grammar": "междометие", "note": null },
+        { "es": "¿qué tal?", "ipa": "/ke tal/", "pos": "interj.", "ru": "как дела?", "example": { "es": "¿Qué tal el trabajo?", "ru": "Как работа?" }, "grammar": "междометие", "note": null },
+        { "es": "¿cómo estás?", "ipa": "/ˈkomo esˈtas/", "pos": "interj.", "ru": "как ты?", "example": { "es": "¿Cómo estás hoy?", "ru": "Как ты сегодня?" }, "grammar": "междометие", "note": null },
+        { "es": "¿qué pasa?", "ipa": "/ke ˈpasa/", "pos": "interj.", "ru": "что происходит?", "example": { "es": "¿Qué pasa aquí?", "ru": "Что здесь происходит?" }, "grammar": "междометие", "note": null },
+        { "es": "adiós", "ipa": "/aˈðjos/", "pos": "interj.", "ru": "пока; прощай", "example": { "es": "Adiós, nos vemos pronto.", "ru": "Пока, скоро увидимся." }, "grammar": "междометие", "note": null },
+        { "es": "hasta luego", "ipa": "/ˈasta ˈlweɣo/", "pos": "interj.", "ru": "до скорого", "example": { "es": "Hasta luego, cuídate.", "ru": "До скорого, береги себя." }, "grammar": "междометие", "note": null },
+        { "es": "hasta pronto", "ipa": "/ˈasta ˈpɾonto/", "pos": "interj.", "ru": "до скорого", "example": { "es": "Hasta pronto, amigo.", "ru": "До скорого, друг." }, "grammar": "междометие", "note": null },
+        { "es": "hasta mañana", "ipa": "/ˈasta maˈɲana/", "pos": "interj.", "ru": "до завтра", "example": { "es": "Hasta mañana en la oficina.", "ru": "До завтра в офисе." }, "grammar": "междометие", "note": null },
+        { "es": "nos vemos", "ipa": "/nos ˈbemos/", "pos": "interj.", "ru": "увидимся", "example": { "es": "Nos vemos el lunes.", "ru": "Увидимся в понедельник." }, "grammar": "междометие", "note": null },
+        { "es": "chao", "ipa": "/ˈtʃao/", "pos": "interj.", "ru": "пока", "example": { "es": "Chao, que te vaya bien.", "ru": "Пока, всего хорошего." }, "grammar": "междометие", "note": "разговорное" },
+        { "es": "saludos", "ipa": "/saˈluðos/", "pos": "interj.", "ru": "привет, приветствую", "example": { "es": "Saludos a tu familia.", "ru": "Привет твоей семье." }, "grammar": "междометие", "note": null },
+        { "es": "bienvenido", "ipa": "/bjembeˈniðo/", "pos": "interj.", "ru": "добро пожаловать (м. р.)", "example": { "es": "¡Bienvenido a casa!", "ru": "Добро пожаловать домой!" }, "grammar": "междометие", "note": null },
+        { "es": "bienvenida", "ipa": "/bjembeˈniða/", "pos": "interj.", "ru": "добро пожаловать (ж. р.)", "example": { "es": "¡Bienvenida al equipo!", "ru": "Добро пожаловать в команду!" }, "grammar": "междометие", "note": null }
+      ]
+    },
+    {
+      "title": "Вежливость",
+      "items": [
+        { "es": "por favor", "ipa": "/poɾ faˈβoɾ/", "pos": "interj.", "ru": "пожалуйста (просьба)", "example": { "es": "Un café, por favor.", "ru": "Кофе, пожалуйста." }, "grammar": "междометие", "note": null },
+        { "es": "gracias", "ipa": "/ˈɡɾasjas/", "pos": "interj.", "ru": "спасибо", "example": { "es": "Gracias por todo.", "ru": "Спасибо за всё." }, "grammar": "междометие", "note": null },
+        { "es": "muchas gracias", "ipa": "/ˈmutʃas ˈɡɾasjas/", "pos": "interj.", "ru": "большое спасибо", "example": { "es": "Muchas gracias por tu ayuda.", "ru": "Большое спасибо за помощь." }, "grammar": "междометие", "note": null },
+        { "es": "de nada", "ipa": "/de ˈnaða/", "pos": "interj.", "ru": "не за что", "example": { "es": "—Gracias. —De nada.", "ru": "—Спасибо. —Не за что." }, "grammar": "междометие", "note": null },
+        { "es": "perdón", "ipa": "/peɾˈðon/", "pos": "interj.", "ru": "прости(те)", "example": { "es": "Perdón, no te vi.", "ru": "Прости, я тебя не заметил." }, "grammar": "междометие", "note": null },
+        { "es": "disculpe", "ipa": "/disˈkulpe/", "pos": "interj.", "ru": "простите (вежл.)", "example": { "es": "Disculpe, ¿dónde está el baño?", "ru": "Простите, где туалет?" }, "grammar": "междометие", "note": "вежливая форма" },
+        { "es": "con permiso", "ipa": "/kom peɾˈmiso/", "pos": "interj.", "ru": "позвольте пройти", "example": { "es": "Con permiso, voy a pasar.", "ru": "Позвольте пройти." }, "grammar": "междометие", "note": null },
+        { "es": "lo siento", "ipa": "/lo ˈsjento/", "pos": "interj.", "ru": "мне жаль, сожалею", "example": { "es": "Lo siento mucho.", "ru": "Мне очень жаль." }, "grammar": "междометие", "note": null },
+        { "es": "mucho gusto", "ipa": "/ˈmutʃo ˈɡusto/", "pos": "interj.", "ru": "очень приятно", "example": { "es": "Mucho gusto en conocerte.", "ru": "Очень приятно познакомиться." }, "grammar": "междометие", "note": null },
+        { "es": "encantado", "ipa": "/enkanˈtaðo/", "pos": "interj.", "ru": "рад знакомству", "example": { "es": "Encantado de verte.", "ru": "Рад тебя видеть." }, "grammar": "междометие", "note": null },
+        { "es": "salud", "ipa": "/saˈluð/", "pos": "interj.", "ru": "за здоровье! (тост)", "example": { "es": "¡Salud! Que cumplas muchos más.", "ru": "За здоровье! Долгих лет." }, "grammar": "междометие", "note": null },
+        { "es": "¡provecho!", "ipa": "/pɾoˈbetʃo/", "pos": "interj.", "ru": "приятного аппетита", "example": { "es": "¡Provecho! Que comas bien.", "ru": "Приятного аппетита! Ешь на здоровье." }, "grammar": "междометие", "note": null },
+        { "es": "¡enhorabuena!", "ipa": "/enoɾaˈβwena/", "pos": "interj.", "ru": "поздравляю", "example": { "es": "¡Enhorabuena por tu boda!", "ru": "Поздравляю со свадьбой!" }, "grammar": "междометие", "note": null }
+      ]
+    },
+    {
+      "title": "Удивление и радость",
+      "items": [
+        { "es": "¡ay!", "ipa": "/aj/", "pos": "interj.", "ru": "ой! ай!", "example": { "es": "¡Ay! Me duele la cabeza.", "ru": "Ой! У меня болит голова." }, "grammar": "междометие", "note": null },
+        { "es": "¡oh!", "ipa": "/o/", "pos": "interj.", "ru": "о! ох!", "example": { "es": "¡Oh! No lo sabía.", "ru": "О! Я этого не знал." }, "grammar": "междометие", "note": null },
+        { "es": "¡ah!", "ipa": "/a/", "pos": "interj.", "ru": "а! ага!", "example": { "es": "¡Ah! Ahora entiendo.", "ru": "А! Теперь понимаю." }, "grammar": "междометие", "note": null },
+        { "es": "¡vaya!", "ipa": "/ˈbaʝa/", "pos": "interj.", "ru": "ну и ну!", "example": { "es": "¡Vaya! Qué sorpresa.", "ru": "Ну и ну! Какой сюрприз." }, "grammar": "междометие", "note": null },
+        { "es": "¡caramba!", "ipa": "/kaˈɾamba/", "pos": "interj.", "ru": "вот те раз!", "example": { "es": "¡Caramba! Qué caro.", "ru": "Вот те раз! Как дорого." }, "grammar": "междометие", "note": null },
+        { "es": "¡anda!", "ipa": "/ˈanda/", "pos": "interj.", "ru": "да ну!", "example": { "es": "¡Anda! No me lo creo.", "ru": "Да ну! Не верю." }, "grammar": "междометие", "note": null },
+        { "es": "¡no me digas!", "ipa": "/no me ˈdiɣas/", "pos": "interj.", "ru": "не может быть!", "example": { "es": "¿Que te casas? ¡No me digas!", "ru": "Ты женишься? Не может быть!" }, "grammar": "междометие", "note": null },
+        { "es": "¡qué va!", "ipa": "/ke ba/", "pos": "interj.", "ru": "да ничего подобного!", "example": { "es": "¿Rico? ¡Qué va!", "ru": "Богатый? Да ничего подобного!" }, "grammar": "междометие", "note": null },
+        { "es": "¡ojalá!", "ipa": "/oxaˈla/", "pos": "interj.", "ru": "хоть бы! если бы!", "example": { "es": "¡Ojalá llueva!", "ru": "Хоть бы пошёл дождь!" }, "grammar": "выражает желание; всегда с subjuntivo", "note": null },
+        { "es": "¡bravo!", "ipa": "/ˈbɾaβo/", "pos": "interj.", "ru": "браво!", "example": { "es": "¡Bravo! Excelente actuación.", "ru": "Браво! Отличное выступление." }, "grammar": "междометие", "note": null },
+        { "es": "¡hurra!", "ipa": "/ˈura/", "pos": "interj.", "ru": "ура!", "example": { "es": "¡Hurra! Ganamos.", "ru": "Ура! Мы победили." }, "grammar": "междометие", "note": null },
+        { "es": "¡qué bien!", "ipa": "/ke bjen/", "pos": "interj.", "ru": "как хорошо!", "example": { "es": "¡Qué bien que hayas venido!", "ru": "Как хорошо, что ты пришёл!" }, "grammar": "междометие", "note": null },
+        { "es": "¡qué alegría!", "ipa": "/ke aleˈɣɾia/", "pos": "interj.", "ru": "какая радость!", "example": { "es": "¡Qué alegría verte!", "ru": "Как я рад тебя видеть!" }, "grammar": "междометие", "note": null },
+        { "es": "¡magnífico!", "ipa": "/maɣˈnifiko/", "pos": "interj.", "ru": "великолепно!", "example": { "es": "¡Magnífico! Todo salió perfecto.", "ru": "Великолепно! Всё прошло идеально." }, "grammar": "междометие", "note": null }
+      ]
+    },
+    {
+      "title": "Досада, боль, страх",
+      "items": [
+        { "es": "¡uy!", "ipa": "/uj/", "pos": "interj.", "ru": "ой!", "example": { "es": "¡Uy! Casi me caigo.", "ru": "Ой! Я чуть не упал." }, "grammar": "междометие", "note": null },
+        { "es": "¡uf!", "ipa": "/uf/", "pos": "interj.", "ru": "уф!", "example": { "es": "¡Uf! Qué calor hace.", "ru": "Уф! Какая жара." }, "grammar": "междометие", "note": null },
+        { "es": "¡puf!", "ipa": "/puf/", "pos": "interj.", "ru": "уф! (усталость)", "example": { "es": "¡Puf! Estoy agotado.", "ru": "Уф! Я вымотан." }, "grammar": "междометие", "note": null },
+        { "es": "¡ay de mí!", "ipa": "/aj de mi/", "pos": "interj.", "ru": "горе мне!", "example": { "es": "¡Ay de mí, pobre de mí!", "ru": "Горе мне, бедному!" }, "grammar": "междометие", "note": "устаревающее" },
+        { "es": "¡Dios mío!", "ipa": "/djos ˈmio/", "pos": "interj.", "ru": "Боже мой!", "example": { "es": "¡Dios mío, qué susto!", "ru": "Боже мой, как я испугался!" }, "grammar": "междометие", "note": null },
+        { "es": "¡madre mía!", "ipa": "/ˈmaðɾe ˈmia/", "pos": "interj.", "ru": "матерь Божья!", "example": { "es": "¡Madre mía, cuánta gente!", "ru": "Матерь Божья, сколько людей!" }, "grammar": "междометие", "note": null },
+        { "es": "¡por Dios!", "ipa": "/poɾ djos/", "pos": "interj.", "ru": "Бога ради!", "example": { "es": "¡Por Dios, no hagas eso!", "ru": "Бога ради, не делай этого!" }, "grammar": "междометие", "note": null },
+        { "es": "¡qué horror!", "ipa": "/ke oˈroɾ/", "pos": "interj.", "ru": "какой ужас!", "example": { "es": "¡Qué horror, esa noticia!", "ru": "Какой ужас, эта новость!" }, "grammar": "междометие", "note": null },
+        { "es": "¡qué pena!", "ipa": "/ke ˈpena/", "pos": "interj.", "ru": "как жаль!", "example": { "es": "¡Qué pena que no vengas!", "ru": "Как жаль, что ты не придёшь!" }, "grammar": "междометие", "note": null },
+        { "es": "¡lástima!", "ipa": "/ˈlastima/", "pos": "interj.", "ru": "жаль!", "example": { "es": "¡Lástima! Se acabó el pan.", "ru": "Жаль! Хлеб закончился." }, "grammar": "междометие", "note": null },
+        { "es": "¡pobre de mí!", "ipa": "/ˈpoβɾe de mi/", "pos": "interj.", "ru": "бедный я!", "example": { "es": "¡Pobre de mí, tan solo!", "ru": "Бедный я, такой одинокий!" }, "grammar": "междометие", "note": null },
+        { "es": "¡válgame!", "ipa": "/ˈbalɣame/", "pos": "interj.", "ru": "Господи помилуй!", "example": { "es": "¡Válgame Dios, qué lío!", "ru": "Господи, что за путаница!" }, "grammar": "междометие", "note": "устаревающее" },
+        { "es": "¡demonios!", "ipa": "/deˈmonjos/", "pos": "interj.", "ru": "чёрт!", "example": { "es": "¡Demonios! Perdí las llaves.", "ru": "Чёрт! Я потерял ключи." }, "grammar": "междометие", "note": null }
+      ]
+    },
+    {
+      "title": "Побуждение, внимание, окрики",
+      "items": [
+        { "es": "¡oye!", "ipa": "/ˈoʝe/", "pos": "interj.", "ru": "эй! слушай!", "example": { "es": "¡Oye, escúchame!", "ru": "Эй, послушай!" }, "grammar": "междометие", "note": null },
+        { "es": "¡oiga!", "ipa": "/ˈoiɣa/", "pos": "interj.", "ru": "послушайте!", "example": { "es": "¡Oiga, señor!", "ru": "Послушайте, сеньор!" }, "grammar": "междометие", "note": "вежливая форма" },
+        { "es": "¡mira!", "ipa": "/ˈmiɾa/", "pos": "interj.", "ru": "смотри!", "example": { "es": "¡Mira, qué bonito!", "ru": "Смотри, как красиво!" }, "grammar": "междометие", "note": null },
+        { "es": "¡vamos!", "ipa": "/ˈbamos/", "pos": "interj.", "ru": "давай! идём!", "example": { "es": "¡Vamos, no te duermas!", "ru": "Давай, не спи!" }, "grammar": "междометие", "note": null },
+        { "es": "¡venga!", "ipa": "/ˈbeŋɡa/", "pos": "interj.", "ru": "давай!, ну!", "example": { "es": "¡Venga, anímate!", "ru": "Давай, воспрянь духом!" }, "grammar": "междометие", "note": "разговорное" },
+        { "es": "¡ándale!", "ipa": "/ˈandale/", "pos": "interj.", "ru": "давай! (мекс.)", "example": { "es": "¡Ándale, date prisa!", "ru": "Давай, поторопись!" }, "grammar": "междометие", "note": "мексиканское" },
+        { "es": "¡arriba!", "ipa": "/aˈriβa/", "pos": "interj.", "ru": "вставай! вверх!", "example": { "es": "¡Arriba, es hora de levantarse!", "ru": "Вставай, пора вставать!" }, "grammar": "междометие", "note": null },
+        { "es": "¡ánimo!", "ipa": "/ˈanimo/", "pos": "interj.", "ru": "держись! смелее!", "example": { "es": "¡Ánimo, ya casi está!", "ru": "Держись, уже почти всё!" }, "grammar": "междометие", "note": null },
+        { "es": "¡cuidado!", "ipa": "/kwiˈðaðo/", "pos": "interj.", "ru": "осторожно!", "example": { "es": "¡Cuidado con el perro!", "ru": "Осторожно, собака!" }, "grammar": "междометие", "note": null },
+        { "es": "¡atención!", "ipa": "/atenˈsjon/", "pos": "interj.", "ru": "внимание!", "example": { "es": "¡Atención, por favor!", "ru": "Внимание, пожалуйста!" }, "grammar": "междометие", "note": null },
+        { "es": "¡socorro!", "ipa": "/soˈkoro/", "pos": "interj.", "ru": "на помощь!", "example": { "es": "¡Socorro, ayuda!", "ru": "Помогите, на помощь!" }, "grammar": "междометие", "note": null },
+        { "es": "¡auxilio!", "ipa": "/awˈksiljo/", "pos": "interj.", "ru": "помогите!", "example": { "es": "¡Auxilio, me ahogo!", "ru": "На помощь, я тону!" }, "grammar": "междометие", "note": null },
+        { "es": "¡fuera!", "ipa": "/ˈfweɾa/", "pos": "interj.", "ru": "вон!", "example": { "es": "¡Fuera de aquí!", "ru": "Вон отсюда!" }, "grammar": "междометие", "note": null },
+        { "es": "¡basta!", "ipa": "/ˈbasta/", "pos": "interj.", "ru": "хватит!", "example": { "es": "¡Basta de ruido!", "ru": "Хватит шума!" }, "grammar": "междометие", "note": null },
+        { "es": "¡silencio!", "ipa": "/siˈlensjo/", "pos": "interj.", "ru": "тихо!", "example": { "es": "¡Silencio, por favor!", "ru": "Тихо, пожалуйста!" }, "grammar": "междометие", "note": null },
+        { "es": "¡chitón!", "ipa": "/tʃiˈton/", "pos": "interj.", "ru": "тс-с!", "example": { "es": "¡Chitón, que empieza la clase!", "ru": "Тс-с, начинается урок!" }, "grammar": "междометие", "note": "разговорное" },
+        { "es": "¡ea!", "ipa": "/ˈea/", "pos": "interj.", "ru": "ну вот!", "example": { "es": "¡Ea, ya está hecho!", "ru": "Ну вот, готово!" }, "grammar": "междометие", "note": "устаревающее" },
+        { "es": "¡hala!", "ipa": "/ˈala/", "pos": "interj.", "ru": "ого! ну!", "example": { "es": "¡Hala, qué rápido!", "ru": "Ого, как быстро!" }, "grammar": "междометие", "note": "разговорное" }
+      ]
+    },
+    {
+      "title": "Разговорное и бранное",
+      "items": [
+        { "es": "joder", "ipa": "/xoˈðeɾ/", "pos": "interj.", "ru": "блин!, чёрт!", "example": { "es": "Joder, qué fastidio.", "ru": "Блин, какая досада." }, "grammar": "междометие", "note": "грубое" },
+        { "es": "¡jolín!", "ipa": "/xoˈlin/", "pos": "interj.", "ru": "блин!", "example": { "es": "¡Jolín, otra vez!", "ru": "Блин, опять!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡jolines!", "ipa": "/xoˈlines/", "pos": "interj.", "ru": "ёлки-палки!", "example": { "es": "¡Jolines, qué lío!", "ru": "Ёлки-палки, что за путаница!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡caray!", "ipa": "/kaˈɾaj/", "pos": "interj.", "ru": "ого!, чёрт возьми!", "example": { "es": "¡Caray, cómo ha crecido!", "ru": "Ого, как он вырос!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡hostia!", "ipa": "/ˈostja/", "pos": "interj.", "ru": "блин!, чёрт!", "example": { "es": "¡Hostia, qué golpe!", "ru": "Блин, какой удар!" }, "grammar": "междометие", "note": "грубое" },
+        { "es": "¡coño!", "ipa": "/ˈkoɲo/", "pos": "interj.", "ru": "чёрт!, блин!", "example": { "es": "¡Coño, qué sorpresa!", "ru": "Чёрт, какой сюрприз!" }, "grammar": "междометие", "note": "грубое" },
+        { "es": "¡mierda!", "ipa": "/ˈmjeɾða/", "pos": "interj.", "ru": "дерьмо!, чёрт!", "example": { "es": "¡Mierda, llegamos tarde!", "ru": "Чёрт, мы опоздали!" }, "grammar": "междометие", "note": "грубое" },
+        { "es": "¡diablos!", "ipa": "/ˈdjaβlos/", "pos": "interj.", "ru": "чёрт!", "example": { "es": "¡Diablos, no funciona!", "ru": "Чёрт, не работает!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡porras!", "ipa": "/ˈporas/", "pos": "interj.", "ru": "блин!", "example": { "es": "¡Porras, me olvidé!", "ru": "Блин, я забыл!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡leche!", "ipa": "/ˈletʃe/", "pos": "interj.", "ru": "блин!, чёрт!", "example": { "es": "¡Leche, qué rabia!", "ru": "Блин, какая злость!" }, "grammar": "междометие", "note": "эвфемизм" },
+        { "es": "¡narices!", "ipa": "/naˈɾises/", "pos": "interj.", "ru": "чёрт!, блин!", "example": { "es": "¡Narices, otra vez!", "ru": "Чёрт, опять!" }, "grammar": "междометие", "note": "эвфемизм" }
+      ]
+    }
+  ]
+}

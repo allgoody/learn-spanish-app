@@ -1,0 +1,146 @@
+{
+  "id": "adverbs",
+  "lang": "es",
+  "title": { "ru": "Наречия", "en": "Adverbs" },
+  "groups": [
+    {
+      "title": "Места",
+      "items": [
+        { "es": "aquí", "ipa": "/aˈki/", "pos": "adv.", "ru": "здесь, сюда", "example": { "es": "Ven aquí.", "ru": "Иди сюда." }, "grammar": "место; ближе к говорящему, чем allí", "note": null },
+        { "es": "acá", "ipa": "/aˈka/", "pos": "adv.", "ru": "сюда", "example": { "es": "Ven acá.", "ru": "Иди сюда." }, "grammar": "сюда; употребительно в Латинской Америке", "note": "разговорное" },
+        { "es": "ahí", "ipa": "/aˈi/", "pos": "adv.", "ru": "там, туда", "example": { "es": "Ponlo ahí.", "ru": "Положи это туда." }, "grammar": "место; рядом с собеседником", "note": null },
+        { "es": "allí", "ipa": "/aˈʝi/", "pos": "adv.", "ru": "там", "example": { "es": "Está allí.", "ru": "Это там." }, "grammar": "место; дальше от говорящего", "note": null },
+        { "es": "allá", "ipa": "/aˈʝa/", "pos": "adv.", "ru": "туда, там", "example": { "es": "Vamos allá.", "ru": "Пойдём туда." }, "grammar": "туда; менее конкретно, чем allí", "note": null },
+        { "es": "cerca", "ipa": "/ˈseɾka/", "pos": "adv.", "ru": "близко, рядом", "example": { "es": "Vive cerca.", "ru": "Он живёт близко." }, "grammar": "близко; cerca de + сущ.", "note": null },
+        { "es": "lejos", "ipa": "/ˈlexos/", "pos": "adv.", "ru": "далеко", "example": { "es": "Está lejos.", "ru": "Это далеко." }, "grammar": "далеко; lejos de + сущ.", "note": null },
+        { "es": "arriba", "ipa": "/aˈriβa/", "pos": "adv.", "ru": "вверху, наверх", "example": { "es": "Mira arriba.", "ru": "Посмотри наверх." }, "grammar": "вверху, наверх", "note": null },
+        { "es": "abajo", "ipa": "/aˈbaxo/", "pos": "adv.", "ru": "внизу, вниз", "example": { "es": "El sótano está abajo.", "ru": "Подвал внизу." }, "grammar": "внизу, вниз", "note": null },
+        { "es": "dentro", "ipa": "/ˈdentɾo/", "pos": "adv.", "ru": "внутри", "example": { "es": "Está dentro.", "ru": "Это внутри." }, "grammar": "внутри; dentro de + сущ.", "note": null },
+        { "es": "fuera", "ipa": "/ˈfweɾa/", "pos": "adv.", "ru": "снаружи, вне", "example": { "es": "Espera fuera.", "ru": "Жди снаружи." }, "grammar": "снаружи; fuera de + сущ.", "note": null },
+        { "es": "adentro", "ipa": "/aˈdentɾo/", "pos": "adv.", "ru": "внутрь", "example": { "es": "Vamos adentro.", "ru": "Пойдём внутрь." }, "grammar": "внутрь; употребительно в Латинской Америке", "note": null },
+        { "es": "afuera", "ipa": "/aˈfweɾa/", "pos": "adv.", "ru": "наружу", "example": { "es": "Sal afuera.", "ru": "Выйди наружу." }, "grammar": "наружу; разговорное", "note": "разговорное" },
+        { "es": "delante", "ipa": "/deˈlante/", "pos": "adv.", "ru": "впереди, спереди", "example": { "es": "Siéntate delante.", "ru": "Сядь впереди." }, "grammar": "впереди; delante de + сущ.", "note": null },
+        { "es": "detrás", "ipa": "/deˈtɾas/", "pos": "adv.", "ru": "позади, сзади", "example": { "es": "Está detrás.", "ru": "Это позади." }, "grammar": "позади; detrás de + сущ.", "note": null },
+        { "es": "encima", "ipa": "/enˈsima/", "pos": "adv.", "ru": "сверху, наверху", "example": { "es": "Ponlo encima.", "ru": "Положи сверху." }, "grammar": "сверху; encima de + сущ.", "note": null },
+        { "es": "debajo", "ipa": "/deˈbaxo/", "pos": "adv.", "ru": "внизу, под", "example": { "es": "Debajo hay agua.", "ru": "Внизу есть вода." }, "grammar": "внизу; debajo de + сущ.", "note": null },
+        { "es": "enfrente", "ipa": "/emˈfɾente/", "pos": "adv.", "ru": "напротив", "example": { "es": "Vive enfrente.", "ru": "Он живёт напротив." }, "grammar": "напротив; enfrente de + сущ.", "note": null },
+        { "es": "junto", "ipa": "/ˈxunto/", "pos": "adv.", "ru": "рядом, вместе", "example": { "es": "Estamos junto al río.", "ru": "Мы у реки." }, "grammar": "рядом; junto a + сущ.", "note": null },
+        { "es": "alrededor", "ipa": "/alreðeˈðoɾ/", "pos": "adv.", "ru": "вокруг", "example": { "es": "Miró alrededor.", "ru": "Он огляделся вокруг." }, "grammar": "вокруг; alrededor de + сущ.", "note": null },
+        { "es": "acullá", "ipa": "/akuˈʝa/", "pos": "adv.", "ru": "вон там", "example": { "es": "Acullá se ve el monte.", "ru": "Вон там видна гора." }, "grammar": "вон там; книжное", "note": "устарелое" },
+        { "es": "dondequiera", "ipa": "/dondeˈkjeɾa/", "pos": "adv.", "ru": "где бы ни, везде", "example": { "es": "Dondequiera que vayas, te espero.", "ru": "Куда бы ты ни пошёл, я тебя жду." }, "grammar": "где бы ни; книжное", "note": null }
+      ]
+    },
+    {
+      "title": "Времени",
+      "items": [
+        { "es": "ahora", "ipa": "/aˈoɾa/", "pos": "adv.", "ru": "сейчас", "example": { "es": "Ahora no puedo.", "ru": "Сейчас не могу." }, "grammar": "настоящий момент", "note": null },
+        { "es": "hoy", "ipa": "/oj/", "pos": "adv.", "ru": "сегодня", "example": { "es": "Hoy es lunes.", "ru": "Сегодня понедельник." }, "grammar": "в этот день", "note": null },
+        { "es": "ayer", "ipa": "/aˈʝeɾ/", "pos": "adv.", "ru": "вчера", "example": { "es": "Ayer llovió.", "ru": "Вчера шёл дождь." }, "grammar": "предыдущий день", "note": null },
+        { "es": "anteayer", "ipa": "/anteaˈʝeɾ/", "pos": "adv.", "ru": "позавчера", "example": { "es": "Anteayer te vi.", "ru": "Позавчера я тебя видел." }, "grammar": "за два дня до сегодня", "note": null },
+        { "es": "mañana", "ipa": "/maˈɲana/", "pos": "adv.", "ru": "завтра", "example": { "es": "Mañana viajamos.", "ru": "Завтра мы едем." }, "grammar": "следующий день", "note": null },
+        { "es": "pasado mañana", "ipa": "/paˈsaðo maˈɲana/", "pos": "adv.", "ru": "послезавтра", "example": { "es": "Pasado mañana llega.", "ru": "Послезавтра он приезжает." }, "grammar": "через день после сегодня", "note": null },
+        { "es": "anoche", "ipa": "/aˈnotʃe/", "pos": "adv.", "ru": "вчера вечером", "example": { "es": "Anoche dormí mal.", "ru": "Вчера вечером я плохо спал." }, "grammar": "прошлой ночью", "note": null },
+        { "es": "luego", "ipa": "/ˈlweɣo/", "pos": "adv.", "ru": "потом, позже", "example": { "es": "Hablo luego contigo.", "ru": "Поговорю с тобой позже." }, "grammar": "после этого", "note": null },
+        { "es": "después", "ipa": "/desˈpwes/", "pos": "adv.", "ru": "потом, после", "example": { "es": "Después te llamo.", "ru": "Потом тебе позвоню." }, "grammar": "после; después de + сущ.", "note": null },
+        { "es": "antes", "ipa": "/ˈantes/", "pos": "adv.", "ru": "раньше, прежде", "example": { "es": "Lo sabía antes.", "ru": "Я знал это раньше." }, "grammar": "прежде; antes de + сущ.", "note": null },
+        { "es": "pronto", "ipa": "/ˈpɾonto/", "pos": "adv.", "ru": "скоро, быстро", "example": { "es": "Vuelve pronto.", "ru": "Возвращайся скорее." }, "grammar": "скоро", "note": null },
+        { "es": "temprano", "ipa": "/temˈpɾano/", "pos": "adv.", "ru": "рано", "example": { "es": "Me levanto temprano.", "ru": "Я встаю рано." }, "grammar": "рано", "note": null },
+        { "es": "tarde", "ipa": "/ˈtaɾðe/", "pos": "adv.", "ru": "поздно", "example": { "es": "Llegaste tarde.", "ru": "Ты пришёл поздно." }, "grammar": "поздно", "note": null },
+        { "es": "siempre", "ipa": "/ˈsjempɾe/", "pos": "adv.", "ru": "всегда", "example": { "es": "Siempre te espero.", "ru": "Я всегда тебя жду." }, "grammar": "всегда", "note": null },
+        { "es": "nunca", "ipa": "/ˈnuŋka/", "pos": "adv.", "ru": "никогда", "example": { "es": "Nunca digas nunca.", "ru": "Никогда не говори «никогда»." }, "grammar": "никогда; требует отрицания при глаголе", "note": null },
+        { "es": "jamás", "ipa": "/xaˈmas/", "pos": "adv.", "ru": "никогда (усил.)", "example": { "es": "Jamás lo olvidaré.", "ru": "Я никогда этого не забуду." }, "grammar": "никогда; усиленное, книжное", "note": null },
+        { "es": "ya", "ipa": "/ʝa/", "pos": "adv.", "ru": "уже", "example": { "es": "Ya está listo.", "ru": "Уже готово." }, "grammar": "уже", "note": null },
+        { "es": "todavía", "ipa": "/toðaˈβia/", "pos": "adv.", "ru": "всё ещё, пока", "example": { "es": "Todavía trabaja.", "ru": "Он всё ещё работает." }, "grammar": "всё ещё", "note": null },
+        { "es": "aún", "ipa": "/aˈun/", "pos": "adv.", "ru": "ещё, до сих пор", "example": { "es": "Aún no ha llegado.", "ru": "Он ещё не пришёл." }, "grammar": "ещё; с ударением = todavía", "note": "ещё (с ударением); aún vs aun" },
+        { "es": "mientras", "ipa": "/ˈmjentɾas/", "pos": "adv.", "ru": "тем временем, пока", "example": { "es": "Mientras, descansa.", "ru": "Тем временем отдохни." }, "grammar": "тем временем", "note": null },
+        { "es": "entonces", "ipa": "/enˈtonses/", "pos": "adv.", "ru": "тогда", "example": { "es": "Entonces vivíamos allí.", "ru": "Тогда мы жили там." }, "grammar": "тогда, в то время", "note": null },
+        { "es": "actualmente", "ipa": "/aktwalˈmente/", "pos": "adv.", "ru": "в настоящее время", "example": { "es": "Actualmente vive en París.", "ru": "В настоящее время он живёт в Париже." }, "grammar": "в настоящее время", "note": null },
+        { "es": "recientemente", "ipa": "/resjenteˈmente/", "pos": "adv.", "ru": "недавно", "example": { "es": "Recientemente la vi.", "ru": "Недавно я её видел." }, "grammar": "недавно", "note": null },
+        { "es": "últimamente", "ipa": "/ˈultimaˈmente/", "pos": "adv.", "ru": "в последнее время", "example": { "es": "Últimamente no duermo bien.", "ru": "В последнее время я плохо сплю." }, "grammar": "в последнее время", "note": null },
+        { "es": "próximamente", "ipa": "/ˈpɾoksimaˈmente/", "pos": "adv.", "ru": "в ближайшее время", "example": { "es": "Próximamente habrá cambios.", "ru": "В ближайшее время будут перемены." }, "grammar": "в ближайшее время", "note": null }
+      ]
+    },
+    {
+      "title": "Образа действия",
+      "items": [
+        { "es": "bien", "ipa": "/bjen/", "pos": "adv.", "ru": "хорошо", "example": { "es": "Trabaja bien.", "ru": "Он хорошо работает." }, "grammar": "образ действия", "note": null },
+        { "es": "mal", "ipa": "/mal/", "pos": "adv.", "ru": "плохо", "example": { "es": "Se siente mal.", "ru": "Он плохо себя чувствует." }, "grammar": "образ действия; антоним bien", "note": null },
+        { "es": "así", "ipa": "/aˈsi/", "pos": "adv.", "ru": "так, таким образом", "example": { "es": "Hazlo así.", "ru": "Сделай так." }, "grammar": "образ действия", "note": null },
+        { "es": "despacio", "ipa": "/desˈpasjo/", "pos": "adv.", "ru": "медленно", "example": { "es": "Habla despacio.", "ru": "Говори медленно." }, "grammar": "медленно", "note": null },
+        { "es": "deprisa", "ipa": "/deˈpɾisa/", "pos": "adv.", "ru": "быстро, наспех", "example": { "es": "Corre deprisa.", "ru": "Он бежит быстро." }, "grammar": "быстро", "note": null },
+        { "es": "rápido", "ipa": "/ˈrapido/", "pos": "adv.", "ru": "быстро", "example": { "es": "Conduce rápido.", "ru": "Он ездит быстро." }, "grammar": "быстро; наречие без -mente", "note": null },
+        { "es": "juntos", "ipa": "/ˈxuntos/", "pos": "adv.", "ru": "вместе", "example": { "es": "Vamos juntos.", "ru": "Пойдём вместе." }, "grammar": "вместе; согласуется в числе", "note": null },
+        { "es": "apenas", "ipa": "/aˈpenas/", "pos": "adv.", "ru": "едва", "example": { "es": "Apenas se ve.", "ru": "Едва видно." }, "grammar": "едва, чуть", "note": null },
+        { "es": "casi", "ipa": "/ˈkasi/", "pos": "adv.", "ru": "почти", "example": { "es": "Casi termino.", "ru": "Я почти закончил." }, "grammar": "почти", "note": null },
+        { "es": "sólo", "ipa": "/ˈsolo/", "pos": "adv.", "ru": "только", "example": { "es": "Sólo quiero ayuda.", "ru": "Я только хочу помощи." }, "grammar": "только, лишь", "note": "традиционное написание с ударением; современная RAE — solo" },
+        { "es": "incluso", "ipa": "/inˈkluso/", "pos": "adv.", "ru": "даже", "example": { "es": "Incluso tú lo sabes.", "ru": "Даже ты это знаешь." }, "grammar": "даже, включая", "note": null },
+        { "es": "también", "ipa": "/tamˈbjen/", "pos": "adv.", "ru": "тоже, также", "example": { "es": "Yo también voy.", "ru": "Я тоже иду." }, "grammar": "тоже; при утверждении", "note": null },
+        { "es": "tampoco", "ipa": "/tamˈpoko/", "pos": "adv.", "ru": "тоже не", "example": { "es": "Yo tampoco lo sé.", "ru": "Я тоже этого не знаю." }, "grammar": "тоже не; при отрицании", "note": null },
+        { "es": "adrede", "ipa": "/aˈðɾeðe/", "pos": "adv.", "ru": "нарочно", "example": { "es": "Lo hizo adrede.", "ru": "Он сделал это нарочно." }, "grammar": "нарочно; разговорное", "note": "разговорное" },
+        { "es": "aposta", "ipa": "/aˈposta/", "pos": "adv.", "ru": "нарочно", "example": { "es": "Lo dijo aposta.", "ru": "Он сказал это нарочно." }, "grammar": "нарочно; разговорное", "note": "разговорное" },
+        { "es": "a propósito", "ipa": "/a pɾoˈposito/", "pos": "adv.", "ru": "намеренно; кстати", "example": { "es": "Lo dijo a propósito.", "ru": "Он сказал это намеренно." }, "grammar": "намеренно; также «кстати»", "note": null },
+        { "es": "quedo", "ipa": "/ˈkedo/", "pos": "adv.", "ru": "тихо, вполголоса", "example": { "es": "Habló quedo.", "ru": "Он говорил тихо." }, "grammar": "тихо; книжное", "note": null },
+        { "es": "recio", "ipa": "/ˈresjo/", "pos": "adv.", "ru": "громко, сильно", "example": { "es": "Grita recio.", "ru": "Он громко кричит." }, "grammar": "громко; разговорное", "note": "разговорное" },
+        { "es": "a la vez", "ipa": "/a la βes/", "pos": "adv.", "ru": "одновременно, разом", "example": { "es": "Hablan a la vez.", "ru": "Они говорят одновременно." }, "grammar": "одновременно", "note": null },
+        { "es": "de repente", "ipa": "/de reˈpente/", "pos": "adv.", "ru": "вдруг", "example": { "es": "De repente, se apagó la luz.", "ru": "Вдруг свет погас." }, "grammar": "внезапно", "note": null }
+      ]
+    },
+    {
+      "title": "Количества и степени",
+      "items": [
+        { "es": "muy", "ipa": "/muj/", "pos": "adv.", "ru": "очень", "example": { "es": "Es muy alto.", "ru": "Он очень высокий." }, "grammar": "очень; перед прил./нареч.", "note": null },
+        { "es": "mucho", "ipa": "/ˈmutʃo/", "pos": "adv.", "ru": "много", "example": { "es": "Trabaja mucho.", "ru": "Он много работает." }, "grammar": "много; с глаголом", "note": null },
+        { "es": "poco", "ipa": "/ˈpoko/", "pos": "adv.", "ru": "мало", "example": { "es": "Duerme poco.", "ru": "Он мало спит." }, "grammar": "мало", "note": null },
+        { "es": "bastante", "ipa": "/basˈtante/", "pos": "adv.", "ru": "довольно, достаточно", "example": { "es": "Es bastante bueno.", "ru": "Он довольно хорош." }, "grammar": "довольно, достаточно", "note": null },
+        { "es": "demasiado", "ipa": "/demaˈsjado/", "pos": "adv.", "ru": "слишком", "example": { "es": "Come demasiado.", "ru": "Он ест слишком много." }, "grammar": "слишком", "note": null },
+        { "es": "más", "ipa": "/mas/", "pos": "adv.", "ru": "больше", "example": { "es": "Quiero más.", "ru": "Я хочу больше." }, "grammar": "больше; сравнительная степень", "note": "ударение отличает от mas «но»" },
+        { "es": "menos", "ipa": "/ˈmenos/", "pos": "adv.", "ru": "меньше", "example": { "es": "Habla menos.", "ru": "Говори меньше." }, "grammar": "меньше; сравнительная степень", "note": null },
+        { "es": "tanto", "ipa": "/ˈtanto/", "pos": "adv.", "ru": "так много, столько", "example": { "es": "No trabajes tanto.", "ru": "Не работай так много." }, "grammar": "столько; с глаголом", "note": null },
+        { "es": "tan", "ipa": "/tan/", "pos": "adv.", "ru": "так", "example": { "es": "Es tan amable.", "ru": "Он так любезен." }, "grammar": "так; перед прил./нареч.", "note": null },
+        { "es": "cuánto", "ipa": "/ˈkwanto/", "pos": "adv.", "ru": "сколько", "example": { "es": "¿Cuánto cuesta?", "ru": "Сколько стоит?" }, "grammar": "сколько; вопросительное", "note": null },
+        { "es": "al menos", "ipa": "/al ˈmenos/", "pos": "adv.", "ru": "по крайней мере", "example": { "es": "Al menos lo intentó.", "ru": "По крайней мере он попытался." }, "grammar": "по крайней мере", "note": null },
+        { "es": "por lo menos", "ipa": "/poɾ lo ˈmenos/", "pos": "adv.", "ru": "по меньшей мере", "example": { "es": "Por lo menos, avisa.", "ru": "Хотя бы предупреди." }, "grammar": "по меньшей мере", "note": null },
+        { "es": "nada", "ipa": "/ˈnaða/", "pos": "adv.", "ru": "ничего, нисколько", "example": { "es": "No queda nada.", "ru": "Ничего не осталось." }, "grammar": "нисколько; при отрицании", "note": null },
+        { "es": "todo", "ipa": "/ˈtoðo/", "pos": "adv.", "ru": "всё", "example": { "es": "Lo sabe todo.", "ru": "Он знает всё." }, "grammar": "всё, целиком", "note": null },
+        { "es": "harto", "ipa": "/ˈaɾto/", "pos": "adv.", "ru": "сыт по горло; очень", "example": { "es": "Estoy harto.", "ru": "Мне надоело." }, "grammar": "сыт по горло; разговорное", "note": "разговорное" },
+        { "es": "medio", "ipa": "/ˈmeðjo/", "pos": "adv.", "ru": "наполовину, полу-", "example": { "es": "Está medio dormido.", "ru": "Он наполовину спит." }, "grammar": "наполовину", "note": null },
+        { "es": "del todo", "ipa": "/del ˈtoðo/", "pos": "adv.", "ru": "совсем, полностью", "example": { "es": "No está del todo bien.", "ru": "Это не совсем хорошо." }, "grammar": "совсем; обычно при отрицании", "note": null },
+        { "es": "en absoluto", "ipa": "/en aβsoˈluto/", "pos": "adv.", "ru": "совсем, отнюдь", "example": { "es": "No me importa en absoluto.", "ru": "Мне совершенно не важно." }, "grammar": "отнюдь; только при отрицании", "note": null },
+        { "es": "casi no", "ipa": "/ˈkasi no/", "pos": "adv.", "ru": "почти не", "example": { "es": "Casi no lo veo.", "ru": "Я его почти не вижу." }, "grammar": "почти не", "note": null }
+      ]
+    },
+    {
+      "title": "Утверждение, отрицание, сомнение",
+      "items": [
+        { "es": "sí", "ipa": "/si/", "pos": "adv.", "ru": "да", "example": { "es": "Sí, quiero.", "ru": "Да, хочу." }, "grammar": "утверждение; с ударением", "note": null },
+        { "es": "no", "ipa": "/no/", "pos": "adv.", "ru": "нет, не", "example": { "es": "No, gracias.", "ru": "Нет, спасибо." }, "grammar": "отрицание", "note": null },
+        { "es": "quizá", "ipa": "/kiˈsa/", "pos": "adv.", "ru": "может быть", "example": { "es": "Quizá venga.", "ru": "Может быть, он придёт." }, "grammar": "возможно; с subjuntivo", "note": "свободный вариант quizás" },
+        { "es": "quizás", "ipa": "/kiˈsas/", "pos": "adv.", "ru": "может быть", "example": { "es": "Quizás llueva.", "ru": "Может быть, будет дождь." }, "grammar": "возможно; с subjuntivo", "note": "свободный вариант quizá" },
+        { "es": "tal vez", "ipa": "/tal βes/", "pos": "adv.", "ru": "быть может", "example": { "es": "Tal vez sea tarde.", "ru": "Быть может, уже поздно." }, "grammar": "возможно; с subjuntivo", "note": null },
+        { "es": "acaso", "ipa": "/aˈkaso/", "pos": "adv.", "ru": "разве, случаем", "example": { "es": "Acaso no lo sabes.", "ru": "Разве ты этого не знаешь?" }, "grammar": "сомнение, вопрос; книжное", "note": null },
+        { "es": "seguramente", "ipa": "/seɣuɾaˈmente/", "pos": "adv.", "ru": "наверняка, вероятно", "example": { "es": "Seguramente vendrá.", "ru": "Наверняка он придёт." }, "grammar": "уверенность, вероятность", "note": null },
+        { "es": "ciertamente", "ipa": "/sjeɾtaˈmente/", "pos": "adv.", "ru": "несомненно", "example": { "es": "Ciertamente es verdad.", "ru": "Несомненно, это правда." }, "grammar": "уверенность", "note": null },
+        { "es": "desde luego", "ipa": "/ˈdezðe ˈlweɣo/", "pos": "adv.", "ru": "разумеется", "example": { "es": "Desde luego, te apoyo.", "ru": "Разумеется, я тебя поддержу." }, "grammar": "уверенное подтверждение", "note": null },
+        { "es": "efectivamente", "ipa": "/efektiβaˈmente/", "pos": "adv.", "ru": "действительно", "example": { "es": "Efectivamente, así fue.", "ru": "Действительно, так и было." }, "grammar": "подтверждение факта", "note": null },
+        { "es": "en efecto", "ipa": "/en eˈfekto/", "pos": "adv.", "ru": "в самом деле", "example": { "es": "En efecto, tienes razón.", "ru": "В самом деле, ты прав." }, "grammar": "подтверждение", "note": null },
+        { "es": "probablemente", "ipa": "/pɾoβableˈmente/", "pos": "adv.", "ru": "вероятно", "example": { "es": "Probablemente llueva.", "ru": "Вероятно, будет дождь." }, "grammar": "вероятность", "note": null },
+        { "es": "posiblemente", "ipa": "/posibleˈmente/", "pos": "adv.", "ru": "возможно", "example": { "es": "Posiblemente venga.", "ru": "Возможно, он придёт." }, "grammar": "возможность", "note": null },
+        { "es": "claro", "ipa": "/ˈklaɾo/", "pos": "adv.", "ru": "конечно", "example": { "es": "Claro, te ayudo.", "ru": "Конечно, я помогу." }, "grammar": "согласие; разговорное", "note": null },
+        { "es": "por supuesto", "ipa": "/poɾ suˈpwesto/", "pos": "adv.", "ru": "разумеется", "example": { "es": "Por supuesto que sí.", "ru": "Разумеется, да." }, "grammar": "уверенное согласие", "note": null },
+        { "es": "ni hablar", "ipa": "/ni aˈβlaɾ/", "pos": "adv.", "ru": "и речи быть не может", "example": { "es": "Ni hablar, no acepto.", "ru": "И речи быть не может, я не согласен." }, "grammar": "категорический отказ; разговорное", "note": "разговорное" }
+      ]
+    },
+    {
+      "title": "Вопросительные и относительные",
+      "items": [
+        { "es": "dónde", "ipa": "/ˈdonde/", "pos": "adv.", "ru": "где", "example": { "es": "¿Dónde vives?", "ru": "Где ты живёшь?" }, "grammar": "вопросительное; всегда с ударением", "note": null },
+        { "es": "cuándo", "ipa": "/ˈkwando/", "pos": "adv.", "ru": "когда", "example": { "es": "¿Cuándo llegas?", "ru": "Когда ты приедешь?" }, "grammar": "вопросительное; всегда с ударением", "note": null },
+        { "es": "cómo", "ipa": "/ˈkomo/", "pos": "adv.", "ru": "как", "example": { "es": "¿Cómo estás?", "ru": "Как ты?" }, "grammar": "вопросительное; всегда с ударением", "note": null },
+        { "es": "cuánto", "ipa": "/ˈkwanto/", "pos": "adv.", "ru": "сколько", "example": { "es": "¿Cuánto cuesta?", "ru": "Сколько стоит?" }, "grammar": "вопросительное; всегда с ударением", "note": null },
+        { "es": "por qué", "ipa": "/poɾ ke/", "pos": "adv.", "ru": "почему", "example": { "es": "¿Por qué lloras?", "ru": "Почему ты плачешь?" }, "grammar": "вопросительное; раздельно и с ударением", "note": null },
+        { "es": "adónde", "ipa": "/aˈdonde/", "pos": "adv.", "ru": "куда", "example": { "es": "¿Adónde vas?", "ru": "Куда ты идёшь?" }, "grammar": "куда; вопросительное", "note": null },
+        { "es": "para qué", "ipa": "/ˈpaɾa ke/", "pos": "adv.", "ru": "зачем, для чего", "example": { "es": "¿Para qué sirve?", "ru": "Для чего это нужно?" }, "grammar": "зачем; вопросительное", "note": null }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "numbers",
+  "lang": "es",
+  "title": { "ru": "Числа", "en": "Numbers" },
+  "groups": [
+    {
+      "title": "Количественные 0–20",
+      "items": [
+        { "es": "cero", "ipa": "/ˈseɾo/", "pos": "num. card.", "ru": "ноль", "example": { "es": "Cero grados.", "ru": "Ноль градусов." }, "grammar": "количественное числительное", "note": null },
+        { "es": "uno", "ipa": "/ˈuno/", "pos": "num. card.", "ru": "один", "example": { "es": "Sólo tengo uno.", "ru": "У меня только один." }, "grammar": "перед сущ. м.р. → un; перед сущ. ж.р. → una", "note": null },
+        { "es": "dos", "ipa": "/dos/", "pos": "num. card.", "ru": "два", "example": { "es": "Tengo dos hermanos.", "ru": "У меня два брата." }, "grammar": "количественное числительное", "note": null },
+        { "es": "tres", "ipa": "/tɾes/", "pos": "num. card.", "ru": "три", "example": { "es": "Hay tres libros.", "ru": "Есть три книги." }, "grammar": "количественное числительное", "note": null },
+        { "es": "cuatro", "ipa": "/ˈkwatɾo/", "pos": "num. card.", "ru": "четыре", "example": { "es": "Cuatro sillas.", "ru": "Четыре стула." }, "grammar": "количественное числительное", "note": null },
+        { "es": "cinco", "ipa": "/ˈsinko/", "pos": "num. card.", "ru": "пять", "example": { "es": "Cinco minutos.", "ru": "Пять минут." }, "grammar": "количественное числительное", "note": null },
+        { "es": "seis", "ipa": "/sejs/", "pos": "num. card.", "ru": "шесть", "example": { "es": "Seis meses.", "ru": "Шесть месяцев." }, "grammar": "количественное числительное", "note": null },
+        { "es": "siete", "ipa": "/ˈsjete/", "pos": "num. card.", "ru": "семь", "example": { "es": "Siete días.", "ru": "Семь дней." }, "grammar": "количественное числительное", "note": null },
+        { "es": "ocho", "ipa": "/ˈotʃo/", "pos": "num. card.", "ru": "восемь", "example": { "es": "Ocho horas.", "ru": "Восемь часов." }, "grammar": "количественное числительное", "note": null },
+        { "es": "nueve", "ipa": "/ˈnweβe/", "pos": "num. card.", "ru": "девять", "example": { "es": "Nueve euros.", "ru": "Девять евро." }, "grammar": "количественное числительное", "note": null },
+        { "es": "diez", "ipa": "/djes/", "pos": "num. card.", "ru": "десять", "example": { "es": "Diez personas.", "ru": "Десять человек." }, "grammar": "количественное числительное", "note": null },
+        { "es": "once", "ipa": "/ˈonse/", "pos": "num. card.", "ru": "одиннадцать", "example": { "es": "Once jugadores.", "ru": "Одиннадцать игроков." }, "grammar": "количественное числительное", "note": null },
+        { "es": "doce", "ipa": "/ˈdose/", "pos": "num. card.", "ru": "двенадцать", "example": { "es": "Doce meses.", "ru": "Двенадцать месяцев." }, "grammar": "количественное числительное", "note": null },
+        { "es": "trece", "ipa": "/ˈtɾese/", "pos": "num. card.", "ru": "тринадцать", "example": { "es": "Trece años.", "ru": "Тринадцать лет." }, "grammar": "количественное числительное", "note": null },
+        { "es": "catorce", "ipa": "/kaˈtoɾse/", "pos": "num. card.", "ru": "четырнадцать", "example": { "es": "Catorce días.", "ru": "Четырнадцать дней." }, "grammar": "количественное числительное", "note": null },
+        { "es": "quince", "ipa": "/ˈkinse/", "pos": "num. card.", "ru": "пятнадцать", "example": { "es": "Quince minutos.", "ru": "Пятнадцать минут." }, "grammar": "количественное числительное", "note": null },
+        { "es": "dieciséis", "ipa": "/djesiˈsejs/", "pos": "num. card.", "ru": "шестнадцать", "example": { "es": "Dieciséis años.", "ru": "Шестнадцать лет." }, "grammar": "количественное числительное; слитно", "note": null },
+        { "es": "diecisiete", "ipa": "/djesiˈsjete/", "pos": "num. card.", "ru": "семнадцать", "example": { "es": "Diecisiete alumnos.", "ru": "Семнадцать учеников." }, "grammar": "количественное числительное; слитно", "note": null },
+        { "es": "dieciocho", "ipa": "/djesiˈotʃo/", "pos": "num. card.", "ru": "восемнадцать", "example": { "es": "Dieciocho euros.", "ru": "Восемнадцать евро." }, "grammar": "количественное числительное; слитно", "note": null },
+        { "es": "diecinueve", "ipa": "/djesiˈnweβe/", "pos": "num. card.", "ru": "девятнадцать", "example": { "es": "Diecinueve casas.", "ru": "Девятнадцать домов." }, "grammar": "количественное числительное; слитно", "note": null },
+        { "es": "veinte", "ipa": "/ˈbeinte/", "pos": "num. card.", "ru": "двадцать", "example": { "es": "Tengo veinte años.", "ru": "Мне двадцать лет." }, "grammar": "количественное числительное", "note": null }
+      ]
+    },
+    {
+      "title": "Десятки",
+      "items": [
+        { "es": "treinta", "ipa": "/ˈtɾeinta/", "pos": "num. card.", "ru": "тридцать", "example": { "es": "Treinta días.", "ru": "Тридцать дней." }, "grammar": "десяток; 30", "note": null },
+        { "es": "cuarenta", "ipa": "/kwaˈɾenta/", "pos": "num. card.", "ru": "сорок", "example": { "es": "Cuarenta grados.", "ru": "Сорок градусов." }, "grammar": "десяток; 40", "note": null },
+        { "es": "cincuenta", "ipa": "/sinˈkwenta/", "pos": "num. card.", "ru": "пятьдесят", "example": { "es": "Cincuenta euros.", "ru": "Пятьдесят евро." }, "grammar": "десяток; 50", "note": null },
+        { "es": "sesenta", "ipa": "/seˈsenta/", "pos": "num. card.", "ru": "шестьдесят", "example": { "es": "Sesenta minutos.", "ru": "Шестьдесят минут." }, "grammar": "десяток; 60", "note": null },
+        { "es": "setenta", "ipa": "/seˈtenta/", "pos": "num. card.", "ru": "семьдесят", "example": { "es": "Setenta años.", "ru": "Семьдесят лет." }, "grammar": "десяток; 70", "note": null },
+        { "es": "ochenta", "ipa": "/oˈtʃenta/", "pos": "num. card.", "ru": "восемьдесят", "example": { "es": "Ochenta personas.", "ru": "Восемьдесят человек." }, "grammar": "десяток; 80", "note": null },
+        { "es": "noventa", "ipa": "/noˈβenta/", "pos": "num. card.", "ru": "девяносто", "example": { "es": "Noventa kilómetros.", "ru": "Девяносто километров." }, "grammar": "десяток; 90", "note": null },
+        { "es": "cien", "ipa": "/sjen/", "pos": "num. card.", "ru": "сто", "example": { "es": "Cien euros.", "ru": "Сто евро." }, "grammar": "перед сущ./числ. → ciento (ciento uno); отдельно → cien", "note": null }
+      ]
+    },
+    {
+      "title": "21–29, сотни, тысячи",
+      "items": [
+        { "es": "veintiuno", "ipa": "/beintiˈuno/", "pos": "num. card.", "ru": "двадцать один", "example": { "es": "Veintiuno más uno.", "ru": "Двадцать один плюс один." }, "grammar": "перед сущ. м.р. → veintiún", "note": null },
+        { "es": "veintidós", "ipa": "/beintiˈdos/", "pos": "num. card.", "ru": "двадцать два", "example": { "es": "Veintidós alumnos.", "ru": "Двадцать два ученика." }, "grammar": "слитно; 22", "note": null },
+        { "es": "veintitrés", "ipa": "/beintiˈtɾes/", "pos": "num. card.", "ru": "двадцать три", "example": { "es": "Veintitrés euros.", "ru": "Двадцать три евро." }, "grammar": "слитно; 23", "note": null },
+        { "es": "veinticuatro", "ipa": "/beintiˈkwatɾo/", "pos": "num. card.", "ru": "двадцать четыре", "example": { "es": "Veinticuatro horas.", "ru": "Двадцать четыре часа." }, "grammar": "слитно; 24", "note": null },
+        { "es": "veinticinco", "ipa": "/beintiˈsinko/", "pos": "num. card.", "ru": "двадцать пять", "example": { "es": "Veinticinco años.", "ru": "Двадцать пять лет." }, "grammar": "слитно; 25", "note": null },
+        { "es": "veintiséis", "ipa": "/beintiˈsejs/", "pos": "num. card.", "ru": "двадцать шесть", "example": { "es": "Veintiséis letras.", "ru": "Двадцать шесть букв." }, "grammar": "слитно; 26", "note": null },
+        { "es": "veintisiete", "ipa": "/beintiˈsjete/", "pos": "num. card.", "ru": "двадцать семь", "example": { "es": "Veintisiete días.", "ru": "Двадцать семь дней." }, "grammar": "слитно; 27", "note": null },
+        { "es": "veintiocho", "ipa": "/beintiˈotʃo/", "pos": "num. card.", "ru": "двадцать восемь", "example": { "es": "Veintiocho grados.", "ru": "Двадцать восемь градусов." }, "grammar": "слитно; 28", "note": null },
+        { "es": "veintinueve", "ipa": "/beintiˈnweβe/", "pos": "num. card.", "ru": "двадцать девять", "example": { "es": "Veintinueve personas.", "ru": "Двадцать девять человек." }, "grammar": "слитно; 29", "note": null },
+        { "es": "doscientos", "ipa": "/dosˈsjentos/", "pos": "num. card.", "ru": "двести", "example": { "es": "Doscientos pesos.", "ru": "Двести песо." }, "grammar": "согласуется в роде: doscientas", "note": null },
+        { "es": "trescientos", "ipa": "/tɾesˈsjentos/", "pos": "num. card.", "ru": "триста", "example": { "es": "Trescientos metros.", "ru": "Триста метров." }, "grammar": "согласуется в роде: trescientas", "note": null },
+        { "es": "cuatrocientos", "ipa": "/kwatɾoˈsjentos/", "pos": "num. card.", "ru": "четыреста", "example": { "es": "Cuatrocientos libros.", "ru": "Четыреста книг." }, "grammar": "согласуется в роде: cuatrocientas", "note": null },
+        { "es": "quinientos", "ipa": "/kiˈnjentos/", "pos": "num. card.", "ru": "пятьсот", "example": { "es": "Quinientos euros.", "ru": "Пятьсот евро." }, "grammar": "нерегулярно от cinco; ж. р. quinientas", "note": null },
+        { "es": "seiscientos", "ipa": "/sejsˈsjentos/", "pos": "num. card.", "ru": "шестьсот", "example": { "es": "Seiscientos gramos.", "ru": "Шестьсот граммов." }, "grammar": "согласуется в роде: seiscientas", "note": null },
+        { "es": "setecientos", "ipa": "/seteˈsjentos/", "pos": "num. card.", "ru": "семьсот", "example": { "es": "Setecientos kilómetros.", "ru": "Семьсот километров." }, "grammar": "согласуется в роде: setecientas", "note": null },
+        { "es": "ochocientos", "ipa": "/otʃoˈsjentos/", "pos": "num. card.", "ru": "восемьсот", "example": { "es": "Ochocientos años.", "ru": "Восемьсот лет." }, "grammar": "согласуется в роде: ochocientas", "note": null },
+        { "es": "novecientos", "ipa": "/noβeˈsjentos/", "pos": "num. card.", "ru": "девятьсот", "example": { "es": "Novecientos dólares.", "ru": "Девятьсот долларов." }, "grammar": "согласуется в роде: novecientas", "note": null },
+        { "es": "mil", "ipa": "/mil/", "pos": "num. card.", "ru": "тысяча", "example": { "es": "Mil gracias.", "ru": "Тысяча благодарностей." }, "grammar": "перед сущ. не требует un: mil euros", "note": null },
+        { "es": "millón", "ipa": "/miˈʝon/", "pos": "num. card.", "ru": "миллион", "example": { "es": "Un millón de euros.", "ru": "Миллион евро." }, "grammar": "millón de + сущ.; мн. ч. millones", "note": null },
+        { "es": "billón", "ipa": "/biˈʝon/", "pos": "num. card.", "ru": "триллион (10¹²)", "example": { "es": "Un billón de dólares.", "ru": "Триллион долларов." }, "grammar": "billón = 10¹²; не совпадает с англ. billion = 10⁹", "note": "ложный друг: англ. billion = миллиард" }
+      ]
+    },
+    {
+      "title": "Порядковые 1–20",
+      "items": [
+        { "es": "primero", "ipa": "/pɾiˈmeɾo/", "pos": "num. ord.", "ru": "первый", "example": { "es": "El primer día.", "ru": "Первый день." }, "grammar": "перед сущ. м.р. → primer", "note": null },
+        { "es": "segundo", "ipa": "/seˈɣundo/", "pos": "num. ord.", "ru": "второй", "example": { "es": "El segundo piso.", "ru": "Второй этаж." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "tercero", "ipa": "/teɾˈseɾo/", "pos": "num. ord.", "ru": "третий", "example": { "es": "El tercer lugar.", "ru": "Третье место." }, "grammar": "перед сущ. м.р. → tercer", "note": null },
+        { "es": "cuarto", "ipa": "/ˈkwaɾto/", "pos": "num. ord.", "ru": "четвёртый", "example": { "es": "El cuarto curso.", "ru": "Четвёртый курс." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "quinto", "ipa": "/ˈkinto/", "pos": "num. ord.", "ru": "пятый", "example": { "es": "El quinto mes.", "ru": "Пятый месяц." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "sexto", "ipa": "/ˈsesto/", "pos": "num. ord.", "ru": "шестой", "example": { "es": "El sexto sentido.", "ru": "Шестое чувство." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "séptimo", "ipa": "/ˈseptimo/", "pos": "num. ord.", "ru": "седьмой", "example": { "es": "El séptimo cielo.", "ru": "Седьмое небо." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "octavo", "ipa": "/okˈtaβo/", "pos": "num. ord.", "ru": "восьмой", "example": { "es": "El octavo piso.", "ru": "Восьмой этаж." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "noveno", "ipa": "/noˈβeno/", "pos": "num. ord.", "ru": "девятый", "example": { "es": "El noveno año.", "ru": "Девятый год." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "décimo", "ipa": "/ˈdesimo/", "pos": "num. ord.", "ru": "десятый", "example": { "es": "El décimo puesto.", "ru": "Десятое место." }, "grammar": "согласуется в роде и числе", "note": null },
+        { "es": "undécimo", "ipa": "/unˈdesimo/", "pos": "num. ord.", "ru": "одиннадцатый", "example": { "es": "El undécimo capítulo.", "ru": "Одиннадцатая глава." }, "grammar": "книжное; также décimo primero", "note": null },
+        { "es": "duodécimo", "ipa": "/dwoˈdesimo/", "pos": "num. ord.", "ru": "двенадцатый", "example": { "es": "El duodécimo día.", "ru": "Двенадцатый день." }, "grammar": "книжное; также décimo segundo", "note": null },
+        { "es": "decimotercero", "ipa": "/desimoteɾˈseɾo/", "pos": "num. ord.", "ru": "тринадцатый", "example": { "es": "El decimotercero de la lista.", "ru": "Тринадцатый в списке." }, "grammar": "слитно; также décimo tercero", "note": null },
+        { "es": "decimocuarto", "ipa": "/desimoˈkwaɾto/", "pos": "num. ord.", "ru": "четырнадцатый", "example": { "es": "El decimocuarto piso.", "ru": "Четырнадцатый этаж." }, "grammar": "слитно; также décimo cuarto", "note": null },
+        { "es": "decimoquinto", "ipa": "/desimoˈkinto/", "pos": "num. ord.", "ru": "пятнадцатый", "example": { "es": "El decimoquinto aniversario.", "ru": "Пятнадцатая годовщина." }, "grammar": "слитно; также décimo quinto", "note": null },
+        { "es": "decimosexto", "ipa": "/desimoˈsesto/", "pos": "num. ord.", "ru": "шестнадцатый", "example": { "es": "El decimosexto lugar.", "ru": "Шестнадцатое место." }, "grammar": "слитно; также décimo sexto", "note": null },
+        { "es": "decimoséptimo", "ipa": "/desimoˈseptimo/", "pos": "num. ord.", "ru": "семнадцатый", "example": { "es": "El decimoséptimo año.", "ru": "Семнадцатый год." }, "grammar": "слитно; также décimo séptimo", "note": null },
+        { "es": "decimoctavo", "ipa": "/desimokˈtaβo/", "pos": "num. ord.", "ru": "восемнадцатый", "example": { "es": "El decimoctavo siglo.", "ru": "Восемнадцатый век." }, "grammar": "слитно; также décimo octavo", "note": null },
+        { "es": "decimonoveno", "ipa": "/desimoˈnoβeno/", "pos": "num. ord.", "ru": "девятнадцатый", "example": { "es": "El decimonoveno capítulo.", "ru": "Девятнадцатая глава." }, "grammar": "слитно; также décimo noveno", "note": null },
+        { "es": "vigésimo", "ipa": "/biˈxesimo/", "pos": "num. ord.", "ru": "двадцатый", "example": { "es": "El vigésimo día.", "ru": "Двадцатый день." }, "grammar": "согласуется в роде и числе", "note": null }
+      ]
+    },
+    {
+      "title": "Дроби, собирательные, приблизительные",
+      "items": [
+        { "es": "medio", "ipa": "/ˈmeðjo/", "pos": "num. card.", "ru": "половина, пол-", "example": { "es": "Medio litro de leche.", "ru": "Пол-литра молока." }, "grammar": "перед сущ. ж.р. → media", "note": null },
+        { "es": "un tercio", "ipa": "/un ˈteɾsjo/", "pos": "loc. num.", "ru": "одна треть", "example": { "es": "Un tercio de la clase.", "ru": "Треть класса." }, "grammar": "дробь; un tercio de + сущ.", "note": null },
+        { "es": "un cuarto", "ipa": "/un ˈkwaɾto/", "pos": "loc. num.", "ru": "одна четверть", "example": { "es": "Un cuarto de hora.", "ru": "Четверть часа." }, "grammar": "дробь; un cuarto de + сущ.", "note": null },
+        { "es": "tres cuartos", "ipa": "/tɾes ˈkwaɾtos/", "pos": "loc. num.", "ru": "три четверти", "example": { "es": "Tres cuartos de hora.", "ru": "Три четверти часа." }, "grammar": "дробь; tres cuartos de + сущ.", "note": null },
+        { "es": "una docena", "ipa": "/una doˈsena/", "pos": "loc. num.", "ru": "дюжина", "example": { "es": "Una docena de huevos.", "ru": "Дюжина яиц." }, "grammar": "собирательное; docena de + сущ.", "note": null },
+        { "es": "una decena", "ipa": "/una deˈsena/", "pos": "loc. num.", "ru": "десяток", "example": { "es": "Una decena de personas.", "ru": "Десяток человек." }, "grammar": "собирательное; decena de + сущ.", "note": null },
+        { "es": "un par", "ipa": "/un paɾ/", "pos": "loc. num.", "ru": "пара", "example": { "es": "Un par de días.", "ru": "Пару дней." }, "grammar": "приблизительное; un par de + сущ.", "note": null },
+        { "es": "ambos", "ipa": "/ˈambos/", "pos": "num. card.", "ru": "оба", "example": { "es": "Ambos son mis amigos.", "ru": "Оба — мои друзья." }, "grammar": "оба; согласуется в роде: ambas", "note": null },
+        { "es": "sendos", "ipa": "/ˈsendos/", "pos": "num. card.", "ru": "по одному каждому", "example": { "es": "Les dio sendos regalos.", "ru": "Он дал каждому по подарку." }, "grammar": "по одному каждому; книжное", "note": "книжное" },
+        { "es": "cientos", "ipa": "/ˈsjentos/", "pos": "num. card.", "ru": "сотни", "example": { "es": "Cientos de personas.", "ru": "Сотни людей." }, "grammar": "приблизительное множество; cientos de + сущ.", "note": null },
+        { "es": "miles", "ipa": "/ˈmiles/", "pos": "num. card.", "ru": "тысячи", "example": { "es": "Miles de estrellas.", "ru": "Тысячи звёзд." }, "grammar": "приблизительное множество; miles de + сущ.", "note": null },
+        { "es": "una vez", "ipa": "/una βes/", "pos": "loc. num.", "ru": "однажды, один раз", "example": { "es": "Una vez fui allí.", "ru": "Однажды я там был." }, "grammar": "кратность; una vez", "note": null },
+        { "es": "la mitad", "ipa": "/la miˈtað/", "pos": "loc. num.", "ru": "половина", "example": { "es": "La mitad del pastel.", "ru": "Половина торта." }, "grammar": "половина; la mitad de + сущ.", "note": null }
+      ]
+    }
+  ]
+}

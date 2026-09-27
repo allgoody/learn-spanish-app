@@ -1,0 +1,112 @@
+{
+  "id": "conjunctions",
+  "lang": "es",
+  "title": { "ru": "Союзы и связки", "en": "Conjunctions & connectors" },
+  "groups": [
+    {
+      "title": "Сочинительные союзы",
+      "items": [
+        { "es": "y", "ipa": "/i/", "pos": "conj.", "ru": "и", "example": { "es": "Habla inglés y francés.", "ru": "Он говорит по-английски и по-французски." }, "grammar": "соединение; y + однородные члены", "note": null },
+        { "es": "e", "ipa": "/e/", "pos": "conj.", "ru": "и", "example": { "es": "Padres e hijos vinieron.", "ru": "Пришли родители и дети." }, "grammar": "перед словами на i-/hi- вместо y", "note": null },
+        { "es": "o", "ipa": "/o/", "pos": "conj.", "ru": "или", "example": { "es": "¿Té o café?", "ru": "Чай или кофе?" }, "grammar": "альтернатива; o + однородные члены", "note": null },
+        { "es": "u", "ipa": "/u/", "pos": "conj.", "ru": "или", "example": { "es": "Siete u ocho personas.", "ru": "Семь или восемь человек." }, "grammar": "перед словами на o-/ho- вместо o", "note": null },
+        { "es": "ni", "ipa": "/ni/", "pos": "conj.", "ru": "ни", "example": { "es": "No come ni bebe.", "ru": "Он ни ест, ни пьёт." }, "grammar": "отрицательное соединение; ni... ni", "note": null },
+        { "es": "pero", "ipa": "/ˈpeɾo/", "pos": "conj.", "ru": "но", "example": { "es": "Es caro, pero bueno.", "ru": "Это дорого, но хорошо." }, "grammar": "противопоставление; pero + член/предложение", "note": null },
+        { "es": "sino", "ipa": "/ˈsino/", "pos": "conj.", "ru": "а, но", "example": { "es": "No es rojo, sino azul.", "ru": "Это не красный, а синий." }, "grammar": "после отрицания; no... sino", "note": null },
+        { "es": "mas", "ipa": "/mas/", "pos": "conj.", "ru": "но, однако", "example": { "es": "Quisiera ir, mas no puedo.", "ru": "Я хотел бы пойти, но не могу." }, "grammar": "книжное противопоставление; омоним más", "note": "книжное" },
+        { "es": "que", "ipa": "/ke/", "pos": "conj.", "ru": "чем; что", "example": { "es": "Prefiero esto que aquello.", "ru": "Я предпочитаю это тому." }, "grammar": "сравнение; que + член/предложение", "note": null },
+        { "es": "como", "ipa": "/ˈkomo/", "pos": "conj.", "ru": "как", "example": { "es": "Es alto como su padre.", "ru": "Он высокий, как его отец." }, "grammar": "сравнение; como + сущ./предложение", "note": null },
+        { "es": "así como", "ipa": "/aˈsi ˈkomo/", "pos": "loc. conj.", "ru": "а также, так же как", "example": { "es": "Habla ruso así como español.", "ru": "Он говорит по-русски, а также по-испански." }, "grammar": "присоединение; así como + член/предложение", "note": null },
+        { "es": "tanto... como", "ipa": "/ˈtanto ˈkomo/", "pos": "loc. conj.", "ru": "и... и, как... так и", "example": { "es": "Tanto tú como yo lo sabemos.", "ru": "И ты, и я это знаем." }, "grammar": "двойное соединение; tanto X como Y", "note": null },
+        { "es": "no solo... sino también", "ipa": "/no ˈsolo ˈsino tamˈbjen/", "pos": "loc. conj.", "ru": "не только... но и", "example": { "es": "No solo estudia, sino también trabaja.", "ru": "Он не только учится, но и работает." }, "grammar": "двойное соединение; no solo X sino también Y", "note": null },
+        { "es": "o bien", "ipa": "/o ˈbjen/", "pos": "loc. conj.", "ru": "или же", "example": { "es": "Ven hoy o bien mañana.", "ru": "Приходи сегодня или же завтра." }, "grammar": "альтернатива с оттенком выбора", "note": null }
+      ]
+    },
+    {
+      "title": "Подчинительные союзы",
+      "items": [
+        { "es": "que", "ipa": "/ke/", "pos": "conj.", "ru": "что, чтобы", "example": { "es": "Creo que tienes razón.", "ru": "Я думаю, что ты прав." }, "grammar": "вводит придаточное; que + indicativo/subjuntivo", "note": null },
+        { "es": "si", "ipa": "/si/", "pos": "conj.", "ru": "если, ли", "example": { "es": "Si llueve, no salimos.", "ru": "Если пойдёт дождь, мы не выйдем." }, "grammar": "условие; si + indicativo", "note": null },
+        { "es": "como", "ipa": "/ˈkomo/", "pos": "conj.", "ru": "так как", "example": { "es": "Como no vino, me fui.", "ru": "Так как он не пришёл, я ушёл." }, "grammar": "причина в начале фразы; como + indicativo", "note": null },
+        { "es": "porque", "ipa": "/ˈpoɾke/", "pos": "conj.", "ru": "потому что", "example": { "es": "No fui porque estaba enfermo.", "ru": "Я не пошёл, потому что был болен." }, "grammar": "причина; porque + indicativo", "note": null },
+        { "es": "pues", "ipa": "/pwes/", "pos": "conj.", "ru": "так как, ведь", "example": { "es": "No salgas, pues es tarde.", "ru": "Не выходи, ведь уже поздно." }, "grammar": "причина; pues + indicativo", "note": null },
+        { "es": "aunque", "ipa": "/ˈaunke/", "pos": "conj.", "ru": "хотя, даже если", "example": { "es": "Aunque llueva, saldremos.", "ru": "Даже если пойдёт дождь, мы выйдем." }, "grammar": "уступка; aunque + indicativo/subjuntivo", "note": null },
+        { "es": "mientras", "ipa": "/ˈmjentɾas/", "pos": "conj.", "ru": "пока, в то время как", "example": { "es": "Lee mientras yo cocino.", "ru": "Читай, пока я готовлю." }, "grammar": "одновременность; mientras + indicativo", "note": null },
+        { "es": "cuando", "ipa": "/ˈkwando/", "pos": "conj.", "ru": "когда", "example": { "es": "Cuando llegues, llámame.", "ru": "Когда придёшь, позвони мне." }, "grammar": "время; cuando + subjuntivo о будущем", "note": null },
+        { "es": "donde", "ipa": "/ˈdonde/", "pos": "conj.", "ru": "где, там где", "example": { "es": "Vive donde nació.", "ru": "Он живёт там, где родился." }, "grammar": "место; donde + indicativo", "note": null },
+        { "es": "según", "ipa": "/seˈɣun/", "pos": "conj.", "ru": "как, смотря по", "example": { "es": "Según dice la prensa, es verdad.", "ru": "Как пишет пресса, это правда." }, "grammar": "источник; según + indicativo", "note": null },
+        { "es": "apenas", "ipa": "/aˈpenas/", "pos": "conj.", "ru": "едва, как только", "example": { "es": "Apenas llegó, se durmió.", "ru": "Едва он пришёл, как заснул." }, "grammar": "немедленное следование; apenas + indicativo", "note": null },
+        { "es": "ya que", "ipa": "/ʝa ke/", "pos": "loc. conj.", "ru": "раз уж, поскольку", "example": { "es": "Ya que estás aquí, ayúdame.", "ru": "Раз уж ты здесь, помоги мне." }, "grammar": "причина; ya que + indicativo", "note": null },
+        { "es": "puesto que", "ipa": "/ˈpwesto ke/", "pos": "loc. conj.", "ru": "поскольку", "example": { "es": "Puesto que insistes, acepto.", "ru": "Раз ты настаиваешь, я согласен." }, "grammar": "причина; puesto que + indicativo", "note": null },
+        { "es": "dado que", "ipa": "/ˈdaðo ke/", "pos": "loc. conj.", "ru": "поскольку, ввиду того что", "example": { "es": "Dado que es tarde, nos vamos.", "ru": "Поскольку уже поздно, мы уходим." }, "grammar": "причина; dado que + indicativo", "note": null },
+        { "es": "en cuanto", "ipa": "/en ˈkwanto/", "pos": "loc. conj.", "ru": "как только", "example": { "es": "En cuanto llegue, te aviso.", "ru": "Как только он придёт, я тебе сообщу." }, "grammar": "время; en cuanto + subjuntivo о будущем", "note": null },
+        { "es": "tan pronto como", "ipa": "/tan ˈpɾonto ˈkomo/", "pos": "loc. conj.", "ru": "как только", "example": { "es": "Tan pronto como puedas, escríbeme.", "ru": "Как только сможешь, напиши мне." }, "grammar": "время; tan pronto como + subjuntivo о будущем", "note": null },
+        { "es": "antes de que", "ipa": "/ˈantes de ke/", "pos": "loc. conj.", "ru": "до того как", "example": { "es": "Sal antes de que llueva.", "ru": "Выходи, пока не пошёл дождь." }, "grammar": "предшествование; antes de que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "después de que", "ipa": "/desˈpwes de ke/", "pos": "loc. conj.", "ru": "после того как", "example": { "es": "Después de que se fue, lloré.", "ru": "После того как он ушёл, я заплакал." }, "grammar": "последовательность; después de que + indicativo/subjuntivo", "note": null },
+        { "es": "para que", "ipa": "/ˈpaɾa ke/", "pos": "loc. conj.", "ru": "чтобы", "example": { "es": "Te lo digo para que lo sepas.", "ru": "Я говорю тебе это, чтобы ты знал." }, "grammar": "цель; para que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "a fin de que", "ipa": "/a fin de ke/", "pos": "loc. conj.", "ru": "с тем чтобы", "example": { "es": "Habla alto a fin de que te oigan.", "ru": "Говори громко, чтобы тебя услышали." }, "grammar": "цель; a fin de que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "con tal de que", "ipa": "/kon tal de ke/", "pos": "loc. conj.", "ru": "при условии что", "example": { "es": "Iré con tal de que vengas.", "ru": "Я пойду при условии, что ты придёшь." }, "grammar": "условие; con tal de que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "sin que", "ipa": "/sin ke/", "pos": "loc. conj.", "ru": "без того чтобы", "example": { "es": "Entró sin que nadie lo viera.", "ru": "Он вошёл так, что никто его не увидел." }, "grammar": "отсутствие действия; sin que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "a menos que", "ipa": "/a ˈmenos ke/", "pos": "loc. conj.", "ru": "если только не", "example": { "es": "No iré a menos que me invites.", "ru": "Я не пойду, если только ты меня не пригласишь." }, "grammar": "условие; a menos que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "siempre que", "ipa": "/ˈsjempɾe ke/", "pos": "loc. conj.", "ru": "при условии что; каждый раз когда", "example": { "es": "Te ayudo siempre que me escuches.", "ru": "Я помогу тебе при условии, что ты меня выслушаешь." }, "grammar": "условие; siempre que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "a condición de que", "ipa": "/a kondiˈsjon de ke/", "pos": "loc. conj.", "ru": "при условии что", "example": { "es": "Acepto a condición de que vengas.", "ru": "Я согласен при условии, что ты придёшь." }, "grammar": "условие; a condición de que + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "por más que", "ipa": "/poɾ mas ke/", "pos": "loc. conj.", "ru": "как ни, сколько бы ни", "example": { "es": "Por más que lo intento, no puedo.", "ru": "Как ни стараюсь, не могу." }, "grammar": "уступка; por más que + subjuntivo", "note": null },
+        { "es": "a pesar de que", "ipa": "/a peˈsaɾ de ke/", "pos": "loc. conj.", "ru": "несмотря на то что", "example": { "es": "Salió a pesar de que llovía.", "ru": "Он вышел, несмотря на то что шёл дождь." }, "grammar": "уступка; a pesar de que + indicativo/subjuntivo", "note": null },
+        { "es": "de modo que", "ipa": "/de ˈmoðo ke/", "pos": "loc. conj.", "ru": "так что; чтобы", "example": { "es": "Habló claro, de modo que todos entendieron.", "ru": "Он говорил ясно, так что все поняли." }, "grammar": "следствие; de modo que + indicativo", "note": null },
+        { "es": "de manera que", "ipa": "/de maˈneɾa ke/", "pos": "loc. conj.", "ru": "так что", "example": { "es": "Corrió, de manera que llegó a tiempo.", "ru": "Он бежал, так что успел вовремя." }, "grammar": "следствие; de manera que + indicativo", "note": null },
+        { "es": "como si", "ipa": "/ˈkomo si/", "pos": "loc. conj.", "ru": "как будто", "example": { "es": "Habla como si supiera todo.", "ru": "Он говорит так, будто всё знает." }, "grammar": "сравнение; como si + subjuntivo", "note": "сослагательное наклонение" },
+        { "es": "hasta que", "ipa": "/ˈasta ke/", "pos": "loc. conj.", "ru": "до тех пор пока не", "example": { "es": "Espera hasta que vuelva.", "ru": "Жди, пока я не вернусь." }, "grammar": "предел; hasta que + subjuntivo о будущем", "note": null },
+        { "es": "desde que", "ipa": "/ˈdezðe ke/", "pos": "loc. conj.", "ru": "с тех пор как", "example": { "es": "Desde que te conozco, soy feliz.", "ru": "С тех пор как я тебя знаю, я счастлив." }, "grammar": "начало; desde que + indicativo", "note": null },
+        { "es": "mientras que", "ipa": "/ˈmjentɾas ke/", "pos": "loc. conj.", "ru": "тогда как", "example": { "es": "Yo estudio, mientras que él duerme.", "ru": "Я учусь, тогда как он спит." }, "grammar": "контраст; mientras que + indicativo", "note": null }
+      ]
+    },
+    {
+      "title": "Связки: контраст и уступка",
+      "items": [
+        { "es": "sin embargo", "ipa": "/sin emˈbaɾɣo/", "pos": "adv. conect.", "ru": "тем не менее, однако", "example": { "es": "Es caro; sin embargo, lo compraré.", "ru": "Это дорого; тем не менее я это куплю." }, "grammar": "контраст между двумя предложениями", "note": null },
+        { "es": "no obstante", "ipa": "/no obsˈtante/", "pos": "adv. conect.", "ru": "однако, тем не менее", "example": { "es": "Estaba cansado; no obstante, siguió.", "ru": "Он устал; однако продолжил." }, "grammar": "контраст; книжн.", "note": null },
+        { "es": "en cambio", "ipa": "/en ˈkambjo/", "pos": "adv. conect.", "ru": "напротив, зато", "example": { "es": "Yo prefiero té; él, en cambio, café.", "ru": "Я предпочитаю чай; он же, напротив, кофе." }, "grammar": "противопоставление двух фактов", "note": null },
+        { "es": "por el contrario", "ipa": "/poɾ el konˈtɾaɾjo/", "pos": "adv. conect.", "ru": "напротив", "example": { "es": "No es tonto; por el contrario, es listo.", "ru": "Он не глуп; напротив, он умён." }, "grammar": "опровержение ожидания", "note": null },
+        { "es": "al contrario", "ipa": "/al konˈtɾaɾjo/", "pos": "adv. conect.", "ru": "наоборот", "example": { "es": "No me molesta; al contrario, me ayuda.", "ru": "Мне это не мешает; наоборот, помогает." }, "grammar": "противоположность сказанному", "note": null },
+        { "es": "si bien", "ipa": "/si bjen/", "pos": "adv. conect.", "ru": "хотя, правда", "example": { "es": "Si bien es joven, es muy sabio.", "ru": "Хотя он молод, он очень мудр." }, "grammar": "уступка; вводит уступительное предложение", "note": null },
+        { "es": "ahora bien", "ipa": "/aˈoɾa bjen/", "pos": "adv. conect.", "ru": "однако же", "example": { "es": "Es buena idea; ahora bien, es cara.", "ru": "Идея хорошая; однако она дорогая." }, "grammar": "переход к оговорке; книжн.", "note": null },
+        { "es": "con todo", "ipa": "/kon ˈtoðo/", "pos": "adv. conect.", "ru": "и всё же", "example": { "es": "Con todo, decidió quedarse.", "ru": "И всё же он решил остаться." }, "grammar": "уступка; книжн.", "note": null },
+        { "es": "aun así", "ipa": "/aun aˈsi/", "pos": "adv. conect.", "ru": "и всё же, даже так", "example": { "es": "Estaba enfermo; aun así, vino.", "ru": "Он был болен; и всё же пришёл." }, "grammar": "уступка с ударным aun", "note": null },
+        { "es": "de todas formas", "ipa": "/de ˈtoðas ˈfoɾmas/", "pos": "adv. conect.", "ru": "всё равно, так или иначе", "example": { "es": "No importa; de todas formas iré.", "ru": "Неважно; я всё равно пойду." }, "grammar": "безразличие к обстоятельству", "note": null },
+        { "es": "de todos modos", "ipa": "/de ˈtoðos ˈmoðos/", "pos": "adv. conect.", "ru": "в любом случае", "example": { "es": "De todos modos, gracias.", "ru": "В любом случае спасибо." }, "grammar": "безразличие к обстоятельству", "note": null },
+        { "es": "eso sí", "ipa": "/ˈeso si/", "pos": "adv. conect.", "ru": "правда, зато", "example": { "es": "Es rápido; eso sí, es caro.", "ru": "Он быстрый; правда, дорогой." }, "grammar": "оговорка после утверждения", "note": null },
+        { "es": "después de todo", "ipa": "/desˈpwes de ˈtoðo/", "pos": "adv. conect.", "ru": "в конце концов", "example": { "es": "Después de todo, es mi hermano.", "ru": "В конце концов, он мой брат." }, "grammar": "вывод с оттенком уступки", "note": null },
+        { "es": "ni aun así", "ipa": "/ni aun aˈsi/", "pos": "adv. conect.", "ru": "даже тогда не", "example": { "es": "Le rogué; ni aun así cedió.", "ru": "Я его умолял; даже тогда он не уступил." }, "grammar": "усиленная уступка при отрицании", "note": null }
+      ]
+    },
+    {
+      "title": "Связки: добавление, пояснение, вывод",
+      "items": [
+        { "es": "además", "ipa": "/adeˈmas/", "pos": "adv. conect.", "ru": "к тому же", "example": { "es": "Es listo; además, es trabajador.", "ru": "Он умный; к тому же трудолюбивый." }, "grammar": "добавление аргумента", "note": null },
+        { "es": "encima", "ipa": "/enˈsima/", "pos": "adv. conect.", "ru": "вдобавок", "example": { "es": "Llegó tarde y, encima, sin disculparse.", "ru": "Он опоздал и вдобавок не извинился." }, "grammar": "добавление с оттенком недовольства", "note": null },
+        { "es": "es más", "ipa": "/es mas/", "pos": "adv. conect.", "ru": "более того", "example": { "es": "Es bueno; es más, es el mejor.", "ru": "Он хорош; более того, он лучший." }, "grammar": "усиление аргумента", "note": null },
+        { "es": "también", "ipa": "/tamˈbjen/", "pos": "adv. conect.", "ru": "также", "example": { "es": "Estudia y también trabaja.", "ru": "Он учится, а также работает." }, "grammar": "присоединение однородного", "note": null },
+        { "es": "asimismo", "ipa": "/asiˈmismo/", "pos": "adv. conect.", "ru": "равным образом", "example": { "es": "Aprobó; asimismo, recibió un premio.", "ru": "Он сдал; также получил награду." }, "grammar": "присоединение; книжн.", "note": null },
+        { "es": "igualmente", "ipa": "/iɣwalˈmente/", "pos": "adv. conect.", "ru": "также, равным образом", "example": { "es": "Es rápido; igualmente, es seguro.", "ru": "Он быстрый; равным образом безопасный." }, "grammar": "присоединение", "note": null },
+        { "es": "por añadidura", "ipa": "/poɾ aɲadiˈðuɾa/", "pos": "adv. conect.", "ru": "вдобавок", "example": { "es": "Es culto y, por añadidura, amable.", "ru": "Он образован и вдобавок любезен." }, "grammar": "добавление; книжн.", "note": null },
+        { "es": "es decir", "ipa": "/es deˈsiɾ/", "pos": "adv. conect.", "ru": "то есть", "example": { "es": "Es políglota; es decir, habla varias lenguas.", "ru": "Он полиглот, то есть говорит на нескольких языках." }, "grammar": "пояснение, переформулировка", "note": null },
+        { "es": "o sea", "ipa": "/o ˈsea/", "pos": "adv. conect.", "ru": "то есть", "example": { "es": "Llega tarde, o sea, a las diez.", "ru": "Он приходит поздно, то есть в десять." }, "grammar": "пояснение; разговорное", "note": "разговорное" },
+        { "es": "esto es", "ipa": "/ˈesto es/", "pos": "adv. conect.", "ru": "то есть, а именно", "example": { "es": "Es idéntico; esto es, el mismo.", "ru": "Это идентично, то есть то же самое." }, "grammar": "пояснение; книжн.", "note": null },
+        { "es": "en otras palabras", "ipa": "/en ˈotɾas paˈlaβɾas/", "pos": "adv. conect.", "ru": "иными словами", "example": { "es": "No vino; en otras palabras, nos falló.", "ru": "Он не пришёл; иными словами, подвёл нас." }, "grammar": "переформулировка", "note": null },
+        { "es": "mejor dicho", "ipa": "/meˈxoɾ ˈditʃo/", "pos": "adv. conect.", "ru": "вернее", "example": { "es": "Es alto; mejor dicho, altísimo.", "ru": "Он высокий; вернее, очень высокий." }, "grammar": "уточнение сказанного", "note": null },
+        { "es": "por ejemplo", "ipa": "/poɾ eˈxemplo/", "pos": "adv. conect.", "ru": "например", "example": { "es": "Frutas, por ejemplo, manzanas.", "ru": "Фрукты, например яблоки." }, "grammar": "иллюстрация", "note": null },
+        { "es": "en efecto", "ipa": "/en eˈfekto/", "pos": "adv. conect.", "ru": "в самом деле, действительно", "example": { "es": "En efecto, tenía razón.", "ru": "Действительно, он был прав." }, "grammar": "подтверждение", "note": null },
+        { "es": "de hecho", "ipa": "/de ˈetʃo/", "pos": "adv. conect.", "ru": "в самом деле, фактически", "example": { "es": "Es difícil; de hecho, imposible.", "ru": "Это трудно; фактически невозможно." }, "grammar": "усиление фактом", "note": null },
+        { "es": "en resumen", "ipa": "/en reˈsumen/", "pos": "adv. conect.", "ru": "в итоге, короче говоря", "example": { "es": "En resumen, todo salió bien.", "ru": "В итоге всё прошло хорошо." }, "grammar": "обобщение", "note": null },
+        { "es": "en fin", "ipa": "/en fin/", "pos": "adv. conect.", "ru": "в конце концов, словом", "example": { "es": "En fin, ya veremos.", "ru": "В конце концов, посмотрим." }, "grammar": "завершение, смена темы", "note": null },
+        { "es": "por último", "ipa": "/poɾ ˈultimo/", "pos": "adv. conect.", "ru": "наконец, в заключение", "example": { "es": "Por último, quiero agradecer.", "ru": "Наконец, я хочу поблагодарить." }, "grammar": "последний пункт перечисления", "note": null },
+        { "es": "finalmente", "ipa": "/finalˈmente/", "pos": "adv. conect.", "ru": "наконец", "example": { "es": "Finalmente, llegamos a casa.", "ru": "Наконец мы добрались до дома." }, "grammar": "завершение последовательности", "note": null },
+        { "es": "por lo tanto", "ipa": "/poɾ lo ˈtanto/", "pos": "adv. conect.", "ru": "следовательно", "example": { "es": "Llueve; por lo tanto, no salgo.", "ru": "Идёт дождь; следовательно, я не выхожу." }, "grammar": "вывод, следствие", "note": null },
+        { "es": "por consiguiente", "ipa": "/poɾ konsiˈɣjente/", "pos": "adv. conect.", "ru": "следовательно", "example": { "es": "No estudió; por consiguiente, falló.", "ru": "Он не учился; следовательно, провалился." }, "grammar": "вывод; книжн.", "note": null },
+        { "es": "en consecuencia", "ipa": "/en konseˈkwensja/", "pos": "adv. conect.", "ru": "вследствие этого", "example": { "es": "Mintió; en consecuencia, fue castigado.", "ru": "Он солгал; вследствие этого был наказан." }, "grammar": "вывод, следствие", "note": null },
+        { "es": "así pues", "ipa": "/aˈsi pwes/", "pos": "adv. conect.", "ru": "итак", "example": { "es": "Así pues, empezamos.", "ru": "Итак, начнём." }, "grammar": "вывод; книжн.", "note": null },
+        { "es": "entonces", "ipa": "/enˈtonses/", "pos": "adv. conect.", "ru": "тогда, значит", "example": { "es": "Si no vienes, entonces me voy.", "ru": "Если ты не придёшь, тогда я уйду." }, "grammar": "следствие в диалоге", "note": null }
+      ]
+    }
+  ]
+}

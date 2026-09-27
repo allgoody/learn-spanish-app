@@ -1,0 +1,129 @@
+{
+  "id": "prepositions",
+  "lang": "es",
+  "title": { "ru": "Предлоги", "en": "Prepositions" },
+  "groups": [
+    {
+      "title": "Простые предлоги",
+      "items": [
+        { "es": "a", "ipa": "/a/", "pos": "prep.", "ru": "в, к, на", "example": { "es": "Voy a Madrid.", "ru": "Я еду в Мадрид." }, "grammar": "направление, время; a + сущ./инф.", "note": null },
+        { "es": "ante", "ipa": "/ˈante/", "pos": "prep.", "ru": "перед, при", "example": { "es": "Se presentó ante el juez.", "ru": "Он предстал перед судьёй." }, "grammar": "перед кем-л.; ante + сущ.", "note": null },
+        { "es": "bajo", "ipa": "/ˈbaxo/", "pos": "prep.", "ru": "под, нижний", "example": { "es": "El gato está bajo la mesa.", "ru": "Кот под столом." }, "grammar": "под; bajo + сущ.", "note": null },
+        { "es": "cabe", "ipa": "/ˈkabe/", "pos": "prep.", "ru": "около, подле", "example": { "es": "Vive cabe la iglesia.", "ru": "Он живёт подле церкви." }, "grammar": "около, подле; cabe + сущ.", "note": "устарелое" },
+        { "es": "con", "ipa": "/kon/", "pos": "prep.", "ru": "с, вместе с", "example": { "es": "Voy con mis amigos.", "ru": "Я иду с друзьями." }, "grammar": "с, вместе с; con + сущ.", "note": null },
+        { "es": "contra", "ipa": "/ˈkontɾa/", "pos": "prep.", "ru": "против, о", "example": { "es": "Luchamos contra la injusticia.", "ru": "Мы боремся против несправедливости." }, "grammar": "против; contra + сущ.", "note": null },
+        { "es": "de", "ipa": "/de/", "pos": "prep.", "ru": "из, от, о", "example": { "es": "Este libro es de Ana.", "ru": "Эта книга Анны." }, "grammar": "принадлежность, происхождение; de + сущ.", "note": null },
+        { "es": "desde", "ipa": "/ˈdezðe/", "pos": "prep.", "ru": "с, от", "example": { "es": "Trabajo aquí desde 2020.", "ru": "Я работаю здесь с 2020 года." }, "grammar": "начало во времени/пространстве; desde + сущ.", "note": null },
+        { "es": "durante", "ipa": "/duˈɾante/", "pos": "prep.", "ru": "в течение, во время", "example": { "es": "Durmió durante el viaje.", "ru": "Он спал во время поездки." }, "grammar": "в течение; durante + сущ.", "note": null },
+        { "es": "en", "ipa": "/en/", "pos": "prep.", "ru": "в, на", "example": { "es": "Vivo en Sevilla.", "ru": "Я живу в Севилье." }, "grammar": "место, время; en + сущ.", "note": null },
+        { "es": "entre", "ipa": "/ˈentɾe/", "pos": "prep.", "ru": "между, среди", "example": { "es": "Está entre las dos casas.", "ru": "Это между двумя домами." }, "grammar": "между, среди; entre + сущ.", "note": null },
+        { "es": "hacia", "ipa": "/ˈasja/", "pos": "prep.", "ru": "к, по направлению к", "example": { "es": "Caminamos hacia el norte.", "ru": "Мы идём на север." }, "grammar": "направление; hacia + сущ.", "note": null },
+        { "es": "hasta", "ipa": "/ˈasta/", "pos": "prep.", "ru": "до, вплоть до", "example": { "es": "Esperé hasta las diez.", "ru": "Я ждал до десяти." }, "grammar": "предел; hasta + сущ./инф.", "note": null },
+        { "es": "mediante", "ipa": "/meˈðjante/", "pos": "prep.", "ru": "посредством, при помощи", "example": { "es": "Lo logró mediante su esfuerzo.", "ru": "Он добился этого своим трудом." }, "grammar": "средство; mediante + сущ.; книжн.", "note": null },
+        { "es": "para", "ipa": "/ˈpaɾa/", "pos": "prep.", "ru": "для, чтобы", "example": { "es": "Este regalo es para ti.", "ru": "Этот подарок для тебя." }, "grammar": "цель, адресат; para + сущ./инф.", "note": null },
+        { "es": "por", "ipa": "/poɾ/", "pos": "prep.", "ru": "по, через, за", "example": { "es": "Gracias por tu ayuda.", "ru": "Спасибо за твою помощь." }, "grammar": "причина, средство, место; por + сущ./инф.", "note": null },
+        { "es": "según", "ipa": "/seˈɣun/", "pos": "prep.", "ru": "по, согласно", "example": { "es": "Según el periódico, lloverá.", "ru": "Судя по газете, будет дождь." }, "grammar": "источник мнения; según + сущ.", "note": null },
+        { "es": "sin", "ipa": "/sin/", "pos": "prep.", "ru": "без", "example": { "es": "Café sin azúcar, por favor.", "ru": "Кофе без сахара, пожалуйста." }, "grammar": "отсутствие; sin + сущ./инф.", "note": null },
+        { "es": "so", "ipa": "/so/", "pos": "prep.", "ru": "под", "example": { "es": "Lo hizo so pena de muerte.", "ru": "Он сделал это под страхом смерти." }, "grammar": "под; so + сущ.; только в устойчивых выражениях", "note": "устарелое" },
+        { "es": "sobre", "ipa": "/ˈsoβɾe/", "pos": "prep.", "ru": "на, над, о", "example": { "es": "El libro está sobre la mesa.", "ru": "Книга на столе." }, "grammar": "на, над; sobre + сущ.", "note": null },
+        { "es": "tras", "ipa": "/tɾas/", "pos": "prep.", "ru": "за, после", "example": { "es": "Tras la tormenta salió el sol.", "ru": "После бури выглянуло солнце." }, "grammar": "за, после; tras + сущ.", "note": null },
+        { "es": "versus", "ipa": "/ˈbeɾsus/", "pos": "prep.", "ru": "против", "example": { "es": "El partido es Madrid versus Barcelona.", "ru": "Матч — Мадрид против Барселоны." }, "grammar": "против; versus + сущ.; спорт./книжн.", "note": null },
+        { "es": "vía", "ipa": "/ˈbia/", "pos": "prep.", "ru": "через, посредством", "example": { "es": "Volamos vía París.", "ru": "Мы летим через Париж." }, "grammar": "через, путём; vía + сущ.", "note": null }
+      ]
+    },
+    {
+      "title": "Предложные обороты места и направления",
+      "items": [
+        { "es": "al lado de", "ipa": "/al ˈlaðo de/", "pos": "loc. prep.", "ru": "рядом с", "example": { "es": "Vive al lado de la estación.", "ru": "Он живёт рядом с вокзалом." }, "grammar": "рядом с; al lado de + сущ.", "note": null },
+        { "es": "alrededor de", "ipa": "/alreðeˈðoɾ de/", "pos": "loc. prep.", "ru": "вокруг", "example": { "es": "Se sentaron alrededor de la hoguera.", "ru": "Они сели вокруг костра." }, "grammar": "вокруг; alrededor de + сущ.", "note": null },
+        { "es": "cerca de", "ipa": "/ˈseɾka de/", "pos": "loc. prep.", "ru": "близко от, около", "example": { "es": "El pueblo está cerca de aquí.", "ru": "Деревня недалеко отсюда." }, "grammar": "близко от; cerca de + сущ.", "note": null },
+        { "es": "lejos de", "ipa": "/ˈlexos de/", "pos": "loc. prep.", "ru": "далеко от", "example": { "es": "Su casa está lejos de la mía.", "ru": "Его дом далеко от моего." }, "grammar": "далеко от; lejos de + сущ.", "note": null },
+        { "es": "dentro de", "ipa": "/ˈdentɾo de/", "pos": "loc. prep.", "ru": "внутри, через", "example": { "es": "Llámame dentro de una hora.", "ru": "Позвони мне через час." }, "grammar": "внутри, через (о времени); dentro de + сущ.", "note": null },
+        { "es": "fuera de", "ipa": "/ˈfweɾa de/", "pos": "loc. prep.", "ru": "вне, за пределами", "example": { "es": "Espera fuera de la casa.", "ru": "Жди снаружи дома." }, "grammar": "вне; fuera de + сущ.", "note": null },
+        { "es": "encima de", "ipa": "/enˈsima de/", "pos": "loc. prep.", "ru": "на, поверх", "example": { "es": "Dejó las llaves encima de la mesa.", "ru": "Он оставил ключи на столе." }, "grammar": "на, поверх; encima de + сущ.", "note": null },
+        { "es": "debajo de", "ipa": "/deˈbaxo de/", "pos": "loc. prep.", "ru": "под", "example": { "es": "El perro duerme debajo de la cama.", "ru": "Собака спит под кроватью." }, "grammar": "под; debajo de + сущ.", "note": null },
+        { "es": "delante de", "ipa": "/deˈlante de/", "pos": "loc. prep.", "ru": "перед, впереди", "example": { "es": "No digas eso delante de los niños.", "ru": "Не говори этого при детях." }, "grammar": "перед; delante de + сущ.", "note": null },
+        { "es": "detrás de", "ipa": "/deˈtɾas de/", "pos": "loc. prep.", "ru": "за, позади", "example": { "es": "El jardín está detrás de la casa.", "ru": "Сад за домом." }, "grammar": "за, позади; detrás de + сущ.", "note": null },
+        { "es": "frente a", "ipa": "/ˈfɾente a/", "pos": "loc. prep.", "ru": "напротив, перед лицом", "example": { "es": "El banco está frente a la plaza.", "ru": "Банк напротив площади." }, "grammar": "напротив; frente a + сущ.", "note": null },
+        { "es": "junto a", "ipa": "/ˈxunto a/", "pos": "loc. prep.", "ru": "рядом с, около", "example": { "es": "El árbol crece junto al río.", "ru": "Дерево растёт у реки." }, "grammar": "рядом с; junto a + сущ.", "note": null },
+        { "es": "en medio de", "ipa": "/en ˈmeðjo de/", "pos": "loc. prep.", "ru": "посреди", "example": { "es": "Se quedó en medio de la calle.", "ru": "Он остался посреди улицы." }, "grammar": "посреди; en medio de + сущ.", "note": null },
+        { "es": "a través de", "ipa": "/a tɾaˈβes de/", "pos": "loc. prep.", "ru": "сквозь, через", "example": { "es": "La luz pasa a través del cristal.", "ru": "Свет проходит сквозь стекло." }, "grammar": "сквозь, через; a través de + сущ.", "note": null },
+        { "es": "por encima de", "ipa": "/poɾ enˈsima de/", "pos": "loc. prep.", "ru": "над, поверх", "example": { "es": "El avión vuela por encima de las nubes.", "ru": "Самолёт летит над облаками." }, "grammar": "над; por encima de + сущ.", "note": null },
+        { "es": "por debajo de", "ipa": "/poɾ deˈbaxo de/", "pos": "loc. prep.", "ru": "под, ниже", "example": { "es": "El río corre por debajo del puente.", "ru": "Река течёт под мостом." }, "grammar": "под, ниже; por debajo de + сущ.", "note": null },
+        { "es": "por delante de", "ipa": "/poɾ deˈlante de/", "pos": "loc. prep.", "ru": "перед, мимо", "example": { "es": "Pasó por delante de la tienda.", "ru": "Он прошёл мимо магазина." }, "grammar": "перед, мимо; por delante de + сущ.", "note": null },
+        { "es": "por detrás de", "ipa": "/poɾ deˈtɾas de/", "pos": "loc. prep.", "ru": "позади, за", "example": { "es": "Entraron por detrás de la casa.", "ru": "Они вошли сзади дома." }, "grammar": "позади; por detrás de + сущ.", "note": null },
+        { "es": "en torno a", "ipa": "/en ˈtoɾno a/", "pos": "loc. prep.", "ru": "вокруг, около", "example": { "es": "Discutieron en torno al problema.", "ru": "Они обсуждали эту проблему." }, "grammar": "вокруг, около (темы); en torno a + сущ.", "note": null },
+        { "es": "en dirección a", "ipa": "/en diɾekˈsjon a/", "pos": "loc. prep.", "ru": "в направлении", "example": { "es": "Caminó en dirección a la playa.", "ru": "Он пошёл в сторону пляжа." }, "grammar": "в направлении; en dirección a + сущ.", "note": null },
+        { "es": "camino de", "ipa": "/kaˈmino de/", "pos": "loc. prep.", "ru": "по пути в", "example": { "es": "Iba camino de la escuela.", "ru": "Он шёл по дороге в школу." }, "grammar": "по пути в; camino de + сущ.", "note": null },
+        { "es": "al borde de", "ipa": "/al ˈboɾðe de/", "pos": "loc. prep.", "ru": "на краю", "example": { "es": "Está al borde del abismo.", "ru": "Он на краю пропасти." }, "grammar": "на краю; al borde de + сущ.", "note": null },
+        { "es": "a la orilla de", "ipa": "/a la oˈɾiʝa de/", "pos": "loc. prep.", "ru": "на берегу", "example": { "es": "Se sentó a la orilla del mar.", "ru": "Он сел на берегу моря." }, "grammar": "на берегу; a la orilla de + сущ.", "note": null },
+        { "es": "en el fondo de", "ipa": "/en el ˈfondo de/", "pos": "loc. prep.", "ru": "в глубине, на дне", "example": { "es": "En el fondo del pozo hay agua.", "ru": "На дне колодца есть вода." }, "grammar": "в глубине; en el fondo de + сущ.", "note": null },
+        { "es": "a la derecha de", "ipa": "/a la deˈɾetʃa de/", "pos": "loc. prep.", "ru": "справа от", "example": { "es": "La farmacia está a la derecha del hotel.", "ru": "Аптека справа от отеля." }, "grammar": "справа от; a la derecha de + сущ.", "note": null },
+        { "es": "a la izquierda de", "ipa": "/a la isˈkjeɾða de/", "pos": "loc. prep.", "ru": "слева от", "example": { "es": "El parque está a la izquierda de la iglesia.", "ru": "Парк слева от церкви." }, "grammar": "слева от; a la izquierda de + сущ.", "note": null }
+      ]
+    },
+    {
+      "title": "Предложные обороты времени",
+      "items": [
+        { "es": "antes de", "ipa": "/ˈantes de/", "pos": "loc. prep.", "ru": "до, прежде", "example": { "es": "Come antes de salir.", "ru": "Ешь перед выходом." }, "grammar": "до; antes de + сущ./инф.", "note": null },
+        { "es": "después de", "ipa": "/desˈpwes de/", "pos": "loc. prep.", "ru": "после", "example": { "es": "Descansa después de trabajar.", "ru": "Отдохни после работы." }, "grammar": "после; después de + сущ./инф.", "note": null },
+        { "es": "a partir de", "ipa": "/a paɾˈtiɾ de/", "pos": "loc. prep.", "ru": "начиная с", "example": { "es": "La tienda abre a partir de las nueve.", "ru": "Магазин открывается с девяти." }, "grammar": "начиная с; a partir de + сущ.", "note": null },
+        { "es": "al cabo de", "ipa": "/al ˈkaβo de/", "pos": "loc. prep.", "ru": "через, по прошествии", "example": { "es": "Llegó al cabo de dos horas.", "ru": "Он пришёл через два часа." }, "grammar": "через; al cabo de + сущ.", "note": null },
+        { "es": "a lo largo de", "ipa": "/a lo ˈlaɾɣo de/", "pos": "loc. prep.", "ru": "вдоль, в течение", "example": { "es": "Hay árboles a lo largo del camino.", "ru": "Вдоль дороги растут деревья." }, "grammar": "вдоль, в течение; a lo largo de + сущ.", "note": null },
+        { "es": "de aquí a", "ipa": "/de aˈki a/", "pos": "loc. prep.", "ru": "через (с этого момента)", "example": { "es": "De aquí a un mes termino.", "ru": "Через месяц я закончу." }, "grammar": "через; de aquí a + сущ.", "note": null },
+        { "es": "de un momento a otro", "ipa": "/de un moˈmento a ˈotɾo/", "pos": "loc. prep.", "ru": "с минуты на минуту", "example": { "es": "Llegará de un momento a otro.", "ru": "Он придёт с минуты на минуту." }, "grammar": "с минуты на минуту; устойчивое выражение", "note": null },
+        { "es": "a eso de", "ipa": "/a ˈeso de/", "pos": "loc. prep.", "ru": "около (о времени)", "example": { "es": "Llegó a eso de las cinco.", "ru": "Он пришёл около пяти." }, "grammar": "около; a eso de + сущ.", "note": null },
+        { "es": "por la mañana", "ipa": "/poɾ la maˈɲana/", "pos": "loc. prep.", "ru": "утром", "example": { "es": "Trabajo por la mañana.", "ru": "Я работаю утром." }, "grammar": "утром; por la mañana", "note": null },
+        { "es": "por la tarde", "ipa": "/poɾ la ˈtaɾðe/", "pos": "loc. prep.", "ru": "днём, вечером", "example": { "es": "Estudia por la tarde.", "ru": "Он учится днём." }, "grammar": "днём; por la tarde", "note": null },
+        { "es": "por la noche", "ipa": "/poɾ la ˈnotʃe/", "pos": "loc. prep.", "ru": "вечером, ночью", "example": { "es": "Leo por la noche.", "ru": "Я читаю по вечерам." }, "grammar": "вечером, ночью; por la noche", "note": null },
+        { "es": "de día", "ipa": "/de ˈdia/", "pos": "loc. prep.", "ru": "днём", "example": { "es": "Duerme de día y trabaja de noche.", "ru": "Он спит днём, а работает ночью." }, "grammar": "днём; de día", "note": null },
+        { "es": "de noche", "ipa": "/de ˈnotʃe/", "pos": "loc. prep.", "ru": "ночью", "example": { "es": "Viajamos de noche.", "ru": "Мы путешествуем ночью." }, "grammar": "ночью; de noche", "note": null },
+        { "es": "al mediodía", "ipa": "/al meðjoˈdia/", "pos": "loc. prep.", "ru": "в полдень", "example": { "es": "Comemos al mediodía.", "ru": "Мы обедаем в полдень." }, "grammar": "в полдень; al mediodía", "note": null }
+      ]
+    },
+    {
+      "title": "Предложные обороты причины, цели и условия",
+      "items": [
+        { "es": "a causa de", "ipa": "/a ˈkawsa de/", "pos": "loc. prep.", "ru": "из-за, по причине", "example": { "es": "Llegó tarde a causa del tráfico.", "ru": "Он опоздал из-за пробок." }, "grammar": "из-за; a causa de + сущ.", "note": null },
+        { "es": "a consecuencia de", "ipa": "/a konseˈkwensja de/", "pos": "loc. prep.", "ru": "вследствие", "example": { "es": "Murió a consecuencia de las heridas.", "ru": "Он умер от ран." }, "grammar": "вследствие; a consecuencia de + сущ.", "note": null },
+        { "es": "debido a", "ipa": "/deˈβiðo a/", "pos": "loc. prep.", "ru": "из-за, вследствие", "example": { "es": "Suspendió debido a la enfermedad.", "ru": "Он не сдал экзамен из-за болезни." }, "grammar": "из-за; debido a + сущ.", "note": null },
+        { "es": "gracias a", "ipa": "/ˈɡɾasjas a/", "pos": "loc. prep.", "ru": "благодаря", "example": { "es": "Aprobé gracias a tu ayuda.", "ru": "Я сдал благодаря твоей помощи." }, "grammar": "благодаря; gracias a + сущ.", "note": null },
+        { "es": "por culpa de", "ipa": "/poɾ ˈkulpa de/", "pos": "loc. prep.", "ru": "по вине", "example": { "es": "Perdimos por culpa de él.", "ru": "Мы проиграли из-за него." }, "grammar": "по вине; por culpa de + сущ.", "note": null },
+        { "es": "a falta de", "ipa": "/a ˈfalta de/", "pos": "loc. prep.", "ru": "за неимением, за отсутствием", "example": { "es": "A falta de pan, buenas son tortas.", "ru": "За неимением хлеба хороши и лепёшки." }, "grammar": "за неимением; a falta de + сущ.", "note": null },
+        { "es": "en vista de", "ipa": "/en ˈbista de/", "pos": "loc. prep.", "ru": "ввиду", "example": { "es": "En vista de los resultados, cambió de plan.", "ru": "Ввиду результатов он изменил план." }, "grammar": "ввиду; en vista de + сущ.", "note": null },
+        { "es": "a fin de", "ipa": "/a fin de/", "pos": "loc. prep.", "ru": "с целью, чтобы", "example": { "es": "Trabaja a fin de aprobar.", "ru": "Он работает, чтобы сдать." }, "grammar": "с целью; a fin de + инф.", "note": null },
+        { "es": "con objeto de", "ipa": "/kon obˈxeto de/", "pos": "loc. prep.", "ru": "с целью", "example": { "es": "Lo dijo con objeto de ayudarte.", "ru": "Он сказал это, чтобы помочь тебе." }, "grammar": "с целью; con objeto de + инф.", "note": null },
+        { "es": "con el fin de", "ipa": "/kon el fin de/", "pos": "loc. prep.", "ru": "с целью", "example": { "es": "Estudia con el fin de mejorar.", "ru": "Он учится, чтобы стать лучше." }, "grammar": "с целью; con el fin de + инф.", "note": null },
+        { "es": "con tal de", "ipa": "/kon tal de/", "pos": "loc. prep.", "ru": "лишь бы, при условии", "example": { "es": "Haría cualquier cosa con tal de verte.", "ru": "Я сделаю что угодно, лишь бы тебя увидеть." }, "grammar": "лишь бы; con tal de + инф.", "note": null },
+        { "es": "en caso de", "ipa": "/en ˈkaso de/", "pos": "loc. prep.", "ru": "в случае", "example": { "es": "Llama en caso de duda.", "ru": "Позвони в случае сомнения." }, "grammar": "в случае; en caso de + сущ./инф.", "note": null },
+        { "es": "a pesar de", "ipa": "/a peˈsaɾ de/", "pos": "loc. prep.", "ru": "несмотря на", "example": { "es": "Salió a pesar de la lluvia.", "ru": "Он вышел, несмотря на дождь." }, "grammar": "несмотря на; a pesar de + сущ./инф.", "note": null },
+        { "es": "a condición de", "ipa": "/a kondiˈsjon de/", "pos": "loc. prep.", "ru": "при условии", "example": { "es": "Te ayudo a condición de que calles.", "ru": "Я помогу тебе при условии, что ты будешь молчать." }, "grammar": "при условии; a condición de + инф./que", "note": null },
+        { "es": "en previsión de", "ipa": "/em pɾebiˈsjon de/", "pos": "loc. prep.", "ru": "в предвидении, на случай", "example": { "es": "Ahorra en previsión de gastos.", "ru": "Он копит на случай расходов." }, "grammar": "на случай; en previsión de + сущ.", "note": null },
+        { "es": "so pena de", "ipa": "/so ˈpena de/", "pos": "loc. prep.", "ru": "под угрозой", "example": { "es": "Lo harás so pena de castigo.", "ru": "Ты сделаешь это под угрозой наказания." }, "grammar": "под угрозой; so pena de + сущ./инф.", "note": null },
+        { "es": "por miedo a", "ipa": "/poɾ ˈmjeðo a/", "pos": "loc. prep.", "ru": "из страха перед", "example": { "es": "No habló por miedo a las consecuencias.", "ru": "Он не заговорил из страха перед последствиями." }, "grammar": "из страха; por miedo a + сущ./инф.", "note": null },
+        { "es": "a fuerza de", "ipa": "/a ˈfweɾsa de/", "pos": "loc. prep.", "ru": "путём, за счёт", "example": { "es": "A fuerza de insistir, lo consiguió.", "ru": "Настойчивостью он добился своего." }, "grammar": "за счёт; a fuerza de + сущ./инф.", "note": null }
+      ]
+    },
+    {
+      "title": "Предложные обороты замены, отношения и средства",
+      "items": [
+        { "es": "en vez de", "ipa": "/em ˈbes de/", "pos": "loc. prep.", "ru": "вместо", "example": { "es": "Bebe agua en vez de vino.", "ru": "Он пьёт воду вместо вина." }, "grammar": "вместо; en vez de + сущ./инф.", "note": null },
+        { "es": "en lugar de", "ipa": "/en luˈɣaɾ de/", "pos": "loc. prep.", "ru": "вместо", "example": { "es": "Fue él en lugar de su hermano.", "ru": "Пошёл он вместо брата." }, "grammar": "вместо; en lugar de + сущ./инф.", "note": null },
+        { "es": "en contra de", "ipa": "/en ˈkontɾa de/", "pos": "loc. prep.", "ru": "против", "example": { "es": "Votó en contra de la ley.", "ru": "Он проголосовал против закона." }, "grammar": "против; en contra de + сущ.", "note": null },
+        { "es": "respecto a", "ipa": "/resˈpekto a/", "pos": "loc. prep.", "ru": "что касается, относительно", "example": { "es": "Respecto a eso, no sé nada.", "ru": "Насчёт этого я ничего не знаю." }, "grammar": "относительно; respecto a + сущ.", "note": null },
+        { "es": "con respecto a", "ipa": "/kon resˈpekto a/", "pos": "loc. prep.", "ru": "относительно", "example": { "es": "Con respecto al precio, es caro.", "ru": "Что касается цены, она высокая." }, "grammar": "относительно; con respecto a + сущ.", "note": null },
+        { "es": "en cuanto a", "ipa": "/en ˈkwanto a/", "pos": "loc. prep.", "ru": "что касается", "example": { "es": "En cuanto a mí, prefiero quedarme.", "ru": "Что до меня, я предпочитаю остаться." }, "grammar": "что касается; en cuanto a + сущ.", "note": null },
+        { "es": "en relación con", "ipa": "/en relaˈsjon kon/", "pos": "loc. prep.", "ru": "в связи с", "example": { "es": "Habló en relación con el proyecto.", "ru": "Он говорил в связи с проектом." }, "grammar": "в связи с; en relación con + сущ.", "note": null },
+        { "es": "por medio de", "ipa": "/poɾ ˈmeðjo de/", "pos": "loc. prep.", "ru": "посредством", "example": { "es": "Se comunica por medio de señas.", "ru": "Он общается с помощью знаков." }, "grammar": "посредством; por medio de + сущ.", "note": null },
+        { "es": "por vía de", "ipa": "/poɾ ˈbia de/", "pos": "loc. prep.", "ru": "через, путём", "example": { "es": "Lo supo por vía oficial.", "ru": "Он узнал это официальным путём." }, "grammar": "путём; por vía de + сущ.", "note": null },
+        { "es": "a base de", "ipa": "/a ˈbase de/", "pos": "loc. prep.", "ru": "на основе, путём", "example": { "es": "Se curó a base de descanso.", "ru": "Он вылечился благодаря отдыху." }, "grammar": "на основе; a base de + сущ./инф.", "note": null },
+        { "es": "de acuerdo con", "ipa": "/de aˈkweɾðo kon/", "pos": "loc. prep.", "ru": "согласно, в соответствии", "example": { "es": "De acuerdo con la ley, es ilegal.", "ru": "Согласно закону, это незаконно." }, "grammar": "согласно; de acuerdo con + сущ.", "note": null },
+        { "es": "en nombre de", "ipa": "/en ˈnombɾe de/", "pos": "loc. prep.", "ru": "от имени", "example": { "es": "Hablo en nombre de todos.", "ru": "Я говорю от имени всех." }, "grammar": "от имени; en nombre de + сущ.", "note": null },
+        { "es": "en favor de", "ipa": "/em faˈβoɾ de/", "pos": "loc. prep.", "ru": "в пользу", "example": { "es": "Donó dinero en favor de los niños.", "ru": "Он пожертвовал деньги в пользу детей." }, "grammar": "в пользу; en favor de + сущ.", "note": null },
+        { "es": "a diferencia de", "ipa": "/a difeˈɾensja de/", "pos": "loc. prep.", "ru": "в отличие от", "example": { "es": "A diferencia de ti, yo estudio.", "ru": "В отличие от тебя, я учусь." }, "grammar": "в отличие от; a diferencia de + сущ.", "note": null },
+        { "es": "en función de", "ipa": "/em funˈsjon de/", "pos": "loc. prep.", "ru": "в зависимости от", "example": { "es": "El precio varía en función de la demanda.", "ru": "Цена меняется в зависимости от спроса." }, "grammar": "в зависимости от; en función de + сущ.", "note": null },
+        { "es": "por obra de", "ipa": "/poɾ ˈoβɾa de/", "pos": "loc. prep.", "ru": "по воле, благодаря", "example": { "es": "Todo ocurrió por obra del azar.", "ru": "Всё произошло по воле случая." }, "grammar": "по воле; por obra de + сущ.", "note": null }
+      ]
+    }
+  ]
+}
