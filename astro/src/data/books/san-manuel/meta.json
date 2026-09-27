@@ -1,0 +1,21 @@
+{
+  "id": "san-manuel",
+  "lang": "es",
+  "title": "San Manuel Bueno, mártir",
+  "author": "Miguel de Unamuno",
+  "source": "Wikisource es",
+  "chapters": [
+    {
+      "id": "prologo",
+      "title": "Prólogo"
+    },
+    {
+      "id": "san-manuel-bueno-martir",
+      "title": "San Manuel Bueno, mártir"
+    },
+    {
+      "id": "epilogo",
+      "title": "Epílogo"
+    }
+  ]
+}
