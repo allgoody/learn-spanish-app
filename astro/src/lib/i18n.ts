@@ -23,6 +23,13 @@ export const strings: Record<Lang, Record<string, string>> = {
     system: "Системная",
     description:
       "«Странствия и видения Испании» — сборник очерков Мигеля де Унамуно о путешествиях по Испании.",
+    about: "О проекте",
+    privacy: "Конфиденциальность",
+    footerNav: "Навигация в подвале",
+    cookieText:
+      "Мы используем cookie и Google Analytics, чтобы понимать, как используется сайт.",
+    cookieAccept: "Принять",
+    cookieDecline: "Отклонить",
   },
   en: {
     translation: "Translation",
@@ -46,6 +53,13 @@ export const strings: Record<Lang, Record<string, string>> = {
     system: "System",
     description:
       "Andanzas y visiones españolas — Miguel de Unamuno's essay collection on travels through Spain.",
+    about: "About",
+    privacy: "Privacy",
+    footerNav: "Footer navigation",
+    cookieText:
+      "We use cookies and Google Analytics to understand how the site is used.",
+    cookieAccept: "Accept",
+    cookieDecline: "Decline",
   },
 };
 

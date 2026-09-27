@@ -1,7 +1,9 @@
 ---
 import '../styles/global.css'
 import HeaderMenu from '../components/HeaderMenu.tsx'
+import CookieConsent from '../components/CookieConsent.astro'
 import { seo, seoLang } from '../lib/seo'
+import { getLang, strings } from '../lib/i18n'
 
 interface Props {
   title?: string
@@ -10,6 +12,7 @@ interface Props {
 }
 
 const { title = seo[seoLang].homeTitle, description = seo[seoLang].homeDescription, contentLang } = Astro.props
+const ui = strings[getLang()]
 ---
 
 <html lang={contentLang ?? 'es'} data-content-lang={contentLang ? '' : undefined}>
@@ -48,6 +51,10 @@ const { title = seo[seoLang].homeTitle, description = seo[seoLang].homeDescripti
     <div class="flex-1"><slot /></div>
     <footer class="border-t border-line mt-12">
       <div class="max-w-2xl mx-auto px-4 py-6 text-center">
+        <nav aria-label={ui.footerNav} class="mb-3 flex justify-center gap-4 text-xs text-muted">
+          <a href="/about/" class="hover:underline">{ui.about}</a>
+          <a href="/privacy/" class="hover:underline">{ui.privacy}</a>
+        </nav>
         <a
           href="https://ctdev.dev/ru/"
           target="_blank"
@@ -56,5 +63,6 @@ const { title = seo[seoLang].homeTitle, description = seo[seoLang].homeDescripti
         >Made by CTDev</a>
       </div>
     </footer>
+    <CookieConsent />
   </body>
 </html>

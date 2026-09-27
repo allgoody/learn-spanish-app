@@ -1,0 +1,79 @@
+---
+import { getLang, strings } from '../lib/i18n'
+
+const ui = strings[getLang()]
+---
+
+<div
+  id="cookie-banner"
+  hidden
+  role="region"
+  aria-label={ui.cookieText}
+  class="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-paper"
+>
+  <div
+    class="max-w-2xl mx-auto flex flex-col gap-3 px-4 py-4 text-sm sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p class="text-muted">
+      {ui.cookieText}{' '}
+      <a href="/privacy/" class="text-accent hover:underline">{ui.privacy}</a>
+    </p>
+    <div class="flex shrink-0 gap-2">
+      <button
+        id="cookie-accept"
+        type="button"
+        class="rounded bg-accent px-3 py-1.5 font-medium text-on-accent"
+      >{ui.cookieAccept}</button>
+      <button
+        id="cookie-decline"
+        type="button"
+        class="rounded border border-line-strong px-3 py-1.5 font-medium text-ink hover:bg-surface-hover"
+      >{ui.cookieDecline}</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = 'cookie-consent'
+    var GA_ID = 'G-RZLGCDEZSN'
+    var banner = document.getElementById('cookie-banner')
+
+    function loadGA() {
+      if (window.__gaLoaded) return
+      window.__gaLoaded = true
+      var s = document.createElement('script')
+      s.async = true
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID
+      document.head.appendChild(s)
+      // canonical gtag form: gtag.js ignores array-form commands
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        window.dataLayer.push(arguments)
+      }
+      window.gtag = gtag
+      gtag('js', new Date())
+      gtag('config', GA_ID)
+    }
+
+    function decide(value) {
+      try {
+        localStorage.setItem(KEY, value)
+      } catch (e) {}
+      if (banner) banner.hidden = true
+      if (value === 'accepted') loadGA()
+    }
+
+    var stored = null
+    try {
+      stored = localStorage.getItem(KEY)
+    } catch (e) {}
+    if (stored === 'accepted') loadGA()
+    else if (stored !== 'declined' && banner) banner.hidden = false
+
+    var accept = document.getElementById('cookie-accept')
+    var decline = document.getElementById('cookie-decline')
+    if (accept) accept.addEventListener('click', function () { decide('accepted') })
+    if (decline) decline.addEventListener('click', function () { decide('declined') })
+  })()
+</script>
