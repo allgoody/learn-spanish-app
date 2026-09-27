@@ -1,8 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
 import BookLanding from '../../../components/BookLanding.tsx'
+import JsonLd from '../../../components/JsonLd.astro'
 import { books } from '../../../lib/books'
 import { seo, seoLang } from '../../../lib/seo'
+import { breadcrumbs } from '../../../lib/jsonld'
 
 export function getStaticPaths() {
   return books.map((b) => ({
@@ -13,9 +15,29 @@ export function getStaticPaths() {
 
 const { book } = Astro.props
 const s = seo[seoLang]
+const base = Astro.site ?? new URL('https://niceio.com/')
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    name: book.title,
+    author: { '@type': 'Person', name: book.author },
+    inLanguage: book.lang,
+    url: new URL(`/books/${book.id}/`, base).href,
+    isAccessibleForFree: true,
+  },
+  breadcrumbs(
+    [
+      { name: 'Главная', path: '/' },
+      { name: book.title, path: `/books/${book.id}/` },
+    ],
+    base,
+  ),
+]
 ---
 
 <Layout title={s.bookTitle(book)} description={s.bookDescription(book)} contentLang="ru">
+  <JsonLd schema={jsonld} />
   <main class="max-w-2xl mx-auto px-4 py-8">
     <BookLanding book={book} client:load />
   </main>

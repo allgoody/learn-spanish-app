@@ -1,8 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
 import WordLesson from '../../../components/WordLesson.tsx'
+import JsonLd from '../../../components/JsonLd.astro'
 import { categories } from '../../../lib/words'
 import { seo, seoLang } from '../../../lib/seo'
+import { breadcrumbs } from '../../../lib/jsonld'
 
 export function getStaticPaths() {
   return categories.map((c) => ({
@@ -13,6 +15,26 @@ export function getStaticPaths() {
 
 const { category } = Astro.props
 const s = seo[seoLang]
+const base = Astro.site ?? new URL('https://niceio.com/')
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: category.title.ru,
+    inLanguage: category.lang,
+    url: new URL(`/words/${category.id}/`, base).href,
+    isAccessibleForFree: true,
+    learningResourceType: 'Vocabulary list',
+    about: { '@type': 'Language', name: 'Spanish' },
+  },
+  breadcrumbs(
+    [
+      { name: 'Главная', path: '/' },
+      { name: category.title.ru, path: `/words/${category.id}/` },
+    ],
+    base,
+  ),
+]
 ---
 
 <Layout
@@ -20,6 +42,7 @@ const s = seo[seoLang]
   contentLang={category.lang}
   description={s.categoryDescription(category)}
 >
+  <JsonLd schema={jsonld} />
   <main class="max-w-2xl mx-auto px-4 py-8">
     <WordLesson category={category} client:load />
   </main>

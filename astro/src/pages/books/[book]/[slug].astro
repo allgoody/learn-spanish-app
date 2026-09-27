@@ -1,8 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
 import Reader from '../../../components/Reader.tsx'
+import JsonLd from '../../../components/JsonLd.astro'
 import { books } from '../../../lib/books'
 import { seo, seoLang } from '../../../lib/seo'
+import { breadcrumbs } from '../../../lib/jsonld'
 import type { Token, GlossLibrary } from '../../../lib/types'
 
 export function getStaticPaths() {
@@ -64,9 +66,35 @@ const paragraphs = splitParagraphs(tokens)
 const idx = book.chapters.findIndex((c) => c.id === chapter.id)
 const prev = idx > 0 ? book.chapters[idx - 1] : null
 const next = idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null
+const base = Astro.site ?? new URL('https://niceio.com/')
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Chapter',
+    name: chapter.title,
+    inLanguage: book.lang,
+    url: new URL(`/books/${book.id}/${chapter.id}`, base).href,
+    position: idx + 1,
+    author: { '@type': 'Person', name: book.author },
+    isPartOf: {
+      '@type': 'Book',
+      name: book.title,
+      url: new URL(`/books/${book.id}/`, base).href,
+    },
+  },
+  breadcrumbs(
+    [
+      { name: 'Главная', path: '/' },
+      { name: book.title, path: `/books/${book.id}/` },
+      { name: chapter.title, path: `/books/${book.id}/${chapter.id}` },
+    ],
+    base,
+  ),
+]
 ---
 
 <Layout title={s.chapterTitle(book, chapter)} description={s.chapterDescription(book, chapter)} contentLang={book.lang}>
+  <JsonLd schema={jsonld} />
   <article class="max-w-2xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">{chapter.title}</h1>
     {paragraphs.map((para) => (
