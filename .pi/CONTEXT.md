@@ -8,15 +8,16 @@ Last updated: 2026-09-27
 
 ## Current Task
 
-**Books #3 and #4 added and fully glossed (2026-09-27).** San Manuel Bueno, mártir (Wikisource, 3 chapters, 2,838 keys) and La Barraca (Gutenberg #14944, Al lector + Capítulo I–X, 9,328 keys) — both at 100% gloss coverage. Verified: astro check 0 errors, 102 tests green, 71 pages built, JSON-LD 0 parse failures. Nothing deployed.
+**Plan `add-word-categories` implemented (2026-09-27).** The `/words/` section grew from 1 category (pronouns, 69) to 8: four curated function-word/grammar categories, plus a corpus-frequency category generated from all four books' committed glosses. All 4 phases / 11 WPs complete; full suite 153 tests green, build 78 pages. Nothing committed, nothing deployed.
 
 ## Completed This Session
 
-- [x] **San Manuel Bueno, mártir (Unamuno)** — new Wikisource `article` extractor + marker-based `splitSections` (`scripts/lib/wikisource-parse.mjs`, +8 tests); config `scripts/data/wikisource/san-manuel.json`; chapters Prólogo (1613 w) / San Manuel Bueno, mártir (11796 w) / Epílogo (481 w)
-- [x] **La Barraca (Blasco Ibáñez)** — `fetch-book.mjs` now config-driven (`indice` = andanzas, `roman` = barraca), configs in `scripts/data/gutenberg/`; verified andanzas regenerates BYTE-IDENTICALLY before trusting it; 11 chapters, 54,151 words
-- [x] **Tokenizer fix** — `à è ì ò ù ç` added to WORD/WORD_CHAR (`Bòn` was splitting into `B`+`n`, so letters got gloss popups); +3 tests; andanzas tokens/glosses regenerated (+152 keys, still 100%), selva provably unchanged
-- [x] **`gloss.mjs` flags** — `--think <level>`, `--timeout <ms>`, `--limit <n>`; `--model` still mandatory
-- [x] **Both books wired** into `lib/books.ts` → 71 pages; JSON-LD 63× Chapter + 4× Book, 0 parse failures; 12 new sitemap routes
+- [x] **Phase 1 — frequency pipeline** — `scripts/lib/frequency.mjs` (mergeGlossaries/countLemmaFrequency/buildFrequencyCategory), `scripts/build-frequency-words.mjs` CLI, `test/frequency.test.mjs`; generated `src/data/words/frequency.json` (200 entries, 9 groups)
+- [x] **Phase 2 — curated categories** — `prepositions.json` (97), `conjunctions.json` (85), `interjections.json` (85), `core-verbs.json` (48) + direct-import data tests
+- [x] **Phase 3 — curated categories** — `adverbs.json` (109), `numbers.json` (82) + tests
+- [x] **Phase 4 — wiring** — `lib/words.ts` imports all 8 JSONs in the contracted order (`pronouns` stays `[0]`); `test/data/words/categories.test.ts` registry invariants (ids/order/uniqueness/700–900 total)
+- [x] **Verified**: `npx vitest run` 24 files / 153 tests · `astro check` 0 errors · build 78 pages · `dist/words` 8 routes · JSON-LD (LearningResource) in all 8 · sitemap exactly 8 `/words/<id>/` · home links 8
+- [x] **Forbidden files confirmed untouched**: `pronouns.json`, `WordLesson.tsx`, `Chooser.tsx`, `pages/words/[category]/index.astro`, `seo.ts`, `jsonld.ts`, all book data
 
 ## In Progress
 
@@ -24,44 +25,43 @@ Last updated: 2026-09-27
 
 ## Blocked / Needs Decision
 
-- [?] **Page weight** — the 11,796-word novella chapter page is 2.2 MB HTML / 231 KB gz (previous worst 1.42 MB). Fix = serve the chapter gloss library as a static asset instead of Reader island props
-- [?] (carried) **Widen `collect.url` in `astro/lighthouserc.json`?** — audit surface is `/` only, so the 16 new pages are unaudited
-- [?] **`--` dialogue dashes** (La Barraca 243, andanzas 610) render literally; normalising means regenerating andanzas' 41 verified pages
-- [?] Nit: `chapterCount` calls everything «глава» — selva (8 stories) reads as «8 глав»
+- [?] **`frequency.json` Castilian `/θ/`** — 11 generated entries inherit `/θ/` from committed book glosses (`decir /deˈθiɾ/`, `hacer /aˈθeɾ/`, `vez /beθ/`, `ciudad`, `cielo`, `cabeza`, `luz`, `entonces`, `parecer`, `conocer`, `empezar`), which conflicts with the project's locked seseo rule. The plan's IPA-normalisation spec was exhaustive and said nothing about seseo, so it was implemented exactly as written rather than silently extended. Fix = map `θ→s` in `normaliseIpa()` + regenerate.
+- [?] **Page weight** — the 11,796-word novella chapter is 2.23 MB HTML / 231 KB gz (worst page; next is 1.67 MB). Fix = serve the chapter gloss library as a static asset instead of Reader island props
+- [?] (carried) **Widen `collect.url` in `astro/lighthouserc.json`?** — audit surface is still `/` only
+- [?] **Trust Manifest (ARD "Trusted" level)** — deliberately omitted: the spec forbids an empty one; needs real signing keys
+- [?] (carried) **`--` dialogue dashes** (La Barraca 243, andanzas 610) render literally
+- [?] (carried) Nit: `chapterCount` calls everything «глава» — selva's 8 stories read as «8 глав»
 
 ## Next Steps
 
-1. Commit this session's changes — 58 dirty paths: 8 source/test files, the new book data, 2 new fetch configs
-2. (user decision) Page-weight fix and/or widening the audit surface — decide together
-3. (carried) Re-run audit-perf / audit-lighthouse-loop after the build changes
-4. (user-driven) Next book — candidates + verified availability in `idea/findings.md`
+1. Decide on the `frequency.json` `/θ/` fix (one-line + regenerate)
+2. (user decision) Page-weight fix and/or widening the audit surface
+3. (carried) Re-check Cloudflare's agent-discoverability + contrast findings; next book candidates in `idea/findings.md`
 
 ## Key Decisions
 
-- **Gloss model: `deepseek-v4.1-flash:cloud` with `--think high`** — the previous pick `deepseek-v4-flash:0731-cloud` was retired 2026-09-25 and every other model on the proxy is retired too
-- **Batch size 50** — 70 s/batch vs ~90 s for 2×25 on the same keys; the 50-key output stayed under the long-generation abort threshold (9,328 keys, 0 aborts)
-- **San Manuel split** = Prólogo / Novela / Epílogo (the work's own structure); one 14k-word chapter would have doubled the page weight
-- **La Barraca chapters titled «Al lector» + «Capítulo I–X»** — the source has bare roman numerals, so titles were made readable
-- (carried) GA consent-gated; JSON-LD per page type; SEO per-locale data; multi-language = subdirectory + hreflang (locked); domain niceio.com; v1 = reading + glosses only
+- **Word-category display order (contracted)**: pronouns, core-verbs, prepositions, conjunctions, adverbs, numbers, interjections, frequency. `pronouns` must stay `[0]` (WordLesson/Chooser tests depend on it)
+- **Adding a category is data-only** — chooser, `/words/[category]/`, sitemap and JSON-LD are generic; only `src/lib/words.ts` needs a new import + array entry
+- **`frequency` is generated, not authored** — deterministic CLI reads all books' `glosses.json` + `tokens/`, merges glossaries by (lemma,pos) majority vote ignoring noisy labels (`name`/`other`/empty `ru`), counts lemmas, ranks top 200. Regeneration is byte-identical (verified)
+- **Curated content conventions (locked by `pronouns.json`)**: broad seseo/neutral IPA with slashes stored in data; one short bilingual example per entry; `pos` = Spanish abbreviation (`prep.`, `loc. prep.`, `conj.`, `adv. conect.`, `interj.`, `num. card.`, `num. ord.`, `loc. num.`, `v. (ser)`…); `grammar`/`note` in Russian; `es` unique within a group; 2-space file indent, one entry per line
+- (carried) Gloss model `deepseek-v4.1-flash:cloud --think high`; ai-catalog Minimal/Discoverable; colour-only links underlined; GA consent-gated; multi-language = subdirectory + hreflang (locked); v1 = reading + glosses only
 
 ## File Map
 
-- `astro/scripts/lib/wikisource-parse.mjs` — `extractStoryText` (behaviour unchanged) + new `extractArticleText`, `splitSections`
-- `astro/scripts/fetch-wikisource.mjs` — `extractor` + `sections` config support
-- `astro/scripts/fetch-book.mjs` — config-driven, `indice` + `roman` modes
-- `astro/scripts/gloss.mjs` — `--think` / `--timeout` / `--limit`
-- `astro/scripts/lib/tokenize.mjs` — àèìòùç in WORD/WORD_CHAR
-- `astro/scripts/data/gutenberg/{andanzas,barraca}.json`, `astro/scripts/data/wikisource/san-manuel.json` — new configs
-- `astro/src/data/books/san-manuel/`, `astro/src/data/books/barraca/` — chapters/tokens/glosses (new, 100% glossed)
-- `astro/src/lib/books.ts` — 4 books
-- `astro/test/tokenize.test.mjs`, `astro/test/wikisource-parse.test.mjs` — +11 tests
-- `.tmp/gloss-{san-manuel,barraca}.log`, `.tmp/kill-gloss.ps1`, `.tmp/count-keys.mjs`, `.tmp/probe-*.mjs`, `.tmp/ld-check.mjs` — scratch (session)
+- `astro/scripts/lib/frequency.mjs` — pure merge/count/build helpers (`POS_RU`, `DEFAULT_EXCLUDE_POS`, `isNoisy`, `mergeGlossaries`, `countLemmaFrequency`, `buildFrequencyCategory`)
+- `astro/scripts/build-frequency-words.mjs` — CLI; reads 4 books, writes `src/data/words/frequency.json`, prints `frequency: 4 books, 10813 lemmas, 9 groups, 200 entries`
+- `astro/test/frequency.test.mjs` — 6 unit tests (merge vote, para prep, count 7/3/1, build limit/grouping, noisy exclusion)
+- `astro/src/data/words/{prepositions,conjunctions,interjections,core-verbs,adverbs,numbers,frequency}.json` — new categories
+- `astro/test/data/words/{prepositions,conjunctions,interjections,core-verbs,adverbs,numbers,frequency,categories}.test.ts` — data-shape tests (direct JSON import, except `categories.test.ts` which imports the registry)
+- `astro/src/lib/words.ts` — MODIFIED: 8 imports + `categories` array in contract order; `languages`/`getCategory` unchanged
+- `.pi/plans/add-word-categories/` — the executed plan (`_index.md` + 4 phase files)
+- `astro/.tmp/frequency.prev.json` — idempotency check leftover (scratch)
 
 ## Gotchas / Warnings
 
-- **Killing a gloss run**: `$!` from the bash tool is NOT the Windows PID. Use `.tmp/kill-gloss.ps1` (matches `node.exe` CommandLine on `gloss.mjs`); `\$_` escapes trip the pi path guard, so the .ps1 file is required
-- **pi path guard**: a bash string literal starting with `/` (e.g. `'/chapters'`) is parsed as a Windows path → "Access to D:\chapters is blocked". Build paths with `path.join` inside a `.tmp/` script instead
-- **Gloss runs are resumable** — `glosses.json` is written after every batch, so a kill/re-run continues from `pendingKeys`. ~50–70 s per 50-key batch on the current model
-- **Gloss library size ≈ 300 bytes/key** (pretty JSON) and it is serialised into the Reader island props → a chapter's distinct-key count sets its page weight
-- **`.tmp/ld-check.mjs` must run from `astro/`** (it walks `dist` CWD-relative): `cd astro && node ../.tmp/ld-check.mjs`
-- (carried) Vitest/vite rewrites `new URL("<literal>", import.meta.url)`; `gloss.mjs --data-dir` is CWD-relative; Wikisource story-parse structure; audit surface = `/` only; LH 13.4.1 blind-spots; 5 islands `client:load`; Windows chrome-launcher EPERM crash expected — full detail in `project-rules-memory.md` Lessons
+- **Frequency entries carry book-data artifacts**: `ipa` comes from the winning gloss (`/θ/` as above); `lemma` merging can produce odd display lemmas (`su` renders as прил.). Regenerate with `node scripts/build-frequency-words.mjs` from `astro/`; output is deterministic/byte-identical
+- **`astro check` sees new JSON via the registry** — a malformed category surfaces as a ts error in `words.ts`, but per-category tests import the JSON directly so they pass only if the category is well-formed
+- **`grep -c` returns exit 1 on zero matches** — the frequency noisy-POS check prints `0` but exits non-zero; treat the printed value, not the exit code
+- (carried) **Cloudflare audits ≠ Lighthouse**; `_headers` needs wrangler; `link-in-text-block` read from the JSON report
+- (carried) **pi path guard**: leading-slash string literals / `\s`-style escapes trip it — use `path.join` in a `.tmp/` script
+- (carried) Vitest/vite rewrites `new URL("<literal>", import.meta.url)`; LH one-lane-at-a-time; killing a gloss run needs the PowerShell matcher
