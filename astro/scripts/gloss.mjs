@@ -24,6 +24,9 @@ function parseArgs(argv) {
     model: process.env.GLOSS_MODEL || null,
     ollamaUrl: "http://localhost:11434",
     batchSize: 50,
+    think: null,
+    timeoutMs: 120000,
+    limit: null,
     dataDir: join(ROOT, "src/data/books/andanzas"),
     phrases: join(ROOT, "scripts/data/phrases.json"),
   };
@@ -31,6 +34,9 @@ function parseArgs(argv) {
     if (argv[i] === "--model") args.model = argv[++i];
     if (argv[i] === "--ollama-url") args.ollamaUrl = argv[++i];
     if (argv[i] === "--batch-size") args.batchSize = parseInt(argv[++i], 10);
+    if (argv[i] === "--think") args.think = argv[++i];
+    if (argv[i] === "--timeout") args.timeoutMs = parseInt(argv[++i], 10);
+    if (argv[i] === "--limit") args.limit = parseInt(argv[++i], 10);
     if (argv[i] === "--data-dir") args.dataDir = argv[++i];
     if (argv[i] === "--phrases") args.phrases = argv[++i];
   }
@@ -48,32 +54,34 @@ function buildUserPrompt(entries) {
   return `Gloss each Spanish word form for a Russian learner. For each item output exactly: {"word": string, "lemma": string, "pos": string, "ipa": string, "ru": string, "grammar": string|null, "cefr": string|null, "modern": string|null, "false_friend": string|null, "note": string|null}. pos is one of: verb, noun, adj, adv, pron, prep, conj, interj, name, num, other. ipa is a broad IPA transcription. ru is the Russian translation. grammar explains THIS surface form (e.g. "pretérito imperfecto, 1ª/3ª pers. sing." for a verb, "sustantivo masculino, plural" for a noun) or null. cefr is A1, A2, B1, B2, C1 or C2, or null. modern is the modern Spanish equivalent if the word is archaic, else null. false_friend is a warning if the word is a false friend for Russian speakers, else null. note is a short usage note if useful, else null.\n\nWords with context sentences (multiple contexts for one word are separated by " / "):\n${lines.join("\n")}`;
 }
 
-async function chatOnce(ollamaUrl, model, entries) {
-  const res = await fetch(`${ollamaUrl}/api/chat`, {
+async function chatOnce(cfg, entries) {
+  const body = {
+    model: cfg.model,
+    messages: [
+      { role: "system", content: SYSTEM_PROMPT },
+      { role: "user", content: buildUserPrompt(entries) },
+    ],
+    stream: false,
+    format: "json",
+  };
+  if (cfg.think) body.think = cfg.think;
+  const res = await fetch(`${cfg.ollamaUrl}/api/chat`, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      model,
-      messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: buildUserPrompt(entries) },
-      ],
-      stream: false,
-      format: "json",
-    }),
-    signal: AbortSignal.timeout(120000),
+    body: JSON.stringify(body),
+    signal: AbortSignal.timeout(cfg.timeoutMs),
   });
   if (!res.ok) throw new Error(`ollama HTTP ${res.status}`);
   const data = await res.json();
   return data.message.content;
 }
 
-async function glossBatch(ollamaUrl, model, entries) {
+async function glossBatch(cfg, entries) {
   // network retry: up to 3 attempts, 5s backoff
   let content = null;
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      content = await chatOnce(ollamaUrl, model, entries);
+      content = await chatOnce(cfg, entries);
       break;
     } catch (e) {
       if (attempt === 3) throw e;
@@ -89,7 +97,7 @@ async function glossBatch(ollamaUrl, model, entries) {
   if (missing.length > 0) {
     console.log(`  ${missing.length} missing, retrying batch once in 3s...`);
     await new Promise((r) => setTimeout(r, 3000));
-    const retry = await chatOnce(ollamaUrl, model, entries);
+    const retry = await chatOnce(cfg, entries);
     const reparsed = parseBatchResponse(retry, keys);
     mergeGlosses(parsed, reparsed);
   }
@@ -104,6 +112,13 @@ async function main() {
     );
     process.exit(1);
   }
+
+  const cfg = {
+    ollamaUrl: args.ollamaUrl,
+    model: args.model,
+    think: args.think,
+    timeoutMs: args.timeoutMs,
+  };
 
   const meta = readJson(join(args.dataDir, "meta.json"));
   const phrases = readJson(args.phrases);
@@ -155,7 +170,10 @@ async function main() {
   // 5. Resume from existing glosses.json
   const glossesPath = join(args.dataDir, "glosses.json");
   const glosses = existsSync(glossesPath) ? readJson(glossesPath) : {};
-  const todo = pendingKeys(keys, glosses);
+  const todo = pendingKeys(keys, glosses).slice(
+    0,
+    args.limit === null ? undefined : args.limit,
+  );
   const failed = [];
 
   // 6-10. Batch gloss
@@ -173,7 +191,7 @@ async function main() {
       `batch ${i + 1}/${batches.length} — glossed so far: ${Object.keys(glosses).length}`,
     );
     try {
-      const parsed = await glossBatch(args.ollamaUrl, args.model, entries);
+      const parsed = await glossBatch(cfg, entries);
       mergeGlosses(glosses, parsed);
       for (const k of batch) if (!(k in glosses)) failed.push(k);
     } catch (e) {
