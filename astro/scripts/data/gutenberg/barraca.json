@@ -1,0 +1,15 @@
+{
+  "id": "barraca",
+  "lang": "es",
+  "title": "La Barraca",
+  "author": "Vicente Blasco Ibáñez",
+  "source": "Project Gutenberg #14944",
+  "gutenbergId": 14944,
+  "input": ".tmp/pg14944.txt",
+  "output": "astro/src/data/books/barraca",
+  "mode": "roman",
+  "start": "AL LECTOR",
+  "startTitle": "Al lector",
+  "end": "FIN",
+  "numberTitle": "Capítulo"
+}

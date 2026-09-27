@@ -1,0 +1,14 @@
+{
+  "id": "andanzas",
+  "lang": "es",
+  "title": "Andanzas y visiones españolas",
+  "author": "Miguel de Unamuno",
+  "source": "Project Gutenberg #78052",
+  "gutenbergId": 78052,
+  "input": ".tmp/pg78052.txt",
+  "output": "astro/src/data/books/andanzas",
+  "mode": "indice",
+  "indice": "ÍNDICE",
+  "start": "PRÓLOGO",
+  "startTitle": "Prólogo"
+}
