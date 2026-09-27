@@ -15,7 +15,7 @@ interface OpenState {
 export default function Reader({ glosses }: Props) {
   const [open, setOpen] = useState<OpenState | null>(null);
   const [lang, setLangState] = useState<Lang>(() => getLang());
-  const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
+  const [pos, setPos] = useState<{ left: number; top: number; below: boolean } | null>(null);
   const popupRef = useRef<HTMLDivElement>(null);
   const isHoverRef = useRef(false);
   const openRef = useRef<OpenState | null>(null);
@@ -82,9 +82,11 @@ export default function Reader({ glosses }: Props) {
       Math.max(rect.left + rect.width / 2 - 160, 8),
       window.innerWidth - 328,
     );
-    let top = rect.top - 12;
-    if (top - h < 8) top = h + 8;
-    setPos({ left, top });
+    // Above the word by default; flip below when it would clip the top edge.
+    const aboveTop = rect.top - 12;
+    const below = aboveTop - h < 8;
+    const top = below ? rect.bottom + 12 : aboveTop;
+    setPos({ left, top, below });
   }, [open]);
 
   if (!open) return null;
@@ -136,11 +138,11 @@ export default function Reader({ glosses }: Props) {
         ref={popupRef}
         role="dialog"
         aria-label={open.key}
-        className="fixed z-50 w-80 max-w-[calc(100vw-16px)] rounded-lg bg-popup p-3 text-sm text-popup-text shadow-lg transition-opacity"
+        className="pointer-events-none fixed z-50 w-80 max-w-[calc(100vw-16px)] rounded-lg bg-popup p-3 text-sm text-popup-text shadow-lg transition-opacity"
         style={{
           left: pos?.left,
           top: pos?.top,
-          transform: "translateY(-100%)",
+          transform: pos?.below ? undefined : "translateY(-100%)",
         }}
       >
         <div className="mb-2 font-semibold">{word}</div>

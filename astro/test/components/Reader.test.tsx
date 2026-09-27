@@ -132,8 +132,67 @@ describe("Reader (desktop: hover supported)", () => {
       expect(screen.getByRole("dialog", { name: "casa" })).toHaveTextContent(
         "дом",
       );
+      // Non-blocking: clicks/hovers pass through the tooltip to the words
+      // underneath, so the next word can be clicked without dismissing it.
+      expect(screen.getByRole("dialog", { name: "casa" })).toHaveClass(
+        "pointer-events-none",
+      );
     } finally {
       window.matchMedia = orig;
+    }
+  });
+
+  it("places the popup below the word when there is no room above", async () => {
+    const orig = window.matchMedia;
+    window.matchMedia = ((query: string) => ({
+      matches: true,
+      media: query,
+      onchange: null,
+      addListener: () => {},
+      removeListener: () => {},
+      addEventListener: () => {},
+      removeEventListener: () => {},
+      dispatchEvent: () => false,
+    })) as typeof window.matchMedia;
+    const origOffset = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      "offsetHeight",
+    );
+    Object.defineProperty(HTMLElement.prototype, "offsetHeight", {
+      configurable: true,
+      get: () => 200,
+    });
+    try {
+      const user = userEvent.setup();
+      renderWithText();
+      const word = screen.getByRole("button", { name: "casa" });
+      // Word near the viewport top: no room for a 200px popup above.
+      word.getBoundingClientRect = () => ({
+        top: 20,
+        bottom: 40,
+        left: 100,
+        right: 140,
+        width: 40,
+        height: 20,
+        x: 100,
+        y: 20,
+        toJSON: () => ({}),
+      });
+
+      await user.click(word);
+      const dialog = screen.getByRole("dialog", { name: "casa" });
+      // below = rect.bottom + 12; no translateY(-100%) (which would go above)
+      expect(dialog.style.top).toBe("52px");
+      expect(dialog.style.transform).toBe("");
+    } finally {
+      window.matchMedia = orig;
+      if (origOffset) {
+        Object.defineProperty(
+          HTMLElement.prototype,
+          "offsetHeight",
+          origOffset,
+        );
+      }
     }
   });
 });
