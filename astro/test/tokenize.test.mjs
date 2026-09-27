@@ -63,4 +63,20 @@ describe("tokenize", () => {
       { t: ".", w: null },
     ]);
   });
+
+  it("keeps Catalan and Valencian letters whole", () => {
+    expect(tokenize("Bòn día, català!", [])).toEqual([
+      { t: "Bòn", w: "bòn" },
+      { t: " ", w: null },
+      { t: "día", w: "día" },
+      { t: ",", w: null },
+      { t: " ", w: null },
+      { t: "català", w: "català" },
+      { t: "!", w: null },
+    ]);
+  });
+
+  it("keeps ç in a word", () => {
+    expect(tokenize("Barça", [])).toEqual([{ t: "Barça", w: "barça" }]);
+  });
 });

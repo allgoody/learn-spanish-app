@@ -1,5 +1,5 @@
-const WORD_CHAR = /[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]/;
-const WORD = /[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+/;
+const WORD_CHAR = /[A-Za-zÁÉÍÓÚÜÑáéíóúüñÀÈÌÒÙÇàèìòùç0-9]/;
+const WORD = /[A-Za-zÁÉÍÓÚÜÑáéíóúüñÀÈÌÒÙÇàèìòùç0-9]+/;
 
 export function tokenize(text, phrases) {
   const sorted = [...phrases].sort((a, b) => b.length - a.length);
