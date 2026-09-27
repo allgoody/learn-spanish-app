@@ -1,0 +1,53 @@
+{
+  "id": "barraca",
+  "lang": "es",
+  "title": "La Barraca",
+  "author": "Vicente Blasco Ibáñez",
+  "source": "Project Gutenberg #14944",
+  "chapters": [
+    {
+      "id": "al-lector",
+      "title": "Al lector"
+    },
+    {
+      "id": "capitulo-i",
+      "title": "Capítulo I"
+    },
+    {
+      "id": "capitulo-ii",
+      "title": "Capítulo II"
+    },
+    {
+      "id": "capitulo-iii",
+      "title": "Capítulo III"
+    },
+    {
+      "id": "capitulo-iv",
+      "title": "Capítulo IV"
+    },
+    {
+      "id": "capitulo-v",
+      "title": "Capítulo V"
+    },
+    {
+      "id": "capitulo-vi",
+      "title": "Capítulo VI"
+    },
+    {
+      "id": "capitulo-vii",
+      "title": "Capítulo VII"
+    },
+    {
+      "id": "capitulo-viii",
+      "title": "Capítulo VIII"
+    },
+    {
+      "id": "capitulo-ix",
+      "title": "Capítulo IX"
+    },
+    {
+      "id": "capitulo-x",
+      "title": "Capítulo X"
+    }
+  ]
+}
