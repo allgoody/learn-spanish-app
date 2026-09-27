@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro'
+import JsonLd from '../components/JsonLd.astro'
+import { seo, seoLang } from '../lib/seo'
+import { breadcrumbs } from '../lib/jsonld'
+
+const s = seo[seoLang]
+const base = Astro.site ?? new URL('https://niceio.com/')
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Политика конфиденциальности',
+    inLanguage: 'ru',
+    url: new URL('/privacy/', base).href,
+  },
+  breadcrumbs(
+    [
+      { name: 'Главная', path: '/' },
+      { name: 'Конфиденциальность', path: '/privacy/' },
+    ],
+    base,
+  ),
+]
+---
+
+<Layout title={s.privacyTitle} description={s.privacyDescription} contentLang="ru">
+  <JsonLd schema={jsonld} />
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold mb-6">Политика конфиденциальности</h1>
+
+    <p class="text-lg leading-relaxed mb-4">
+      Мы уважаем вашу приватность и собираем минимум данных.
+    </p>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Какие данные мы обрабатываем</h2>
+    <ul class="list-disc pl-5 space-y-2 leading-relaxed mb-4">
+      <li>
+        <strong>Аккаунтов нет.</strong> Мы не запрашиваем имя, e-mail или другие персональные данные.
+      </li>
+      <li>
+        <strong>Настройки.</strong> Выбранная тема, язык и решение о cookie хранятся только в вашем
+        браузере (localStorage) и никуда не отправляются.
+      </li>
+      <li>
+        <strong>Google Analytics.</strong> Включается только после вашего согласия и собирает
+        обезличенную статистику посещений: страницы, устройство, примерное местоположение.
+      </li>
+    </ul>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Cookie</h2>
+    <p class="leading-relaxed mb-4">
+      После согласия Google Analytics устанавливает cookie <code>_ga</code> и <code>_ga_*</code>,
+      чтобы отличать сессии. Пока вы не нажали «Принять», аналитика не загружается и эти cookie
+      не ставятся.
+    </p>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Отказ и изменение выбора</h2>
+    <p class="leading-relaxed mb-4">
+      Вы можете отказаться от аналитики — сайт продолжит работать. Чтобы изменить решение,
+      сбросьте выбор и обновите страницу:
+    </p>
+    <button
+      id="consent-reset"
+      type="button"
+      class="rounded border border-line-strong px-3 py-1.5 text-sm font-medium text-ink hover:bg-surface-hover"
+    >Сбросить выбор cookie</button>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Контакты</h2>
+    <p class="leading-relaxed mb-4">
+      Вопросы о приватности: <a
+        href="https://ctdev.dev/ru/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-accent hover:underline"
+      >CTDev</a>.
+    </p>
+
+    <p class="mt-8">
+      <a href="/" class="text-accent hover:underline">← На главную</a>
+    </p>
+  </main>
+</Layout>
+
+<script is:inline>
+  (function () {
+    var b = document.getElementById('consent-reset')
+    if (!b) return
+    b.addEventListener('click', function () {
+      try {
+        localStorage.removeItem('cookie-consent')
+      } catch (e) {}
+      location.reload()
+    })
+  })()
+</script>

@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro'
+import JsonLd from '../components/JsonLd.astro'
+import { seo, seoLang } from '../lib/seo'
+import { breadcrumbs } from '../lib/jsonld'
+
+const s = seo[seoLang]
+const base = Astro.site ?? new URL('https://niceio.com/')
+const jsonld = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'О проекте',
+    inLanguage: 'ru',
+    url: new URL('/about/', base).href,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Aprende español',
+      url: new URL('/', base).href,
+    },
+  },
+  breadcrumbs(
+    [
+      { name: 'Главная', path: '/' },
+      { name: 'О проекте', path: '/about/' },
+    ],
+    base,
+  ),
+]
+---
+
+<Layout title={s.aboutTitle} description={s.aboutDescription} contentLang="ru">
+  <JsonLd schema={jsonld} />
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold mb-6">О проекте</h1>
+
+    <p class="text-lg leading-relaxed mb-4">
+      <strong>Aprende español</strong> — бесплатный сайт для изучения испанского языка через чтение.
+      Мы берём литературу в открытом доступе и сопровождаем каждое слово переводом и пояснениями,
+      чтобы читать в оригинале можно было с самого начала.
+    </p>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Зачем это</h2>
+    <p class="leading-relaxed mb-4">
+      Чтение — самый естественный способ набрать словарный запас, но словарь за каждым незнакомым
+      словом отвлекает. Здесь значение можно посмотреть прямо в тексте: перевод, часть речи,
+      словарную форму, грамматическую форму данного слова, ложных друзей и примечания.
+    </p>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Что внутри</h2>
+    <ul class="list-disc pl-5 space-y-2 leading-relaxed mb-4">
+      <li>
+        <strong>Книги.</strong> Испанская классика в открытом доступе — Мигель де Унамуно,
+        Орасио Кирога. Каждая глава идёт со встроенным словарём.
+      </li>
+      <li>
+        <strong>Слова по темам.</strong> Подборки вроде местоимений с переводом, произношением
+        и примерами.
+      </li>
+    </ul>
+
+    <h2 class="text-lg font-semibold mt-8 mb-3">Как читать</h2>
+    <p class="leading-relaxed mb-4">
+      Щёлкните или коснитесь подчёркнутого слова — появится карточка со значением. Никакой
+      регистрации и оплаты.
+    </p>
+
+    <p class="mt-8">
+      <a href="/" class="text-accent hover:underline">← На главную</a>
+    </p>
+  </main>
+</Layout>

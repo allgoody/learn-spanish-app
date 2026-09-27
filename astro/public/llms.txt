@@ -1,12 +1,9 @@
-# astro
+# Aprende español
 
-> TODO: one paragraph describing what this site is, who it serves, and what an
-> AI assistant should know about it. Replace these two lines, then delete this
-> comment block.
+> Free Russian-language app for learning Spanish by reading public-domain
+> Spanish literature with an integrated word glossary, plus themed vocabulary
+> lists with translations and examples. No registration, no payment.
 
-- [Home](/)
-
-<!-- seeded: astro-pi-workflow — llms.txt gives AI agents a machine-readable
-site summary (Lighthouse's llms-txt audit checks for an H1, links, and length).
-Site-owned: edit freely. Keep the H1, keep at least one link, and list key
-pages with one-line descriptions. -->
+- [Home](https://niceio.com/): choose a book or a word category
+- [About](https://niceio.com/about/): what the app is for
+- [Privacy](https://niceio.com/privacy/): cookies and Google Analytics
