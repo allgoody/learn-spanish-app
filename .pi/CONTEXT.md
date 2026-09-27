@@ -8,15 +8,15 @@ Last updated: 2026-09-27
 
 ## Current Task
 
-**Site content/legal additions complete (2026-09-27).** Google Analytics + cookie consent, About/Privacy pages, non-blocking desktop word popup, JSON-LD on every page. Verified: astro check 0 errors, 92 tests green, build 55 pages. Nothing deployed.
+**Books #3 and #4 added and fully glossed (2026-09-27).** San Manuel Bueno, mártir (Wikisource, 3 chapters, 2,838 keys) and La Barraca (Gutenberg #14944, Al lector + Capítulo I–X, 9,328 keys) — both at 100% gloss coverage. Verified: astro check 0 errors, 102 tests green, 71 pages built, JSON-LD 0 parse failures. Nothing deployed.
 
 ## Completed This Session
 
-- [x] **Google Analytics (G-RZLGCDEZSN) + cookie consent banner** — `CookieConsent.astro` rendered from Layout; GA consent-gated (loads only after "Принять"; canonical `gtag()` arguments form, no Partytown), localStorage `cookie-consent`; banner strings in i18n (ru/en)
-- [x] **About (`/about/`) + Privacy (`/privacy/`)** — Russian content; SEO title/description in `lib/seo.ts`; footer nav links; privacy has a consent-reset button
-- [x] **Desktop word popup non-blocking** — `pointer-events-none` on the desktop tooltip (`Reader.tsx`) so clicks pass through to words beneath; flips below the word when there is no room above. Tests in `Reader.test.tsx`
-- [x] **JSON-LD on all pages** — Book, Chapter, LearningResource, AboutPage, WebPage + BreadcrumbList everywhere (home already had WebSite + Organization). Helper `lib/jsonld.ts`; all 55 built pages parse, 0 failures
-- [x] **`llms.txt`** filled in (was a TODO placeholder)
+- [x] **San Manuel Bueno, mártir (Unamuno)** — new Wikisource `article` extractor + marker-based `splitSections` (`scripts/lib/wikisource-parse.mjs`, +8 tests); config `scripts/data/wikisource/san-manuel.json`; chapters Prólogo (1613 w) / San Manuel Bueno, mártir (11796 w) / Epílogo (481 w)
+- [x] **La Barraca (Blasco Ibáñez)** — `fetch-book.mjs` now config-driven (`indice` = andanzas, `roman` = barraca), configs in `scripts/data/gutenberg/`; verified andanzas regenerates BYTE-IDENTICALLY before trusting it; 11 chapters, 54,151 words
+- [x] **Tokenizer fix** — `à è ì ò ù ç` added to WORD/WORD_CHAR (`Bòn` was splitting into `B`+`n`, so letters got gloss popups); +3 tests; andanzas tokens/glosses regenerated (+152 keys, still 100%), selva provably unchanged
+- [x] **`gloss.mjs` flags** — `--think <level>`, `--timeout <ms>`, `--limit <n>`; `--model` still mandatory
+- [x] **Both books wired** into `lib/books.ts` → 71 pages; JSON-LD 63× Chapter + 4× Book, 0 parse failures; 12 new sitemap routes
 
 ## In Progress
 
@@ -24,39 +24,44 @@ Last updated: 2026-09-27
 
 ## Blocked / Needs Decision
 
-- [?] (carried) **Widen `collect.url` in `astro/lighthouserc.json`?** — audit surface is `/` only; user decision pending
+- [?] **Page weight** — the 11,796-word novella chapter page is 2.2 MB HTML / 231 KB gz (previous worst 1.42 MB). Fix = serve the chapter gloss library as a static asset instead of Reader island props
+- [?] (carried) **Widen `collect.url` in `astro/lighthouserc.json`?** — audit surface is `/` only, so the 16 new pages are unaudited
+- [?] **`--` dialogue dashes** (La Barraca 243, andanzas 610) render literally; normalising means regenerating andanzas' 41 verified pages
+- [?] Nit: `chapterCount` calls everything «глава» — selva (8 stories) reads as «8 глав»
 
 ## Next Steps
 
-1. (user-driven) Next book from `idea/findings.md` — pipeline covers Gutenberg (`fetch-book.mjs`) AND Wikisource (`fetch-wikisource.mjs`)
-2. (carried) Commit pending changes — this session's files + the 2026-09-05 set are still UNCOMMITTED
-3. (carried, user decision) Widen `collect.url` to `/books/andanzas/`, `/words/pronouns/`, a chapter — then re-run `node astro/scripts/perf-check.mjs --full --runs 3 astro`
-4. (carried) Re-run audit-perf / audit-lighthouse-loop — not run since GA/JSON-LD/About/Privacy landed
+1. Commit this session's changes — 58 dirty paths: 8 source/test files, the new book data, 2 new fetch configs
+2. (user decision) Page-weight fix and/or widening the audit surface — decide together
+3. (carried) Re-run audit-perf / audit-lighthouse-loop after the build changes
+4. (user-driven) Next book — candidates + verified availability in `idea/findings.md`
 
 ## Key Decisions
 
-- **GA is consent-gated** — no analytics script (and no cookie) until the user clicks "Принять". Keeps the site GDPR-clean and the GA script out of the Lighthouse window; no consent-mode pre-consent pings
-- **JSON-LD per page type** — `Chapter` is a real schema.org type; `PrivacyPolicy` is NOT (privacy page uses `WebPage`). Breadcrumbs via `lib/jsonld.ts`
-- (carried) Audit surface = home page only; SEO per-locale data; English removed (kept as data); multi-language = subdirectory + hreflang (locked); domain niceio.com; gloss model user-supplied `deepseek-v4-flash:0731-cloud`; v1 = reading + glosses only
-- (carried) Book #2 (selva) details live in `project-rules-memory.md` — prior-session work, not repeated here
+- **Gloss model: `deepseek-v4.1-flash:cloud` with `--think high`** — the previous pick `deepseek-v4-flash:0731-cloud` was retired 2026-09-25 and every other model on the proxy is retired too
+- **Batch size 50** — 70 s/batch vs ~90 s for 2×25 on the same keys; the 50-key output stayed under the long-generation abort threshold (9,328 keys, 0 aborts)
+- **San Manuel split** = Prólogo / Novela / Epílogo (the work's own structure); one 14k-word chapter would have doubled the page weight
+- **La Barraca chapters titled «Al lector» + «Capítulo I–X»** — the source has bare roman numerals, so titles were made readable
+- (carried) GA consent-gated; JSON-LD per page type; SEO per-locale data; multi-language = subdirectory + hreflang (locked); domain niceio.com; v1 = reading + glosses only
 
 ## File Map
 
-- `astro/src/components/CookieConsent.astro` — banner + consent-gated GA loader (new)
-- `astro/src/pages/about.astro`, `astro/src/pages/privacy.astro` — RU pages (new)
-- `astro/src/lib/jsonld.ts` + `astro/test/lib/jsonld.test.ts` — `breadcrumbs()` helper (new)
-- `astro/src/lib/i18n.ts` — `about`/`privacy`/`footerNav`/`cookie*` strings (ru+en)
-- `astro/src/lib/seo.ts` — about/privacy title+description (ru+en)
-- `astro/src/layouts/Layout.astro` — footer nav + `<CookieConsent />`
-- `astro/src/components/Reader.tsx` — non-blocking tooltip + above/below placement
-- `astro/test/components/Reader.test.tsx` — class + near-top placement tests
-- `astro/src/pages/books/[book]/index.astro`, `astro/src/pages/books/[book]/[slug].astro`, `astro/src/pages/words/[category]/index.astro` — JSON-LD added
-- `astro/public/llms.txt` — real site summary
-- `.tmp/ld-check.mjs` — JSON-LD dist parser (scratch, session)
+- `astro/scripts/lib/wikisource-parse.mjs` — `extractStoryText` (behaviour unchanged) + new `extractArticleText`, `splitSections`
+- `astro/scripts/fetch-wikisource.mjs` — `extractor` + `sections` config support
+- `astro/scripts/fetch-book.mjs` — config-driven, `indice` + `roman` modes
+- `astro/scripts/gloss.mjs` — `--think` / `--timeout` / `--limit`
+- `astro/scripts/lib/tokenize.mjs` — àèìòùç in WORD/WORD_CHAR
+- `astro/scripts/data/gutenberg/{andanzas,barraca}.json`, `astro/scripts/data/wikisource/san-manuel.json` — new configs
+- `astro/src/data/books/san-manuel/`, `astro/src/data/books/barraca/` — chapters/tokens/glosses (new, 100% glossed)
+- `astro/src/lib/books.ts` — 4 books
+- `astro/test/tokenize.test.mjs`, `astro/test/wikisource-parse.test.mjs` — +11 tests
+- `.tmp/gloss-{san-manuel,barraca}.log`, `.tmp/kill-gloss.ps1`, `.tmp/count-keys.mjs`, `.tmp/probe-*.mjs`, `.tmp/ld-check.mjs` — scratch (session)
 
 ## Gotchas / Warnings
 
-- **JSON-LD check**: parse every `ld+json` block in `dist/` with `.tmp/ld-check.mjs` (no `ld` CLI needed); expected types — home WebSite+Organization, book landing Book, reader Chapter, words LearningResource, about AboutPage, privacy WebPage
-- **`pointer-events-none` trade-off**: desktop tooltip text is no longer selectable/copyable (intentional for non-blocking)
-- (carried) Vitest + vite rewriting `new URL("<literal>", import.meta.url)` in tests; `gloss.mjs --data-dir` is CWD-relative; Wikisource parse structure (ws-data in header, style block in first `<p>`) — full detail in `project-rules-memory.md` Lessons
-- (carried) Audit surface = `/` only; LH 13.4.1 blind-spots; INP n/a; LCP = H1 text; 5 islands `client:load`; Windows chrome-launcher EPERM crash expected; JSX `className` vs Astro `class`; sticky footer `min-h-dvh`
+- **Killing a gloss run**: `$!` from the bash tool is NOT the Windows PID. Use `.tmp/kill-gloss.ps1` (matches `node.exe` CommandLine on `gloss.mjs`); `\$_` escapes trip the pi path guard, so the .ps1 file is required
+- **pi path guard**: a bash string literal starting with `/` (e.g. `'/chapters'`) is parsed as a Windows path → "Access to D:\chapters is blocked". Build paths with `path.join` inside a `.tmp/` script instead
+- **Gloss runs are resumable** — `glosses.json` is written after every batch, so a kill/re-run continues from `pendingKeys`. ~50–70 s per 50-key batch on the current model
+- **Gloss library size ≈ 300 bytes/key** (pretty JSON) and it is serialised into the Reader island props → a chapter's distinct-key count sets its page weight
+- **`.tmp/ld-check.mjs` must run from `astro/`** (it walks `dist` CWD-relative): `cd astro && node ../.tmp/ld-check.mjs`
+- (carried) Vitest/vite rewrites `new URL("<literal>", import.meta.url)`; `gloss.mjs --data-dir` is CWD-relative; Wikisource story-parse structure; audit surface = `/` only; LH 13.4.1 blind-spots; 5 islands `client:load`; Windows chrome-launcher EPERM crash expected — full detail in `project-rules-memory.md` Lessons
