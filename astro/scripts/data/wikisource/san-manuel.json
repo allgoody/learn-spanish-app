@@ -1,0 +1,18 @@
+{
+  "id": "san-manuel",
+  "lang": "es",
+  "title": "San Manuel Bueno, mártir",
+  "author": "Miguel de Unamuno",
+  "source": "Wikisource es",
+  "extractor": "article",
+  "pages": ["San Manuel Bueno, mártir"],
+  "sections": [
+    { "id": "prologo", "title": "Prólogo", "marker": "Prólogo" },
+    {
+      "id": "san-manuel-bueno-martir",
+      "title": "San Manuel Bueno, mártir",
+      "marker": "San Manuel Bueno, mártir"
+    },
+    { "id": "epilogo", "title": "Epílogo", "marker": "Epílogo" }
+  ]
+}

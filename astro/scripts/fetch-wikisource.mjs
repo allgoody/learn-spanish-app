@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractStoryText } from "./lib/wikisource-parse.mjs";
+import { extractStoryText, extractArticleText, splitSections } from "./lib/wikisource-parse.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -24,7 +24,7 @@ function slugify(title) {
   return lower.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
-async function fetchPage(title) {
+async function fetchPageHtml(title) {
   const url =
     "https://es.wikisource.org/w/api.php?action=parse&page=" +
     encodeURIComponent(title) +
@@ -47,7 +47,7 @@ async function fetchPage(title) {
   if (!res.ok) throw new Error("HTTP " + res.status + " for " + title);
   const data = await res.json();
   if (!data.parse?.text) throw new Error("no parse.text for " + title);
-  return extractStoryText(data.parse.text, title);
+  return data.parse.text;
 }
 
 async function main() {
@@ -59,17 +59,29 @@ async function main() {
     throw new Error("cannot read config " + config + ": " + e.message);
   }
 
+  // "article" = a whole work on one page (no per-chapter heading); "story" = the
+  // ws-h3-medio pattern used by Cuentos de la selva.
+  const extract =
+    configData.extractor === "article"
+      ? (html) => extractArticleText(html)
+      : extractStoryText;
   const texts = [];
   for (const title of configData.pages) {
     console.log(`Fetching ${title} ...`);
-    texts.push(await fetchPage(title));
+    texts.push(extract(await fetchPageHtml(title), title));
     await new Promise((r) => setTimeout(r, 300));
   }
 
-  const chapters = configData.pages.map((p) => ({
-    id: slugify(p),
-    title: p,
-  }));
+  // Chapters: either one per page, or split by paragraph markers when a single
+  // page holds the whole work.
+  const outputs = configData.sections
+    ? splitSections(texts[0], configData.sections)
+    : configData.pages.map((p, i) => ({
+        id: slugify(p),
+        title: p,
+        text: texts[i],
+      }));
+  const chapters = outputs.map(({ id, title }) => ({ id, title }));
   const meta = {
     id: configData.id,
     lang: configData.lang,
@@ -85,10 +97,9 @@ async function main() {
   );
 
   let total = 0;
-  chapters.forEach((ch, i) => {
-    const text = texts[i];
-    writeFileSync(join(output, "chapters", `${ch.id}.txt`), text);
-    const words = text.split(/\s+/).filter(Boolean).length;
+  outputs.forEach((ch) => {
+    writeFileSync(join(output, "chapters", `${ch.id}.txt`), ch.text);
+    const words = ch.text.split(/\s+/).filter(Boolean).length;
     total += words;
     console.log(`${ch.id}: ${words} words`);
   });
