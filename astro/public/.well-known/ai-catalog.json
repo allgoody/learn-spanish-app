@@ -1,0 +1,18 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Aprende español",
+    "identifier": "niceio.com",
+    "documentationUrl": "https://niceio.com/about/"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:niceio.com:site:llms-txt",
+      "displayName": "Aprende español — site summary for agents",
+      "type": "text/markdown",
+      "url": "https://niceio.com/llms.txt",
+      "description": "Machine-readable summary of the site: public-domain Spanish reading with word glosses, plus themed vocabulary lists. Links to the main sections.",
+      "tags": ["spanish", "language-learning", "public-domain", "glossary"]
+    }
+  ]
+}
