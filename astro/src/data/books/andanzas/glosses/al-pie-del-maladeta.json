@@ -3851,17 +3851,17 @@
     "false_friend": null,
     "note": null
   },
-  "catal": {
-    "word": "catal",
+  "català": {
+    "word": "català",
     "lemma": "català",
-    "pos": "adj",
-    "ipa": "/kataˈla/",
-    "ru": "каталанский",
-    "grammar": "adjetivo, masculino singular (catalán)",
+    "pos": "noun",
+    "ipa": "/kətəˈla/",
+    "ru": "каталонец; каталанский язык; каталанский",
+    "grammar": "catalán, sustantivo/adjetivo masculino singular",
     "cefr": null,
-    "modern": "catalán",
+    "modern": null,
     "false_friend": null,
-    "note": "каталанская форма испанского 'catalán'"
+    "note": "каталанская форма; исп. catalán"
   },
   "ha": {
     "word": "ha",
@@ -4252,7 +4252,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -5987,6 +5987,18 @@
     "false_friend": null,
     "note": null
   },
+  "diamante": {
+    "word": "diamante",
+    "lemma": "diamante",
+    "pos": "noun",
+    "ipa": "/djaˈmante/",
+    "ru": "алмаз, бриллиант",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "может быть поэтическим образом: алмаз, бриллиант"
+  },
   "algo": {
     "word": "algo",
     "lemma": "algo",
@@ -6947,6 +6959,18 @@
     "false_friend": null,
     "note": null
   },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
+  },
   "nació": {
     "word": "nació",
     "lemma": "nacer",
@@ -7234,6 +7258,18 @@
     "modern": null,
     "false_friend": null,
     "note": "En 'Juana la Loca'."
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "flandes": {
     "word": "flandes",
@@ -8014,6 +8050,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
   },
   "casera": {
     "word": "casera",

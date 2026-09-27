@@ -1511,6 +1511,18 @@
     "false_friend": null,
     "note": null
   },
+  "difícil": {
+    "word": "difícil",
+    "lemma": "difícil",
+    "pos": "adj",
+    "ipa": "diˈfi.θil",
+    "ru": "трудный, сложный",
+    "grammar": "adjetivo singular (masculino/femenino)",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "seria": {
     "word": "seria",
     "lemma": "serio",
@@ -2099,29 +2111,17 @@
     "false_friend": null,
     "note": null
   },
-  "pie": {
-    "word": "pie",
-    "lemma": "pie",
+  "pieças": {
+    "word": "pieças",
+    "lemma": "pieza",
     "pos": "noun",
-    "ipa": "/pje/",
-    "ru": "нога (ступня), подножие",
-    "grammar": "sustantivo masculino, singular",
-    "cefr": "A1",
-    "modern": null,
+    "ipa": "[ˈpjeθas]",
+    "ru": "части, куски; комнаты",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "B1",
+    "modern": "piezas",
     "false_friend": null,
-    "note": "В выражении 'al pie de' — у подножия."
-  },
-  "as": {
-    "word": "as",
-    "lemma": "haber",
-    "pos": "verb",
-    "ipa": "/as/",
-    "ru": "ты имеешь",
-    "grammar": "presente de indicativo, 2ª pers. sing., forma antigua de 'has'",
-    "cefr": null,
-    "modern": "has",
-    "false_friend": null,
-    "note": "Grafía antigua de 'has'."
+    "note": "Arcaica grafía de 'piezas'"
   },
   "o": {
     "word": "o",
@@ -2459,6 +2459,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "va": {
     "word": "va",
     "lemma": "ir",
@@ -2627,6 +2639,18 @@
     "false_friend": null,
     "note": null
   },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
+  },
   "poniente": {
     "word": "poniente",
     "lemma": "poniente",
@@ -2663,17 +2687,17 @@
     "false_friend": null,
     "note": null
   },
-  "pla": {
-    "word": "pla",
+  "plaça": {
+    "word": "plaça",
     "lemma": "plaza",
     "pos": "noun",
-    "ipa": "/ˈplasa/",
+    "ipa": "/ˈplaθa/",
     "ru": "площадь",
-    "grammar": "sustantivo femenino, singular",
-    "cefr": "A2",
+    "grammar": "sustantivo femenino, singular; grafía antigua con ç",
+    "cefr": "B1",
     "modern": "plaza",
     "false_friend": null,
-    "note": "Forma arcaica 'plaça' aparece como 'pla' en el texto; fragmento de 'plaça'."
+    "note": "устаревшая орфография; современное plaza"
   },
   "colgadizo": {
     "word": "colgadizo",
@@ -2939,6 +2963,18 @@
     "false_friend": null,
     "note": null
   },
+  "proporción": {
+    "word": "proporción",
+    "lemma": "proporción",
+    "pos": "noun",
+    "ipa": "pɾo.poɾˈθjon",
+    "ru": "пропорция, соразмерность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "puestas": {
     "word": "puestas",
     "lemma": "poner",
@@ -3167,29 +3203,17 @@
     "false_friend": null,
     "note": "Arcaico: ortografía con 'x' en lugar de 'j'."
   },
-  "tra": {
-    "word": "tra",
-    "lemma": "traza",
-    "pos": "noun",
-    "ipa": "/ˈtɾaθa/",
-    "ru": "план, чертёж",
-    "grammar": "sustantivo femenino, singular",
-    "cefr": "B2",
-    "modern": "traza",
-    "false_friend": null,
-    "note": "Fragmento de 'traza' en el texto."
-  },
-  "adas": {
-    "word": "adas",
-    "lemma": "trazadas",
+  "traçadas": {
+    "word": "traçadas",
+    "lemma": "trazar",
     "pos": "verb",
     "ipa": "/tɾaˈθaðas/",
-    "ru": "начерченные, проложенные",
-    "grammar": "participio pasado, femenino plural",
-    "cefr": "B2",
+    "ru": "проложенные, размеченные, очерченные",
+    "grammar": "participio femenino plural de trazar; grafía antigua con ç",
+    "cefr": "B1",
     "modern": "trazadas",
     "false_friend": null,
-    "note": "Fragmento de 'trazadas' (arcaico 'traçadas') en el texto."
+    "note": "устаревшая орфография; современное trazadas"
   },
   "fin": {
     "word": "fin",
@@ -3215,29 +3239,17 @@
     "false_friend": null,
     "note": null
   },
-  "lan": {
-    "word": "lan",
-    "lemma": "llano",
-    "pos": "adj",
-    "ipa": "/ˈʎano/",
-    "ru": "ровный, простой",
-    "grammar": "adjetivo masculino singular",
+  "lançan": {
+    "word": "lançan",
+    "lemma": "lanzar",
+    "pos": "verb",
+    "ipa": "/ˈlanθan/",
+    "ru": "бросают, мечут; выпускают (побеги, листья)",
+    "grammar": "presente de indicativo, 3ª pers. plural; grafía antigua con ç",
     "cefr": "B1",
-    "modern": "llano",
+    "modern": "lanzan",
     "false_friend": null,
-    "note": "Fragmento de 'llano' en el texto."
-  },
-  "an": {
-    "word": "an",
-    "lemma": "grande",
-    "pos": "adj",
-    "ipa": "/ˈɡɾandes/",
-    "ru": "большие",
-    "grammar": "adjetivo plural",
-    "cefr": "A1",
-    "modern": "grandes",
-    "false_friend": null,
-    "note": "Fragmento de 'grandes' en el texto."
+    "note": "устаревшая орфография; современное lanzan"
   },
   "mismas": {
     "word": "mismas",
@@ -3755,6 +3767,18 @@
     "false_friend": null,
     "note": null
   },
+  "estanque": {
+    "word": "estanque",
+    "lemma": "estanque",
+    "pos": "noun",
+    "ipa": "[esˈtaŋke]",
+    "ru": "пруд",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "llegaba": {
     "word": "llegaba",
     "lemma": "llegar",
@@ -3790,6 +3814,18 @@
     "modern": null,
     "false_friend": null,
     "note": "также может быть наречием 'даже'"
+  },
+  "pie": {
+    "word": "pie",
+    "lemma": "pie",
+    "pos": "noun",
+    "ipa": "/pje/",
+    "ru": "нога (ступня), подножие",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "В выражении 'al pie de' — у подножия."
   },
   "éste": {
     "word": "éste",
@@ -3895,6 +3931,18 @@
     "ru": "ловил бы рыбу",
     "grammar": "pretérito imperfecto de subjuntivo, 3ª pers. singular",
     "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -4390,6 +4438,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "místico": {
+    "word": "místico",
+    "lemma": "místico",
+    "pos": "adj",
+    "ipa": "/ˈmistiko/",
+    "ru": "мистический; мистик",
+    "grammar": "adjetivo masculino singular; también sustantivo",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy místico — 'я мистик по натуре'."
   },
   "agüero": {
     "word": "agüero",
@@ -5947,6 +6007,18 @@
     "ru": "храбрые",
     "grammar": "adjetivo, plural",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null

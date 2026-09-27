@@ -3155,17 +3155,17 @@
     "false_friend": null,
     "note": null
   },
-  "ó": {
-    "word": "ó",
-    "lemma": "o",
-    "pos": "conj",
-    "ipa": "/o/",
-    "ru": "или",
-    "grammar": "conjunción disyuntiva",
-    "cefr": "A1",
-    "modern": "o",
+  "alçó": {
+    "word": "alçó",
+    "lemma": "alzar",
+    "pos": "verb",
+    "ipa": "/alˈθo/",
+    "ru": "поднял",
+    "grammar": "pretérito perfecto simple, 3ª pers. sing.",
+    "cefr": "B1",
+    "modern": "alzó",
     "false_friend": null,
-    "note": "se escribe con tilde entre números para evitar confusión con cero"
+    "note": "Устаревшее написание с ç; современное alzó."
   },
   "los": {
     "word": "los",
@@ -4295,17 +4295,17 @@
     "false_friend": null,
     "note": "Forma arcaica de 'así'."
   },
-  "abullidas": {
-    "word": "abullidas",
-    "lemma": "zambullir",
+  "çabullidas": {
+    "word": "çabullidas",
+    "lemma": "zabullir",
     "pos": "verb",
-    "ipa": "/a.βuˈʝi.ðas/",
+    "ipa": "/θaβuˈʝiðas/",
     "ru": "погружённые, окунувшиеся",
-    "grammar": "participio femenino, plural",
-    "cefr": null,
-    "modern": "zambullidas",
+    "grammar": "participio pasado, femenino plural; usado como adjetivo verbal",
+    "cefr": "C1",
+    "modern": "zabullidas",
     "false_friend": null,
-    "note": "Variante arcaica de 'zambullidas' (del verbo 'zambullir')."
+    "note": "Устаревшее написание ç; современное zabullidas. В контексте — 'погружённые в Бога'."
   },
   "dios": {
     "word": "dios",
@@ -5104,7 +5104,7 @@
     "lemma": "llegar",
     "pos": "verb",
     "ipa": "/ˈʎeɣe/",
-    "ru": "прибудет (subjuntivo)",
+    "ru": "прибудет (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -5416,7 +5416,7 @@
     "lemma": "volver",
     "pos": "verb",
     "ipa": "/ˈbwelβas/",
-    "ru": "ты вернёшься (subjuntivo)",
+    "ru": "ты вернёшься (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 2ª pers. sing.",
     "cefr": "A1",
     "modern": null,
@@ -5464,7 +5464,7 @@
     "lemma": "pasar",
     "pos": "verb",
     "ipa": "/paˈsaɾa/",
-    "ru": "прошло (subjuntivo)",
+    "ru": "прошло (сослагательное наклонение)",
     "grammar": "pretérito imperfecto de subjuntivo, 3ª pers. sing.",
     "cefr": "B1",
     "modern": null,

@@ -4,7 +4,7 @@
     "lemma": "ir",
     "pos": "verb",
     "ipa": "ˈbaʝa",
-    "ru": "иду, идёт (subjuntivo)",
+    "ru": "иду, идёт (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A1",
     "modern": null,
@@ -407,6 +407,18 @@
     "false_friend": "В русском 'график' — расписание, а в испанском 'gráfico' — графический",
     "note": "sentido gráfico = visual"
   },
+  "pictórico": {
+    "word": "pictórico",
+    "lemma": "pictórico",
+    "pos": "adj",
+    "ipa": "pikˈto.ɾi.ko",
+    "ru": "живописный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Relacionado con la pintura."
+  },
   "o": {
     "word": "o",
     "lemma": "o",
@@ -427,6 +439,18 @@
     "ru": "лучше, лучший",
     "grammar": "comparativo de bueno/bien",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "escultórico": {
+    "word": "escultórico",
+    "lemma": "escultórico",
+    "pos": "adj",
+    "ipa": "es.kulˈto.ɾi.ko",
+    "ru": "скульптурный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -1855,6 +1879,18 @@
     "ru": "по, через, за",
     "grammar": null,
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "construcción": {
+    "word": "construcción",
+    "lemma": "construcción",
+    "pos": "noun",
+    "ipa": "kons.tɾukˈθjon",
+    "ru": "строительство, конструкция",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3586,6 +3622,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Del verbo 'obligar'"
+  },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "alerta": {
     "word": "alerta",

@@ -5759,6 +5759,18 @@
     "false_friend": null,
     "note": "gozar de = наслаждаться, иметь"
   },
+  "estupendo": {
+    "word": "estupendo",
+    "lemma": "estupendo",
+    "pos": "adj",
+    "ipa": "/estuˈpendo/",
+    "ru": "потрясающий, замечательный, изумительный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не связано с 'stupid'; не путать с estúpido.",
+    "note": null
+  },
   "mirador": {
     "word": "mirador",
     "lemma": "mirador",
@@ -7031,6 +7043,18 @@
     "false_friend": null,
     "note": "También 'cresta' de un gallo."
   },
+  "difícil": {
+    "word": "difícil",
+    "lemma": "difícil",
+    "pos": "adj",
+    "ipa": "diˈfi.θil",
+    "ru": "трудный, сложный",
+    "grammar": "adjetivo singular (masculino/femenino)",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "rebaño": {
     "word": "rebaño",
     "lemma": "rebaño",
@@ -7266,6 +7290,18 @@
     "ipa": "/ˈresto/",
     "ru": "остаток, остальное",
     "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "buscaron": {
+    "word": "buscaron",
+    "lemma": "buscar",
+    "pos": "verb",
+    "ipa": "[busˈkaɾon]",
+    "ru": "искали",
+    "grammar": "pretérito indefinido, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,
     "false_friend": null,
@@ -11183,6 +11219,18 @@
     "false_friend": null,
     "note": null
   },
+  "modelo": {
+    "word": "modelo",
+    "lemma": "modelo",
+    "pos": "noun",
+    "ipa": "moˈðe.lo",
+    "ru": "модель, образец",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Род: исп. modelo — мужского рода, рус. модель — женского.",
+    "note": null
+  },
   "comprendo": {
     "word": "comprendo",
     "lemma": "comprender",
@@ -11962,6 +12010,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Derivado de 'calmoso'."
+  },
+  "perfección": {
+    "word": "perfección",
+    "lemma": "perfección",
+    "pos": "noun",
+    "ipa": "/peɾfekˈθjon/",
+    "ru": "совершенство, безупречность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "posible": {
     "word": "posible",
@@ -12928,7 +12988,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsean/",
-    "ru": "были бы (subjuntivo)",
+    "ru": "были бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,
@@ -13847,6 +13907,18 @@
     "false_friend": null,
     "note": "Palabra francesa, parte del título 'Un hiver à Majorque'."
   },
+  "à": {
+    "word": "à",
+    "lemma": "à",
+    "pos": "prep",
+    "ipa": "/a/",
+    "ru": "в, на (франц.)",
+    "grammar": "preposición francesa",
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "французский предлог; в испанском соответствует a/en"
+  },
   "majorque": {
     "word": "majorque",
     "lemma": "Majorque",
@@ -13859,29 +13931,17 @@
     "false_friend": null,
     "note": "Nombre francés de Mallorca."
   },
-  "menag": {
-    "word": "menag",
-    "lemma": "ménagère",
+  "menagère": {
+    "word": "menagère",
+    "lemma": "menagère",
     "pos": "noun",
-    "ipa": "[menaˈʒɛʁ]",
-    "ru": "домохозяйка",
-    "grammar": "sustantivo femenino (francés)",
+    "ipa": "/mənaˈʒɛʁ/",
+    "ru": "хозяйка, домохозяйка (франц.)",
+    "grammar": "sustantivo femenino francés, singular",
     "cefr": null,
     "modern": null,
     "false_friend": null,
-    "note": "Palabra francesa, aparece como 'menagère' en el texto."
-  },
-  "re": {
-    "word": "re",
-    "lemma": "re",
-    "pos": "noun",
-    "ipa": "/re/",
-    "ru": "ре (нота)",
-    "grammar": "sustantivo masculino, singular",
-    "cefr": null,
-    "modern": null,
-    "false_friend": null,
-    "note": "en el texto aparece como fragmento de 'Real'"
+    "note": "французское слово; исп. ama de casa"
   },
   "fuera": {
     "word": "fuera",
@@ -14143,6 +14203,18 @@
     "ru": "последние",
     "grammar": "adjetivo masculino, plural",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "tristes": {
+    "word": "tristes",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/ˈtɾistes/",
+    "ru": "грустные, печальные",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -16511,6 +16583,18 @@
     "false_friend": null,
     "note": "nombre propio; en el texto se refiere a fray Luis de León"
   },
+  "salvador": {
+    "word": "salvador",
+    "lemma": "Salvador",
+    "pos": "name",
+    "ipa": "[salβaˈðoɾ]",
+    "ru": "Сальвадор",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Имя"
+  },
   "duque": {
     "word": "duque",
     "lemma": "duque",
@@ -16534,6 +16618,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "toscana": {
+    "word": "toscana",
+    "lemma": "Toscana",
+    "pos": "name",
+    "ipa": "[tosˈkana]",
+    "ru": "Тоскана",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Область в Италии"
   },
   "hermano": {
     "word": "hermano",
@@ -16720,7 +16816,7 @@
     "lemma": "derribar",
     "pos": "verb",
     "ipa": "deriˈβase",
-    "ru": "сносил, срубал (subjuntivo)",
+    "ru": "сносил, срубал (сослагательное наклонение)",
     "grammar": "pretérito imperfecto de subjuntivo, 1ª/3ª pers. singular",
     "cefr": "B2",
     "modern": null,
@@ -16828,7 +16924,7 @@
     "lemma": "derribar",
     "pos": "verb",
     "ipa": "deriˈβaɾan",
-    "ru": "сносили, срубали (subjuntivo)",
+    "ru": "сносили, срубали (сослагательное наклонение)",
     "grammar": "pretérito imperfecto de subjuntivo, 3ª pers. plural",
     "cefr": "B2",
     "modern": null,
@@ -17723,6 +17819,18 @@
     "false_friend": null,
     "note": "acceder a = соглашаться на что-либо"
   },
+  "grado": {
+    "word": "grado",
+    "lemma": "grado",
+    "pos": "noun",
+    "ipa": "/ˈɡɾaðo/",
+    "ru": "степень, уровень, градус",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "concluir": {
     "word": "concluir",
     "lemma": "concluir",
@@ -18070,6 +18178,18 @@
     "modern": null,
     "false_friend": null,
     "note": "También sustantivo: puesto = место, должность."
+  },
+  "alcance": {
+    "word": "alcance",
+    "lemma": "alcance",
+    "pos": "noun",
+    "ipa": "alˈkan.θe",
+    "ru": "досягаемость, предел, охват; al alcance = доступный",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "al alcance de = в пределах досягаемости."
   },
   "flacos": {
     "word": "flacos",
@@ -19367,6 +19487,18 @@
     "false_friend": null,
     "note": null
   },
+  "atraviesa": {
+    "word": "atraviesa",
+    "lemma": "atravesar",
+    "pos": "verb",
+    "ipa": "[atɾaˈβjesa]",
+    "ru": "проходит сквозь, пересекает",
+    "grammar": "presente de indicativo, 3ª pers. singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "nombre": {
     "word": "nombre",
     "lemma": "nombre",
@@ -19494,6 +19626,18 @@
     "ipa": "/senˈswal/",
     "ru": "чувственный",
     "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "voluptuosidad": {
+    "word": "voluptuosidad",
+    "lemma": "voluptuosidad",
+    "pos": "noun",
+    "ipa": "/boluptwosiˈðað/",
+    "ru": "сладострастие, чувственность",
+    "grammar": "sustantivo femenino singular",
     "cefr": "B2",
     "modern": null,
     "false_friend": null,
@@ -21635,6 +21779,18 @@
     "false_friend": null,
     "note": "также может означать 'грубиян' о человеке"
   },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
+  },
   "importa": {
     "word": "importa",
     "lemma": "importar",
@@ -21678,6 +21834,18 @@
     "ipa": "/keˈɾia/",
     "ru": "хотел, хотела",
     "grammar": "pretérito imperfecto de indicativo, 1ª/3ª pers. sing.",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
     "cefr": "A1",
     "modern": null,
     "false_friend": null,
@@ -22890,6 +23058,18 @@
     "ipa": "/ˈpisa/",
     "ru": "наступает, топчет",
     "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pasearse": {
+    "word": "pasearse",
+    "lemma": "pasear",
+    "pos": "verb",
+    "ipa": "[paseˈaɾse]",
+    "ru": "прогуливаться",
+    "grammar": "infinitivo reflexivo",
     "cefr": "A2",
     "modern": null,
     "false_friend": null,

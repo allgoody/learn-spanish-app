@@ -7727,6 +7727,18 @@
     "false_friend": null,
     "note": null
   },
+  "aguardaban": {
+    "word": "aguardaban",
+    "lemma": "aguardar",
+    "pos": "verb",
+    "ipa": "[aɣwaɾˈðaβan]",
+    "ru": "ожидали, ждали",
+    "grammar": "pretérito imperfecto, 3ª pers. plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "muerte": {
     "word": "muerte",
     "lemma": "muerte",
@@ -7738,6 +7750,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "echándoles": {
+    "word": "echándoles",
+    "lemma": "echar",
+    "pos": "verb",
+    "ipa": "[eˈtʃandoles]",
+    "ru": "выбросив их; недосчитавшись их",
+    "grammar": "gerundio + pronombre enclítico (les)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Gerundio de 'echar' con pronombre 'les'"
   },
   "fuera": {
     "word": "fuera",
@@ -7799,6 +7823,18 @@
     "false_friend": null,
     "note": null
   },
+  "buscaron": {
+    "word": "buscaron",
+    "lemma": "buscar",
+    "pos": "verb",
+    "ipa": "[busˈkaɾon]",
+    "ru": "искали",
+    "grammar": "pretérito indefinido, 3ª pers. plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "encontraron": {
     "word": "encontraron",
     "lemma": "encontrar",
@@ -7843,6 +7879,18 @@
     "ru": "часы (единица времени)",
     "grammar": "sustantivo femenino, plural",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "mortales": {
+    "word": "mortales",
+    "lemma": "mortal",
+    "pos": "adj",
+    "ipa": "[moɾˈtales]",
+    "ru": "смертные; мучительные",
+    "grammar": "adjetivo plural",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -7931,6 +7979,18 @@
     "false_friend": null,
     "note": null
   },
+  "arregló": {
+    "word": "arregló",
+    "lemma": "arreglar",
+    "pos": "verb",
+    "ipa": "[areˈɣlo]",
+    "ru": "устроил, привёл в порядок",
+    "grammar": "pretérito indefinido, 3ª pers. singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "entrada": {
     "word": "entrada",
     "lemma": "entrada",
@@ -7939,6 +7999,18 @@
     "ru": "вход",
     "grammar": "sustantivo femenino, singular",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "disimulada": {
+    "word": "disimulada",
+    "lemma": "disimular",
+    "pos": "adj",
+    "ipa": "[disimuˈlaða]",
+    "ru": "скрытая, замаскированная",
+    "grammar": "participio pasado, femenino singular",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -7954,6 +8026,18 @@
     "modern": null,
     "false_friend": null,
     "note": "agua — женского рода, но в единственном числе используется 'el agua'"
+  },
+  "subterráneas": {
+    "word": "subterráneas",
+    "lemma": "subterráneo",
+    "pos": "adj",
+    "ipa": "[suβteˈraneas]",
+    "ru": "подземные",
+    "grammar": "adjetivo femenino plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "quietas": {
     "word": "quietas",
@@ -8003,6 +8087,42 @@
     "false_friend": null,
     "note": null
   },
+  "trasparencia": {
+    "word": "trasparencia",
+    "lemma": "transparencia",
+    "pos": "noun",
+    "ipa": "[tɾaspaˈɾenθja]",
+    "ru": "прозрачность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": "transparencia",
+    "false_friend": null,
+    "note": "Grafía antigua de 'transparencia'"
+  },
+  "advertiros": {
+    "word": "advertiros",
+    "lemma": "advertir",
+    "pos": "verb",
+    "ipa": "[aðβeɾˈtiɾos]",
+    "ru": "предупредить вас",
+    "grammar": "infinitivo + pronombre enclítico (os)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Infinitivo de 'advertir' con pronombre 'os'"
+  },
+  "deis": {
+    "word": "deis",
+    "lemma": "dar",
+    "pos": "verb",
+    "ipa": "[deis]",
+    "ru": "дадите, сделаете (шаг)",
+    "grammar": "presente de subjuntivo, 2ª pers. plural (vosotros)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Subjuntivo de 'dar', 2ª persona plural"
+  },
   "dirección": {
     "word": "dirección",
     "lemma": "dirección",
@@ -8027,6 +8147,18 @@
     "false_friend": null,
     "note": "En América Latina se usa 'quieren' para ustedes."
   },
+  "meter": {
+    "word": "meter",
+    "lemma": "meter",
+    "pos": "verb",
+    "ipa": "[meˈteɾ]",
+    "ru": "сунуть, вставить",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "pie": {
     "word": "pie",
     "lemma": "pie",
@@ -8050,6 +8182,30 @@
     "modern": null,
     "false_friend": null,
     "note": "Se usa con el artículo 'el' aunque es femenino: el agua."
+  },
+  "advertido": {
+    "word": "advertido",
+    "lemma": "advertir",
+    "pos": "adj",
+    "ipa": "[aðβeɾˈtiðo]",
+    "ru": "предупреждённый",
+    "grammar": "participio pasado, masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "imposible": {
+    "word": "imposible",
+    "lemma": "imposible",
+    "pos": "adj",
+    "ipa": "[impoˈsiβle]",
+    "ru": "невозможный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "descubrir": {
     "word": "descubrir",
@@ -8135,6 +8291,30 @@
     "false_friend": null,
     "note": null
   },
+  "chinita": {
+    "word": "chinita",
+    "lemma": "chinita",
+    "pos": "noun",
+    "ipa": "[tʃiˈnita]",
+    "ru": "камешек",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Diminutivo de 'china' (камень, галька)"
+  },
+  "descubrirla": {
+    "word": "descubrirla",
+    "lemma": "descubrir",
+    "pos": "verb",
+    "ipa": "[deskuˈβɾiɾla]",
+    "ru": "обнаружить её",
+    "grammar": "infinitivo + pronombre enclítico (la)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "tarde": {
     "word": "tarde",
     "lemma": "tarde",
@@ -8171,6 +8351,18 @@
     "false_friend": null,
     "note": "Desprendida de = libre de."
   },
+  "estalactita": {
+    "word": "estalactita",
+    "lemma": "estalactita",
+    "pos": "noun",
+    "ipa": "[estalaɣˈtita]",
+    "ru": "сталактит",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "rompe": {
     "word": "rompe",
     "lemma": "romper",
@@ -8179,6 +8371,18 @@
     "ru": "ломает, разрывает",
     "grammar": "presente de indicativo, 3ª pers. sing.",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "levemente": {
+    "word": "levemente",
+    "lemma": "levemente",
+    "pos": "adv",
+    "ipa": "[leβeˈmente]",
+    "ru": "слегка, легко",
+    "grammar": null,
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8194,6 +8398,30 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "absoluto": {
+    "word": "absoluto",
+    "lemma": "absoluto",
+    "pos": "adj",
+    "ipa": "[aβsoˈluto]",
+    "ru": "абсолютный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "tinieblas": {
+    "word": "tinieblas",
+    "lemma": "tinieblas",
+    "pos": "noun",
+    "ipa": "[tiˈnjeβlas]",
+    "ru": "мрак, тьма",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Обычно употребляется во множественном числе"
   },
   "laguna": {
     "word": "laguna",
@@ -8231,6 +8459,30 @@
     "false_friend": null,
     "note": null
   },
+  "bote": {
+    "word": "bote",
+    "lemma": "bote",
+    "pos": "noun",
+    "ipa": "[ˈbote]",
+    "ru": "лодка",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pasearse": {
+    "word": "pasearse",
+    "lemma": "pasear",
+    "pos": "verb",
+    "ipa": "[paseˈaɾse]",
+    "ru": "прогуливаться",
+    "grammar": "infinitivo reflexivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "bajo": {
     "word": "bajo",
     "lemma": "bajo",
@@ -8239,6 +8491,18 @@
     "ru": "под",
     "grammar": "preposición",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "bóveda": {
+    "word": "bóveda",
+    "lemma": "bóveda",
+    "pos": "noun",
+    "ipa": "[ˈboβeða]",
+    "ru": "свод",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8267,6 +8531,42 @@
     "false_friend": null,
     "note": "En la expresión 'en el fondo' significa 'в глубине, вдалеке'."
   },
+  "emergen": {
+    "word": "emergen",
+    "lemma": "emerger",
+    "pos": "verb",
+    "ipa": "[eˈmeɾxen]",
+    "ru": "появляются, выступают",
+    "grammar": "presente de indicativo, 3ª pers. plural",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "cargada": {
+    "word": "cargada",
+    "lemma": "cargar",
+    "pos": "adj",
+    "ipa": "[kaɾˈɣaða]",
+    "ru": "нагруженная, заряженная",
+    "grammar": "participio pasado, femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "cal": {
+    "word": "cal",
+    "lemma": "cal",
+    "pos": "noun",
+    "ipa": "[kal]",
+    "ru": "известь",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": "В русском 'кал' означает фекалии, а испанское 'cal' — известь",
+    "note": null
+  },
   "cae": {
     "word": "cae",
     "lemma": "caer",
@@ -8287,6 +8587,18 @@
     "ru": "потолок, крыша",
     "grammar": "sustantivo masculino singular",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "atraviesa": {
+    "word": "atraviesa",
+    "lemma": "atravesar",
+    "pos": "verb",
+    "ipa": "[atɾaˈβjesa]",
+    "ru": "проходит сквозь, пересекает",
+    "grammar": "presente de indicativo, 3ª pers. singular",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8315,6 +8627,18 @@
     "false_friend": null,
     "note": "Se usa en lugar de 'y' antes de palabras que empiezan con i- o hi-."
   },
+  "inmóvil": {
+    "word": "inmóvil",
+    "lemma": "inmóvil",
+    "pos": "adj",
+    "ipa": "[inˈmoβil]",
+    "ru": "неподвижный",
+    "grammar": "adjetivo masculino/femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "va": {
     "word": "va",
     "lemma": "ir",
@@ -8323,6 +8647,30 @@
     "ru": "идёт, едет",
     "grammar": "presente de indicativo, 3ª pers. sing.",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "depositarle": {
+    "word": "depositarle",
+    "lemma": "depositar",
+    "pos": "verb",
+    "ipa": "[deposiˈtaɾle]",
+    "ru": "отложить ему/ей",
+    "grammar": "infinitivo + pronombre enclítico (le)",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estalagmita": {
+    "word": "estalagmita",
+    "lemma": "estalagmita",
+    "pos": "noun",
+    "ipa": "[estalaɣˈmita]",
+    "ru": "сталагмит",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8347,6 +8695,54 @@
     "ru": "ждёт",
     "grammar": "presente de indicativo, 3ª pers. sing.",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "fundirse": {
+    "word": "fundirse",
+    "lemma": "fundir",
+    "pos": "verb",
+    "ipa": "[funˈdiɾse]",
+    "ru": "слиться, соединиться",
+    "grammar": "infinitivo reflexivo",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "columna": {
+    "word": "columna",
+    "lemma": "columna",
+    "pos": "noun",
+    "ipa": "[koˈlumna]",
+    "ru": "колонна, столб",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "compañera": {
+    "word": "compañera",
+    "lemma": "compañero",
+    "pos": "noun",
+    "ipa": "[kompaˈɲeɾa]",
+    "ru": "спутница, подруга",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estorba": {
+    "word": "estorba",
+    "lemma": "estorbar",
+    "pos": "verb",
+    "ipa": "[esˈtoɾβa]",
+    "ru": "мешает",
+    "grammar": "presente de indicativo, 3ª pers. singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8399,6 +8795,18 @@
     "false_friend": null,
     "note": "También verbo 'anhelo' = я жажду, но aquí sustantivo."
   },
+  "milenario": {
+    "word": "milenario",
+    "lemma": "milenario",
+    "pos": "adj",
+    "ipa": "[mileˈnaɾjo]",
+    "ru": "тысячелетний",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "juntarse": {
     "word": "juntarse",
     "lemma": "juntar",
@@ -8435,6 +8843,18 @@
     "false_friend": null,
     "note": null
   },
+  "llámanle": {
+    "word": "llámanle",
+    "lemma": "llamar",
+    "pos": "verb",
+    "ipa": "[ˈʝamanle]",
+    "ru": "называют его",
+    "grammar": "presente de indicativo, 3ª pers. plural + pronombre enclítico (le)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "lago": {
     "word": "lago",
     "lemma": "lago",
@@ -8447,6 +8867,30 @@
     "false_friend": null,
     "note": null
   },
+  "duquesa": {
+    "word": "duquesa",
+    "lemma": "duquesa",
+    "pos": "noun",
+    "ipa": "[duˈkesa]",
+    "ru": "герцогиня",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "toscana": {
+    "word": "toscana",
+    "lemma": "Toscana",
+    "pos": "name",
+    "ipa": "[tosˈkana]",
+    "ru": "Тоскана",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Область в Италии"
+  },
   "madre": {
     "word": "madre",
     "lemma": "madre",
@@ -8458,6 +8902,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "salvador": {
+    "word": "salvador",
+    "lemma": "Salvador",
+    "pos": "name",
+    "ipa": "[salβaˈðoɾ]",
+    "ru": "Сальвадор",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Имя"
   },
   "hizo": {
     "word": "hizo",
@@ -8483,6 +8939,30 @@
     "false_friend": null,
     "note": "tratamiento inglés"
   },
+  "martel": {
+    "word": "martel",
+    "lemma": "Martel",
+    "pos": "name",
+    "ipa": "[maɾˈtel]",
+    "ru": "Мартель",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Фамилия"
+  },
+  "explorador": {
+    "word": "explorador",
+    "lemma": "explorador",
+    "pos": "noun",
+    "ipa": "[eksploɾaˈðoɾ]",
+    "ru": "исследователь",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "dice": {
     "word": "dice",
     "lemma": "decir",
@@ -8503,6 +8983,18 @@
     "ru": "знает, знаком",
     "grammar": "presente de indicativo, 3ª pers. sing.",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estanque": {
+    "word": "estanque",
+    "lemma": "estanque",
+    "pos": "noun",
+    "ipa": "[esˈtaŋke]",
+    "ru": "пруд",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8543,6 +9035,18 @@
     "false_friend": null,
     "note": null
   },
+  "ventana": {
+    "word": "ventana",
+    "lemma": "ventana",
+    "pos": "noun",
+    "ipa": "/benˈtana/",
+    "ru": "окно",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "veía": {
     "word": "veía",
     "lemma": "ver",
@@ -8554,6 +9058,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "recodo": {
+    "word": "recodo",
+    "lemma": "recodo",
+    "pos": "noun",
+    "ipa": "/reˈkoðo/",
+    "ru": "изгиб, поворот (реки, дороги)",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "часто о реке или дороге"
   },
   "forma": {
     "word": "forma",
@@ -8578,6 +9094,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "oeste": {
+    "word": "oeste",
+    "lemma": "oeste",
+    "pos": "noun",
+    "ipa": "/oˈeste/",
+    "ru": "запад",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "точка компаса; hacia el oeste = на запад"
   },
   "metros": {
     "word": "metros",
@@ -8639,6 +9167,18 @@
     "false_friend": null,
     "note": null
   },
+  "llegando": {
+    "word": "llegando",
+    "lemma": "llegar",
+    "pos": "verb",
+    "ipa": "/ʝeˈɣando/",
+    "ru": "доходя, прибывая; доходя до",
+    "grammar": "gerundio de llegar",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "llegar a = доходить до"
+  },
   "pura": {
     "word": "pura",
     "lemma": "puro",
@@ -8662,6 +9202,54 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "navega": {
+    "word": "navega",
+    "lemma": "navegar",
+    "pos": "verb",
+    "ipa": "/naˈβeɣa/",
+    "ru": "плывёт, идёт (о судне); плавает",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "navegar = плыть, идти (о судне); также управлять судном"
+  },
+  "bosques": {
+    "word": "bosques",
+    "lemma": "bosque",
+    "pos": "noun",
+    "ipa": "/ˈboskes/",
+    "ru": "леса",
+    "grammar": "sustantivo masculino, plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "bosque = лес (обычно небольшой или густой)"
+  },
+  "agujas": {
+    "word": "agujas",
+    "lemma": "aguja",
+    "pos": "noun",
+    "ipa": "/aˈɣuxas/",
+    "ru": "иглы; стрелки (часов); спицы",
+    "grammar": "sustantivo femenino, plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "agujas de escarcha — литературный образ: иглы инея"
+  },
+  "escarcha": {
+    "word": "escarcha",
+    "lemma": "escarcha",
+    "pos": "noun",
+    "ipa": "/esˈkaɾtʃa/",
+    "ru": "иней, изморозь",
+    "grammar": "sustantivo femenino, singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "иней, изморозь"
   },
   "largas": {
     "word": "largas",
@@ -8687,6 +9275,18 @@
     "false_friend": null,
     "note": null
   },
+  "diamante": {
+    "word": "diamante",
+    "lemma": "diamante",
+    "pos": "noun",
+    "ipa": "/djaˈmante/",
+    "ru": "алмаз, бриллиант",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "может быть поэтическим образом: алмаз, бриллиант"
+  },
   "trecho": {
     "word": "trecho",
     "lemma": "trecho",
@@ -8698,6 +9298,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "isletas": {
+    "word": "isletas",
+    "lemma": "isleta",
+    "pos": "noun",
+    "ipa": "/isˈletas/",
+    "ru": "островки",
+    "grammar": "sustantivo femenino, plural; diminutivo de isla",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "уменьшительное от isla: островок"
   },
   "carbonato": {
     "word": "carbonato",
@@ -9971,6 +10583,18 @@
     "false_friend": null,
     "note": "apellido"
   },
+  "jugador": {
+    "word": "jugador",
+    "lemma": "jugador",
+    "pos": "noun",
+    "ipa": "/xuɣaˈðoɾ/",
+    "ru": "игрок; играющий",
+    "grammar": "sustantivo masculino singular; también adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy jugador — 'я игрок'."
+  },
   "belicoso": {
     "word": "belicoso",
     "lemma": "belicoso",
@@ -10066,6 +10690,18 @@
     "modern": null,
     "false_friend": null,
     "note": "forma apocopada ante sustantivo masculino singular"
+  },
+  "grado": {
+    "word": "grado",
+    "lemma": "grado",
+    "pos": "noun",
+    "ipa": "/ˈɡɾaðo/",
+    "ru": "степень, уровень, градус",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "aceptados": {
     "word": "aceptados",
@@ -11224,7 +11860,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -11698,6 +12334,18 @@
     "modern": null,
     "false_friend": null,
     "note": "echar de menos = скучать, не хватать."
+  },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
   },
   "ríos": {
     "word": "ríos",
@@ -13355,6 +14003,18 @@
     "false_friend": null,
     "note": "En 'en cambio' significa 'напротив, зато'."
   },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
+  },
   "escritores": {
     "word": "escritores",
     "lemma": "escritor",
@@ -13666,6 +14326,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "político": {
+    "word": "político",
+    "lemma": "político",
+    "pos": "adj",
+    "ipa": "poˈli.ti.ko",
+    "ru": "политический; политик",
+    "grammar": "adjetivo masculino singular; también sustantivo",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "En plural políticos: политические/политики."
   },
   "publicadas": {
     "word": "publicadas",
@@ -14596,7 +15268,7 @@
     "lemma": "ir",
     "pos": "verb",
     "ipa": "ˈbaʝa",
-    "ru": "иду, идёт (subjuntivo)",
+    "ru": "иду, идёт (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A1",
     "modern": null,
@@ -14770,6 +15442,18 @@
     "modern": null,
     "false_friend": null,
     "note": "В данном контексте — существительное 'равнина'."
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "norte": {
     "word": "norte",

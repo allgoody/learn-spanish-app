@@ -1523,6 +1523,18 @@
     "false_friend": null,
     "note": null
   },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
+  },
   "bien": {
     "word": "bien",
     "lemma": "bien",
@@ -4384,7 +4396,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -4399,6 +4411,18 @@
     "ru": "сторона, бок",
     "grammar": "sustantivo masculino, singular",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "evangelio": {
+    "word": "evangelio",
+    "lemma": "evangelio",
+    "pos": "noun",
+    "ipa": "/ebanˈxeljo/",
+    "ru": "Евангелие; евангелие",
+    "grammar": "sustantivo masculino singular; часто с заглавной",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -5074,6 +5098,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "plateresca": {
+    "word": "plateresca",
+    "lemma": "plateresco",
+    "pos": "adj",
+    "ipa": "pla.teˈɾes.ka",
+    "ru": "платерескный (архитектурный стиль)",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Estilo plateresco — испанский ренессансный декор."
   },
   "dora": {
     "word": "dora",
@@ -5879,6 +5915,18 @@
     "false_friend": null,
     "note": "Здесь глагол, а не существительное 'корона'."
   },
+  "absorbe": {
+    "word": "absorbe",
+    "lemma": "absorber",
+    "pos": "verb",
+    "ipa": "/abˈsoɾβe/",
+    "ru": "поглощает, впитывает, абсорбирует",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "fachada": {
     "word": "fachada",
     "lemma": "fachada",
@@ -6019,6 +6067,18 @@
     "ru": "торжественные",
     "grammar": "adjetivo plural",
     "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "edificios": {
+    "word": "edificios",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjos",
+    "ru": "здания",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6297,6 +6357,18 @@
     "cefr": "A1",
     "modern": null,
     "false_friend": null,
+    "note": null
+  },
+  "estupendo": {
+    "word": "estupendo",
+    "lemma": "estupendo",
+    "pos": "adj",
+    "ipa": "/estuˈpendo/",
+    "ru": "потрясающий, замечательный, изумительный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не связано с 'stupid'; не путать с estúpido.",
     "note": null
   },
   "pórtico": {
@@ -6967,6 +7039,18 @@
     "ru": "подобный, такой",
     "grammar": "adjetivo, singular",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "arquitectónica": {
+    "word": "arquitectónica",
+    "lemma": "arquitectónico",
+    "pos": "adj",
+    "ipa": "aɾ.ki.tekˈto.ni.ka",
+    "ru": "архитектурная",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -9179,6 +9263,18 @@
     "false_friend": null,
     "note": null
   },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
+  },
   "convirtiendo": {
     "word": "convirtiendo",
     "lemma": "convertir",
@@ -9406,6 +9502,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "místico": {
+    "word": "místico",
+    "lemma": "místico",
+    "pos": "adj",
+    "ipa": "/ˈmistiko/",
+    "ru": "мистический; мистик",
+    "grammar": "adjetivo masculino singular; también sustantivo",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy místico — 'я мистик по натуре'."
   },
   "atrevidas": {
     "word": "atrevidas",
@@ -10427,6 +10535,18 @@
     "false_friend": null,
     "note": null
   },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
+  },
   "refugio": {
     "word": "refugio",
     "lemma": "refugio",
@@ -11002,6 +11122,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
   },
   "profundamente": {
     "word": "profundamente",

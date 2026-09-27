@@ -112,7 +112,7 @@
     "lemma": "digerir",
     "pos": "verb",
     "ipa": "/dixeˈɾiɾlas/",
-    "ru": "переваривать их (fem. pl.)",
+    "ru": "переваривать их (жен. мн. ч.)",
     "grammar": "verbo, infinitivo con pronombre enclítico (las)",
     "cefr": "B2",
     "modern": null,
@@ -688,7 +688,7 @@
     "lemma": "soportar",
     "pos": "verb",
     "ipa": "/sopoɾˈtaɾla/",
-    "ru": "выносить её (fem. sing.)",
+    "ru": "выносить её (жен. ед. ч.)",
     "grammar": "verbo, infinitivo con pronombre enclítico (la)",
     "cefr": "B1",
     "modern": null,
@@ -5123,6 +5123,18 @@
     "false_friend": null,
     "note": null
   },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "calles": {
     "word": "calles",
     "lemma": "calle",
@@ -6371,6 +6383,18 @@
     "false_friend": null,
     "note": null
   },
+  "enorme": {
+    "word": "enorme",
+    "lemma": "enorme",
+    "pos": "adj",
+    "ipa": "/eˈnoɾme/",
+    "ru": "огромный, громадный",
+    "grammar": "adjetivo singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "asoman": {
     "word": "asoman",
     "lemma": "asomar",
@@ -6441,6 +6465,18 @@
     "cefr": "A2",
     "modern": null,
     "false_friend": null,
+    "note": null
+  },
+  "estupendo": {
+    "word": "estupendo",
+    "lemma": "estupendo",
+    "pos": "adj",
+    "ipa": "/estuˈpendo/",
+    "ru": "потрясающий, замечательный, изумительный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не связано с 'stupid'; не путать с estúpido.",
     "note": null
   },
   "soneto": {

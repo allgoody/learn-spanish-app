@@ -1523,6 +1523,18 @@
     "false_friend": null,
     "note": null
   },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
+  },
   "no": {
     "word": "no",
     "lemma": "no",
@@ -1975,6 +1987,18 @@
     "ru": "нерешительные",
     "grammar": "adjetivo, femenino, plural",
     "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3262,6 +3286,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "bosques": {
+    "word": "bosques",
+    "lemma": "bosque",
+    "pos": "noun",
+    "ipa": "/ˈboskes/",
+    "ru": "леса",
+    "grammar": "sustantivo masculino, plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "bosque = лес (обычно небольшой или густой)"
   },
   "movibles": {
     "word": "movibles",

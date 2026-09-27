@@ -1235,6 +1235,18 @@
     "false_friend": null,
     "note": null
   },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
+  },
   "vienen": {
     "word": "vienen",
     "lemma": "venir",
@@ -2452,7 +2464,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -5831,12 +5843,24 @@
     "false_friend": null,
     "note": null
   },
+  "traducir": {
+    "word": "traducir",
+    "lemma": "traducir",
+    "pos": "verb",
+    "ipa": "/tɾaðuˈθiɾ/",
+    "ru": "переводить",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "ramona": {
     "word": "ramona",
     "lemma": "Ramona",
     "pos": "name",
     "ipa": "[raˈmona]",
-    "ru": "Рамонa (женское имя)",
+    "ru": "Рамона (женское имя)",
     "grammar": null,
     "cefr": null,
     "modern": null,
@@ -6681,6 +6705,18 @@
     "cefr": "B2",
     "modern": null,
     "false_friend": "ложный друг: в русском 'каста' — социальная группа, а здесь 'порода, род'",
+    "note": null
+  },
+  "sería": {
+    "word": "sería",
+    "lemma": "ser",
+    "pos": "verb",
+    "ipa": "/seˈɾia/",
+    "ru": "был бы, была бы, было бы",
+    "grammar": "condicional simple, 1ª/3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": "Не путать с рус. 'серия'.",
     "note": null
   },
   "barraca": {

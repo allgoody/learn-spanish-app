@@ -1811,6 +1811,18 @@
     "false_friend": null,
     "note": null
   },
+  "suyo": {
+    "word": "suyo",
+    "lemma": "suyo",
+    "pos": "pron",
+    "ipa": "ˈsu.ʝo",
+    "ru": "его, свой, принадлежащий ему",
+    "grammar": "pronombre posesivo, 3ª pers., masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "el suyo = его (вещь); также прилагательное su."
+  },
   "corazón": {
     "word": "corazón",
     "lemma": "corazón",
@@ -1972,7 +1984,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsean/",
-    "ru": "были бы (subjuntivo)",
+    "ru": "были бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,
@@ -3011,6 +3023,18 @@
     "false_friend": null,
     "note": "Novela picaresca = плутовской роман."
   },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
+  },
   "posadas": {
     "word": "posadas",
     "lemma": "posada",
@@ -3214,6 +3238,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Literario."
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "perfuma": {
     "word": "perfuma",
@@ -3707,6 +3743,18 @@
     "false_friend": null,
     "note": "También significa 'deber' = быть должным."
   },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "misma": {
     "word": "misma",
     "lemma": "mismo",
@@ -3751,6 +3799,18 @@
     "ru": "живёт",
     "grammar": "presente de indicativo, 3ª pers. singular",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "líneas": {
+    "word": "líneas",
+    "lemma": "línea",
+    "pos": "noun",
+    "ipa": "ˈli.ne.as",
+    "ru": "линии",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -5483,6 +5543,18 @@
     "false_friend": null,
     "note": null
   },
+  "sería": {
+    "word": "sería",
+    "lemma": "ser",
+    "pos": "verb",
+    "ipa": "/seˈɾia/",
+    "ru": "был бы, была бы, было бы",
+    "grammar": "condicional simple, 1ª/3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": "Не путать с рус. 'серия'.",
+    "note": null
+  },
   "perros": {
     "word": "perros",
     "lemma": "perro",
@@ -6664,7 +6736,7 @@
     "lemma": "disposición",
     "pos": "noun",
     "ipa": "disposiˈθjon",
-    "ru": "расположение, disposition",
+    "ru": "расположение, готовность",
     "grammar": "sustantivo femenino singular",
     "cefr": "B2",
     "modern": null,
@@ -8152,7 +8224,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -9346,6 +9418,18 @@
     "modern": null,
     "false_friend": null,
     "note": "также 'ребёнок' (hijo/hija)"
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "afortunado": {
     "word": "afortunado",
@@ -11255,6 +11339,18 @@
     "false_friend": null,
     "note": null
   },
+  "voluptuosidad": {
+    "word": "voluptuosidad",
+    "lemma": "voluptuosidad",
+    "pos": "noun",
+    "ipa": "/boluptwosiˈðað/",
+    "ru": "сладострастие, чувственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "queja": {
     "word": "queja",
     "lemma": "queja",
@@ -11398,6 +11494,18 @@
     "modern": null,
     "false_friend": null,
     "note": "También nombre propio de lugar."
+  },
+  "estupendo": {
+    "word": "estupendo",
+    "lemma": "estupendo",
+    "pos": "adj",
+    "ipa": "/estuˈpendo/",
+    "ru": "потрясающий, замечательный, изумительный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не связано с 'stupid'; не путать с estúpido.",
+    "note": null
   },
   "panorama": {
     "word": "panorama",
@@ -12263,6 +12371,18 @@
     "false_friend": null,
     "note": null
   },
+  "puras": {
+    "word": "puras",
+    "lemma": "puro",
+    "pos": "adj",
+    "ipa": "ˈpu.ɾas",
+    "ru": "чистые, беспримесные",
+    "grammar": "adjetivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "matemáticas": {
     "word": "matemáticas",
     "lemma": "matemática",
@@ -12931,6 +13051,18 @@
     "ru": "ловкие, проворные",
     "grammar": "adjetivo plural",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -14363,6 +14495,18 @@
     "false_friend": null,
     "note": null
   },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
+  },
   "lenguas": {
     "word": "lenguas",
     "lemma": "lengua",
@@ -15066,6 +15210,18 @@
     "ipa": "/ˈkampo/",
     "ru": "поле, деревня",
     "grammar": "sustantivo masculino",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
     "cefr": "A1",
     "modern": null,
     "false_friend": null,
@@ -17027,6 +17183,18 @@
     "false_friend": null,
     "note": null
   },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
+  },
   "recio": {
     "word": "recio",
     "lemma": "recio",
@@ -17370,6 +17538,18 @@
     "ipa": "kultiˈβaɾ",
     "ru": "возделывать, выращивать",
     "grammar": "infinitivo",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "merece": {
+    "word": "merece",
+    "lemma": "merecer",
+    "pos": "verb",
+    "ipa": "meˈɾe.θe",
+    "ru": "заслуживает",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
     "cefr": "B1",
     "modern": null,
     "false_friend": null,
@@ -20122,6 +20302,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "valor": {
+    "word": "valor",
+    "lemma": "valor",
+    "pos": "noun",
+    "ipa": "baˈloɾ",
+    "ru": "ценность, стоимость; смелость",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "valor estético = эстетическая ценность."
   },
   "proverbial": {
     "word": "proverbial",

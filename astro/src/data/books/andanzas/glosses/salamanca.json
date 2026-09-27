@@ -299,6 +299,18 @@
     "false_friend": null,
     "note": null
   },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
+  },
   "límites": {
     "word": "límites",
     "lemma": "límite",
@@ -652,7 +664,7 @@
     "lemma": "escribir",
     "pos": "verb",
     "ipa": "esˈkɾiβa",
-    "ru": "пишу, напишу (subjuntivo/imperativo)",
+    "ru": "пишу, напишу (сослагательное наклонение/повелительное наклонение)",
     "grammar": "presente de subjuntivo o imperativo formal (usted)",
     "cefr": "A2",
     "modern": null,
@@ -2939,6 +2951,18 @@
     "false_friend": null,
     "note": null
   },
+  "líneas": {
+    "word": "líneas",
+    "lemma": "línea",
+    "pos": "noun",
+    "ipa": "ˈli.ne.as",
+    "ru": "линии",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "confieso": {
     "word": "confieso",
     "lemma": "confesar",
@@ -3079,6 +3103,18 @@
     "ru": "романы",
     "grammar": "sustantivo femenino plural",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6575,6 +6611,18 @@
     "false_friend": null,
     "note": "en este contexto, 'circular' se usa como sustantivo para referirse al acto de circular"
   },
+  "sería": {
+    "word": "sería",
+    "lemma": "ser",
+    "pos": "verb",
+    "ipa": "/seˈɾia/",
+    "ru": "был бы, была бы, было бы",
+    "grammar": "condicional simple, 1ª/3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": "Не путать с рус. 'серия'.",
+    "note": null
+  },
   "cuadrar": {
     "word": "cuadrar",
     "lemma": "cuadrar",
@@ -6820,7 +6868,7 @@
     "lemma": "romper",
     "pos": "verb",
     "ipa": "/ˈrom.pan/",
-    "ru": "сломают, разобьют (subjuntivo)",
+    "ru": "сломают, разобьют (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "B1",
     "modern": null,
@@ -7487,6 +7535,18 @@
     "false_friend": null,
     "note": null
   },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
+  },
   "poesía": {
     "word": "poesía",
     "lemma": "poesía",
@@ -7955,6 +8015,18 @@
     "false_friend": null,
     "note": "grafía arcaica de 'medieval'"
   },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "elefantinas": {
     "word": "elefantinas",
     "lemma": "elefantino",
@@ -8086,6 +8158,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
   },
   "reza": {
     "word": "reza",
@@ -8896,7 +8980,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -9808,7 +9892,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsean/",
-    "ru": "были бы (subjuntivo)",
+    "ru": "были бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,
@@ -11278,6 +11362,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "egipto": {
+    "word": "egipto",
+    "lemma": "Egipto",
+    "pos": "name",
+    "ipa": "eˈxip.to",
+    "ru": "Египет",
+    "grammar": "nombre propio masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Normalmente con mayúscula: Egipto."
   },
   "realmente": {
     "word": "realmente",

@@ -491,6 +491,18 @@
     "false_friend": null,
     "note": "Историческая область в Испании."
   },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "nieto": {
     "word": "nieto",
     "lemma": "nieto",
@@ -3959,6 +3971,18 @@
     "false_friend": null,
     "note": "Также прилагательное"
   },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
+  },
   "ni": {
     "word": "ni",
     "lemma": "ni",
@@ -5231,6 +5255,18 @@
     "false_friend": null,
     "note": null
   },
+  "líneas": {
+    "word": "líneas",
+    "lemma": "línea",
+    "pos": "noun",
+    "ipa": "ˈli.ne.as",
+    "ru": "линии",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "contornos": {
     "word": "contornos",
     "lemma": "contorno",
@@ -6454,6 +6490,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "suyo": {
+    "word": "suyo",
+    "lemma": "suyo",
+    "pos": "pron",
+    "ipa": "ˈsu.ʝo",
+    "ru": "его, свой, принадлежащий ему",
+    "grammar": "pronombre posesivo, 3ª pers., masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "el suyo = его (вещь); также прилагательное su."
   },
   "aquí": {
     "word": "aquí",

@@ -1595,6 +1595,18 @@
     "false_friend": null,
     "note": null
   },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
+  },
   "ciudades": {
     "word": "ciudades",
     "lemma": "ciudad",
@@ -2471,6 +2483,18 @@
     "false_friend": null,
     "note": null
   },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
+  },
   "allí": {
     "word": "allí",
     "lemma": "allí",
@@ -2735,6 +2759,18 @@
     "false_friend": null,
     "note": null
   },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
+  },
   "dolor": {
     "word": "dolor",
     "lemma": "dolor",
@@ -2863,6 +2899,18 @@
     "ru": "напрямую, непосредственно",
     "grammar": "adverbio",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3454,6 +3502,18 @@
     "modern": null,
     "false_friend": null,
     "note": "'pedir limosna' = просить милостыню."
+  },
+  "voluptuosidad": {
+    "word": "voluptuosidad",
+    "lemma": "voluptuosidad",
+    "pos": "noun",
+    "ipa": "/boluptwosiˈðað/",
+    "ru": "сладострастие, чувственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "queja": {
     "word": "queja",
@@ -5704,7 +5764,7 @@
     "lemma": "aparecer",
     "pos": "verb",
     "ipa": "apaˈɾeθka",
-    "ru": "появляется (subjuntivo)",
+    "ru": "появляется (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "B1",
     "modern": null,
@@ -5959,6 +6019,18 @@
     "ru": "централизация",
     "grammar": "sustantivo femenino, singular",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "enorme": {
+    "word": "enorme",
+    "lemma": "enorme",
+    "pos": "adj",
+    "ipa": "/eˈnoɾme/",
+    "ru": "огромный, громадный",
+    "grammar": "adjetivo singular",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6352,7 +6424,7 @@
     "lemma": "demasiado",
     "pos": "adj",
     "ipa": "/demasiˈaðas/",
-    "ru": "слишком много (fem. pl.)",
+    "ru": "слишком много (жен. мн. ч.)",
     "grammar": "adjetivo, femenino plural",
     "cefr": "A2",
     "modern": null,
@@ -6484,7 +6556,7 @@
     "lemma": "científico",
     "pos": "adj",
     "ipa": "/θjenˈtifikas/",
-    "ru": "научные (fem. pl.)",
+    "ru": "научные (жен. мн. ч.)",
     "grammar": "adjetivo, femenino plural",
     "cefr": "B1",
     "modern": null,
@@ -7043,6 +7115,18 @@
     "false_friend": null,
     "note": null
   },
+  "moral": {
+    "word": "moral",
+    "lemma": "moral",
+    "pos": "noun",
+    "ipa": "moˈɾal",
+    "ru": "мораль; нравственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "También existe como adjetivo: нравственный."
+  },
   "educación": {
     "word": "educación",
     "lemma": "educación",
@@ -7387,6 +7471,18 @@
     "ru": "Кант",
     "grammar": "nombre propio",
     "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "difícil": {
+    "word": "difícil",
+    "lemma": "difícil",
+    "pos": "adj",
+    "ipa": "diˈfi.θil",
+    "ru": "трудный, сложный",
+    "grammar": "adjetivo singular (masculino/femenino)",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8735,6 +8831,18 @@
     "false_friend": null,
     "note": null
   },
+  "defecto": {
+    "word": "defecto",
+    "lemma": "defecto",
+    "pos": "noun",
+    "ipa": "deˈfek.to",
+    "ru": "дефект, недостаток",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "pragmaticismo": {
     "word": "pragmaticismo",
     "lemma": "pragmaticismo",
@@ -9502,6 +9610,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Usado como sustantivo en este contexto."
+  },
+  "jugador": {
+    "word": "jugador",
+    "lemma": "jugador",
+    "pos": "noun",
+    "ipa": "/xuɣaˈðoɾ/",
+    "ru": "игрок; играющий",
+    "grammar": "sustantivo masculino singular; también adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy jugador — 'я игрок'."
   },
   "castigo": {
     "word": "castigo",

@@ -1883,6 +1883,18 @@
     "false_friend": null,
     "note": null
   },
+  "inmóvil": {
+    "word": "inmóvil",
+    "lemma": "inmóvil",
+    "pos": "adj",
+    "ipa": "[inˈmoβil]",
+    "ru": "неподвижный",
+    "grammar": "adjetivo masculino/femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "sosiego": {
     "word": "sosiego",
     "lemma": "sosiego",
@@ -3910,6 +3922,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "veíamos": {
     "word": "veíamos",

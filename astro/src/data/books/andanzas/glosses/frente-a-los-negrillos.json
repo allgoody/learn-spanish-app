@@ -1727,6 +1727,18 @@
     "false_friend": null,
     "note": "устаревшее, литературное"
   },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "cubrirse": {
     "word": "cubrirse",
     "lemma": "cubrir",
@@ -2344,7 +2356,7 @@
     "lemma": "llegar",
     "pos": "verb",
     "ipa": "/ˈʎeɣe/",
-    "ru": "прибудет (subjuntivo)",
+    "ru": "прибудет (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -3856,7 +3868,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -3946,6 +3958,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
   },
   "prójimos": {
     "word": "prójimos",

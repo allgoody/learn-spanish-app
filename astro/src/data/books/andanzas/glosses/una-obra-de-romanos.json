@@ -371,6 +371,18 @@
     "false_friend": null,
     "note": null
   },
+  "valor": {
+    "word": "valor",
+    "lemma": "valor",
+    "pos": "noun",
+    "ipa": "baˈloɾ",
+    "ru": "ценность, стоимость; смелость",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "valor estético = эстетическая ценность."
+  },
   "del": {
     "word": "del",
     "lemma": "de",
@@ -1691,6 +1703,18 @@
     "false_friend": null,
     "note": "participio de jubilar, usado como adjetivo"
   },
+  "función": {
+    "word": "función",
+    "lemma": "función",
+    "pos": "noun",
+    "ipa": "funˈθjon",
+    "ru": "функция, назначение; представление",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "función arquitectónica = архитектурная функция."
+  },
   "lástima": {
     "word": "lástima",
     "lemma": "lástima",
@@ -2555,6 +2579,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificios": {
+    "word": "edificios",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjos",
+    "ru": "здания",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "queja": {
     "word": "queja",
     "lemma": "queja",
@@ -2656,7 +2692,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -3706,6 +3742,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Se usa antes de participios."
+  },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
   },
   "acostó": {
     "word": "acostó",

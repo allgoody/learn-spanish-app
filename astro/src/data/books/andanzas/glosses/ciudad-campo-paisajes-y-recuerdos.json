@@ -7919,6 +7919,54 @@
     "false_friend": null,
     "note": null
   },
+  "voluptuoso": {
+    "word": "voluptuoso",
+    "lemma": "voluptuoso",
+    "pos": "adj",
+    "ipa": "/bolupˈtwoso/",
+    "ru": "сладострастный, чувственный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "imaginativo": {
+    "word": "imaginativo",
+    "lemma": "imaginativo",
+    "pos": "adj",
+    "ipa": "/imaxinaˈtiβo/",
+    "ru": "одарённый воображением, мечтательный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": "Не переводить как 'воображаемый' — это imaginario.",
+    "note": null
+  },
+  "idealizó": {
+    "word": "idealizó",
+    "lemma": "idealizar",
+    "pos": "verb",
+    "ipa": "/iðealiˈθo/",
+    "ru": "идеализировал",
+    "grammar": "pretérito perfecto simple, 3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "voluptuosidad": {
+    "word": "voluptuosidad",
+    "lemma": "voluptuosidad",
+    "pos": "noun",
+    "ipa": "/boluptwosiˈðað/",
+    "ru": "сладострастие, чувственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "dijo": {
     "word": "dijo",
     "lemma": "decir",
@@ -7930,6 +7978,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
   },
   "montón": {
     "word": "montón",
@@ -7943,6 +8003,18 @@
     "false_friend": null,
     "note": "Часто в выражении 'un montón de' — много."
   },
+  "vicios": {
+    "word": "vicios",
+    "lemma": "vicio",
+    "pos": "noun",
+    "ipa": "/ˈbiθjos/",
+    "ru": "пороки, вредные привычки",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "jamás": {
     "word": "jamás",
     "lemma": "jamás",
@@ -7954,6 +8026,30 @@
     "modern": null,
     "false_friend": null,
     "note": "Более emphatic, чем 'nunca'."
+  },
+  "asomado": {
+    "word": "asomado",
+    "lemma": "asomar",
+    "pos": "verb",
+    "ipa": "/asomaˈðo/",
+    "ru": "выглянувший, показавшийся",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo verbal",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "asomado a la ventana — высунувшийся в окно."
+  },
+  "ventana": {
+    "word": "ventana",
+    "lemma": "ventana",
+    "pos": "noun",
+    "ipa": "/benˈtana/",
+    "ru": "окно",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "gusta": {
     "word": "gusta",
@@ -7967,6 +8063,18 @@
     "false_friend": null,
     "note": "Se usa con objeto indirecto: 'me gusta' = мне нравится."
   },
+  "bebo": {
+    "word": "bebo",
+    "lemma": "beber",
+    "pos": "verb",
+    "ipa": "/ˈbeβo/",
+    "ru": "пью",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "soy": {
     "word": "soy",
     "lemma": "ser",
@@ -7978,6 +8086,18 @@
     "modern": null,
     "false_friend": null,
     "note": "неправильный глагол"
+  },
+  "jugador": {
+    "word": "jugador",
+    "lemma": "jugador",
+    "pos": "noun",
+    "ipa": "/xuɣaˈðoɾ/",
+    "ru": "игрок; играющий",
+    "grammar": "sustantivo masculino singular; también adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy jugador — 'я игрок'."
   },
   "nunca": {
     "word": "nunca",
@@ -8003,6 +8123,102 @@
     "false_friend": null,
     "note": "Con 'he tocado' = я тронул."
   },
+  "naipe": {
+    "word": "naipe",
+    "lemma": "naipe",
+    "pos": "noun",
+    "ipa": "/ˈnaipe/",
+    "ru": "игральная карта",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Обычно в сочетании tocar un naipe — брать карту."
+  },
+  "agrada": {
+    "word": "agrada",
+    "lemma": "agradar",
+    "pos": "verb",
+    "ipa": "/aˈɣɾaða/",
+    "ru": "нравится, доставляет удовольствие",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Подлежащее — вещь; человек — косвенное дополнение."
+  },
+  "crápula": {
+    "word": "crápula",
+    "lemma": "crápula",
+    "pos": "noun",
+    "ipa": "/ˈkɾapula/",
+    "ru": "разврат, кутеж, распутство; распутник",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "sería": {
+    "word": "sería",
+    "lemma": "ser",
+    "pos": "verb",
+    "ipa": "/seˈɾia/",
+    "ru": "был бы, была бы, было бы",
+    "grammar": "condicional simple, 1ª/3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": "Не путать с рус. 'серия'.",
+    "note": null
+  },
+  "traducir": {
+    "word": "traducir",
+    "lemma": "traducir",
+    "pos": "verb",
+    "ipa": "/tɾaðuˈθiɾ/",
+    "ru": "переводить",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "débauche": {
+    "word": "débauche",
+    "lemma": "débauche",
+    "pos": "noun",
+    "ipa": "/deˈβoʃ/",
+    "ru": "разврат, кутеж, распутство",
+    "grammar": "galicismo, sustantivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Французское слово; в тексте поясняется как juerga/farra."
+  },
+  "juerga": {
+    "word": "juerga",
+    "lemma": "juerga",
+    "pos": "noun",
+    "ipa": "/ˈxweɾɣa/",
+    "ru": "кутеж, гулянка, пирушка",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "farra": {
+    "word": "farra",
+    "lemma": "farra",
+    "pos": "noun",
+    "ipa": "/ˈfara/",
+    "ru": "кутеж, гулянка, пирушка",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Разговорное; употр. в ряде стран Латинской Америки."
+  },
   "vivo": {
     "word": "vivo",
     "lemma": "vivir",
@@ -8015,6 +8231,30 @@
     "false_friend": null,
     "note": "также прилагательное 'живой'"
   },
+  "monje": {
+    "word": "monje",
+    "lemma": "monje",
+    "pos": "noun",
+    "ipa": "/ˈmoŋxe/",
+    "ru": "монах",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "místico": {
+    "word": "místico",
+    "lemma": "místico",
+    "pos": "adj",
+    "ipa": "/ˈmistiko/",
+    "ru": "мистический; мистик",
+    "grammar": "adjetivo masculino singular; también sustantivo",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Soy místico — 'я мистик по натуре'."
+  },
   "nada": {
     "word": "nada",
     "lemma": "nada",
@@ -8023,6 +8263,18 @@
     "ru": "ничто, ничего",
     "grammar": "pronombre indefinido",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "definía": {
+    "word": "definía",
+    "lemma": "definir",
+    "pos": "verb",
+    "ipa": "/defiˈnia/",
+    "ru": "определял, характеризовал",
+    "grammar": "pretérito imperfecto, 1ª/3ª pers. sing.",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8039,6 +8291,54 @@
     "false_friend": null,
     "note": null
   },
+  "frases": {
+    "word": "frases",
+    "lemma": "frase",
+    "pos": "noun",
+    "ipa": "/ˈfɾases/",
+    "ru": "фразы, предложения, выражения",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estupendo": {
+    "word": "estupendo",
+    "lemma": "estupendo",
+    "pos": "adj",
+    "ipa": "/estuˈpendo/",
+    "ru": "потрясающий, замечательный, изумительный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не связано с 'stupid'; не путать с estúpido.",
+    "note": null
+  },
+  "esteta": {
+    "word": "esteta",
+    "lemma": "esteta",
+    "pos": "noun",
+    "ipa": "/esˈteta/",
+    "ru": "эстет",
+    "grammar": "sustantivo masculino (o común en cuanto al género) singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "llevó": {
+    "word": "llevó",
+    "lemma": "llevar",
+    "pos": "verb",
+    "ipa": "/ʝeˈβo/",
+    "ru": "привёл, довёл; понёс",
+    "grammar": "pretérito perfecto simple, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "llevar a... — довести до..."
+  },
   "último": {
     "word": "último",
     "lemma": "último",
@@ -8047,6 +8347,102 @@
     "ru": "последний",
     "grammar": "adjetivo masculino singular",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "grado": {
+    "word": "grado",
+    "lemma": "grado",
+    "pos": "noun",
+    "ipa": "/ˈɡɾaðo/",
+    "ru": "степень, уровень, градус",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "perfección": {
+    "word": "perfección",
+    "lemma": "perfección",
+    "pos": "noun",
+    "ipa": "/peɾfekˈθjon/",
+    "ru": "совершенство, безупречность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "sugerirnos": {
+    "word": "sugerirnos",
+    "lemma": "sugerir",
+    "pos": "verb",
+    "ipa": "/suxeˈɾirnos/",
+    "ru": "внушать нам, подсказывать нам",
+    "grammar": "infinitivo + pronombre enclítico nos (1ª pers. plural)",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "sensaciones": {
+    "word": "sensaciones",
+    "lemma": "sensación",
+    "pos": "noun",
+    "ipa": "/sensaˈθjones/",
+    "ru": "ощущения, чувства, впечатления",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Не только 'сенсации'; чаще 'ощущения'.",
+    "note": null
+  },
+  "enteramente": {
+    "word": "enteramente",
+    "lemma": "enteramente",
+    "pos": "adv",
+    "ipa": "/enteɾaˈmente/",
+    "ru": "полностью, совершенно, всецело",
+    "grammar": "adverbio",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
+  },
+  "encontrase": {
+    "word": "encontrase",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enkonˈtɾase/",
+    "ru": "находил бы, встречал бы; находился бы",
+    "grammar": "pretérito imperfecto de subjuntivo, 1ª/3ª pers. sing.",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Форма на -se; совр. вариант та же форма encontrase."
+  },
+  "tristes": {
+    "word": "tristes",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/ˈtɾistes/",
+    "ru": "грустные, печальные",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8087,6 +8483,18 @@
     "false_friend": null,
     "note": "Soñar con/en = мечтать о."
   },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "buscaba": {
     "word": "buscaba",
     "lemma": "buscar",
@@ -8095,6 +8503,30 @@
     "ru": "искал(а)",
     "grammar": "verbo, pretérito imperfecto de indicativo, 1ª/3ª pers. sing.",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "violentas": {
+    "word": "violentas",
+    "lemma": "violento",
+    "pos": "adj",
+    "ipa": "/bjoˈlentas/",
+    "ru": "насильственные, бурные, яростные",
+    "grammar": "adjetivo femenino plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8123,6 +8555,30 @@
     "false_friend": null,
     "note": null
   },
+  "salambó": {
+    "word": "salambó",
+    "lemma": "Salambó",
+    "pos": "name",
+    "ipa": "/salamˈbo/",
+    "ru": "Саламбо",
+    "grammar": "nombre propio femenino (título de novela)",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Роман Гюстава Флобера 'Salammbô'."
+  },
+  "comprenderá": {
+    "word": "comprenderá",
+    "lemma": "comprender",
+    "pos": "verb",
+    "ipa": "/kompɾendeˈɾa/",
+    "ru": "поймёт, осознает",
+    "grammar": "futuro simple, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "enamorado": {
     "word": "enamorado",
     "lemma": "enamorado",
@@ -8135,6 +8591,102 @@
     "false_friend": null,
     "note": null
   },
+  "monstruoso": {
+    "word": "monstruoso",
+    "lemma": "monstruoso",
+    "pos": "adj",
+    "ipa": "/monsˈtɾwoso/",
+    "ru": "чудовищный, монструозный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
+  },
+  "enorme": {
+    "word": "enorme",
+    "lemma": "enorme",
+    "pos": "adj",
+    "ipa": "/eˈnoɾme/",
+    "ru": "огромный, громадный",
+    "grammar": "adjetivo singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "elefantes": {
+    "word": "elefantes",
+    "lemma": "elefante",
+    "pos": "noun",
+    "ipa": "/eleˈfantes/",
+    "ru": "слоны",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pagodas": {
+    "word": "pagodas",
+    "lemma": "pagoda",
+    "pos": "noun",
+    "ipa": "/paˈɣoðas/",
+    "ru": "пагоды",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
+  },
+  "evangelio": {
+    "word": "evangelio",
+    "lemma": "evangelio",
+    "pos": "noun",
+    "ipa": "/ebanˈxeljo/",
+    "ru": "Евангелие; евангелие",
+    "grammar": "sustantivo masculino singular; часто с заглавной",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "absorbe": {
+    "word": "absorbe",
+    "lemma": "absorber",
+    "pos": "verb",
+    "ipa": "/abˈsoɾβe/",
+    "ru": "поглощает, впитывает, абсорбирует",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "montaña": {
     "word": "montaña",
     "lemma": "montaña",
@@ -8143,6 +8695,42 @@
     "ru": "гора",
     "grammar": "sustantivo femenino, singular",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "efluvios": {
+    "word": "efluvios",
+    "lemma": "efluvio",
+    "pos": "noun",
+    "ipa": "/eˈfluβjos/",
+    "ru": "испарения, эманации, флюиды",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estéticos": {
+    "word": "estéticos",
+    "lemma": "estético",
+    "pos": "adj",
+    "ipa": "/esˈtetikos/",
+    "ru": "эстетические",
+    "grammar": "adjetivo masculino plural",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "éticos": {
+    "word": "éticos",
+    "lemma": "ético",
+    "pos": "adj",
+    "ipa": "ˈe.ti.kos",
+    "ru": "этические",
+    "grammar": "adjetivo masculino plural",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -8170,6 +8758,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "moral": {
+    "word": "moral",
+    "lemma": "moral",
+    "pos": "noun",
+    "ipa": "moˈɾal",
+    "ru": "мораль; нравственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "También existe como adjetivo: нравственный."
   },
   "piedad": {
     "word": "piedad",
@@ -11740,7 +12340,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsean/",
-    "ru": "были бы (subjuntivo)",
+    "ru": "были бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,

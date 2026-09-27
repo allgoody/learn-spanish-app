@@ -2939,6 +2939,18 @@
     "false_friend": null,
     "note": null
   },
+  "merece": {
+    "word": "merece",
+    "lemma": "merecer",
+    "pos": "verb",
+    "ipa": "meˈɾe.θe",
+    "ru": "заслуживает",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "visitarlo": {
     "word": "visitarlo",
     "lemma": "visitar",
@@ -3450,6 +3462,18 @@
     "ipa": "ˈpuðe",
     "ru": "я мог",
     "grammar": "pretérito perfecto simple, 1ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "traducir": {
+    "word": "traducir",
+    "lemma": "traducir",
+    "pos": "verb",
+    "ipa": "/tɾaðuˈθiɾ/",
+    "ru": "переводить",
+    "grammar": "infinitivo",
     "cefr": "A2",
     "modern": null,
     "false_friend": null,
@@ -5363,6 +5387,18 @@
     "false_friend": null,
     "note": null
   },
+  "modelo": {
+    "word": "modelo",
+    "lemma": "modelo",
+    "pos": "noun",
+    "ipa": "moˈðe.lo",
+    "ru": "модель, образец",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Род: исп. modelo — мужского рода, рус. модель — женского.",
+    "note": null
+  },
   "pura": {
     "word": "pura",
     "lemma": "puro",
@@ -6143,6 +6179,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "mi": {
     "word": "mi",
     "lemma": "mi",
@@ -6634,6 +6682,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "plateresca": {
+    "word": "plateresca",
+    "lemma": "plateresco",
+    "pos": "adj",
+    "ipa": "pla.teˈɾes.ka",
+    "ru": "платерескный (архитектурный стиль)",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Estilo plateresco — испанский ренессансный декор."
   },
   "siga": {
     "word": "siga",
@@ -7559,17 +7619,17 @@
     "false_friend": null,
     "note": null
   },
-  "alcoba": {
-    "word": "alcoba",
-    "lemma": "alcoba",
-    "pos": "noun",
-    "ipa": "alkoβa",
-    "ru": "альков, спальня",
-    "grammar": "sustantivo femenino, singular",
-    "cefr": "B2",
+  "alcobaça": {
+    "word": "alcobaça",
+    "lemma": "Alcobaça",
+    "pos": "name",
+    "ipa": "[ɐɫkuˈβasɐ]",
+    "ru": "Алкобаса",
+    "grammar": null,
+    "cefr": null,
     "modern": null,
     "false_friend": null,
-    "note": "En el contexto aparece como parte del topónimo Alcobaça."
+    "note": "Город в Португалии"
   },
   "entrar": {
     "word": "entrar",
@@ -9215,6 +9275,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificios": {
+    "word": "edificios",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjos",
+    "ru": "здания",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "veces": {
     "word": "veces",
     "lemma": "vez",
@@ -9622,6 +9694,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Puede usarse en sentido figurado como 'guardador de recuerdos'."
+  },
+  "alcance": {
+    "word": "alcance",
+    "lemma": "alcance",
+    "pos": "noun",
+    "ipa": "alˈkan.θe",
+    "ru": "досягаемость, предел, охват; al alcance = доступный",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "al alcance de = в пределах досягаемости."
   },
   "burlas": {
     "word": "burlas",
@@ -10043,6 +10127,18 @@
     "false_friend": null,
     "note": null
   },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "muy": {
     "word": "muy",
     "lemma": "muy",
@@ -10078,6 +10174,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "solo": {
     "word": "solo",

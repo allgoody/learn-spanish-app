@@ -1307,6 +1307,18 @@
     "false_friend": null,
     "note": null
   },
+  "diamante": {
+    "word": "diamante",
+    "lemma": "diamante",
+    "pos": "noun",
+    "ipa": "/djaˈmante/",
+    "ru": "алмаз, бриллиант",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "может быть поэтическим образом: алмаз, бриллиант"
+  },
   "porque": {
     "word": "porque",
     "lemma": "porque",
@@ -3394,6 +3406,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
   },
   "plaza": {
     "word": "plaza",

@@ -3899,6 +3899,18 @@
     "false_friend": null,
     "note": null
   },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
+  },
   "luz": {
     "word": "luz",
     "lemma": "luz",
@@ -4336,7 +4348,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -4445,6 +4457,18 @@
     "pos": "noun",
     "ipa": "/oˈɣaɾ/",
     "ru": "очаг, дом",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
     "grammar": "sustantivo masculino singular",
     "cefr": "A2",
     "modern": null,
@@ -4567,6 +4591,18 @@
     "ru": "охватывает",
     "grammar": "3ª pers. sing. presente de indicativo de abarcar",
     "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6010,6 +6046,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "eça": {
+    "word": "eça",
+    "lemma": "Eça",
+    "pos": "name",
+    "ipa": "[ˈesɐ]",
+    "ru": "Эса",
+    "grammar": null,
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "Португальская фамилия"
   },
   "queiroz": {
     "word": "queiroz",
@@ -7535,6 +7583,18 @@
     "false_friend": null,
     "note": null
   },
+  "probar": {
+    "word": "probar",
+    "lemma": "probar",
+    "pos": "verb",
+    "ipa": "pɾoˈβaɾ",
+    "ru": "пробовать, доказывать; примерять",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "probar que = доказывать, что."
+  },
   "fruta": {
     "word": "fruta",
     "lemma": "fruta",
@@ -9059,6 +9119,18 @@
     "false_friend": null,
     "note": "Grafía antigua de 'has'."
   },
+  "tristes": {
+    "word": "tristes",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/ˈtɾistes/",
+    "ru": "грустные, печальные",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "rosas": {
     "word": "rosas",
     "lemma": "rosa",
@@ -9250,6 +9322,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
   },
   "otras": {
     "word": "otras",
@@ -9598,6 +9682,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
   },
   "surtida": {
     "word": "surtida",
@@ -10060,7 +10156,7 @@
     "lemma": "científico",
     "pos": "adj",
     "ipa": "/θjenˈtifikas/",
-    "ru": "научные (fem. pl.)",
+    "ru": "научные (жен. мн. ч.)",
     "grammar": "adjetivo, femenino plural",
     "cefr": "B1",
     "modern": null,
@@ -10235,17 +10331,17 @@
     "false_friend": null,
     "note": "Редкое слово, производное от 'Coimbra'."
   },
-  "fran": {
-    "word": "fran",
+  "frança": {
+    "word": "frança",
     "lemma": "França",
     "pos": "name",
-    "ipa": "/fɾan/",
-    "ru": "Франса (часть фамилии)",
-    "grammar": "nombre propio",
+    "ipa": "[ˈfɾɐ̃sɐ]",
+    "ru": "Франса",
+    "grammar": null,
     "cefr": null,
     "modern": null,
     "false_friend": null,
-    "note": "Фрагмент имени 'França Amado' (португальская фамилия)."
+    "note": "Португальская фамилия"
   },
   "amado": {
     "word": "amado",
@@ -10535,29 +10631,17 @@
     "false_friend": null,
     "note": null
   },
-  "peregrina": {
-    "word": "peregrina",
-    "lemma": "peregrino",
-    "pos": "adj",
-    "ipa": "/pe.ɾeˈɣɾi.na/",
-    "ru": "паломница, странница; паломнический",
-    "grammar": "adjetivo o sustantivo, femenino singular",
-    "cefr": "B2",
-    "modern": null,
-    "false_friend": null,
-    "note": "В контексте — часть названия 'Peregrinaçam' (португальское 'Peregrinação')."
-  },
-  "am": {
-    "word": "am",
-    "lemma": "am",
-    "pos": "other",
-    "ipa": "/am/",
-    "ru": "—",
+  "peregrinaçam": {
+    "word": "peregrinaçam",
+    "lemma": "peregrinação",
+    "pos": "noun",
+    "ipa": "[peɾeɣɾinaˈsɐ̃w̃]",
+    "ru": "паломничество",
     "grammar": null,
     "cefr": null,
-    "modern": null,
+    "modern": "peregrinación",
     "false_friend": null,
-    "note": "Фрагмент слова (например, 'también', 'cambio', 'Salamanca')."
+    "note": "Arcaica grafía portuguesa de 'peregrinação'"
   },
   "fernán": {
     "word": "fernán",
@@ -10630,6 +10714,18 @@
     "modern": null,
     "false_friend": null,
     "note": "En 'extremo oriente' significa 'lejano'."
+  },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
   },
   "eran": {
     "word": "eran",

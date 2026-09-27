@@ -3364,7 +3364,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -4567,6 +4567,18 @@
     "ru": "ускорение",
     "grammar": "sustantivo femenino, singular",
     "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estar": {
+    "word": "estar",
+    "lemma": "estar",
+    "pos": "verb",
+    "ipa": "/esˈtaɾ/",
+    "ru": "быть, находиться, чувствовать себя",
+    "grammar": "infinitivo",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6059,6 +6071,18 @@
     "false_friend": null,
     "note": null
   },
+  "grado": {
+    "word": "grado",
+    "lemma": "grado",
+    "pos": "noun",
+    "ipa": "/ˈɡɾaðo/",
+    "ru": "степень, уровень, градус",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "oscilación": {
     "word": "oscilación",
     "lemma": "oscilación",
@@ -6575,6 +6599,18 @@
     "false_friend": null,
     "note": null
   },
+  "tristes": {
+    "word": "tristes",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/ˈtɾistes/",
+    "ru": "грустные, печальные",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "desoladas": {
     "word": "desoladas",
     "lemma": "desolado",
@@ -6946,6 +6982,18 @@
     "modern": null,
     "false_friend": null,
     "note": "С ударением, в отличие от 'como' (как, так как)"
+  },
+  "encuentra": {
+    "word": "encuentra",
+    "lemma": "encontrar",
+    "pos": "verb",
+    "ipa": "/enˈkwentɾa/",
+    "ru": "находит, встречает; находится",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Тж. encontrarse — находиться."
   },
   "usted": {
     "word": "usted",
@@ -8003,6 +8051,18 @@
     "false_friend": null,
     "note": null
   },
+  "piensan": {
+    "word": "piensan",
+    "lemma": "pensar",
+    "pos": "verb",
+    "ipa": "ˈpjen.san",
+    "ru": "думают, считают",
+    "grammar": "presente de indicativo, 3ª pers. plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Cambio radical e→ie."
+  },
   "tener": {
     "word": "tener",
     "lemma": "tener",
@@ -8026,6 +8086,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Se usa 'el alma' por razones fonéticas, aunque es femenina."
+  },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
   },
   "mayor": {
     "word": "mayor",
@@ -8746,6 +8818,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
   },
   "conductores": {
     "word": "conductores",
@@ -10060,7 +10144,7 @@
     "lemma": "contestar",
     "pos": "verb",
     "ipa": "konˈteste",
-    "ru": "отвечу, ответить (subjuntivo)",
+    "ru": "отвечу, ответить (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª pers. sing.",
     "cefr": "B1",
     "modern": null,
@@ -10132,7 +10216,7 @@
     "lemma": "escribir",
     "pos": "verb",
     "ipa": "esˈkɾiβa",
-    "ru": "пишу, напишу (subjuntivo/imperativo)",
+    "ru": "пишу, напишу (сослагательное наклонение/повелительное наклонение)",
     "grammar": "presente de subjuntivo o imperativo formal (usted)",
     "cefr": "A2",
     "modern": null,
@@ -10648,7 +10732,7 @@
     "lemma": "juzgar",
     "pos": "verb",
     "ipa": "ˈxuθɣe",
-    "ru": "судить, оценивать (subjuntivo)",
+    "ru": "судить, оценивать (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "B1",
     "modern": null,
@@ -10708,12 +10792,24 @@
     "lemma": "apreciar",
     "pos": "verb",
     "ipa": "apɾeˈθjen",
-    "ru": "ценят, оценивают (subjuntivo)",
+    "ru": "ценят, оценивают (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": "usado después de 'que'"
+  },
+  "valor": {
+    "word": "valor",
+    "lemma": "valor",
+    "pos": "noun",
+    "ipa": "baˈloɾ",
+    "ru": "ценность, стоимость; смелость",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "valor estético = эстетическая ценность."
   },
   "espíritu": {
     "word": "espíritu",
@@ -10876,7 +10972,7 @@
     "lemma": "envanezcer",
     "pos": "verb",
     "ipa": "embaneθˈka",
-    "ru": "возгордиться, стать тщеславным (subjuntivo)",
+    "ru": "возгордиться, стать тщеславным (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "C1",
     "modern": null,
@@ -11092,7 +11188,7 @@
     "lemma": "juzgar",
     "pos": "verb",
     "ipa": "ˈxuθɣen",
-    "ru": "судят, оценивают (subjuntivo)",
+    "ru": "судят, оценивают (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "B1",
     "modern": null,

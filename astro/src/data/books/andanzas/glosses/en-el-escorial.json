@@ -1000,7 +1000,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -1132,7 +1132,7 @@
     "lemma": "llegar",
     "pos": "verb",
     "ipa": "/ˈʎeɣe/",
-    "ru": "прибудет (subjuntivo)",
+    "ru": "прибудет (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -2728,7 +2728,7 @@
     "lemma": "disposición",
     "pos": "noun",
     "ipa": "disposiˈθjon",
-    "ru": "расположение, disposition",
+    "ru": "расположение, готовность",
     "grammar": "sustantivo femenino singular",
     "cefr": "B2",
     "modern": null,
@@ -3407,6 +3407,42 @@
     "false_friend": null,
     "note": "вспомогательный глагол"
   },
+  "calumniado": {
+    "word": "calumniado",
+    "lemma": "calumniar",
+    "pos": "verb",
+    "ipa": "ka.lumˈnja.ðo",
+    "ru": "оклеветанный",
+    "grammar": "participio pasado, masculino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "De calumniar; usado como adjetivo/participio."
+  },
+  "modelo": {
+    "word": "modelo",
+    "lemma": "modelo",
+    "pos": "noun",
+    "ipa": "moˈðe.lo",
+    "ru": "модель, образец",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Род: исп. modelo — мужского рода, рус. модель — женского.",
+    "note": null
+  },
+  "juicio": {
+    "word": "juicio",
+    "lemma": "juicio",
+    "pos": "noun",
+    "ipa": "ˈxwi.θjo",
+    "ru": "суждение, мнение; суд",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "En juicio estético = эстетическое суждение."
+  },
   "quiere": {
     "word": "quiere",
     "lemma": "querer",
@@ -3443,6 +3479,18 @@
     "false_friend": null,
     "note": null
   },
+  "político": {
+    "word": "político",
+    "lemma": "político",
+    "pos": "adj",
+    "ipa": "poˈli.ti.ko",
+    "ru": "политический; политик",
+    "grammar": "adjetivo masculino singular; también sustantivo",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "En plural políticos: политические/политики."
+  },
   "dicho": {
     "word": "dicho",
     "lemma": "dicho",
@@ -3467,6 +3515,18 @@
     "false_friend": null,
     "note": null
   },
+  "difícil": {
+    "word": "difícil",
+    "lemma": "difícil",
+    "pos": "adj",
+    "ipa": "diˈfi.θil",
+    "ru": "трудный, сложный",
+    "grammar": "adjetivo singular (masculino/femenino)",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "gustar": {
     "word": "gustar",
     "lemma": "gustar",
@@ -3478,6 +3538,30 @@
     "modern": null,
     "false_friend": null,
     "note": "En el contexto 'gustar distintas cocinas' significa 'пробовать' (probar)."
+  },
+  "escultórico": {
+    "word": "escultórico",
+    "lemma": "escultórico",
+    "pos": "adj",
+    "ipa": "es.kulˈto.ɾi.ko",
+    "ru": "скульптурный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pictórico": {
+    "word": "pictórico",
+    "lemma": "pictórico",
+    "pos": "adj",
+    "ipa": "pikˈto.ɾi.ko",
+    "ru": "живописный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Relacionado con la pintura."
   },
   "suelen": {
     "word": "suelen",
@@ -3526,6 +3610,18 @@
     "modern": null,
     "false_friend": null,
     "note": "En 'por mucho que' significa 'как бы ни'."
+  },
+  "alcance": {
+    "word": "alcance",
+    "lemma": "alcance",
+    "pos": "noun",
+    "ipa": "alˈkan.θe",
+    "ru": "досягаемость, предел, охват; al alcance = доступный",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "al alcance de = в пределах досягаемости."
   },
   "éste": {
     "word": "éste",
@@ -3599,6 +3695,42 @@
     "false_friend": null,
     "note": null
   },
+  "veo": {
+    "word": "veo",
+    "lemma": "ver",
+    "pos": "verb",
+    "ipa": "ˈbe.o",
+    "ru": "вижу",
+    "grammar": "presente de indicativo, 1ª pers. sing.",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "adorno": {
+    "word": "adorno",
+    "lemma": "adorno",
+    "pos": "noun",
+    "ipa": "aˈðoɾ.no",
+    "ru": "украшение, орнамент",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "cuya": {
     "word": "cuya",
     "lemma": "cuyo",
@@ -3607,6 +3739,30 @@
     "ru": "чья",
     "grammar": "pronombre relativo, femenino, singular",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "función": {
+    "word": "función",
+    "lemma": "función",
+    "pos": "noun",
+    "ipa": "funˈθjon",
+    "ru": "функция, назначение; представление",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "función arquitectónica = архитектурная функция."
+  },
+  "arquitectónica": {
+    "word": "arquitectónica",
+    "lemma": "arquitectónico",
+    "pos": "adj",
+    "ipa": "aɾ.ki.tekˈto.ni.ka",
+    "ru": "архитектурная",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3623,6 +3779,18 @@
     "false_friend": null,
     "note": null
   },
+  "antoja": {
+    "word": "antoja",
+    "lemma": "antojar",
+    "pos": "verb",
+    "ipa": "anˈto.xa",
+    "ru": "кажется, представляется; вздумается",
+    "grammar": "presente de indicativo, 3ª pers. sing.; normalmente en antojarse",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "se me antoja = мне кажется; antojo = прихоть."
+  },
   "allí": {
     "word": "allí",
     "lemma": "allí",
@@ -3631,6 +3799,54 @@
     "ru": "там",
     "grammar": "adverbio de lugar",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "tapar": {
+    "word": "tapar",
+    "lemma": "tapar",
+    "pos": "verb",
+    "ipa": "taˈpaɾ",
+    "ru": "закрывать, прикрывать, заделывать",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "grieta": {
+    "word": "grieta",
+    "lemma": "grieta",
+    "pos": "noun",
+    "ipa": "ˈɡɾje.ta",
+    "ru": "трещина",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "No confundir con grito (крик)."
+  },
+  "defecto": {
+    "word": "defecto",
+    "lemma": "defecto",
+    "pos": "noun",
+    "ipa": "deˈfek.to",
+    "ru": "дефект, недостаток",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "construcción": {
+    "word": "construcción",
+    "lemma": "construcción",
+    "pos": "noun",
+    "ipa": "kons.tɾukˈθjon",
+    "ru": "строительство, конструкция",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3659,6 +3875,18 @@
     "false_friend": null,
     "note": null
   },
+  "plateresca": {
+    "word": "plateresca",
+    "lemma": "plateresco",
+    "pos": "adj",
+    "ipa": "pla.teˈɾes.ka",
+    "ru": "платерескный (архитектурный стиль)",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Estilo plateresco — испанский ренессансный декор."
+  },
   "gran": {
     "word": "gran",
     "lemma": "grande",
@@ -3682,6 +3910,18 @@
     "modern": null,
     "false_friend": null,
     "note": "в 'a medida que' = по мере того как"
+  },
+  "churrigueresca": {
+    "word": "churrigueresca",
+    "lemma": "churrigueresco",
+    "pos": "adj",
+    "ipa": "tʃu.ri.ɣeˈɾes.ka",
+    "ru": "чурригерескный (пышный барочный стиль)",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "C1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Por el arquitecto Churriguera; estilo barroco recargado."
   },
   "salamanca": {
     "word": "salamanca",
@@ -3719,6 +3959,30 @@
     "false_friend": null,
     "note": "Согласуется в роде и числе с обладаемым предметом."
   },
+  "edificios": {
+    "word": "edificios",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjos",
+    "ru": "здания",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pecan": {
+    "word": "pecan",
+    "lemma": "pecar",
+    "pos": "verb",
+    "ipa": "ˈpe.kan",
+    "ru": "грешат; имеют недостаток",
+    "grammar": "presente de indicativo, 3ª pers. plural",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "pecar de = страдать чем-л.; pecar por = грешить чем-л."
+  },
   "ciertamente": {
     "word": "ciertamente",
     "lemma": "ciertamente",
@@ -3727,6 +3991,30 @@
     "ru": "конечно, несомненно",
     "grammar": "adverbio",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "severidad": {
+    "word": "severidad",
+    "lemma": "severidad",
+    "pos": "noun",
+    "ipa": "se.βe.ɾiˈðad",
+    "ru": "строгость, суровость",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "recargados": {
+    "word": "recargados",
+    "lemma": "recargar",
+    "pos": "verb",
+    "ipa": "re.kaɾˈɣa.ðos",
+    "ru": "перегруженные, изобилующие (декором)",
+    "grammar": "participio pasado, masculino plural; usado como adjetivo",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3754,6 +4042,54 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "descansaba": {
+    "word": "descansaba",
+    "lemma": "descansar",
+    "pos": "verb",
+    "ipa": "des.kanˈsa.βa",
+    "ru": "отдыхал(а); здесь: останавливался (о взгляде)",
+    "grammar": "pretérito imperfecto, 1ª/3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "mi vista descansaba en = взгляд отдыхал на."
+  },
+  "líneas": {
+    "word": "líneas",
+    "lemma": "línea",
+    "pos": "noun",
+    "ipa": "ˈli.ne.as",
+    "ru": "линии",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "puras": {
+    "word": "puras",
+    "lemma": "puro",
+    "pos": "adj",
+    "ipa": "ˈpu.ɾas",
+    "ru": "чистые, беспримесные",
+    "grammar": "adjetivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "severísimas": {
+    "word": "severísimas",
+    "lemma": "severo",
+    "pos": "adj",
+    "ipa": "se.βeˈɾi.si.mas",
+    "ru": "строжайшие, суровейшие",
+    "grammar": "adjetivo femenino plural, superlativo de severo",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Superlativo absoluto: -ísimas."
   },
   "aquella": {
     "word": "aquella",
@@ -3791,6 +4127,18 @@
     "false_friend": null,
     "note": "También 'тесто'."
   },
+  "proporción": {
+    "word": "proporción",
+    "lemma": "proporción",
+    "pos": "noun",
+    "ipa": "pɾo.poɾˈθjon",
+    "ru": "пропорция, соразмерность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "grandeza": {
     "word": "grandeza",
     "lemma": "grandeza",
@@ -3802,6 +4150,18 @@
     "modern": null,
     "false_friend": "Ложный друг: исп. 'grandeza' = 'величие', а не 'грандиозность' (грандиозность = 'grandiosidad')",
     "note": null
+  },
+  "afanosidad": {
+    "word": "afanosidad",
+    "lemma": "afanosidad",
+    "pos": "noun",
+    "ipa": "a.fa.no.siˈðad",
+    "ru": "суетливость, напряжённость, усердие",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "C2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Редкое; синонимы afán, ansiedad."
   },
   "cree": {
     "word": "cree",
@@ -3851,6 +4211,54 @@
     "false_friend": null,
     "note": null
   },
+  "preguntarle": {
+    "word": "preguntarle",
+    "lemma": "preguntar",
+    "pos": "verb",
+    "ipa": "pɾe.ɣunˈtaɾ.le",
+    "ru": "спросить ему/у него",
+    "grammar": "infinitivo + pronombre dativo le",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "preguntarle a alguien = спросить кого-л."
+  },
+  "suyo": {
+    "word": "suyo",
+    "lemma": "suyo",
+    "pos": "pron",
+    "ipa": "ˈsu.ʝo",
+    "ru": "его, свой, принадлежащий ему",
+    "grammar": "pronombre posesivo, 3ª pers., masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "el suyo = его (вещь); также прилагательное su."
+  },
+  "superfluo": {
+    "word": "superfluo",
+    "lemma": "superfluo",
+    "pos": "adj",
+    "ipa": "suˈpeɾ.flwo",
+    "ru": "излишний, ненужный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "variable": {
+    "word": "variable",
+    "lemma": "variable",
+    "pos": "adj",
+    "ipa": "baˈɾja.βle",
+    "ru": "переменный, изменчивый",
+    "grammar": "adjetivo singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "aquí": {
     "word": "aquí",
     "lemma": "aquí",
@@ -3862,6 +4270,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
   },
   "tanto": {
     "word": "tanto",
@@ -3923,6 +4343,42 @@
     "false_friend": null,
     "note": null
   },
+  "piensan": {
+    "word": "piensan",
+    "lemma": "pensar",
+    "pos": "verb",
+    "ipa": "ˈpjen.san",
+    "ru": "думают, считают",
+    "grammar": "presente de indicativo, 3ª pers. plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Cambio radical e→ie."
+  },
+  "merece": {
+    "word": "merece",
+    "lemma": "merecer",
+    "pos": "verb",
+    "ipa": "meˈɾe.θe",
+    "ru": "заслуживает",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "párrafo": {
+    "word": "párrafo",
+    "lemma": "párrafo",
+    "pos": "noun",
+    "ipa": "ˈpa.ra.fo",
+    "ru": "абзац, параграф",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": "Рус. параграф чаще раздел; исп. párrafo — абзац.",
+    "note": null
+  },
   "eso": {
     "word": "eso",
     "lemma": "eso",
@@ -3959,6 +4415,42 @@
     "false_friend": null,
     "note": "Ударение на втором слоге; множественное число: 'caracteres'."
   },
+  "carece": {
+    "word": "carece",
+    "lemma": "carecer",
+    "pos": "verb",
+    "ipa": "kaˈɾe.θe",
+    "ru": "лишён, не имеет",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "carecer de = не иметь чего-л."
+  },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
+  },
+  "valor": {
+    "word": "valor",
+    "lemma": "valor",
+    "pos": "noun",
+    "ipa": "baˈloɾ",
+    "ru": "ценность, стоимость; смелость",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "valor estético = эстетическая ценность."
+  },
   "falta": {
     "word": "falta",
     "lemma": "falta",
@@ -3971,6 +4463,30 @@
     "false_friend": null,
     "note": "в выражении 'hacer falta' — 'быть необходимым'"
   },
+  "probar": {
+    "word": "probar",
+    "lemma": "probar",
+    "pos": "verb",
+    "ipa": "pɾoˈβaɾ",
+    "ru": "пробовать, доказывать; примерять",
+    "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "probar que = доказывать, что."
+  },
+  "árido": {
+    "word": "árido",
+    "lemma": "árido",
+    "pos": "adj",
+    "ipa": "ˈa.ɾi.ðo",
+    "ru": "засушливый, бесплодный, сухой",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "puedan": {
     "word": "puedan",
     "lemma": "poder",
@@ -3979,6 +4495,30 @@
     "ru": "могут (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. plural",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "hermosísimos": {
+    "word": "hermosísimos",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "eɾ.moˈsi.si.mos",
+    "ru": "прекраснейшие, красивейшие",
+    "grammar": "adjetivo masculino plural, superlativo de hermoso",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Superlativo absoluto."
+  },
+  "áridas": {
+    "word": "áridas",
+    "lemma": "árido",
+    "pos": "adj",
+    "ipa": "ˈa.ɾi.ðas",
+    "ru": "засушливые, бесплодные",
+    "grammar": "adjetivo femenino plural",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -3994,6 +4534,42 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "pirámides": {
+    "word": "pirámides",
+    "lemma": "pirámide",
+    "pos": "noun",
+    "ipa": "piˈɾa.mi.ðes",
+    "ru": "пирамиды",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "egipto": {
+    "word": "egipto",
+    "lemma": "Egipto",
+    "pos": "name",
+    "ipa": "eˈxip.to",
+    "ru": "Египет",
+    "grammar": "nombre propio masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Normalmente con mayúscula: Egipto."
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "yo": {
     "word": "yo",
@@ -4018,6 +4594,18 @@
     "modern": null,
     "false_friend": null,
     "note": "con tilde para distinguir de 'se' pronombre"
+  },
+  "negarse": {
+    "word": "negarse",
+    "lemma": "negar",
+    "pos": "verb",
+    "ipa": "[neˈɣaɾse]",
+    "ru": "отказываться, отрицать",
+    "grammar": "infinitivo reflexivo",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "inmensa": {
     "word": "inmensa",
@@ -4074,6 +4662,18 @@
     "ipa": "ˈmoðo",
     "ru": "способ, образ",
     "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
     "cefr": "A2",
     "modern": null,
     "false_friend": null,
@@ -4171,6 +4771,18 @@
     "ru": "засушливый, сухой",
     "grammar": "adjetivo, plural, masculino",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "tristes": {
+    "word": "tristes",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/ˈtɾistes/",
+    "ru": "грустные, печальные",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -5783,29 +6395,17 @@
     "false_friend": null,
     "note": null
   },
-  "bailli": {
-    "word": "bailli",
+  "baillière": {
+    "word": "baillière",
     "lemma": "Baillière",
     "pos": "name",
-    "ipa": "/baiˈʎi/",
-    "ru": "Байи",
-    "grammar": "apellido (fragmento)",
+    "ipa": "[bajˈjɛʁ]",
+    "ru": "Байер",
+    "grammar": null,
     "cefr": null,
     "modern": null,
     "false_friend": null,
-    "note": "parte del apellido Baillière"
-  },
-  "re": {
-    "word": "re",
-    "lemma": "re",
-    "pos": "noun",
-    "ipa": "/re/",
-    "ru": "ре (нота)",
-    "grammar": "sustantivo masculino, singular",
-    "cefr": null,
-    "modern": null,
-    "false_friend": null,
-    "note": "en el texto aparece como fragmento de 'Real'"
+    "note": "Французская фамилия"
   },
   "continuación": {
     "word": "continuación",
@@ -6160,7 +6760,7 @@
     "lemma": "ir",
     "pos": "verb",
     "ipa": "ˈbaʝa",
-    "ru": "иду, идёт (subjuntivo)",
+    "ru": "иду, идёт (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A1",
     "modern": null,
@@ -6971,6 +7571,18 @@
     "false_friend": null,
     "note": "ortografía antigua"
   },
+  "monje": {
+    "word": "monje",
+    "lemma": "monje",
+    "pos": "noun",
+    "ipa": "/ˈmoŋxe/",
+    "ru": "монах",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "gustaba": {
     "word": "gustaba",
     "lemma": "gustar",
@@ -7738,6 +8350,18 @@
     "modern": null,
     "false_friend": null,
     "note": "En 'extremo oriente' significa 'lejano'."
+  },
+  "oriente": {
+    "word": "oriente",
+    "lemma": "oriente",
+    "pos": "noun",
+    "ipa": "/oˈɾjente/",
+    "ru": "восток, Восток",
+    "grammar": "sustantivo masculino singular (a menudo con mayúscula)",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "Oriente — Восток; oriente — восток."
   },
   "afluían": {
     "word": "afluían",
@@ -8723,17 +9347,17 @@
     "false_friend": null,
     "note": null
   },
-  "fuer": {
-    "word": "fuer",
+  "fuerça": {
+    "word": "fuerça",
     "lemma": "fuerza",
     "pos": "noun",
-    "ipa": "/ˈfweɾ.θa/",
+    "ipa": "[ˈfweɾθa]",
     "ru": "сила",
-    "grammar": "sustantivo femenino, singular (forma incompleta)",
-    "cefr": "B1",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B2",
     "modern": "fuerza",
     "false_friend": null,
-    "note": "En el texto aparece como 'fuerza'."
+    "note": "Arcaica grafía de 'fuerza'"
   },
   "bóbeda": {
     "word": "bóbeda",
@@ -9023,29 +9647,17 @@
     "false_friend": null,
     "note": null
   },
-  "pie": {
-    "word": "pie",
-    "lemma": "pie",
+  "pieças": {
+    "word": "pieças",
+    "lemma": "pieza",
     "pos": "noun",
-    "ipa": "/pje/",
-    "ru": "нога (ступня), подножие",
-    "grammar": "sustantivo masculino, singular",
-    "cefr": "A1",
-    "modern": null,
+    "ipa": "[ˈpjeθas]",
+    "ru": "части, куски; комнаты",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "B1",
+    "modern": "piezas",
     "false_friend": null,
-    "note": "В выражении 'al pie de' — у подножия."
-  },
-  "as": {
-    "word": "as",
-    "lemma": "haber",
-    "pos": "verb",
-    "ipa": "/as/",
-    "ru": "ты имеешь",
-    "grammar": "presente de indicativo, 2ª pers. sing., forma antigua de 'has'",
-    "cefr": null,
-    "modern": "has",
-    "false_friend": null,
-    "note": "Grafía antigua de 'has'."
+    "note": "Arcaica grafía de 'piezas'"
   },
   "desenfado": {
     "word": "desenfado",

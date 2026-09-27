@@ -1271,6 +1271,18 @@
     "false_friend": null,
     "note": null
   },
+  "líneas": {
+    "word": "líneas",
+    "lemma": "línea",
+    "pos": "noun",
+    "ipa": "ˈli.ne.as",
+    "ru": "линии",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "estos": {
     "word": "estos",
     "lemma": "este",
@@ -1883,6 +1895,18 @@
     "false_friend": null,
     "note": null
   },
+  "bóveda": {
+    "word": "bóveda",
+    "lemma": "bóveda",
+    "pos": "noun",
+    "ipa": "[ˈboβeða]",
+    "ru": "свод",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "corriendo": {
     "word": "corriendo",
     "lemma": "correr",
@@ -2267,6 +2291,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificios": {
+    "word": "edificios",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjos",
+    "ru": "здания",
+    "grammar": "sustantivo masculino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "inmensa": {
     "word": "inmensa",
     "lemma": "inmenso",
@@ -2287,6 +2323,18 @@
     "ru": "фраза",
     "grammar": "singular, femenino",
     "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "arquitectónica": {
+    "word": "arquitectónica",
+    "lemma": "arquitectónico",
+    "pos": "adj",
+    "ipa": "aɾ.ki.tekˈto.ni.ka",
+    "ru": "архитектурная",
+    "grammar": "adjetivo femenino singular",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -2567,6 +2615,18 @@
     "false_friend": null,
     "note": "Palabra italiana, parte del título 'La vita è un Sogno'."
   },
+  "è": {
+    "word": "è",
+    "lemma": "essere",
+    "pos": "verb",
+    "ipa": "/ɛ/",
+    "ru": "есть, является (итал.)",
+    "grammar": "italiano, 3ª pers. sing. presente de indicativo de essere",
+    "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": "итальянская форма; исп. es"
+  },
   "sogno": {
     "word": "sogno",
     "lemma": "sogno",
@@ -2783,6 +2843,18 @@
     "false_friend": null,
     "note": null
   },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "economía": {
     "word": "economía",
     "lemma": "economía",
@@ -2831,6 +2903,18 @@
     "false_friend": null,
     "note": "En 'esfuerzo bruto' significa 'bruto, sin refinar'."
   },
+  "llevó": {
+    "word": "llevó",
+    "lemma": "llevar",
+    "pos": "verb",
+    "ipa": "/ʝeˈβo/",
+    "ru": "привёл, довёл; понёс",
+    "grammar": "pretérito perfecto simple, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "llevar a... — довести до..."
+  },
   "colmo": {
     "word": "colmo",
     "lemma": "colmo",
@@ -2855,6 +2939,18 @@
     "false_friend": null,
     "note": null
   },
+  "pirámides": {
+    "word": "pirámides",
+    "lemma": "pirámide",
+    "pos": "noun",
+    "ipa": "piˈɾa.mi.ðes",
+    "ru": "пирамиды",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "inmensas": {
     "word": "inmensas",
     "lemma": "inmenso",
@@ -2863,6 +2959,18 @@
     "ru": "огромные",
     "grammar": "adjetivo, femenino, plural",
     "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "frases": {
+    "word": "frases",
+    "lemma": "frase",
+    "pos": "noun",
+    "ipa": "/ˈfɾases/",
+    "ru": "фразы, предложения, выражения",
+    "grammar": "sustantivo femenino plural",
+    "cefr": "A2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -2890,6 +2998,18 @@
     "modern": null,
     "false_friend": "En ruso 'арена' significa 'escenario, circo'; en español 'arena' es 'песок'.",
     "note": null
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "período": {
     "word": "período",
@@ -3478,6 +3598,18 @@
     "modern": null,
     "false_friend": null,
     "note": "также может означать 'приказ'"
+  },
+  "proporción": {
+    "word": "proporción",
+    "lemma": "proporción",
+    "pos": "noun",
+    "ipa": "pɾo.poɾˈθjon",
+    "ru": "пропорция, соразмерность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "qué": {
     "word": "qué",
@@ -4643,6 +4775,18 @@
     "false_friend": null,
     "note": "Usado como auxiliar."
   },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
+  },
   "contemplaba": {
     "word": "contemplaba",
     "lemma": "contemplar",
@@ -5039,6 +5183,18 @@
     "false_friend": null,
     "note": null
   },
+  "diamante": {
+    "word": "diamante",
+    "lemma": "diamante",
+    "pos": "noun",
+    "ipa": "/djaˈmante/",
+    "ru": "алмаз, бриллиант",
+    "grammar": "sustantivo masculino, singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "может быть поэтическим образом: алмаз, бриллиант"
+  },
   "nada": {
     "word": "nada",
     "lemma": "nada",
@@ -5056,7 +5212,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,

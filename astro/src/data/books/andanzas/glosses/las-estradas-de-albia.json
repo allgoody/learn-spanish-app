@@ -4295,6 +4295,18 @@
     "false_friend": null,
     "note": null
   },
+  "inmóvil": {
+    "word": "inmóvil",
+    "lemma": "inmóvil",
+    "pos": "adj",
+    "ipa": "[inˈmoβil]",
+    "ru": "неподвижный",
+    "grammar": "adjetivo masculino/femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "idea": {
     "word": "idea",
     "lemma": "idea",
@@ -4396,7 +4408,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,

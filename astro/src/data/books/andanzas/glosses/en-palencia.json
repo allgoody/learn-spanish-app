@@ -527,6 +527,18 @@
     "false_friend": null,
     "note": "Uso literario."
   },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "alguno": {
     "word": "alguno",
     "lemma": "alguno",
@@ -1294,6 +1306,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
   },
   "siglos": {
     "word": "siglos",
@@ -2662,6 +2686,18 @@
     "modern": null,
     "false_friend": null,
     "note": "также 'выгодный' в переносном смысле"
+  },
+  "fuertes": {
+    "word": "fuertes",
+    "lemma": "fuerte",
+    "pos": "adj",
+    "ipa": "/ˈfweɾtes/",
+    "ru": "сильные, крепкие, громкие",
+    "grammar": "adjetivo plural",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "cantos": {
     "word": "cantos",
@@ -4390,6 +4426,18 @@
     "modern": null,
     "false_friend": null,
     "note": "En 'en pelo' = con la cabeza descubierta, sin sombrero."
+  },
+  "natural": {
+    "word": "natural",
+    "lemma": "natural",
+    "pos": "adj",
+    "ipa": "/natuˈɾal/",
+    "ru": "естественный, природный; натуральный",
+    "grammar": "adjetivo singular (m/f)",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "enteramente natural que... — вполне естественно, что..."
   },
   "grumos": {
     "word": "grumos",

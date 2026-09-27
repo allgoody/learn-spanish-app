@@ -503,6 +503,18 @@
     "false_friend": null,
     "note": null
   },
+  "compañera": {
+    "word": "compañera",
+    "lemma": "compañero",
+    "pos": "noun",
+    "ipa": "[kompaˈɲeɾa]",
+    "ru": "спутница, подруга",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "del": {
     "word": "del",
     "lemma": "de",

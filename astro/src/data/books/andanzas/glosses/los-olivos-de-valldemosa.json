@@ -2699,6 +2699,18 @@
     "false_friend": null,
     "note": "en 'sombrero de copa' = цилиндр"
   },
+  "enorme": {
+    "word": "enorme",
+    "lemma": "enorme",
+    "pos": "adj",
+    "ipa": "/eˈnoɾme/",
+    "ru": "огромный, громадный",
+    "grammar": "adjetivo singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "cornamenta": {
     "word": "cornamenta",
     "lemma": "cornamenta",
@@ -3346,6 +3358,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "valor": {
+    "word": "valor",
+    "lemma": "valor",
+    "pos": "noun",
+    "ipa": "baˈloɾ",
+    "ru": "ценность, стоимость; смелость",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "valor estético = эстетическая ценность."
   },
   "entiende": {
     "word": "entiende",
@@ -5104,7 +5128,7 @@
     "lemma": "lanzar",
     "pos": "verb",
     "ipa": "/lanˈθaβan/",
-    "ru": "бросали, издавали (gritos)",
+    "ru": "бросали, издавали (крики)",
     "grammar": "pretérito imperfecto de indicativo, 3ª pers. plural",
     "cefr": "A2",
     "modern": null,
@@ -7098,6 +7122,18 @@
     "ipa": "ˈbasta",
     "ru": "обширный, огромный",
     "grammar": "adjetivo femenino, singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "estalagmita": {
+    "word": "estalagmita",
+    "lemma": "estalagmita",
+    "pos": "noun",
+    "ipa": "[estalaɣˈmita]",
+    "ru": "сталагмит",
+    "grammar": "sustantivo femenino singular",
     "cefr": "B2",
     "modern": null,
     "false_friend": null,

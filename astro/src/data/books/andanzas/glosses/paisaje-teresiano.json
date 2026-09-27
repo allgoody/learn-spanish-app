@@ -539,6 +539,18 @@
     "false_friend": null,
     "note": "также предлог 'для'"
   },
+  "edificio": {
+    "word": "edificio",
+    "lemma": "edificio",
+    "pos": "noun",
+    "ipa": "e.ðiˈfi.θjo",
+    "ru": "здание",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "su": {
     "word": "su",
     "lemma": "su",
@@ -1288,7 +1300,7 @@
     "lemma": "inspirar",
     "pos": "verb",
     "ipa": "insˈpiɾe",
-    "ru": "вдохновляет (subjuntivo)",
+    "ru": "вдохновляет (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 3ª pers. singular",
     "cefr": "B1",
     "modern": null,
@@ -2644,7 +2656,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -2694,6 +2706,18 @@
     "ipa": "/suˈβiɾ/",
     "ru": "подниматься",
     "grammar": "infinitivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "pasearse": {
+    "word": "pasearse",
+    "lemma": "pasear",
+    "pos": "verb",
+    "ipa": "[paseˈaɾse]",
+    "ru": "прогуливаться",
+    "grammar": "infinitivo reflexivo",
     "cefr": "A2",
     "modern": null,
     "false_friend": null,
@@ -2890,6 +2914,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Часто употребляется с артиклем: el cual, la cual."
+  },
+  "enorme": {
+    "word": "enorme",
+    "lemma": "enorme",
+    "pos": "adj",
+    "ipa": "/eˈnoɾme/",
+    "ru": "огромный, громадный",
+    "grammar": "adjetivo singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
   },
   "tortuga": {
     "word": "tortuga",
@@ -4403,6 +4439,18 @@
     "false_friend": null,
     "note": null
   },
+  "llevó": {
+    "word": "llevó",
+    "lemma": "llevar",
+    "pos": "verb",
+    "ipa": "/ʝeˈβo/",
+    "ru": "привёл, довёл; понёс",
+    "grammar": "pretérito perfecto simple, 3ª pers. sing.",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "llevar a... — довести до..."
+  },
   "primo": {
     "word": "primo",
     "lemma": "primo",
@@ -5303,6 +5351,18 @@
     "false_friend": null,
     "note": null
   },
+  "desierto": {
+    "word": "desierto",
+    "lemma": "desierto",
+    "pos": "noun",
+    "ipa": "deˈsjeɾ.to",
+    "ru": "пустыня",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": "Не путать с рус. десерт (исп. postre).",
+    "note": "desierto = пустыня; postre = десерт."
+  },
   "algo": {
     "word": "algo",
     "lemma": "algo",
@@ -5731,6 +5791,18 @@
     "ru": "Хосе",
     "grammar": "nombre propio",
     "cefr": null,
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "evangelio": {
+    "word": "evangelio",
+    "lemma": "evangelio",
+    "pos": "noun",
+    "ipa": "/ebanˈxeljo/",
+    "ru": "Евангелие; евангелие",
+    "grammar": "sustantivo masculino singular; часто с заглавной",
+    "cefr": "B2",
     "modern": null,
     "false_friend": null,
     "note": null
@@ -6431,6 +6503,18 @@
     "false_friend": null,
     "note": null
   },
+  "modelo": {
+    "word": "modelo",
+    "lemma": "modelo",
+    "pos": "noun",
+    "ipa": "moˈðe.lo",
+    "ru": "модель, образец",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": "Род: исп. modelo — мужского рода, рус. модель — женского.",
+    "note": null
+  },
   "papel": {
     "word": "papel",
     "lemma": "papel",
@@ -6586,6 +6670,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
   },
   "sabía": {
     "word": "sabía",
@@ -7306,6 +7402,18 @@
     "modern": null,
     "false_friend": null,
     "note": null
+  },
+  "moral": {
+    "word": "moral",
+    "lemma": "moral",
+    "pos": "noun",
+    "ipa": "moˈɾal",
+    "ru": "мораль; нравственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "También existe como adjetivo: нравственный."
   },
   "religiosa": {
     "word": "religiosa",

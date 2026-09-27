@@ -167,6 +167,18 @@
     "false_friend": null,
     "note": null
   },
+  "conocer": {
+    "word": "conocer",
+    "lemma": "conocer",
+    "pos": "verb",
+    "ipa": "ko.noˈθeɾ",
+    "ru": "знать, быть знакомым; познакомиться",
+    "grammar": "infinitivo",
+    "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": "conocer — быть знакомым; saber — знать факт."
+  },
   "el": {
     "word": "el",
     "lemma": "el",
@@ -1271,6 +1283,18 @@
     "false_friend": null,
     "note": null
   },
+  "pictórico": {
+    "word": "pictórico",
+    "lemma": "pictórico",
+    "pos": "adj",
+    "ipa": "pikˈto.ɾi.ko",
+    "ru": "живописный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "Relacionado con la pintura."
+  },
   "montes": {
     "word": "montes",
     "lemma": "monte",
@@ -2303,6 +2327,18 @@
     "false_friend": null,
     "note": null
   },
+  "moral": {
+    "word": "moral",
+    "lemma": "moral",
+    "pos": "noun",
+    "ipa": "moˈɾal",
+    "ru": "мораль; нравственность",
+    "grammar": "sustantivo femenino singular",
+    "cefr": "B1",
+    "modern": null,
+    "false_friend": null,
+    "note": "También existe como adjetivo: нравственный."
+  },
   "aunque": {
     "word": "aunque",
     "lemma": "aunque",
@@ -2692,7 +2728,7 @@
     "lemma": "ser",
     "pos": "verb",
     "ipa": "/ˈsea/",
-    "ru": "был бы (subjuntivo)",
+    "ru": "был бы (сослагательное наклонение)",
     "grammar": "presente de subjuntivo, 1ª/3ª pers. sing.",
     "cefr": "A2",
     "modern": null,
@@ -3262,6 +3298,18 @@
     "modern": null,
     "false_friend": null,
     "note": "Город в Галисии (Испания)."
+  },
+  "rigor": {
+    "word": "rigor",
+    "lemma": "rigor",
+    "pos": "noun",
+    "ipa": "riˈɣoɾ",
+    "ru": "строгость, суровость; en rigor = строго говоря",
+    "grammar": "sustantivo masculino singular",
+    "cefr": "B2",
+    "modern": null,
+    "false_friend": null,
+    "note": "En rigor = строго говоря."
   },
   "mayor": {
     "word": "mayor",
@@ -4979,6 +5027,18 @@
     "false_friend": null,
     "note": null
   },
+  "nacido": {
+    "word": "nacido",
+    "lemma": "nacer",
+    "pos": "verb",
+    "ipa": "/naˈθiðo/",
+    "ru": "рождённый",
+    "grammar": "participio pasado, masculino singular; usado como adjetivo",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": "В конструкции nacido con... — 'рождённый с...'."
+  },
   "criado": {
     "word": "criado",
     "lemma": "criado",
@@ -6011,6 +6071,18 @@
     "false_friend": null,
     "note": null
   },
+  "hermoso": {
+    "word": "hermoso",
+    "lemma": "hermoso",
+    "pos": "adj",
+    "ipa": "[eɾˈmoso]",
+    "ru": "красивый, прекрасный",
+    "grammar": "adjetivo masculino singular",
+    "cefr": "A2",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
   "adentro": {
     "word": "adentro",
     "lemma": "adentro",
@@ -6040,7 +6112,7 @@
     "lemma": "empezar",
     "pos": "verb",
     "ipa": "/emˈpjeθen/",
-    "ru": "начнут (subj.)",
+    "ru": "начнут (сосл. накл.)",
     "grammar": "presente de subjuntivo, 3ª pers. pl.",
     "cefr": "A2",
     "modern": null,
@@ -7051,6 +7123,18 @@
     "ru": "сегодня",
     "grammar": "adverbio de tiempo",
     "cefr": "A1",
+    "modern": null,
+    "false_friend": null,
+    "note": null
+  },
+  "merece": {
+    "word": "merece",
+    "lemma": "merecer",
+    "pos": "verb",
+    "ipa": "meˈɾe.θe",
+    "ru": "заслуживает",
+    "grammar": "presente de indicativo, 3ª pers. sing.",
+    "cefr": "B1",
     "modern": null,
     "false_friend": null,
     "note": null
